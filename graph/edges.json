@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-09",
+  "updated": "2026-04-10",
   "edges": [
     {
       "from": "cat:agents/agent-clusters",
@@ -2765,6 +2765,951 @@
       "from": "proj:serper",
       "to": "cat:tools-integrations/actions/web-search-apis-for-agents",
       "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/speech-models",
+      "to": "cat:models-inference/models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/speech-models/stt",
+      "to": "cat:models-inference/models/speech-models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/speech-models/tts",
+      "to": "cat:models-inference/models/speech-models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:openai-whisper",
+      "to": "cat:models-inference/models/speech-models/stt",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:deepgram",
+      "to": "cat:models-inference/models/speech-models/stt",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:assemblyai",
+      "to": "cat:models-inference/models/speech-models/stt",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:elevenlabs",
+      "to": "cat:models-inference/models/speech-models/tts",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:cartesia",
+      "to": "cat:models-inference/models/speech-models/tts",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:kokoro-tts",
+      "to": "cat:models-inference/models/speech-models/tts",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/voice/telephony-agents",
+      "to": "cat:frameworks-runtimes/frameworks/voice",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:retell-ai",
+      "to": "cat:frameworks-runtimes/frameworks/voice/telephony-agents",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:bland-ai",
+      "to": "cat:frameworks-runtimes/frameworks/voice/telephony-agents",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:synthflow",
+      "to": "cat:frameworks-runtimes/frameworks/voice/telephony-agents",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/agent-to-agent/discovery-and-agent-cards",
+      "to": "cat:agents/agent-to-agent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/agent-to-agent/delegation-and-handoff",
+      "to": "cat:agents/agent-to-agent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/agent-to-agent/negotiation-and-contracts",
+      "to": "cat:agents/agent-to-agent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/agent-to-agent/trust-and-reputation",
+      "to": "cat:agents/agent-to-agent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/agent-in-the-loop/supervisor-agents",
+      "to": "cat:safety-governance/agent-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/agent-in-the-loop/critic-and-reviewer-agents",
+      "to": "cat:safety-governance/agent-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/agent-in-the-loop/policy-enforcement-agents",
+      "to": "cat:safety-governance/agent-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/human-in-the-loop/approval-gates",
+      "to": "cat:safety-governance/human-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/human-in-the-loop/review-inboxes",
+      "to": "cat:safety-governance/human-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/human-in-the-loop/interrupt-and-takeover",
+      "to": "cat:safety-governance/human-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/human-in-the-loop/clarification-loops",
+      "to": "cat:safety-governance/human-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/human-in-the-loop/correction-and-annotation",
+      "to": "cat:safety-governance/human-in-the-loop",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/research-and-experimentation",
+      "to": "cat:observability-evals",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/research-and-experimentation/agent-experimentation-frameworks",
+      "to": "cat:observability-evals/research-and-experimentation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/research-and-experimentation/behavioural-probes",
+      "to": "cat:observability-evals/research-and-experimentation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/research-and-experimentation/ablation-harnesses",
+      "to": "cat:observability-evals/research-and-experimentation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/research-and-experimentation/reproducibility-tooling",
+      "to": "cat:observability-evals/research-and-experimentation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/research-and-ethics-evaluations",
+      "to": "cat:safety-governance",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/research-and-ethics-evaluations/alignment-evaluations",
+      "to": "cat:safety-governance/research-and-ethics-evaluations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/research-and-ethics-evaluations/interpretability-tools",
+      "to": "cat:safety-governance/research-and-ethics-evaluations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/research-and-ethics-evaluations/bias-and-fairness-evaluations",
+      "to": "cat:safety-governance/research-and-ethics-evaluations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/research-and-ethics-evaluations/safety-benchmarks",
+      "to": "cat:safety-governance/research-and-ethics-evaluations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/research-and-ethics-evaluations/ethics-frameworks",
+      "to": "cat:safety-governance/research-and-ethics-evaluations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/research-and-ethics-evaluations/model-organism-studies",
+      "to": "cat:safety-governance/research-and-ethics-evaluations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/control-surfaces",
+      "to": "cat:interfaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/control-surfaces/agent-inboxes",
+      "to": "cat:interfaces/control-surfaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/control-surfaces/fleet-dashboards",
+      "to": "cat:interfaces/control-surfaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/control-surfaces/agent-cockpits",
+      "to": "cat:interfaces/control-surfaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/control-surfaces/intervention-consoles",
+      "to": "cat:interfaces/control-surfaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/control-surfaces/policy-and-governance-consoles",
+      "to": "cat:interfaces/control-surfaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/runtimes",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/observation-frameworks",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/goal-management",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/autonomous-guardrails",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/planning-and-scheduling",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/self-improvement",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/triggers-and-scheduling",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/runtimes/durable-execution",
+      "to": "cat:frameworks-runtimes/runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:temporal",
+      "to": "cat:frameworks-runtimes/runtimes/durable-execution",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:restate",
+      "to": "cat:frameworks-runtimes/runtimes/durable-execution",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:inngest",
+      "to": "cat:frameworks-runtimes/runtimes/durable-execution",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:dbos",
+      "to": "cat:frameworks-runtimes/runtimes/durable-execution",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/runtimes/event-and-messaging",
+      "to": "cat:frameworks-runtimes/runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/evals-and-experiment-tracking/observability/telemetry-standards",
+      "to": "cat:observability-evals/evals-and-experiment-tracking/observability",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:otel-genai",
+      "to": "cat:observability-evals/evals-and-experiment-tracking/observability/telemetry-standards",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:vllm",
+      "to": "cat:models-inference/inference/inference-servers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:sglang",
+      "to": "cat:models-inference/inference/inference-servers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:tgi",
+      "to": "cat:models-inference/inference/inference-servers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:lmdeploy",
+      "to": "cat:models-inference/inference/inference-servers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/quantisation",
+      "to": "cat:models-inference/models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/distillation",
+      "to": "cat:models-inference/models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/hallucination-and-factuality",
+      "to": "cat:safety-governance",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/hallucination-and-factuality/claim-extraction",
+      "to": "cat:safety-governance/hallucination-and-factuality",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/hallucination-and-factuality/citation-verification",
+      "to": "cat:safety-governance/hallucination-and-factuality",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/hallucination-and-factuality/consistency-checks",
+      "to": "cat:safety-governance/hallucination-and-factuality",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/provenance-and-watermarking",
+      "to": "cat:safety-governance",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:c2pa",
+      "to": "cat:safety-governance/provenance-and-watermarking",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:synthid",
+      "to": "cat:safety-governance/provenance-and-watermarking",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/identity-and-auth/secrets-and-vaults",
+      "to": "cat:safety-governance/identity-and-auth",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/evals-and-experiment-tracking/agent-testing",
+      "to": "cat:observability-evals/evals-and-experiment-tracking",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:context-memory-data/data/rag/retrieval-evaluation",
+      "to": "cat:context-memory-data/data/rag",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:ragas",
+      "to": "cat:context-memory-data/data/rag/retrieval-evaluation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:trulens",
+      "to": "cat:context-memory-data/data/rag/retrieval-evaluation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools-integrations/actions/screen-understanding",
+      "to": "cat:tools-integrations/actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:omniparser",
+      "to": "cat:tools-integrations/actions/screen-understanding",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/speech-models/voice-activity-detection",
+      "to": "cat:models-inference/models/speech-models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/speech-models/speaker-diarisation",
+      "to": "cat:models-inference/models/speech-models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:context-memory-data/data/trajectory-datasets",
+      "to": "cat:context-memory-data/data",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/annotation/human-labelling-services",
+      "to": "cat:interfaces/annotation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:dev-tools-skills/prompts/prompt-management/release-and-rollout",
+      "to": "cat:dev-tools-skills/prompts/prompt-management",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/guardrails/policy-compilation",
+      "to": "cat:safety-governance/guardrails",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "to": "cat:frameworks-runtimes/frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/dag-pipelines",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/state-machine-workflows",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/durable-agent-workflows",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/batch-and-bulk-agents",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/etl-and-enrichment",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/event-driven-workflows",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/scheduled-and-recurring",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/frameworks/workflow-orchestration/human-gated-workflows",
+      "to": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/experiments",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/experiments/emergent-communication",
+      "to": "cat:agents/experiments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/experiments/self-replication-studies",
+      "to": "cat:agents/experiments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/experiments/deception-sandbagging-studies",
+      "to": "cat:agents/experiments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/experiments/power-seeking-probes",
+      "to": "cat:agents/experiments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/experiments/self-rewriting-agents",
+      "to": "cat:agents/experiments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/multiagent/debate-deliberation",
+      "to": "cat:agents/multiagent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/multiagent/market-auction-mechanisms",
+      "to": "cat:agents/multiagent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/simulations-worlds/economic-simulation",
+      "to": "cat:agents/simulations-worlds",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/simulations-worlds/epidemiological-policy-simulation",
+      "to": "cat:agents/simulations-worlds",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/open-ended-exploration",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/legal",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/medical-clinical",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/finance",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/scientific-research",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/mathematics-theorem-proving",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/education-tutoring",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/customer-support",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/sales-sdr",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/recruiting-sourcing",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/gis-geospatial",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/robotics-embodied-tasks",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/gaming-npc",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/creative-writing",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/music-composition",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/translation-localization",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/soc-incident-response",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/threat-intelligence-osint",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/vulnerability-research-bug-bounty",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/malware-analysis-reverse-engineering",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/digital-forensics-dfir",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/fuzzing-exploit-generation",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/code-security-review",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/phishing-analysis-takedown",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/compliance-audit",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/cloud-security-posture",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/network-defense",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/security/deception-honeypots",
+      "to": "cat:agents/security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin",
+      "to": "cat:agents/operations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/incident-response-on-call",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/log-analysis-triage",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/root-cause-analysis",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/runbook-execution",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/config-management",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/patch-upgrade",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/capacity-planning-rightsizing",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/database-administration",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/observability-exploration",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/sre-sysadmin/shell-terminal-agents",
+      "to": "cat:agents/operations/sre-sysadmin",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration",
+      "to": "cat:agents/operations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration/docker",
+      "to": "cat:agents/operations/containers-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration/kubernetes",
+      "to": "cat:agents/operations/containers-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration/helm-charts",
+      "to": "cat:agents/operations/containers-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration/cluster-diagnostics",
+      "to": "cat:agents/operations/containers-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration/pod-workload-remediation",
+      "to": "cat:agents/operations/containers-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration/service-mesh",
+      "to": "cat:agents/operations/containers-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/containers-orchestration/gitops",
+      "to": "cat:agents/operations/containers-orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/infrastructure-as-code",
+      "to": "cat:agents/operations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/infrastructure-as-code/terraform-opentofu",
+      "to": "cat:agents/operations/infrastructure-as-code",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/infrastructure-as-code/pulumi",
+      "to": "cat:agents/operations/infrastructure-as-code",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/infrastructure-as-code/cloudformation-cdk",
+      "to": "cat:agents/operations/infrastructure-as-code",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/cloud",
+      "to": "cat:agents/operations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/cloud/cost-optimization",
+      "to": "cat:agents/operations/cloud",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/cloud/migration",
+      "to": "cat:agents/operations/cloud",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/cloud/multi-cloud-orchestration",
+      "to": "cat:agents/operations/cloud",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/networking",
+      "to": "cat:agents/operations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/networking/troubleshooting",
+      "to": "cat:agents/operations/networking",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/networking/firewall-policy-generation",
+      "to": "cat:agents/operations/networking",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/operations/networking/network-config",
+      "to": "cat:agents/operations/networking",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/memory/forgetting-decay-policies",
+      "to": "cat:agents/memory",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/memory/memory-consolidation",
+      "to": "cat:agents/memory",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/purpose-specific/data-labeling",
+      "to": "cat:agents/purpose-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/purpose-specific/academic-literature-review",
+      "to": "cat:agents/purpose-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/collective-intelligence",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/creative-collaboration",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:context-memory-data/data/synthetic-trajectory-generation",
+      "to": "cat:context-memory-data/data",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/benchmarks/tool-use-benchmarks",
+      "to": "cat:observability-evals/benchmarks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/benchmarks/long-horizon-task-benchmarks",
+      "to": "cat:observability-evals/benchmarks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/benchmarks/multi-agent-benchmarks",
+      "to": "cat:observability-evals/benchmarks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:observability-evals/benchmarks/safety-red-team-benchmarks",
+      "to": "cat:observability-evals/benchmarks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/security/red-team/jailbreak-corpora",
+      "to": "cat:safety-governance/security/red-team",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:safety-governance/security/red-team/agent-hijacking-testbeds",
+      "to": "cat:safety-governance/security/red-team",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:tools-integrations/actions/physical-world-actuation",
+      "to": "cat:tools-integrations/actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:tools-integrations/actions/email-as-a-tool",
+      "to": "cat:tools-integrations/actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:tools-integrations/actions/calendar-as-a-tool",
+      "to": "cat:tools-integrations/actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:tools-integrations/actions/filesystem-tools",
+      "to": "cat:tools-integrations/actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/runtimes/gpu-resource-schedulers",
+      "to": "cat:frameworks-runtimes/runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks-runtimes/runtimes/agent-migration-hot-swap",
+      "to": "cat:frameworks-runtimes/runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:interfaces/control-surfaces/replay-forking-uis",
+      "to": "cat:interfaces/control-surfaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/reinforcement-learning/self-play-environments",
+      "to": "cat:models-inference/models/reinforcement-learning",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:models-inference/models/reinforcement-learning/curriculum-generation",
+      "to": "cat:models-inference/models/reinforcement-learning",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:ecosystem/organisations/research-labs",
+      "to": "cat:ecosystem/organisations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:ecosystem/publications-newsletters",
+      "to": "cat:ecosystem",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:dev-tools-skills/prompts/prompt-versioning-diffing",
+      "to": "cat:dev-tools-skills/prompts",
+      "type": "SUBCATEGORY_OF"
     }
   ]
 }

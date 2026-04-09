@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-09",
+  "updated": "2026-04-10",
   "nodes": [
     {
       "id": "cat:agents",
@@ -5313,6 +5313,2265 @@
       "type": "Project",
       "label": "Zep Temporal KG",
       "url": "https://github.com/getzep/zep"
+    },
+    {
+      "id": "cat:models-inference/models/speech-models",
+      "type": "Category",
+      "label": "Speech Models",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Speech Models"
+      ],
+      "description": "",
+      "short_description": "Speech-to-text and text-to-speech models that agents depend on for voice I/O.",
+      "long_description": "Open and hosted speech models used as the ears and mouth of voice agents. Covers ASR/STT (transcription), TTS (synthesis), and end-to-end speech models. Distinct from Frameworks/Voice (which orchestrates the loop) and from Telephony Agents (which handle the phone transport)."
+    },
+    {
+      "id": "cat:models-inference/models/speech-models/stt",
+      "type": "Category",
+      "label": "Speech-to-Text",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Speech Models",
+        "Speech-to-Text"
+      ],
+      "description": "",
+      "short_description": "ASR models used by agents to transcribe user speech.",
+      "long_description": "Automatic speech recognition models \u2014 open-weights and hosted APIs \u2014 that convert audio into text for downstream agent reasoning. Latency and streaming support matter more than raw WER for agentic use."
+    },
+    {
+      "id": "cat:models-inference/models/speech-models/tts",
+      "type": "Category",
+      "label": "Text-to-Speech",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Speech Models",
+        "Text-to-Speech"
+      ],
+      "description": "",
+      "short_description": "TTS models used by agents to synthesise spoken responses.",
+      "long_description": "Neural text-to-speech models that agents use to respond with voice. Distinguished by streaming latency, voice cloning, and prosody control rather than pure naturalness."
+    },
+    {
+      "id": "proj:openai-whisper",
+      "type": "Project",
+      "label": "openai/whisper",
+      "url": "https://github.com/openai/whisper"
+    },
+    {
+      "id": "proj:deepgram",
+      "type": "Project",
+      "label": "Deepgram",
+      "url": "https://deepgram.com"
+    },
+    {
+      "id": "proj:assemblyai",
+      "type": "Project",
+      "label": "AssemblyAI",
+      "url": "https://www.assemblyai.com"
+    },
+    {
+      "id": "proj:elevenlabs",
+      "type": "Project",
+      "label": "ElevenLabs",
+      "url": "https://elevenlabs.io"
+    },
+    {
+      "id": "proj:cartesia",
+      "type": "Project",
+      "label": "Cartesia",
+      "url": "https://cartesia.ai"
+    },
+    {
+      "id": "proj:kokoro-tts",
+      "type": "Project",
+      "label": "hexgrad/Kokoro-82M",
+      "url": "https://huggingface.co/hexgrad/Kokoro-82M"
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/voice/telephony-agents",
+      "type": "Category",
+      "label": "Telephony Agents",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Voice",
+        "Telephony Agents"
+      ],
+      "description": "",
+      "short_description": "Platforms for building agents that place and receive phone calls over SIP/PSTN.",
+      "long_description": "Voice-agent platforms whose primary surface is the telephone network \u2014 inbound IVR replacement, outbound calling, SIP trunking, carrier integration. Distinct from Realtime Voice Pipelines (which is about the STT\u2192LLM\u2192TTS loop in-browser or in-app); telephony adds call control, DTMF, warm transfer, and carrier-grade latency constraints."
+    },
+    {
+      "id": "proj:retell-ai",
+      "type": "Project",
+      "label": "Retell AI",
+      "url": "https://www.retellai.com"
+    },
+    {
+      "id": "proj:bland-ai",
+      "type": "Project",
+      "label": "Bland AI",
+      "url": "https://www.bland.ai"
+    },
+    {
+      "id": "proj:synthflow",
+      "type": "Project",
+      "label": "Synthflow",
+      "url": "https://synthflow.ai"
+    },
+    {
+      "id": "cat:agents/agent-to-agent/discovery-and-agent-cards",
+      "type": "Category",
+      "label": "Discovery & Agent Cards",
+      "path": [
+        "Agents",
+        "Agent to Agent",
+        "Discovery & Agent Cards"
+      ],
+      "description": "",
+      "short_description": "Mechanisms agents use to find and describe each other \u2014 agent cards, .well-known endpoints, directories.",
+      "long_description": "How one agent learns that another exists and what it can do. Includes agent card specs (e.g. A2A agent cards), .well-known/agent.json conventions, and public directories of addressable agents. Distinct from MCP registries, which describe tools rather than agents."
+    },
+    {
+      "id": "cat:agents/agent-to-agent/delegation-and-handoff",
+      "type": "Category",
+      "label": "Delegation & Task Handoff",
+      "path": [
+        "Agents",
+        "Agent to Agent",
+        "Delegation & Task Handoff"
+      ],
+      "description": "",
+      "short_description": "Patterns for one agent commissioning work to another and receiving results.",
+      "long_description": "Protocols and libraries where an originating agent hands a task to a remote agent, tracks its progress, and integrates the result. The focus is workflow transfer rather than chat, distinguishing it from free-form messaging."
+    },
+    {
+      "id": "cat:agents/agent-to-agent/negotiation-and-contracts",
+      "type": "Category",
+      "label": "Negotiation & Contracts",
+      "path": [
+        "Agents",
+        "Agent to Agent",
+        "Negotiation & Contracts"
+      ],
+      "description": "",
+      "short_description": "Protocols for agents to negotiate price, terms, or obligations before acting.",
+      "long_description": "Slot for standards and libraries letting agents reach agreement on what will be done, for how much, and under which constraints \u2014 adjacent to agent payments but focused on the contracting step rather than settlement."
+    },
+    {
+      "id": "cat:agents/agent-to-agent/trust-and-reputation",
+      "type": "Category",
+      "label": "Trust & Reputation",
+      "path": [
+        "Agents",
+        "Agent to Agent",
+        "Trust & Reputation"
+      ],
+      "description": "",
+      "short_description": "Identity, attestations, and reputation signals agents use to decide whether to trust peers.",
+      "long_description": "Verifiable credentials, signed agent identities, reputation scores, and revocation mechanisms that let agents make trust decisions about other agents they encounter. Distinct from human-facing Identity and Auth under Safety & Governance."
+    },
+    {
+      "id": "cat:safety-governance/agent-in-the-loop/supervisor-agents",
+      "type": "Category",
+      "label": "Supervisor Agents",
+      "path": [
+        "Safety & Governance",
+        "Agent in the Loop",
+        "Supervisor Agents"
+      ],
+      "description": "",
+      "short_description": "Agents whose role is to approve, reject, or moderate the actions of other agents at runtime.",
+      "long_description": "A supervisory agent sits above a worker agent and gates its tool calls or outputs against a policy. Distinct from Guardrails (which are typically rule- or classifier-based) because the supervisor is itself an LLM agent reasoning about intent and context."
+    },
+    {
+      "id": "cat:safety-governance/agent-in-the-loop/critic-and-reviewer-agents",
+      "type": "Category",
+      "label": "Critic & Reviewer Agents",
+      "path": [
+        "Safety & Governance",
+        "Agent in the Loop",
+        "Critic & Reviewer Agents"
+      ],
+      "description": "",
+      "short_description": "Agents that review another agent's plan, reasoning, or output and return critiques used to revise it.",
+      "long_description": "Reviewer/critic patterns where a second agent audits a first agent's work before it is accepted \u2014 plan critique, output review, reflection loops executed by a separate agent rather than self-reflection within the same context."
+    },
+    {
+      "id": "cat:safety-governance/agent-in-the-loop/policy-enforcement-agents",
+      "type": "Category",
+      "label": "Policy Enforcement Agents",
+      "path": [
+        "Safety & Governance",
+        "Agent in the Loop",
+        "Policy Enforcement Agents"
+      ],
+      "description": "",
+      "short_description": "Agents that evaluate proposed actions against a policy document and veto or allow them.",
+      "long_description": "Agents configured with an organisational or regulatory policy that other agents must consult before acting. The policy is reasoned about by the enforcement agent rather than compiled into static rules."
+    },
+    {
+      "id": "cat:safety-governance/human-in-the-loop/approval-gates",
+      "type": "Category",
+      "label": "Approval Gates",
+      "path": [
+        "Safety & Governance",
+        "Human in the Loop",
+        "Approval Gates"
+      ],
+      "description": "",
+      "short_description": "Synchronous checkpoints that block an agent action until a human explicitly approves it.",
+      "long_description": "Pre-action confirmation flows where the agent pauses and the human must allow, deny, or edit a proposed tool call before it runs. Distinct from Review Inboxes (async) and from Interrupt & Takeover (mid-action)."
+    },
+    {
+      "id": "cat:safety-governance/human-in-the-loop/review-inboxes",
+      "type": "Category",
+      "label": "Review Inboxes",
+      "path": [
+        "Safety & Governance",
+        "Human in the Loop",
+        "Review Inboxes"
+      ],
+      "description": "",
+      "short_description": "Async queues where humans review completed or pending agent actions in bulk.",
+      "long_description": "Inbox-style UIs where agent decisions accumulate for later human review, approval, or correction \u2014 suited to long-running agents whose work cannot block on a human in real time."
+    },
+    {
+      "id": "cat:safety-governance/human-in-the-loop/interrupt-and-takeover",
+      "type": "Category",
+      "label": "Interrupt & Takeover",
+      "path": [
+        "Safety & Governance",
+        "Human in the Loop",
+        "Interrupt & Takeover"
+      ],
+      "description": "",
+      "short_description": "Patterns letting a human jump into a running agent session and take manual control.",
+      "long_description": "Mid-execution intervention \u2014 pausing an agent, editing its state or plan, or taking over its session. Used for voice agents, computer-use agents, and long-running autonomous runs."
+    },
+    {
+      "id": "cat:safety-governance/human-in-the-loop/clarification-loops",
+      "type": "Category",
+      "label": "Clarification Loops",
+      "path": [
+        "Safety & Governance",
+        "Human in the Loop",
+        "Clarification Loops"
+      ],
+      "description": "",
+      "short_description": "Protocols for agents to ask humans targeted questions when they are uncertain.",
+      "long_description": "Mechanisms letting an agent explicitly request missing information from a human rather than guessing \u2014 structured clarification prompts, disambiguation UIs, uncertainty-triggered question generation."
+    },
+    {
+      "id": "cat:safety-governance/human-in-the-loop/correction-and-annotation",
+      "type": "Category",
+      "label": "Correction & Annotation",
+      "path": [
+        "Safety & Governance",
+        "Human in the Loop",
+        "Correction & Annotation"
+      ],
+      "description": "",
+      "short_description": "Tools letting humans correct agent outputs and feed those corrections back for training or retrieval.",
+      "long_description": "Post-hoc correction UIs that capture human edits to agent outputs and route them to eval datasets, fine-tuning pipelines, or memory stores. Distinct from Approval Gates because the action has already happened."
+    },
+    {
+      "id": "cat:observability-evals/research-and-experimentation",
+      "type": "Category",
+      "label": "Research & Experimentation",
+      "path": [
+        "Observability & Evals",
+        "Research & Experimentation"
+      ],
+      "description": "",
+      "short_description": "Frameworks for running controlled studies of agent behaviour \u2014 treatments, replications, ablations.",
+      "long_description": "The scientific side of agent evaluation: tools that let researchers design controlled experiments across agent configurations, track independent and dependent variables, replicate runs, and reason about statistical significance. Distinct from Evals and Experiment Tracking (which is production-oriented telemetry) and from Benchmarks (which are fixed leaderboards)."
+    },
+    {
+      "id": "cat:observability-evals/research-and-experimentation/agent-experimentation-frameworks",
+      "type": "Category",
+      "label": "Agent Experimentation Frameworks",
+      "path": [
+        "Observability & Evals",
+        "Research & Experimentation",
+        "Agent Experimentation Frameworks"
+      ],
+      "description": "",
+      "short_description": "Harnesses for running treatment/control experiments on agent configurations.",
+      "long_description": "Frameworks that treat agents as experimental subjects \u2014 varying prompt, model, tool set, or memory and running replicated trials to measure the effect on outcomes. The unit of analysis is the agent run."
+    },
+    {
+      "id": "cat:observability-evals/research-and-experimentation/behavioural-probes",
+      "type": "Category",
+      "label": "Behavioural Probes",
+      "path": [
+        "Observability & Evals",
+        "Research & Experimentation",
+        "Behavioural Probes"
+      ],
+      "description": "",
+      "short_description": "Targeted micro-tests that poke at specific agent behaviours in constrained scenarios.",
+      "long_description": "Narrow, hypothesis-driven tests designed to elicit a specific behaviour (sycophancy, tool misuse, goal drift) in a controlled setting. Distinct from broad benchmarks, which aggregate over many tasks."
+    },
+    {
+      "id": "cat:observability-evals/research-and-experimentation/ablation-harnesses",
+      "type": "Category",
+      "label": "Ablation Harnesses",
+      "path": [
+        "Observability & Evals",
+        "Research & Experimentation",
+        "Ablation Harnesses"
+      ],
+      "description": "",
+      "short_description": "Tooling for systematically removing or swapping agent components to attribute behaviour.",
+      "long_description": "Frameworks that make it easy to disable a tool, swap a model, or strip a memory layer and re-run the same scenario \u2014 the classic ablation study applied to agent stacks."
+    },
+    {
+      "id": "cat:observability-evals/research-and-experimentation/reproducibility-tooling",
+      "type": "Category",
+      "label": "Reproducibility Tooling",
+      "path": [
+        "Observability & Evals",
+        "Research & Experimentation",
+        "Reproducibility Tooling"
+      ],
+      "description": "",
+      "short_description": "Tools for capturing and replaying the full state of an agent run so results can be reproduced.",
+      "long_description": "Seed management, deterministic replay, run manifests, and dataset versioning aimed at making agent research reproducible across machines and time."
+    },
+    {
+      "id": "cat:safety-governance/research-and-ethics-evaluations",
+      "type": "Category",
+      "label": "Research & Ethics Evaluations",
+      "path": [
+        "Safety & Governance",
+        "Research & Ethics Evaluations"
+      ],
+      "description": "",
+      "short_description": "Tools and frameworks for evaluating alignment, interpretability, bias, and ethical properties of agents.",
+      "long_description": "The research-oriented evaluation stack for agent safety and ethics \u2014 distinct from runtime Guardrails (which block bad actions in production) and from general Benchmarks (which measure capability). Covers alignment probes, interpretability of agent reasoning, bias and fairness audits, and frameworks that codify ethical principles into testable criteria."
+    },
+    {
+      "id": "cat:safety-governance/research-and-ethics-evaluations/alignment-evaluations",
+      "type": "Category",
+      "label": "Alignment Evaluations",
+      "path": [
+        "Safety & Governance",
+        "Research & Ethics Evaluations",
+        "Alignment Evaluations"
+      ],
+      "description": "",
+      "short_description": "Evaluations probing whether an agent's behaviour matches its principal's intent under stress.",
+      "long_description": "Scenario suites and techniques for testing alignment properties \u2014 goal-following, corrigibility, deception, power-seeking, reward hacking. Typically adversarial or out-of-distribution probes rather than capability benchmarks."
+    },
+    {
+      "id": "cat:safety-governance/research-and-ethics-evaluations/interpretability-tools",
+      "type": "Category",
+      "label": "Interpretability Tools",
+      "path": [
+        "Safety & Governance",
+        "Research & Ethics Evaluations",
+        "Interpretability Tools"
+      ],
+      "description": "",
+      "short_description": "Tools for inspecting and explaining the internal reasoning of agents and the models behind them.",
+      "long_description": "Mechanistic interpretability libraries, activation probing, chain-of-thought faithfulness checks, and agent-level introspection tools that expose *why* an agent chose an action rather than just *what* it did."
+    },
+    {
+      "id": "cat:safety-governance/research-and-ethics-evaluations/bias-and-fairness-evaluations",
+      "type": "Category",
+      "label": "Bias & Fairness Evaluations",
+      "path": [
+        "Safety & Governance",
+        "Research & Ethics Evaluations",
+        "Bias & Fairness Evaluations"
+      ],
+      "description": "",
+      "short_description": "Test suites and frameworks for measuring bias and fairness in agent decisions and outputs.",
+      "long_description": "Datasets, metrics, and harnesses focused on demographic bias, representational harms, and disparate impact in agent outputs and tool-use decisions. Distinct from general eval suites because the target property is fairness rather than capability."
+    },
+    {
+      "id": "cat:safety-governance/research-and-ethics-evaluations/safety-benchmarks",
+      "type": "Category",
+      "label": "Safety Benchmarks",
+      "path": [
+        "Safety & Governance",
+        "Research & Ethics Evaluations",
+        "Safety Benchmarks"
+      ],
+      "description": "",
+      "short_description": "Benchmarks whose target property is safe behaviour rather than task success.",
+      "long_description": "Standardised leaderboards that score agents on refusal quality, jailbreak resistance, harmful-tool-use avoidance, and similar safety properties. Kept separate from the general Benchmarks slot because the measurement target is orthogonal to capability."
+    },
+    {
+      "id": "cat:safety-governance/research-and-ethics-evaluations/ethics-frameworks",
+      "type": "Category",
+      "label": "Ethics Frameworks",
+      "path": [
+        "Safety & Governance",
+        "Research & Ethics Evaluations",
+        "Ethics Frameworks"
+      ],
+      "description": "",
+      "short_description": "Codified ethical principles, audit checklists, and standards used to evaluate agent deployments.",
+      "long_description": "Structured frameworks \u2014 principles, checklists, impact assessments, and audit standards \u2014 that organisations apply to agents before or after deployment. Includes ecosystem standards bodies' ethics outputs and independent audit methodologies."
+    },
+    {
+      "id": "cat:safety-governance/research-and-ethics-evaluations/model-organism-studies",
+      "type": "Category",
+      "label": "Model Organism Studies",
+      "path": [
+        "Safety & Governance",
+        "Research & Ethics Evaluations",
+        "Model Organism Studies"
+      ],
+      "description": "",
+      "short_description": "Deliberately constructed agents used as subjects for safety and alignment research.",
+      "long_description": "Research artefacts where a model or agent is intentionally trained or configured to exhibit a property of interest (sleeper behaviour, deception, sandbagging) so the property can be studied and detection methods validated."
+    },
+    {
+      "id": "cat:interfaces/control-surfaces",
+      "type": "Category",
+      "label": "Control Surfaces",
+      "path": [
+        "Interfaces",
+        "Control Surfaces"
+      ],
+      "description": "",
+      "short_description": "Operator-facing surfaces for supervising, steering, and intervening in running agents.",
+      "long_description": "Dashboards, inboxes, cockpits, and consoles through which humans manage agents in flight \u2014 distinct from Frontends (end-user chat) and from UX primitives (reusable widgets). The unit of interaction is an agent or fleet rather than a conversation. Overlaps with Safety & Governance / Human in the Loop (which classifies the *interaction patterns*); Control Surfaces classifies the *products* that implement them."
+    },
+    {
+      "id": "cat:interfaces/control-surfaces/agent-inboxes",
+      "type": "Category",
+      "label": "Agent Inboxes",
+      "path": [
+        "Interfaces",
+        "Control Surfaces",
+        "Agent Inboxes"
+      ],
+      "description": "",
+      "short_description": "Inbox-style products where humans triage, approve, or reply to agent actions.",
+      "long_description": "Dedicated inbox applications that collect items requiring human attention from one or many agents \u2014 approvals, clarifications, failures \u2014 and present them as a reviewable queue."
+    },
+    {
+      "id": "cat:interfaces/control-surfaces/fleet-dashboards",
+      "type": "Category",
+      "label": "Fleet Dashboards",
+      "path": [
+        "Interfaces",
+        "Control Surfaces",
+        "Fleet Dashboards"
+      ],
+      "description": "",
+      "short_description": "Dashboards that show the state of many agents at once.",
+      "long_description": "Operator views onto populations of running agents \u2014 status, throughput, cost, failures \u2014 typically used by teams running agent fleets at scale."
+    },
+    {
+      "id": "cat:interfaces/control-surfaces/agent-cockpits",
+      "type": "Category",
+      "label": "Agent Cockpits",
+      "path": [
+        "Interfaces",
+        "Control Surfaces",
+        "Agent Cockpits"
+      ],
+      "description": "",
+      "short_description": "Single-agent operator views showing live state, plan, and step-by-step reasoning.",
+      "long_description": "Cockpit-style surfaces focused on one agent at a time \u2014 the live plan, current tool call, memory state, and controls to pause, edit, or redirect it."
+    },
+    {
+      "id": "cat:interfaces/control-surfaces/intervention-consoles",
+      "type": "Category",
+      "label": "Intervention Consoles",
+      "path": [
+        "Interfaces",
+        "Control Surfaces",
+        "Intervention Consoles"
+      ],
+      "description": "",
+      "short_description": "Consoles that let an operator interrupt a running agent and take manual control.",
+      "long_description": "Products whose primary purpose is giving humans a fast path to break into a running session \u2014 pause, rewind, edit state, or take over execution. Adjacent to Human in the Loop / Interrupt & Takeover, which names the *pattern*."
+    },
+    {
+      "id": "cat:interfaces/control-surfaces/policy-and-governance-consoles",
+      "type": "Category",
+      "label": "Policy & Governance Consoles",
+      "path": [
+        "Interfaces",
+        "Control Surfaces",
+        "Policy & Governance Consoles"
+      ],
+      "description": "",
+      "short_description": "Admin surfaces for defining policies, permissions, and budgets that agents must obey.",
+      "long_description": "Governance-oriented control planes where operators configure what agents may do, which tools they may call, cost ceilings, and who may authorise exceptions. Distinct from runtime guardrails because the surface is the policy editor, not the enforcement point."
+    },
+    {
+      "id": "cat:agents/autonomous/runtimes",
+      "type": "Category",
+      "label": "Autonomous Runtimes",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Autonomous Runtimes"
+      ],
+      "description": "",
+      "short_description": "Runtimes purpose-built for long-running agents that operate without per-step supervision.",
+      "long_description": "Execution environments optimised for autonomy \u2014 persistent state across days or weeks, goal stacks, failure recovery, and cost ceilings baked into the runtime rather than bolted on. Distinct from Frameworks (which describe the agent) and general Runtimes (which don't assume long-running autonomy)."
+    },
+    {
+      "id": "cat:agents/autonomous/observation-frameworks",
+      "type": "Category",
+      "label": "Autonomous Observation Frameworks",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Autonomous Observation Frameworks"
+      ],
+      "description": "",
+      "short_description": "Frameworks that let an autonomous agent continually observe its environment and trigger action.",
+      "long_description": "Perception loops for agents that do not sit in a chat \u2014 polling, webhooks, file watchers, screen watchers, schedule-driven checks. The framework's job is to turn environmental change into agent-readable events."
+    },
+    {
+      "id": "cat:agents/autonomous/goal-management",
+      "type": "Category",
+      "label": "Goal Management",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Goal Management"
+      ],
+      "description": "",
+      "short_description": "Systems for tracking, decomposing, and updating long-horizon goals across autonomous runs.",
+      "long_description": "Persistent goal stores with sub-goal decomposition, priority, deadline, and revision \u2014 the durable layer above individual agent runs."
+    },
+    {
+      "id": "cat:agents/autonomous/autonomous-guardrails",
+      "type": "Category",
+      "label": "Autonomous Guardrails",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Autonomous Guardrails"
+      ],
+      "description": "",
+      "short_description": "Guardrails specifically tuned for long-running, unsupervised agents.",
+      "long_description": "Rate limits, spend ceilings, drift detection, out-of-policy triggers, and kill switches designed for agents that humans cannot watch in real time. Distinct from general Guardrails, which typically sit in the request/response path of a supervised agent."
+    },
+    {
+      "id": "cat:agents/autonomous/planning-and-scheduling",
+      "type": "Category",
+      "label": "Planning & Scheduling",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Planning & Scheduling"
+      ],
+      "description": "",
+      "short_description": "Planners and schedulers that decide what an autonomous agent should do next.",
+      "long_description": "Classical planners, HTN decomposition, LLM-based planners, and schedulers that turn goals into ordered action queues over long horizons."
+    },
+    {
+      "id": "cat:agents/autonomous/self-improvement",
+      "type": "Category",
+      "label": "Self-Improvement Loops",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Self-Improvement Loops"
+      ],
+      "description": "",
+      "short_description": "Patterns where an autonomous agent modifies its own prompts, tools, or weights over time.",
+      "long_description": "Feedback loops that let an agent refine itself \u2014 prompt self-editing, tool acquisition, curriculum self-play, and in-weight updates driven by the agent's own evaluation of its performance."
+    },
+    {
+      "id": "cat:agents/autonomous/triggers-and-scheduling",
+      "type": "Category",
+      "label": "Triggers & Scheduling",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Triggers & Scheduling"
+      ],
+      "description": "",
+      "short_description": "Cron-like and event-driven dispatch for autonomous agent runs.",
+      "long_description": "Services whose job is to start an agent run on a schedule or in response to an external event. Distinct from Planning (which decides what to do) \u2014 triggers decide *when*."
+    },
+    {
+      "id": "cat:frameworks-runtimes/runtimes/durable-execution",
+      "type": "Category",
+      "label": "Durable Execution",
+      "path": [
+        "Frameworks & Runtimes",
+        "Runtimes",
+        "Durable Execution"
+      ],
+      "description": "",
+      "short_description": "Workflow engines that give agents durable, resumable execution across failures and restarts.",
+      "long_description": "Durable workflow runtimes (originating in backend workflow orchestration) repurposed or marketed for agent execution \u2014 promises of exactly-once steps, automatic retry, replay, and long-running state. Distinct from general Orchestration because the guarantee is durability, not just composition."
+    },
+    {
+      "id": "proj:temporal",
+      "type": "Project",
+      "label": "Temporal",
+      "url": "https://temporal.io"
+    },
+    {
+      "id": "proj:restate",
+      "type": "Project",
+      "label": "Restate",
+      "url": "https://restate.dev"
+    },
+    {
+      "id": "proj:inngest",
+      "type": "Project",
+      "label": "Inngest",
+      "url": "https://www.inngest.com"
+    },
+    {
+      "id": "proj:dbos",
+      "type": "Project",
+      "label": "DBOS",
+      "url": "https://www.dbos.dev"
+    },
+    {
+      "id": "cat:frameworks-runtimes/runtimes/event-and-messaging",
+      "type": "Category",
+      "label": "Event & Messaging Substrates",
+      "path": [
+        "Frameworks & Runtimes",
+        "Runtimes",
+        "Event & Messaging Substrates"
+      ],
+      "description": "",
+      "short_description": "Message buses and event streams that carry inter-agent and agent-to-tool traffic.",
+      "long_description": "Pub/sub brokers, streaming logs, and event meshes used as the transport layer between agents, tools, and humans. Distinct from A2A (which specifies the protocol) \u2014 this slot is the substrate underneath."
+    },
+    {
+      "id": "cat:observability-evals/evals-and-experiment-tracking/observability/telemetry-standards",
+      "type": "Category",
+      "label": "Telemetry Standards",
+      "path": [
+        "Observability & Evals",
+        "Evals and Experiment Tracking",
+        "Observability",
+        "Telemetry Standards"
+      ],
+      "description": "",
+      "short_description": "Open standards for agent and LLM telemetry \u2014 spans, traces, and semantic conventions.",
+      "long_description": "Specs that define how agent runs are instrumented for tracing and metrics in a vendor-neutral way. Distinct from the Observability products themselves, which implement the standards."
+    },
+    {
+      "id": "proj:otel-genai",
+      "type": "Project",
+      "label": "OpenTelemetry GenAI Conventions",
+      "url": "https://opentelemetry.io/docs/specs/semconv/gen-ai/"
+    },
+    {
+      "id": "proj:vllm",
+      "type": "Project",
+      "label": "vLLM",
+      "url": "https://github.com/vllm-project/vllm"
+    },
+    {
+      "id": "proj:sglang",
+      "type": "Project",
+      "label": "SGLang",
+      "url": "https://github.com/sgl-project/sglang"
+    },
+    {
+      "id": "proj:tgi",
+      "type": "Project",
+      "label": "Text Generation Inference",
+      "url": "https://github.com/huggingface/text-generation-inference"
+    },
+    {
+      "id": "proj:lmdeploy",
+      "type": "Project",
+      "label": "LMDeploy",
+      "url": "https://github.com/InternLM/lmdeploy"
+    },
+    {
+      "id": "cat:models-inference/models/quantisation",
+      "type": "Category",
+      "label": "Quantisation",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Quantisation"
+      ],
+      "description": "",
+      "short_description": "Tools and formats for compressing models so they run on smaller hardware.",
+      "long_description": "Quantisation libraries and file formats \u2014 GGUF, AWQ, GPTQ, bitsandbytes, llm-compressor \u2014 that let the same model run on constrained hardware at the cost of some accuracy. Distinct from Inference Servers, which consume quantised weights."
+    },
+    {
+      "id": "cat:models-inference/models/distillation",
+      "type": "Category",
+      "label": "Distillation",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Distillation"
+      ],
+      "description": "",
+      "short_description": "Tools for distilling large models into smaller student models for agent use.",
+      "long_description": "Training-time techniques and toolkits for producing a smaller model that mimics a larger one \u2014 useful for agents that need low-latency, low-cost inference in tight loops."
+    },
+    {
+      "id": "cat:safety-governance/hallucination-and-factuality",
+      "type": "Category",
+      "label": "Hallucination & Factuality",
+      "path": [
+        "Safety & Governance",
+        "Hallucination & Factuality"
+      ],
+      "description": "",
+      "short_description": "Tools that detect, measure, or prevent hallucinated claims in agent outputs.",
+      "long_description": "Runtime detectors and evaluation libraries focused specifically on factual grounding of LLM outputs \u2014 claim extraction, citation verification, consistency checks across retrievals, and hallucination scores. Distinct from general grounding infra under Context/Data."
+    },
+    {
+      "id": "cat:safety-governance/hallucination-and-factuality/claim-extraction",
+      "type": "Category",
+      "label": "Claim Extraction",
+      "path": [
+        "Safety & Governance",
+        "Hallucination & Factuality",
+        "Claim Extraction"
+      ],
+      "description": "",
+      "short_description": "Tools that decompose LLM outputs into atomic factual claims.",
+      "long_description": "Libraries that parse an agent output into a list of discrete, checkable claims \u2014 the prerequisite for downstream verification."
+    },
+    {
+      "id": "cat:safety-governance/hallucination-and-factuality/citation-verification",
+      "type": "Category",
+      "label": "Citation Verification",
+      "path": [
+        "Safety & Governance",
+        "Hallucination & Factuality",
+        "Citation Verification"
+      ],
+      "description": "",
+      "short_description": "Checks that cited sources actually support the claim they're attached to.",
+      "long_description": "Runtime and eval-time tools that fetch cited sources and verify the claim is supported by the text, distinguishing hallucinated citations from real ones."
+    },
+    {
+      "id": "cat:safety-governance/hallucination-and-factuality/consistency-checks",
+      "type": "Category",
+      "label": "Consistency Checks",
+      "path": [
+        "Safety & Governance",
+        "Hallucination & Factuality",
+        "Consistency Checks"
+      ],
+      "description": "",
+      "short_description": "Self-consistency and cross-retrieval consistency checks as hallucination signals.",
+      "long_description": "Sampling multiple generations, or checking an answer against multiple retrievals, and flagging divergence as a hallucination signal."
+    },
+    {
+      "id": "cat:safety-governance/provenance-and-watermarking",
+      "type": "Category",
+      "label": "Provenance & Watermarking",
+      "path": [
+        "Safety & Governance",
+        "Provenance & Watermarking"
+      ],
+      "description": "",
+      "short_description": "Signals and specs for proving whether content was produced by an agent.",
+      "long_description": "C2PA manifests, synthetic-output watermarking, and cryptographic content credentials. Concerned with the authenticity trail of agent-generated artefacts rather than the agent's runtime behaviour."
+    },
+    {
+      "id": "proj:c2pa",
+      "type": "Project",
+      "label": "C2PA",
+      "url": "https://c2pa.org"
+    },
+    {
+      "id": "proj:synthid",
+      "type": "Project",
+      "label": "SynthID",
+      "url": "https://deepmind.google/technologies/synthid/"
+    },
+    {
+      "id": "cat:safety-governance/identity-and-auth/secrets-and-vaults",
+      "type": "Category",
+      "label": "Secrets & Vaults for Agents",
+      "path": [
+        "Safety & Governance",
+        "Identity and Auth",
+        "Secrets & Vaults for Agents"
+      ],
+      "description": "",
+      "short_description": "Vaults and brokers that hold credentials agents need, without exposing them in context.",
+      "long_description": "Services that inject credentials into tool calls at runtime without letting the agent see them, or that issue short-lived tokens scoped to a single agent run. Distinct from general secret managers because the threat model assumes the agent itself may be adversarial or compromised."
+    },
+    {
+      "id": "cat:observability-evals/evals-and-experiment-tracking/agent-testing",
+      "type": "Category",
+      "label": "Agent Testing",
+      "path": [
+        "Observability & Evals",
+        "Evals and Experiment Tracking",
+        "Agent Testing"
+      ],
+      "description": "",
+      "short_description": "Unit and integration testing frameworks for agents, modelled on software testing.",
+      "long_description": "Testing frameworks where the unit under test is an agent or tool call \u2014 assertions over tool-call sequences, fixture-based scenarios, deterministic replay, CI-friendly runners. Distinct from Evals (which score quality) \u2014 testing is about regressions and correctness."
+    },
+    {
+      "id": "cat:context-memory-data/data/rag/retrieval-evaluation",
+      "type": "Category",
+      "label": "Retrieval Evaluation",
+      "path": [
+        "Context, Memory & Data",
+        "Data",
+        "RAG",
+        "Retrieval Evaluation"
+      ],
+      "description": "",
+      "short_description": "Metrics and frameworks for evaluating retriever and RAG pipeline quality.",
+      "long_description": "Tools like RAGAS and TruLens RAG triad that score retrieval precision, context relevance, and answer faithfulness \u2014 distinct from general eval frameworks because the metric set is retrieval-specific."
+    },
+    {
+      "id": "proj:ragas",
+      "type": "Project",
+      "label": "RAGAS",
+      "url": "https://github.com/explodinggradients/ragas"
+    },
+    {
+      "id": "proj:trulens",
+      "type": "Project",
+      "label": "TruLens",
+      "url": "https://github.com/truera/trulens"
+    },
+    {
+      "id": "cat:tools-integrations/actions/screen-understanding",
+      "type": "Category",
+      "label": "Screen Understanding",
+      "path": [
+        "Tools & Integrations",
+        "Actions",
+        "Screen Understanding"
+      ],
+      "description": "",
+      "short_description": "Models and tools that parse screenshots into structured UI elements for computer-use agents.",
+      "long_description": "OCR, GUI element detectors, and vision models that turn a screenshot into a list of clickable regions with labels. The perception layer that sits under Computer Use frameworks \u2014 distinct from them because the output is a structured scene graph, not an action."
+    },
+    {
+      "id": "proj:omniparser",
+      "type": "Project",
+      "label": "OmniParser",
+      "url": "https://github.com/microsoft/OmniParser"
+    },
+    {
+      "id": "cat:models-inference/models/speech-models/voice-activity-detection",
+      "type": "Category",
+      "label": "Voice Activity Detection",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Speech Models",
+        "Voice Activity Detection"
+      ],
+      "description": "",
+      "short_description": "Detectors that decide when a user has started or stopped speaking.",
+      "long_description": "VAD models and libraries used in voice-agent pipelines to segment speech from silence, drive turn-taking, and trigger STT. A prerequisite for low-latency voice agents."
+    },
+    {
+      "id": "cat:models-inference/models/speech-models/speaker-diarisation",
+      "type": "Category",
+      "label": "Speaker Diarisation",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Speech Models",
+        "Speaker Diarisation"
+      ],
+      "description": "",
+      "short_description": "Who-spoke-when segmentation of multi-speaker audio.",
+      "long_description": "Diarisation models that assign speaker labels to audio segments \u2014 needed by agents that process meetings, calls, or multi-party conversations."
+    },
+    {
+      "id": "cat:context-memory-data/data/trajectory-datasets",
+      "type": "Category",
+      "label": "Trajectory Datasets & Tooling",
+      "path": [
+        "Context, Memory & Data",
+        "Data",
+        "Trajectory Datasets & Tooling"
+      ],
+      "description": "",
+      "short_description": "Datasets and tooling for collecting, curating, and replaying agent run trajectories.",
+      "long_description": "Trajectory stores, trace-to-dataset converters, and human-labelled agent run collections used for fine-tuning, eval construction, and research. The data layer underneath agent training and evaluation."
+    },
+    {
+      "id": "cat:interfaces/annotation/human-labelling-services",
+      "type": "Category",
+      "label": "Human Labelling Services",
+      "path": [
+        "Interfaces",
+        "Annotation",
+        "Human Labelling Services"
+      ],
+      "description": "",
+      "short_description": "Managed human-in-the-loop labelling and RLHF services for agent training.",
+      "long_description": "Vendor services that supply trained human labellers for agent trajectories, preference data, and red-teaming runs. Distinct from Annotation tools (software) \u2014 this slot is the service layer."
+    },
+    {
+      "id": "cat:dev-tools-skills/prompts/prompt-management/release-and-rollout",
+      "type": "Category",
+      "label": "Release & Rollout",
+      "path": [
+        "Dev Tools & Skills",
+        "Prompts",
+        "Prompt Management",
+        "Release & Rollout"
+      ],
+      "description": "",
+      "short_description": "Canary, A/B, and staged rollout tooling for prompt and agent config changes.",
+      "long_description": "Release-engineering tools applied to prompts: canary a new prompt to 5% of traffic, roll back on regression, diff live variants. Distinct from version control, which just stores history."
+    },
+    {
+      "id": "cat:safety-governance/guardrails/policy-compilation",
+      "type": "Category",
+      "label": "Policy Compilation",
+      "path": [
+        "Safety & Governance",
+        "Guardrails",
+        "Policy Compilation"
+      ],
+      "description": "",
+      "short_description": "Toolchains that compile natural-language policies or constitutions into runtime guardrails.",
+      "long_description": "Tooling that takes a written policy (company rules, a constitution, regulatory text) and turns it into executable guardrails \u2014 rule extraction, test generation, and classifier training driven by the policy document."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration",
+      "type": "Category",
+      "label": "Workflow Orchestration",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration"
+      ],
+      "description": "",
+      "short_description": "Frameworks for building persistent, non-conversational agentic workflows and pipelines.",
+      "long_description": "Frameworks whose primary unit is a workflow or pipeline \u2014 a DAG or state machine of steps that may invoke LLMs \u2014 rather than a conversation. Used for back-office automation, data pipelines, and long-running business processes where the agent is one component among many. Distinct from Orchestration under Runtimes (which focuses on agent-to-agent coordination at runtime) and from Stateful Design (which focuses on conversational state)."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/dag-pipelines",
+      "type": "Category",
+      "label": "DAG Pipelines",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "DAG Pipelines"
+      ],
+      "description": "",
+      "short_description": "LLM-aware DAG frameworks for data-flow style agentic pipelines.",
+      "long_description": "Pipeline frameworks where steps form a directed acyclic graph and the runtime executes them in topological order. LLM calls are first-class nodes alongside transforms, branches, and joins. Suited to document processing, enrichment, and ETL-flavoured agent work."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/state-machine-workflows",
+      "type": "Category",
+      "label": "State Machine Workflows",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "State Machine Workflows"
+      ],
+      "description": "",
+      "short_description": "Explicit state-machine frameworks for agentic workflows with branching and loops.",
+      "long_description": "Frameworks that model the workflow as a finite state machine with guarded transitions \u2014 appropriate when control flow has real branches, loops, and recovery states rather than a linear DAG."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/durable-agent-workflows",
+      "type": "Category",
+      "label": "Durable Agent Workflows",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "Durable Agent Workflows"
+      ],
+      "description": "",
+      "short_description": "Agent-framing atop durable workflow engines, with resumable, exactly-once steps.",
+      "long_description": "The framework layer sitting on top of durable execution engines (Temporal, Restate, Inngest, DBOS) that exposes an agent-authoring API. Distinct from the engines themselves, which live under Runtimes/Durable Execution."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/batch-and-bulk-agents",
+      "type": "Category",
+      "label": "Batch & Bulk Agents",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "Batch & Bulk Agents"
+      ],
+      "description": "",
+      "short_description": "Frameworks for running the same agent across large batches of inputs.",
+      "long_description": "Batch-flavoured frameworks optimised for sweeping an agent over thousands or millions of rows \u2014 cost control, partial-failure handling, and resumable progress matter more than latency or memory."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/etl-and-enrichment",
+      "type": "Category",
+      "label": "ETL & Enrichment",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "ETL & Enrichment"
+      ],
+      "description": "",
+      "short_description": "Agentic ETL frameworks where LLM steps classify, extract, and enrich row-oriented data.",
+      "long_description": "Frameworks where the workflow is fundamentally a data transformation, with LLMs standing in for regex, rules, or classifiers. Distinct from general pipelines because the shape is explicitly tabular/row-at-a-time."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/event-driven-workflows",
+      "type": "Category",
+      "label": "Event-Driven Workflows",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "Event-Driven Workflows"
+      ],
+      "description": "",
+      "short_description": "Workflows triggered and advanced by external events rather than user messages.",
+      "long_description": "Workflows whose progression is driven by webhooks, queue messages, file drops, or schedules rather than a conversational turn. The agent is a participant in an event mesh, not a chat partner."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/scheduled-and-recurring",
+      "type": "Category",
+      "label": "Scheduled & Recurring Workflows",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "Scheduled & Recurring Workflows"
+      ],
+      "description": "",
+      "short_description": "Cron-style agentic workflows that run on a schedule without human initiation.",
+      "long_description": "Scheduled execution of agentic pipelines \u2014 nightly enrichment runs, weekly reports, periodic reconciliation. The framework's job is to manage schedule, idempotency, and catch-up on missed runs."
+    },
+    {
+      "id": "cat:frameworks-runtimes/frameworks/workflow-orchestration/human-gated-workflows",
+      "type": "Category",
+      "label": "Human-Gated Workflows",
+      "path": [
+        "Frameworks & Runtimes",
+        "Frameworks",
+        "Workflow Orchestration",
+        "Human-Gated Workflows"
+      ],
+      "description": "",
+      "short_description": "Long-running workflows that pause at defined checkpoints for human input before resuming.",
+      "long_description": "Workflow frameworks with first-class suspend-until-human primitives \u2014 the workflow parks, emits a review task, and resumes when a human responds. Distinct from Human in the Loop interaction patterns (which are runtime behaviours) \u2014 this slot is the framework-level primitive."
+    },
+    {
+      "id": "cat:agents/experiments",
+      "type": "Category",
+      "label": "Experiments",
+      "path": [
+        "Agents",
+        "Experiments"
+      ],
+      "description": "",
+      "short_description": "Research-oriented agent setups designed to probe emergent, risky, or unusual behaviours rather than deliver production utility.",
+      "long_description": "Experimental harnesses and studies where agents are configured to exhibit or test phenomena such as emergent communication, self-replication, deception, or self-modification. Output is typically papers, logs, and reproducible runs rather than deployed systems. Sits adjacent to evaluation and safety tooling."
+    },
+    {
+      "id": "cat:agents/experiments/emergent-communication",
+      "type": "Category",
+      "label": "Emergent Communication",
+      "path": [
+        "Agents",
+        "Experiments",
+        "Emergent Communication"
+      ],
+      "description": "",
+      "short_description": "Studies where multiple agents develop their own signalling or language through interaction rather than being given a protocol.",
+      "long_description": "Experimental setups in which agents must coordinate without a predefined communication channel, leading to the emergence of ad-hoc protocols, symbols, or languages. Typically implemented as research codebases and simulation environments used to study linguistic and coordination phenomena."
+    },
+    {
+      "id": "cat:agents/experiments/self-replication-studies",
+      "type": "Category",
+      "label": "Self-Replication Studies",
+      "path": [
+        "Agents",
+        "Experiments",
+        "Self-Replication Studies"
+      ],
+      "description": "",
+      "short_description": "Controlled tests of whether an agent can copy, deploy, or propagate itself to new environments.",
+      "long_description": "Research experiments that measure an agent's ability to exfiltrate, install, or re-instantiate itself on new hosts or accounts. Usually framed as safety evaluations with sandboxed targets, producing capability reports rather than deployable tools."
+    },
+    {
+      "id": "cat:agents/experiments/deception-sandbagging-studies",
+      "type": "Category",
+      "label": "Deception & Sandbagging Studies",
+      "path": [
+        "Agents",
+        "Experiments",
+        "Deception & Sandbagging Studies"
+      ],
+      "description": "",
+      "short_description": "Evaluations probing whether agents strategically lie, hide capabilities, or underperform when they suspect they are being tested.",
+      "long_description": "Research setups that measure deceptive alignment behaviours: sandbagging on evals, misreporting internal state, or behaving differently under perceived observation. Typically implemented as scripted scenarios, red-team harnesses, and scoring pipelines sitting alongside alignment benchmarks."
+    },
+    {
+      "id": "cat:agents/experiments/power-seeking-probes",
+      "type": "Category",
+      "label": "Power-Seeking Probes",
+      "path": [
+        "Agents",
+        "Experiments",
+        "Power-Seeking Probes"
+      ],
+      "description": "",
+      "short_description": "Experiments that test whether agents pursue resources, influence, or self-preservation as instrumental sub-goals.",
+      "long_description": "Scenario-based studies in which agents are given goals that could be advanced by acquiring compute, money, credentials, or control, and observers measure whether such behaviours emerge. Implemented as simulation environments and evaluation suites within the alignment research stack."
+    },
+    {
+      "id": "cat:agents/experiments/self-rewriting-agents",
+      "type": "Category",
+      "label": "Self-Rewriting Agents",
+      "path": [
+        "Agents",
+        "Experiments",
+        "Self-Rewriting Agents"
+      ],
+      "description": "",
+      "short_description": "Agents that modify their own prompts, code, tools, or weights during a run as the object of study.",
+      "long_description": "Research setups where the agent's ability to edit its own source, system prompt, or tool definitions is the variable under investigation. Distinct from production self-improvement loops: the goal is characterising capabilities and risks, not shipping a better agent."
+    },
+    {
+      "id": "cat:agents/multiagent/debate-deliberation",
+      "type": "Category",
+      "label": "Debate & Deliberation",
+      "path": [
+        "Agents",
+        "Multiagent",
+        "Debate & Deliberation"
+      ],
+      "description": "",
+      "short_description": "Multi-agent setups where agents argue opposing positions so a judge or aggregator can reach a better answer.",
+      "long_description": "Frameworks and experiments implementing debate, deliberation, and adversarial critique protocols between LLM agents. Typically used to improve answer quality, expose reasoning flaws, or study scalable oversight. Delivered as libraries or research codebases rather than end-user products."
+    },
+    {
+      "id": "cat:agents/multiagent/market-auction-mechanisms",
+      "type": "Category",
+      "label": "Market & Auction Mechanisms",
+      "path": [
+        "Agents",
+        "Multiagent",
+        "Market & Auction Mechanisms"
+      ],
+      "description": "",
+      "short_description": "Multi-agent coordination via markets, bidding, and auctions rather than dialogue or central planning.",
+      "long_description": "Systems where agents allocate tasks, resources, or attention through price signals, auctions, or market-clearing mechanisms. Includes research simulations and runtime libraries that implement bidding protocols as the coordination primitive for agent collectives."
+    },
+    {
+      "id": "cat:agents/simulations-worlds/economic-simulation",
+      "type": "Category",
+      "label": "Economic Simulation",
+      "path": [
+        "Agents",
+        "Simulations & Worlds",
+        "Economic Simulation"
+      ],
+      "description": "",
+      "short_description": "Agent-based simulations of economies, markets, and the behaviour of economic actors.",
+      "long_description": "Multi-agent models of consumers, firms, traders, and institutions used to study market dynamics, policy interventions, and emergent macro behaviour. Typically delivered as research frameworks and simulation environments rather than trading or forecasting products."
+    },
+    {
+      "id": "cat:agents/simulations-worlds/epidemiological-policy-simulation",
+      "type": "Category",
+      "label": "Epidemiological & Policy Simulation",
+      "path": [
+        "Agents",
+        "Simulations & Worlds",
+        "Epidemiological & Policy Simulation"
+      ],
+      "description": "",
+      "short_description": "Agent-based simulations of disease spread and the policy responses that shape it.",
+      "long_description": "Models populating synthetic populations with agents whose contacts, movement, and compliance drive epidemic dynamics, used to evaluate interventions such as lockdowns, vaccination, or testing regimes. Delivered as research simulation frameworks for public-health and policy analysis."
+    },
+    {
+      "id": "cat:agents/autonomous/open-ended-exploration",
+      "type": "Category",
+      "label": "Open-Ended Exploration",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Open-Ended Exploration"
+      ],
+      "description": "",
+      "short_description": "Autonomous agents with no fixed task, tasked with exploring an environment and generating their own objectives.",
+      "long_description": "Runtimes and research agents that operate without a concrete user goal, instead discovering, proposing, and pursuing novel sub-tasks in open environments. Draws on curiosity-driven and novelty-seeking methods; typically realised as long-running loops in simulators or real systems."
+    },
+    {
+      "id": "cat:agents/domain-specific/legal",
+      "type": "Category",
+      "label": "Legal",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Legal"
+      ],
+      "description": "",
+      "short_description": "Agents tailored to legal workflows such as research, drafting, review, and case analysis.",
+      "long_description": "LLM-based agents specialised for the legal domain, with tooling for case law retrieval, contract review, drafting, and litigation support. Delivered as SaaS products, firm-internal assistants, or libraries that wrap legal corpora and document pipelines."
+    },
+    {
+      "id": "cat:agents/domain-specific/medical-clinical",
+      "type": "Category",
+      "label": "Medical & Clinical",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Medical & Clinical"
+      ],
+      "description": "",
+      "short_description": "Agents for clinical documentation, diagnosis support, and medical knowledge workflows.",
+      "long_description": "Agents operating over clinical data, medical literature, and healthcare workflows \u2014 e.g. scribing encounters, drafting notes, triaging symptoms, or querying guidelines. Typically integrates with EHRs or medical ontologies and enforces clinical safety constraints."
+    },
+    {
+      "id": "cat:agents/domain-specific/finance",
+      "type": "Category",
+      "label": "Finance",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Finance"
+      ],
+      "description": "",
+      "short_description": "Agents for financial analysis, trading, portfolio, and accounting workflows.",
+      "long_description": "Agents that reason over market data, filings, ledgers, or transactions to support investing, trading, FP&A, or bookkeeping tasks. Typically connects to market-data APIs, brokerages, or accounting systems and often requires auditability of each action."
+    },
+    {
+      "id": "cat:agents/domain-specific/scientific-research",
+      "type": "Category",
+      "label": "Scientific Research",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Scientific Research"
+      ],
+      "description": "",
+      "short_description": "Agents automating literature review, hypothesis generation, and experiment planning for scientists.",
+      "long_description": "Agents that read papers, synthesize findings, propose hypotheses, and plan or orchestrate experiments across scientific domains. Distinct from biotech-specific tooling in that it spans the general research loop \u2014 search, read, reason, write \u2014 rather than a single wet-lab pipeline."
+    },
+    {
+      "id": "cat:agents/domain-specific/mathematics-theorem-proving",
+      "type": "Category",
+      "label": "Mathematics & Theorem Proving",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Mathematics & Theorem Proving"
+      ],
+      "description": "",
+      "short_description": "Agents for formal proof construction, theorem proving, and mathematical reasoning.",
+      "long_description": "Agents that produce or assist formal proofs in systems like Lean, Coq, or Isabelle, or perform symbolic mathematical reasoning. Typically integrates with proof assistants and tactics libraries rather than free-form text generation."
+    },
+    {
+      "id": "cat:agents/domain-specific/education-tutoring",
+      "type": "Category",
+      "label": "Education & Tutoring",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Education & Tutoring"
+      ],
+      "description": "",
+      "short_description": "Agents acting as tutors, graders, or curriculum assistants for learners.",
+      "long_description": "Agents that teach, explain, quiz, or grade across subjects, adapting to a learner's level and progress. Typically embedded in learning platforms or standalone tutors and emphasize pedagogical turn-taking over task completion."
+    },
+    {
+      "id": "cat:agents/domain-specific/customer-support",
+      "type": "Category",
+      "label": "Customer Support",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Customer Support"
+      ],
+      "description": "",
+      "short_description": "Agents handling customer inquiries, ticket triage, and helpdesk resolution.",
+      "long_description": "Agents that field customer questions, resolve tickets, escalate cases, and operate over help-center content and CRM/ticketing systems. Distinct from generic chatbots by their integration with support workflows and SLA-driven behaviour."
+    },
+    {
+      "id": "cat:agents/domain-specific/sales-sdr",
+      "type": "Category",
+      "label": "Sales & SDR",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Sales & SDR"
+      ],
+      "description": "",
+      "short_description": "Agents for prospecting, outbound outreach, and sales development workflows.",
+      "long_description": "Agents that research prospects, draft and send outbound sequences, qualify leads, and log activity into CRMs. Sits between data enrichment sources and sales-engagement platforms, automating the SDR motion."
+    },
+    {
+      "id": "cat:agents/domain-specific/recruiting-sourcing",
+      "type": "Category",
+      "label": "Recruiting & Sourcing",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Recruiting & Sourcing"
+      ],
+      "description": "",
+      "short_description": "Agents for candidate sourcing, screening, and recruiter workflow automation.",
+      "long_description": "Agents that search candidate pools, parse resumes, match roles, and draft recruiter outreach. Typically integrates with ATS platforms and professional-network data sources, distinct from general sales outreach."
+    },
+    {
+      "id": "cat:agents/domain-specific/gis-geospatial",
+      "type": "Category",
+      "label": "GIS & Geospatial",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "GIS & Geospatial"
+      ],
+      "description": "",
+      "short_description": "Agents reasoning over maps, spatial data, and geospatial analysis tasks.",
+      "long_description": "Agents that query, transform, and analyze geospatial data \u2014 vector/raster layers, routing, remote sensing \u2014 often driving GIS tooling like QGIS, PostGIS, or Earth Engine. Distinguished by spatial reasoning and map-aware tool use."
+    },
+    {
+      "id": "cat:agents/domain-specific/robotics-embodied-tasks",
+      "type": "Category",
+      "label": "Robotics & Embodied Tasks",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Robotics & Embodied Tasks"
+      ],
+      "description": "",
+      "short_description": "Agents driving physical robots or embodied simulators to execute real-world tasks.",
+      "long_description": "Agents that plan and execute actions on robotic hardware or embodied simulators, grounding language in perception and motor control. Sits above low-level controllers and typically integrates with VLA/VLM models and robotics stacks like ROS."
+    },
+    {
+      "id": "cat:agents/domain-specific/gaming-npc",
+      "type": "Category",
+      "label": "Gaming & NPC",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Gaming & NPC"
+      ],
+      "description": "",
+      "short_description": "Agents powering non-player characters and interactive behaviour inside games.",
+      "long_description": "Agents that drive NPC dialogue, behaviour, and decision-making inside games or virtual worlds. Typically runs inside a game engine loop with persistent character state, distinct from general conversational agents."
+    },
+    {
+      "id": "cat:agents/domain-specific/creative-writing",
+      "type": "Category",
+      "label": "Creative Writing",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Creative Writing"
+      ],
+      "description": "",
+      "short_description": "Agents for long-form fiction, screenwriting, and narrative creative work.",
+      "long_description": "Agents specialized for drafting, revising, and structuring creative prose \u2014 novels, short stories, screenplays \u2014 with support for characters, plot arcs, and style continuity. Distinct from general writing assistants by their narrative-state tracking."
+    },
+    {
+      "id": "cat:agents/domain-specific/music-composition",
+      "type": "Category",
+      "label": "Music Composition",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Music Composition"
+      ],
+      "description": "",
+      "short_description": "Agents that compose, arrange, or produce music as their primary output.",
+      "long_description": "Agents whose domain knowledge and tool use target musical composition \u2014 generating melodies, harmonies, arrangements, or full tracks. Sits alongside other creative domain agents but distinguished by musical output formats (MIDI, DAW sessions, audio) and music-theory-aware reasoning."
+    },
+    {
+      "id": "cat:agents/domain-specific/translation-localization",
+      "type": "Category",
+      "label": "Translation & Localization",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Translation & Localization"
+      ],
+      "description": "",
+      "short_description": "Agents specialised in translating and localising content across languages, locales, and cultural contexts.",
+      "long_description": "Agents whose domain is multilingual translation and localisation \u2014 handling terminology, tone, locale conventions, and file formats like XLIFF or PO. Goes beyond raw model translation by managing glossaries, translation memory, QA passes, and workflow integration."
+    },
+    {
+      "id": "cat:agents/security",
+      "type": "Category",
+      "label": "Security",
+      "path": [
+        "Agents",
+        "Security"
+      ],
+      "description": "",
+      "short_description": "Agents built for cybersecurity workflows across defence, offence, analysis, and compliance.",
+      "long_description": "Top-level grouping for agents whose purpose is security work \u2014 SOC triage, threat hunting, vulnerability research, forensics, compliance, and related functions. Subcategories partition the space by security discipline rather than by agent shape."
+    },
+    {
+      "id": "cat:agents/security/soc-incident-response",
+      "type": "Category",
+      "label": "SOC & Incident Response",
+      "path": [
+        "Agents",
+        "Security",
+        "SOC & Incident Response"
+      ],
+      "description": "",
+      "short_description": "Agents that triage alerts, investigate incidents, and drive response inside a security operations centre.",
+      "long_description": "Agents that plug into SOC workflows to enrich alerts, correlate signals across SIEM/EDR/XDR, summarise incidents, and recommend or execute containment actions. Typically integrate with case management and playbook runners, acting as force multipliers for tier-1 and tier-2 analysts."
+    },
+    {
+      "id": "cat:agents/security/threat-intelligence-osint",
+      "type": "Category",
+      "label": "Threat Intelligence & OSINT",
+      "path": [
+        "Agents",
+        "Security",
+        "Threat Intelligence & OSINT"
+      ],
+      "description": "",
+      "short_description": "Agents that gather, correlate, and summarise threat intelligence and open-source intelligence.",
+      "long_description": "Agents that crawl OSINT sources, darkweb feeds, CTI platforms, and public records to build actor profiles, IOC sets, and situational reports. Distinct from SOC response by focus on external collection and analysis rather than internal alert triage."
+    },
+    {
+      "id": "cat:agents/security/vulnerability-research-bug-bounty",
+      "type": "Category",
+      "label": "Vulnerability Research & Bug Bounty",
+      "path": [
+        "Agents",
+        "Security",
+        "Vulnerability Research & Bug Bounty"
+      ],
+      "description": "",
+      "short_description": "Agents that hunt for vulnerabilities in software or systems, including bug bounty automation.",
+      "long_description": "Agents that probe targets for security flaws \u2014 reading code and binaries, generating test cases, triaging findings, and drafting disclosure reports. Includes bug bounty assistants that scope programs, recon assets, and prepare submissions."
+    },
+    {
+      "id": "cat:agents/security/malware-analysis-reverse-engineering",
+      "type": "Category",
+      "label": "Malware Analysis & Reverse Engineering",
+      "path": [
+        "Agents",
+        "Security",
+        "Malware Analysis & Reverse Engineering"
+      ],
+      "description": "",
+      "short_description": "Agents that assist in analysing malware samples and reverse-engineering binaries.",
+      "long_description": "Agents that drive disassemblers, decompilers, and sandboxes to characterise malware behaviour, extract IOCs, and annotate reverse-engineered code. Typically integrate with tools like Ghidra, IDA, or radare2 and produce analyst-ready reports."
+    },
+    {
+      "id": "cat:agents/security/digital-forensics-dfir",
+      "type": "Category",
+      "label": "Digital Forensics & DFIR",
+      "path": [
+        "Agents",
+        "Security",
+        "Digital Forensics & DFIR"
+      ],
+      "description": "",
+      "short_description": "Agents that support digital forensics and incident response investigations on disks, memory, and logs.",
+      "long_description": "Agents that parse forensic artefacts \u2014 disk images, memory dumps, event logs, timelines \u2014 to reconstruct attacker activity and produce investigative narratives. Distinct from SOC response by focus on post-incident evidence analysis and chain-of-custody-aware workflows."
+    },
+    {
+      "id": "cat:agents/security/fuzzing-exploit-generation",
+      "type": "Category",
+      "label": "Fuzzing & Exploit Generation",
+      "path": [
+        "Agents",
+        "Security",
+        "Fuzzing & Exploit Generation"
+      ],
+      "description": "",
+      "short_description": "Agents that drive fuzzers and synthesise proof-of-concept exploits from discovered crashes.",
+      "long_description": "Agents that orchestrate coverage-guided fuzzing campaigns, triage crashes, and attempt to weaponise findings into working exploits or PoCs. Sits adjacent to vulnerability research but specialised on the automated discovery-plus-exploitation loop."
+    },
+    {
+      "id": "cat:agents/security/code-security-review",
+      "type": "Category",
+      "label": "Code Security Review",
+      "path": [
+        "Agents",
+        "Security",
+        "Code Security Review"
+      ],
+      "description": "",
+      "short_description": "Agents that audit source code for security vulnerabilities and insecure patterns.",
+      "long_description": "Agents that perform SAST-style review on source or diffs, flagging injection, auth, crypto, and supply-chain issues with contextual reasoning beyond rule matching. Typically integrate with pull requests or IDEs and produce remediation guidance."
+    },
+    {
+      "id": "cat:agents/security/phishing-analysis-takedown",
+      "type": "Category",
+      "label": "Phishing Analysis & Takedown",
+      "path": [
+        "Agents",
+        "Security",
+        "Phishing Analysis & Takedown"
+      ],
+      "description": "",
+      "short_description": "Agents that analyse phishing emails and domains and drive takedown workflows.",
+      "long_description": "Agents that parse suspicious messages, extract indicators, verdict URLs and attachments, and initiate or track takedown requests with registrars and hosts. Distinct from general SOC response by narrow focus on phishing lifecycle."
+    },
+    {
+      "id": "cat:agents/security/compliance-audit",
+      "type": "Category",
+      "label": "Compliance & Audit",
+      "path": [
+        "Agents",
+        "Security",
+        "Compliance & Audit"
+      ],
+      "description": "",
+      "short_description": "Agents that map controls, evidence, and policies against compliance frameworks and audits.",
+      "long_description": "Agents that interpret frameworks like SOC 2, ISO 27001, HIPAA, or PCI DSS, collect and align evidence, identify gaps, and draft audit artefacts. Sit between GRC tooling and LLM reasoning, automating the prose- and mapping-heavy parts of compliance work."
+    },
+    {
+      "id": "cat:agents/security/cloud-security-posture",
+      "type": "Category",
+      "label": "Cloud Security Posture",
+      "path": [
+        "Agents",
+        "Security",
+        "Cloud Security Posture"
+      ],
+      "description": "",
+      "short_description": "Agents that assess cloud accounts for misconfiguration, drift, and posture violations across IaaS and SaaS.",
+      "long_description": "Covers agentic CSPM-style tooling: scanning cloud provider APIs for risky configurations, IAM sprawl, exposed resources, and compliance drift. Sits in the defensive security stack, typically read-only against cloud control planes, producing findings and remediation suggestions."
+    },
+    {
+      "id": "cat:agents/security/network-defense",
+      "type": "Category",
+      "label": "Network Defense",
+      "path": [
+        "Agents",
+        "Security",
+        "Network Defense"
+      ],
+      "description": "",
+      "short_description": "Agents that monitor network traffic and enforce or recommend defensive actions against intrusions.",
+      "long_description": "Includes IDS/IPS-style agents, traffic anomaly hunters, and firewall-rule reasoners. Operates on packet captures, flow logs, or NDR feeds and sits in the blue-team runtime layer, distinct from endpoint forensics or cloud posture."
+    },
+    {
+      "id": "cat:agents/security/deception-honeypots",
+      "type": "Category",
+      "label": "Deception & Honeypots",
+      "path": [
+        "Agents",
+        "Security",
+        "Deception & Honeypots"
+      ],
+      "description": "",
+      "short_description": "Agents that deploy, operate, or impersonate decoy systems to lure and analyse attackers.",
+      "long_description": "Covers LLM-driven honeypots, deceptive services, and canary agents that convincingly role-play real assets to capture attacker behaviour. Distinct from detection or forensics in that the agent's job is to be the bait and the observer."
+    },
+    {
+      "id": "cat:agents/operations",
+      "type": "Category",
+      "label": "Operations",
+      "path": [
+        "Agents",
+        "Operations"
+      ],
+      "description": "",
+      "short_description": "Agents that run, maintain, and evolve production infrastructure and the ops workflows around it.",
+      "long_description": "Parent for agentic tooling that targets SRE, sysadmin, cloud, networking, containers, and IaC work. Sits alongside other domain agent buckets (Development, Security) and groups agents whose job is keeping systems running rather than building new software."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin",
+      "type": "Category",
+      "label": "SRE & Sysadmin",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin"
+      ],
+      "description": "",
+      "short_description": "Agents that perform SRE and sysadmin duties: triage, remediation, tuning, and day-to-day system upkeep.",
+      "long_description": "Covers agents acting on live systems through shells, APIs, observability stacks, and runbooks. Distinct from IaC (declarative provisioning) or Containers/Cloud buckets \u2014 the focus is operational toil on already-running systems."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/incident-response-on-call",
+      "type": "Category",
+      "label": "Incident Response & On-Call",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Incident Response & On-Call"
+      ],
+      "description": "",
+      "short_description": "Agents that participate in incident response and on-call rotations, coordinating triage and mitigation.",
+      "long_description": "Includes pager-bot style agents that join incidents, correlate signals, draft comms, and drive mitigation steps. Sits upstream of root-cause analysis and downstream of alerting, often integrated with PagerDuty/Slack/Opsgenie."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/log-analysis-triage",
+      "type": "Category",
+      "label": "Log Analysis & Triage",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Log Analysis & Triage"
+      ],
+      "description": "",
+      "short_description": "Agents that ingest logs and surface, cluster, or explain relevant events for operators.",
+      "long_description": "Focused on reading large log streams and producing triage summaries, anomaly callouts, and query suggestions. Distinct from RCA (which reasons about causes) and observability exploration (which spans metrics and traces)."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/root-cause-analysis",
+      "type": "Category",
+      "label": "Root Cause Analysis",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Root Cause Analysis"
+      ],
+      "description": "",
+      "short_description": "Agents that hypothesise and verify root causes of incidents from logs, metrics, traces, and changes.",
+      "long_description": "Covers agents that build causal chains across telemetry and recent deploys or config changes to explain why a system failed. Sits downstream of incident response and log triage; output is a diagnosis, not a fix."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/runbook-execution",
+      "type": "Category",
+      "label": "Runbook Execution",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Runbook Execution"
+      ],
+      "description": "",
+      "short_description": "Agents that execute documented runbooks step-by-step against live systems, with optional human approval.",
+      "long_description": "Takes a predefined procedure and drives it through shells, APIs, or ticketing systems, handling branching and verification. Distinct from autonomous remediation \u2014 the playbook is authored, the agent is the operator."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/config-management",
+      "type": "Category",
+      "label": "Config Management",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Config Management"
+      ],
+      "description": "",
+      "short_description": "Agents that author, apply, and reconcile system configuration across fleets of machines or services.",
+      "long_description": "Covers agentic wrappers over Ansible/Puppet/Chef-style workflows and direct SSH-based config editing. Sits alongside IaC but focuses on mutable per-host state rather than declarative cloud provisioning."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/patch-upgrade",
+      "type": "Category",
+      "label": "Patch & Upgrade",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Patch & Upgrade"
+      ],
+      "description": "",
+      "short_description": "Agents that plan and apply OS, package, and dependency upgrades across systems.",
+      "long_description": "Focused on patch cadence, vulnerability-driven upgrades, and staged rollout of new versions. Distinct from config management in that the payload is software versions, and from code-level dependency bots that target repositories."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/capacity-planning-rightsizing",
+      "type": "Category",
+      "label": "Capacity Planning & Rightsizing",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Capacity Planning & Rightsizing"
+      ],
+      "description": "",
+      "short_description": "Agents that analyse usage and recommend or apply capacity, scaling, and rightsizing changes.",
+      "long_description": "Reasons over utilisation metrics and cost data to suggest instance sizes, replica counts, autoscaling bounds, or reservation changes. Sits between FinOps and SRE, producing actionable scaling proposals rather than raw dashboards."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/database-administration",
+      "type": "Category",
+      "label": "Database Administration",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Database Administration"
+      ],
+      "description": "",
+      "short_description": "Agents that administer databases: schema changes, backups, index tuning, and routine DBA operations.",
+      "long_description": "Covers LLM-driven DBA workflows \u2014 schema migrations, backup/restore, index and query tuning, user and role management, and routine maintenance across relational and NoSQL stores. Typically wraps SQL clients, admin APIs, or MCP servers exposing database operations."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/observability-exploration",
+      "type": "Category",
+      "label": "Observability Exploration",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Observability Exploration"
+      ],
+      "description": "",
+      "short_description": "Agents that interactively query metrics, traces, and logs to answer operational questions.",
+      "long_description": "Covers conversational exploration of observability data \u2014 Prometheus, Grafana, OpenTelemetry, APM backends \u2014 where the agent formulates queries, pivots across signals, and surfaces anomalies. Sits adjacent to log triage and RCA but focused on open-ended investigation rather than incident-driven workflows."
+    },
+    {
+      "id": "cat:agents/operations/sre-sysadmin/shell-terminal-agents",
+      "type": "Category",
+      "label": "Shell & Terminal Agents",
+      "path": [
+        "Agents",
+        "Operations",
+        "SRE & Sysadmin",
+        "Shell & Terminal Agents"
+      ],
+      "description": "",
+      "short_description": "Agents that operate a Unix shell or terminal session to execute sysadmin tasks.",
+      "long_description": "Covers agents whose primary interface is a shell or TTY \u2014 running commands, parsing output, and iterating on system tasks in a terminal. Distinct from coding CLIs in that the target is live system administration, not source editing."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration",
+      "type": "Category",
+      "label": "Containers & Orchestration",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration"
+      ],
+      "description": "",
+      "short_description": "Agents that manage containerized workloads and orchestrators across the container lifecycle.",
+      "long_description": "Parent slot for agents operating Docker, Kubernetes, Helm, service meshes, and GitOps pipelines. Covers build, deploy, diagnose, and remediate actions against container runtimes and clusters, typically via kubectl/Docker APIs or MCP wrappers."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration/docker",
+      "type": "Category",
+      "label": "Docker",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration",
+        "Docker"
+      ],
+      "description": "",
+      "short_description": "Agents that build, run, and manage Docker containers and images on a host or daemon.",
+      "long_description": "Scoped to Docker-specific operations \u2014 image builds, container lifecycle, Compose stacks, registry pushes, and local daemon troubleshooting. Sibling to Kubernetes for cluster-level concerns."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration/kubernetes",
+      "type": "Category",
+      "label": "Kubernetes",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration",
+        "Kubernetes"
+      ],
+      "description": "",
+      "short_description": "Agents that operate Kubernetes clusters via kubectl, the API, or cluster MCP servers.",
+      "long_description": "Covers general-purpose K8s agents that inspect resources, apply manifests, scale workloads, and manage namespaces. Narrower siblings handle diagnostics, remediation, Helm, mesh, and GitOps specifically."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration/helm-charts",
+      "type": "Category",
+      "label": "Helm Charts",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration",
+        "Helm Charts"
+      ],
+      "description": "",
+      "short_description": "Agents that author, lint, template, and release Helm charts for Kubernetes deployments.",
+      "long_description": "Scoped to Helm chart workflows \u2014 generating values, rendering templates, upgrading releases, and managing chart repositories. Distinct from general K8s agents by its packaging/release focus."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration/cluster-diagnostics",
+      "type": "Category",
+      "label": "Cluster Diagnostics",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration",
+        "Cluster Diagnostics"
+      ],
+      "description": "",
+      "short_description": "Agents that diagnose Kubernetes cluster health, misconfiguration, and failing resources.",
+      "long_description": "Covers read-heavy investigation of cluster state \u2014 pod crashes, scheduling failures, RBAC and networking issues \u2014 producing root-cause summaries. Sibling to remediation agents, which act on findings."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration/pod-workload-remediation",
+      "type": "Category",
+      "label": "Pod & Workload Remediation",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration",
+        "Pod & Workload Remediation"
+      ],
+      "description": "",
+      "short_description": "Agents that take corrective action on failing pods, deployments, and workloads.",
+      "long_description": "Covers write-path remediation \u2014 restarting pods, adjusting resources, patching manifests, rolling back deployments \u2014 often triggered by diagnostics. Complements the read-only cluster-diagnostics slot."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration/service-mesh",
+      "type": "Category",
+      "label": "Service Mesh",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration",
+        "Service Mesh"
+      ],
+      "description": "",
+      "short_description": "Agents that configure and troubleshoot service meshes such as Istio, Linkerd, or Consul.",
+      "long_description": "Scoped to mesh-layer concerns \u2014 traffic routing, mTLS, policy, and sidecar behavior. Distinct from general K8s ops by its focus on the L7 data plane and mesh control planes."
+    },
+    {
+      "id": "cat:agents/operations/containers-orchestration/gitops",
+      "type": "Category",
+      "label": "GitOps",
+      "path": [
+        "Agents",
+        "Operations",
+        "Containers & Orchestration",
+        "GitOps"
+      ],
+      "description": "",
+      "short_description": "Agents that drive GitOps workflows via Argo CD, Flux, or equivalent reconcilers.",
+      "long_description": "Covers agents that edit manifest repos, inspect sync state, and manage GitOps controllers as the deployment mechanism. Sits between IaC and cluster operations, with Git as the source of truth."
+    },
+    {
+      "id": "cat:agents/operations/infrastructure-as-code",
+      "type": "Category",
+      "label": "Infrastructure as Code",
+      "path": [
+        "Agents",
+        "Operations",
+        "Infrastructure as Code"
+      ],
+      "description": "",
+      "short_description": "Agents that author and apply declarative infrastructure definitions across IaC toolchains.",
+      "long_description": "Parent slot for agents working in Terraform/OpenTofu, Pulumi, and CloudFormation/CDK \u2014 generating, refactoring, planning, and applying infra code. Sits upstream of direct cloud and cluster ops, producing the declarative state those layers converge on."
+    },
+    {
+      "id": "cat:agents/operations/infrastructure-as-code/terraform-opentofu",
+      "type": "Category",
+      "label": "Terraform & OpenTofu",
+      "path": [
+        "Agents",
+        "Operations",
+        "Infrastructure as Code",
+        "Terraform & OpenTofu"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/infrastructure-as-code/pulumi",
+      "type": "Category",
+      "label": "Pulumi",
+      "path": [
+        "Agents",
+        "Operations",
+        "Infrastructure as Code",
+        "Pulumi"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/infrastructure-as-code/cloudformation-cdk",
+      "type": "Category",
+      "label": "CloudFormation & CDK",
+      "path": [
+        "Agents",
+        "Operations",
+        "Infrastructure as Code",
+        "CloudFormation & CDK"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/cloud",
+      "type": "Category",
+      "label": "Cloud",
+      "path": [
+        "Agents",
+        "Operations",
+        "Cloud"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/cloud/cost-optimization",
+      "type": "Category",
+      "label": "Cost Optimization",
+      "path": [
+        "Agents",
+        "Operations",
+        "Cloud",
+        "Cost Optimization"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/cloud/migration",
+      "type": "Category",
+      "label": "Migration",
+      "path": [
+        "Agents",
+        "Operations",
+        "Cloud",
+        "Migration"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/cloud/multi-cloud-orchestration",
+      "type": "Category",
+      "label": "Multi-Cloud Orchestration",
+      "path": [
+        "Agents",
+        "Operations",
+        "Cloud",
+        "Multi-Cloud Orchestration"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/networking",
+      "type": "Category",
+      "label": "Networking",
+      "path": [
+        "Agents",
+        "Operations",
+        "Networking"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/networking/troubleshooting",
+      "type": "Category",
+      "label": "Troubleshooting",
+      "path": [
+        "Agents",
+        "Operations",
+        "Networking",
+        "Troubleshooting"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/networking/firewall-policy-generation",
+      "type": "Category",
+      "label": "Firewall & Policy Generation",
+      "path": [
+        "Agents",
+        "Operations",
+        "Networking",
+        "Firewall & Policy Generation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/operations/networking/network-config",
+      "type": "Category",
+      "label": "Network Config",
+      "path": [
+        "Agents",
+        "Operations",
+        "Networking",
+        "Network Config"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/memory/forgetting-decay-policies",
+      "type": "Category",
+      "label": "Forgetting & Decay Policies",
+      "path": [
+        "Agents",
+        "Memory",
+        "Forgetting & Decay Policies"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/memory/memory-consolidation",
+      "type": "Category",
+      "label": "Memory Consolidation",
+      "path": [
+        "Agents",
+        "Memory",
+        "Memory Consolidation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/purpose-specific/data-labeling",
+      "type": "Category",
+      "label": "Data Labeling",
+      "path": [
+        "Agents",
+        "Purpose Specific",
+        "Data Labeling"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/purpose-specific/academic-literature-review",
+      "type": "Category",
+      "label": "Academic Literature Review",
+      "path": [
+        "Agents",
+        "Purpose Specific",
+        "Academic Literature Review"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/collective-intelligence",
+      "type": "Category",
+      "label": "Collective Intelligence",
+      "path": [
+        "Agents",
+        "Collective Intelligence"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/creative-collaboration",
+      "type": "Category",
+      "label": "Creative Collaboration",
+      "path": [
+        "Agents",
+        "Creative Collaboration"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:context-memory-data/data/synthetic-trajectory-generation",
+      "type": "Category",
+      "label": "Synthetic Trajectory Generation",
+      "path": [
+        "Context, Memory & Data",
+        "Data",
+        "Synthetic Trajectory Generation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:observability-evals/benchmarks/tool-use-benchmarks",
+      "type": "Category",
+      "label": "Tool-Use Benchmarks",
+      "path": [
+        "Observability & Evals",
+        "Benchmarks",
+        "Tool-Use Benchmarks"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:observability-evals/benchmarks/long-horizon-task-benchmarks",
+      "type": "Category",
+      "label": "Long-Horizon Task Benchmarks",
+      "path": [
+        "Observability & Evals",
+        "Benchmarks",
+        "Long-Horizon Task Benchmarks"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:observability-evals/benchmarks/multi-agent-benchmarks",
+      "type": "Category",
+      "label": "Multi-Agent Benchmarks",
+      "path": [
+        "Observability & Evals",
+        "Benchmarks",
+        "Multi-Agent Benchmarks"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:observability-evals/benchmarks/safety-red-team-benchmarks",
+      "type": "Category",
+      "label": "Safety & Red-Team Benchmarks",
+      "path": [
+        "Observability & Evals",
+        "Benchmarks",
+        "Safety & Red-Team Benchmarks"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:safety-governance/security/red-team/jailbreak-corpora",
+      "type": "Category",
+      "label": "Jailbreak Corpora",
+      "path": [
+        "Safety & Governance",
+        "Security",
+        "Red Team",
+        "Jailbreak Corpora"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:safety-governance/security/red-team/agent-hijacking-testbeds",
+      "type": "Category",
+      "label": "Agent Hijacking Testbeds",
+      "path": [
+        "Safety & Governance",
+        "Security",
+        "Red Team",
+        "Agent Hijacking Testbeds"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:tools-integrations/actions/physical-world-actuation",
+      "type": "Category",
+      "label": "Physical World Actuation",
+      "path": [
+        "Tools & Integrations",
+        "Actions",
+        "Physical World Actuation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:tools-integrations/actions/email-as-a-tool",
+      "type": "Category",
+      "label": "Email as a Tool",
+      "path": [
+        "Tools & Integrations",
+        "Actions",
+        "Email as a Tool"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:tools-integrations/actions/calendar-as-a-tool",
+      "type": "Category",
+      "label": "Calendar as a Tool",
+      "path": [
+        "Tools & Integrations",
+        "Actions",
+        "Calendar as a Tool"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:tools-integrations/actions/filesystem-tools",
+      "type": "Category",
+      "label": "Filesystem Tools",
+      "path": [
+        "Tools & Integrations",
+        "Actions",
+        "Filesystem Tools"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:frameworks-runtimes/runtimes/gpu-resource-schedulers",
+      "type": "Category",
+      "label": "GPU & Resource Schedulers",
+      "path": [
+        "Frameworks & Runtimes",
+        "Runtimes",
+        "GPU & Resource Schedulers"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:frameworks-runtimes/runtimes/agent-migration-hot-swap",
+      "type": "Category",
+      "label": "Agent Migration & Hot-Swap",
+      "path": [
+        "Frameworks & Runtimes",
+        "Runtimes",
+        "Agent Migration & Hot-Swap"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:interfaces/control-surfaces/replay-forking-uis",
+      "type": "Category",
+      "label": "Replay & Forking UIs",
+      "path": [
+        "Interfaces",
+        "Control Surfaces",
+        "Replay & Forking UIs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:models-inference/models/reinforcement-learning/self-play-environments",
+      "type": "Category",
+      "label": "Self-Play Environments",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Reinforcement Learning",
+        "Self-Play Environments"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:models-inference/models/reinforcement-learning/curriculum-generation",
+      "type": "Category",
+      "label": "Curriculum Generation",
+      "path": [
+        "Models & Inference",
+        "Models",
+        "Reinforcement Learning",
+        "Curriculum Generation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:ecosystem/organisations/research-labs",
+      "type": "Category",
+      "label": "Research Labs",
+      "path": [
+        "Ecosystem",
+        "Organisations",
+        "Research Labs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:ecosystem/publications-newsletters",
+      "type": "Category",
+      "label": "Publications & Newsletters",
+      "path": [
+        "Ecosystem",
+        "Publications & Newsletters"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:dev-tools-skills/prompts/prompt-versioning-diffing",
+      "type": "Category",
+      "label": "Prompt Versioning & Diffing",
+      "path": [
+        "Dev Tools & Skills",
+        "Prompts",
+        "Prompt Versioning & Diffing"
+      ],
+      "description": ""
     }
   ]
 }
