@@ -92,8 +92,8 @@
 <script>
 (async function () {
   const [nodesRes, edgesRes] = await Promise.all([
-    fetch('../graph/nodes.json'),
-    fetch('../graph/edges.json'),
+    fetch('./data/nodes.json'),
+    fetch('./data/edges.json'),
   ]);
   const nodesData = await nodesRes.json();
   const edgesData = await edgesRes.json();

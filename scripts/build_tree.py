@@ -10,12 +10,14 @@ at every level, matching the repo's ordering rule.
 """
 from __future__ import annotations
 import json
+import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 NODES_IN = ROOT / "graph" / "nodes.json"
 EDGES_IN = ROOT / "graph" / "edges.json"
 TREE_OUT = ROOT / "ecosystem.json"
+DOCS_DATA = ROOT / "docs" / "data"
 
 
 def main() -> None:
@@ -92,6 +94,13 @@ def main() -> None:
 
     TREE_OUT.write_text(json.dumps(tree, indent=2) + "\n")
     print(f"wrote {TREE_OUT.relative_to(ROOT)}")
+
+    # Sync graph data into docs/data/ so the static site (GitHub Pages
+    # serving /docs at root) can fetch it with ./data/ paths.
+    DOCS_DATA.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(NODES_IN, DOCS_DATA / "nodes.json")
+    shutil.copy2(EDGES_IN, DOCS_DATA / "edges.json")
+    print(f"synced {DOCS_DATA.relative_to(ROOT)}/")
     print(f"segments: {len(segments)}")
     print(f"categories: {sum(1 for n in nodes.values() if n['type'] == 'Category')}")
     print(f"projects:   {sum(1 for n in nodes.values() if n['type'] == 'Project')}")
