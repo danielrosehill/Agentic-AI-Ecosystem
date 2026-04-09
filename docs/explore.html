@@ -142,10 +142,10 @@ function renderBreadcrumb() {
     const span = document.createElement('span');
     if (i === stack.length - 1) {
       span.className = 'current';
-      span.textContent = node.label || 'Home';
+      span.textContent = (node.label || node.name) || 'Home';
     } else {
       span.className = 'crumb';
-      span.textContent = node.label || 'Home';
+      span.textContent = (node.label || node.name) || 'Home';
       span.addEventListener('click', () => setStack(stack.slice(0, i + 1)));
     }
     breadcrumb.appendChild(span);
@@ -156,7 +156,7 @@ function childrenOf(node) {
   if (!node) return [];
   if (node === tree) return tree.segments.map(s => ({...s, _type: 'category'}));
   const kids = (node.children || []).map(c => ({...c, _type: 'category'}));
-  const projs = (node.examples || []).map(p => ({...p, _type: 'project'}));
+  const projs = (node.examples || []).filter(e => e.url).map(p => ({...p, _type: 'project'}));
   return [...kids, ...projs];
 }
 
@@ -183,7 +183,7 @@ function render() {
   // Hub (current node)
   const hubG = el('g', { class: 'node hub' });
   el('circle', { cx, cy, r: 46 }, hubG);
-  const label = node === tree ? 'All Segments' : (node.label || '');
+  const label = node === tree ? 'All Segments' : ((node.label || node.name) || '');
   wrapText(hubG, label, cx, cy, 80, '#fff', 13, 700);
   hubG.addEventListener('click', () => {
     if (stack.length > 1) setStack(stack.slice(0, -1));
@@ -202,7 +202,7 @@ function render() {
     const lx = cx + Math.cos(angle) * (radius + r + 12);
     const ly = cy + Math.sin(angle) * (radius + r + 12);
     const t = el('text', { x: lx, y: ly, 'text-anchor': labelAnchor(angle) }, g);
-    t.textContent = truncate(kid.label || kid.name || '', 28);
+    t.textContent = truncate(kid.name || kid.label || '', 28);
     t.setAttribute('fill', '#1a1f2c');
     t.setAttribute('font-size', '11');
     t.setAttribute('font-weight', '600');
@@ -257,7 +257,7 @@ function showPanel(node) {
   if (!node) return;
   panel.innerHTML = '';
   const h1 = document.createElement('h1');
-  h1.textContent = node === tree ? 'Agentic AI Ecosystem' : (node.label || '');
+  h1.textContent = node === tree ? 'Agentic AI Ecosystem' : ((node.label || node.name) || '');
   panel.appendChild(h1);
 
   if (node === tree) {
@@ -274,7 +274,7 @@ function showPanel(node) {
       const li = document.createElement('li');
       li.className = 'child';
       const left = document.createElement('span');
-      left.textContent = seg.label;
+      left.textContent = (seg.label || seg.name);
       const right = document.createElement('span');
       right.className = 'count';
       right.textContent = countDescendants(seg);
@@ -322,7 +322,7 @@ function showPanel(node) {
       const li = document.createElement('li');
       li.className = 'child';
       const left = document.createElement('span');
-      left.textContent = c.label;
+      left.textContent = (c.label || c.name);
       const right = document.createElement('span');
       right.className = 'count';
       right.textContent = countDescendants(c);
@@ -333,7 +333,7 @@ function showPanel(node) {
     panel.appendChild(ul);
   }
 
-  const projs = (node.examples || []);
+  const projs = (node.examples || []).filter(e => e.url);
   if (projs.length) {
     const h2 = document.createElement('h2');
     h2.textContent = `Projects (${projs.length})`;
