@@ -563,6 +563,76 @@
       "name": "agent-os",
       "url": "https://github.com/rivet-dev/agent-os",
       "path": ["Environments", "OS"]
+    },
+    {
+      "name": "gitagent",
+      "url": "https://github.com/open-gitagent/gitagent",
+      "path": ["Standards", "Proposed"]
+    },
+    {
+      "name": "mcp-server-airbnb",
+      "url": "https://github.com/openbnb-org/mcp-server-airbnb",
+      "path": ["MCP", "Third Party"]
+    },
+    {
+      "name": "vllora",
+      "url": "https://github.com/vllora/vllora",
+      "path": ["Tools", "Debugging"]
+    },
+    {
+      "name": "UI-Venus",
+      "url": "https://github.com/inclusionAI/UI-Venus",
+      "path": ["Tools", "Vision UI"]
+    },
+    {
+      "name": "Lightpanda Browser",
+      "url": "https://github.com/lightpanda-io/browser",
+      "path": ["AI Browsers", "Headless"]
+    },
+    {
+      "name": "Steel Browser",
+      "url": "https://github.com/steel-dev/steel-browser",
+      "path": ["AI Browsers", "Headless"]
+    },
+    {
+      "name": "WargamesAI",
+      "url": "https://github.com/user1342/WargamesAI",
+      "path": ["Geopolitical Simulation"]
+    },
+    {
+      "name": "snowglobe",
+      "url": "https://github.com/IQTLabs/snowglobe",
+      "path": ["Geopolitical Simulation"]
+    },
+    {
+      "name": "Plurals",
+      "url": "https://github.com/josh-ashkinaze/plurals",
+      "path": ["Synthesised Perspectives"]
+    },
+    {
+      "name": "llm-council",
+      "url": "https://github.com/karpathy/llm-council",
+      "path": ["Synthesised Perspectives"]
+    },
+    {
+      "name": "langfuse",
+      "url": "https://github.com/langfuse/langfuse",
+      "path": ["Evals and Experiment Tracking", "Observability"]
+    },
+    {
+      "name": "deepeval",
+      "url": "https://github.com/confident-ai/deepeval",
+      "path": ["Evals and Experiment Tracking", "Frameworks"]
+    },
+    {
+      "name": "openclaw",
+      "url": "https://github.com/openclaw/openclaw",
+      "path": ["Personal AI", "Assistants"]
+    },
+    {
+      "name": "leon",
+      "url": "https://github.com/leon-ai/leon",
+      "path": ["Personal AI", "Assistants"]
     }
   ]
 }

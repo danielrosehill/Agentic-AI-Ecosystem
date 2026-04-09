@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**112 projects** across **58 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**126 projects** across **63 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -10,6 +10,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 ## Segments
 
+- [AI Browsers](#ai-browsers) (2)
 - [Agent Clusters](#agent-clusters) (1)
 - [Agent Collaboration](#agent-collaboration) (1)
 - [Agent Skills](#agent-skills) (1)
@@ -31,17 +32,18 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Development Platforms](#development-platforms) (1)
 - [Engineering Platforms](#engineering-platforms) (1)
 - [Environments](#environments) (1)
-- [Evals and Experiment Tracking](#evals-and-experiment-tracking) (1)
+- [Evals and Experiment Tracking](#evals-and-experiment-tracking) (3)
 - [Evaluations](#evaluations) (1)
 - [Feedback Formatting](#feedback-formatting) (1)
 - [Financial Tools](#financial-tools) (1)
 - [Frameworks](#frameworks) (13)
 - [Frontend Components](#frontend-components) (1)
 - [Frontends](#frontends) (3)
+- [Geopolitical Simulation](#geopolitical-simulation) (2)
 - [Harnesses](#harnesses) (3)
 - [LLMs](#llms) (2)
 - [Loops](#loops) (1)
-- [MCP](#mcp) (1)
+- [MCP](#mcp) (2)
 - [Memory](#memory) (5)
 - [Memory Layers](#memory-layers) (1)
 - [Monitoring](#monitoring) (1)
@@ -51,6 +53,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Optimisation Platform](#optimisation-platform) (1)
 - [Orchestration](#orchestration) (4)
 - [Personal](#personal) (1)
+- [Personal AI](#personal-ai) (2)
 - [Personification](#personification) (1)
 - [Pipelines](#pipelines) (1)
 - [Proxy](#proxy) (1)
@@ -60,16 +63,25 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Skills](#skills) (2)
 - [Skills Baskets](#skills-baskets) (1)
 - [Software Extensions](#software-extensions) (1)
+- [Standards](#standards) (1)
+- [Synthesised Perspectives](#synthesised-perspectives) (2)
 - [Task Specific](#task-specific) (1)
 - [Tooling](#tooling) (4)
 - [Toolkits](#toolkits) (1)
-- [Tools](#tools) (2)
+- [Tools](#tools) (4)
 - [Trainers](#trainers) (1)
 - [Uncategorized](#uncategorized) (1)
 - [Utilities](#utilities) (1)
 - [Voice](#voice) (1)
 
 ---
+
+## AI Browsers
+
+### Headless
+
+- [Lightpanda Browser](https://github.com/lightpanda-io/browser)
+- [Steel Browser](https://github.com/steel-dev/steel-browser)
 
 ## Agent Clusters
 
@@ -250,6 +262,14 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [trulens](https://github.com/truera/trulens)
 
+### Frameworks
+
+- [deepeval](https://github.com/confident-ai/deepeval)
+
+### Observability
+
+- [langfuse](https://github.com/langfuse/langfuse)
+
 ## Evaluations
 
 - [langwatch](https://github.com/langwatch/langwatch)
@@ -319,6 +339,11 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [agent-deck](https://github.com/asheshgoplani/agent-deck)
 
+## Geopolitical Simulation
+
+- [snowglobe](https://github.com/IQTLabs/snowglobe)
+- [WargamesAI](https://github.com/user1342/WargamesAI)
+
 ## Harnesses
 
 - [hive](https://github.com/aden-hive/hive)
@@ -345,6 +370,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Aggregation
 
 - [klavis](https://github.com/Klavis-AI/klavis)
+
+### Third Party
+
+- [mcp-server-airbnb](https://github.com/openbnb-org/mcp-server-airbnb)
 
 ## Memory
 
@@ -405,6 +434,13 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [nanobot](https://github.com/HKUDS/nanobot)
 
+## Personal AI
+
+### Assistants
+
+- [leon](https://github.com/leon-ai/leon)
+- [openclaw](https://github.com/openclaw/openclaw)
+
 ## Personification
 
 - [bub](https://github.com/bubbuild/bub)
@@ -463,6 +499,17 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [jupyter-ai](https://github.com/jupyterlab/jupyter-ai)
 
+## Standards
+
+### Proposed
+
+- [gitagent](https://github.com/open-gitagent/gitagent)
+
+## Synthesised Perspectives
+
+- [llm-council](https://github.com/karpathy/llm-council)
+- [Plurals](https://github.com/josh-ashkinaze/plurals)
+
 ## Task Specific
 
 ### Product Design
@@ -496,6 +543,14 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Android
 
 - [agent-device](https://github.com/callstackincubator/agent-device)
+
+### Debugging
+
+- [vllora](https://github.com/vllora/vllora)
+
+### Vision UI
+
+- [UI-Venus](https://github.com/inclusionAI/UI-Venus)
 
 ### macOS
 
