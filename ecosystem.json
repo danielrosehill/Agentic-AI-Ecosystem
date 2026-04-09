@@ -1,0 +1,508 @@
+{
+  "$schema": "./schema.json",
+  "updated": "2026-04-09",
+  "projects": [
+    {
+      "name": "vercel/ai",
+      "url": "https://github.com/vercel/ai",
+      "path": ["Toolkits"]
+    },
+    {
+      "name": "activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "path": ["Automation", "Open Source", "GUI Based"]
+    },
+    {
+      "name": "Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "path": ["Automation", "Open Source", "GUI Based"]
+    },
+    {
+      "name": "autogen",
+      "url": "https://github.com/microsoft/autogen",
+      "path": ["Frameworks"],
+      "tags": ["major"]
+    },
+    {
+      "name": "mem0",
+      "url": "https://github.com/mem0ai/mem0",
+      "path": ["Memory Layers"]
+    },
+    {
+      "name": "agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser",
+      "path": ["Browser Tooling"]
+    },
+    {
+      "name": "crewAI",
+      "url": "https://github.com/crewAIInc/crewAI",
+      "path": ["Frameworks", "Multiagent Orchestration"],
+      "tags": ["major"]
+    },
+    {
+      "name": "livekit/agents",
+      "url": "https://github.com/livekit/agents",
+      "path": ["Frameworks", "Voice"]
+    },
+    {
+      "name": "hive",
+      "url": "https://github.com/aden-hive/hive",
+      "path": ["Harnesses"]
+    },
+    {
+      "name": "xataio/agent",
+      "url": "https://github.com/xataio/agent",
+      "path": ["Agents"]
+    },
+    {
+      "name": "agent-lightning",
+      "url": "https://github.com/microsoft/agent-lightning",
+      "path": ["Trainers"]
+    },
+    {
+      "name": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents",
+      "path": ["Uncategorized"]
+    },
+    {
+      "name": "nanobot",
+      "url": "https://github.com/HKUDS/nanobot",
+      "path": ["Personal"]
+    },
+    {
+      "name": "RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst",
+      "path": ["Observability"]
+    },
+    {
+      "name": "OpenBB",
+      "url": "https://github.com/OpenBB-finance/OpenBB",
+      "path": ["Data Sources", "Financial"]
+    },
+    {
+      "name": "firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "path": ["Data Extraction and Structuring"]
+    },
+    {
+      "name": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "path": ["Skills Baskets"]
+    },
+    {
+      "name": "AI-Trader",
+      "url": "https://github.com/HKUDS/AI-Trader",
+      "path": ["Agents", "Autonomous", "Trading"]
+    },
+    {
+      "name": "OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands",
+      "path": ["Agents", "Development"]
+    },
+    {
+      "name": "voltagent",
+      "url": "https://github.com/VoltAgent/voltagent",
+      "path": ["Engineering Platforms"]
+    },
+    {
+      "name": "Biomni",
+      "url": "https://github.com/snap-stanford/Biomni",
+      "path": ["Agents", "Domain Specific", "Biotech"]
+    },
+    {
+      "name": "crush",
+      "url": "https://github.com/charmbracelet/crush",
+      "path": ["Agents", "Harnesses", "CLIs", "Third Party"]
+    },
+    {
+      "name": "graphiti",
+      "url": "https://github.com/getzep/graphiti",
+      "path": ["Agents", "Memory", "Graph Builders"]
+    },
+    {
+      "name": "lobehub",
+      "url": "https://github.com/lobehub/lobehub",
+      "path": ["Agents", "Platforms", "Open Source", "Workspace Creators"]
+    },
+    {
+      "name": "agentkit",
+      "url": "https://github.com/coinbase/agentkit",
+      "path": ["Tooling", "Financial"]
+    },
+    {
+      "name": "hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "path": ["Agents", "Frameworks", "Open Source"]
+    },
+    {
+      "name": "openclaw-mission-control",
+      "url": "https://github.com/abhi1693/openclaw-mission-control",
+      "path": ["Agents", "Frontends", "OpenClaw"]
+    },
+    {
+      "name": "coze-studio",
+      "url": "https://github.com/coze-dev/coze-studio",
+      "path": ["Development Platforms"]
+    },
+    {
+      "name": "airweave",
+      "url": "https://github.com/airweave-ai/airweave",
+      "path": ["RAG"]
+    },
+    {
+      "name": "agent-squad",
+      "url": "https://github.com/awslabs/agent-squad",
+      "path": ["Orchestration", "Platform-Specific"]
+    },
+    {
+      "name": "julep",
+      "url": "https://github.com/julep-ai/julep",
+      "path": ["Deployment Platforms", "Serverless"]
+    },
+    {
+      "name": "Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach",
+      "path": ["Tooling", "Data Ingestion"]
+    },
+    {
+      "name": "stagehand",
+      "url": "https://github.com/browserbase/stagehand",
+      "path": ["Tooling", "Browser Utils", "SDK"]
+    },
+    {
+      "name": "langflow",
+      "url": "https://github.com/langflow-ai/langflow",
+      "path": ["Building Tools"]
+    },
+    {
+      "name": "superdesign",
+      "url": "https://github.com/superdesigndev/superdesign",
+      "path": ["Task Specific", "Product Design"]
+    },
+    {
+      "name": "Shannon",
+      "url": "https://github.com/Kocoro-lab/Shannon",
+      "path": ["Orchestration"]
+    },
+    {
+      "name": "deepagents",
+      "url": "https://github.com/langchain-ai/deepagents",
+      "path": ["Harnesses", "Deep Research"]
+    },
+    {
+      "name": "agentgateway",
+      "url": "https://github.com/agentgateway/agentgateway",
+      "path": ["Proxy"]
+    },
+    {
+      "name": "agentation",
+      "url": "https://github.com/benjitaylor/agentation",
+      "path": ["Feedback Formatting"]
+    },
+    {
+      "name": "gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli",
+      "path": ["Agents", "Harnesses", "CLIs", "Vendor"]
+    },
+    {
+      "name": "BotSharp",
+      "url": "https://github.com/SciSharp/BotSharp",
+      "path": ["Frameworks", ".NET"]
+    },
+    {
+      "name": "qwen-code",
+      "url": "https://github.com/QwenLM/qwen-code",
+      "path": ["Agents", "CLIs/Toolkits", "Vendor"]
+    },
+    {
+      "name": "AgentsMesh",
+      "url": "https://github.com/AgentsMesh/AgentsMesh",
+      "path": ["Multiagent", "Workspace"]
+    },
+    {
+      "name": "dify",
+      "url": "https://github.com/langgenius/dify",
+      "path": ["Agents", "Backend Platforms"]
+    },
+    {
+      "name": "goose",
+      "url": "https://github.com/aaif-goose/goose",
+      "path": ["Frontends", "GUIs and CLIs"]
+    },
+    {
+      "name": "mindsdb",
+      "url": "https://github.com/mindsdb/mindsdb",
+      "path": ["Backend Querying"]
+    },
+    {
+      "name": "Paper2Agent",
+      "url": "https://github.com/jmiao24/Paper2Agent",
+      "path": ["Pipelines"]
+    },
+    {
+      "name": "goat",
+      "url": "https://github.com/goat-sdk/goat",
+      "path": ["Financial Tools"]
+    },
+    {
+      "name": "agent-ui",
+      "url": "https://github.com/agno-agi/agent-ui",
+      "path": ["Frontend Components", "Chat UIs"]
+    },
+    {
+      "name": "uAgents",
+      "url": "https://github.com/fetchai/uAgents",
+      "path": ["Frameworks"]
+    },
+    {
+      "name": "ii-agent",
+      "url": "https://github.com/Intelligent-Internet/ii-agent",
+      "path": ["Frameworks"]
+    },
+    {
+      "name": "OpenSandbox",
+      "url": "https://github.com/alibaba/OpenSandbox",
+      "path": ["Runtimes", "Sandboxes"]
+    },
+    {
+      "name": "bolna",
+      "url": "https://github.com/bolna-ai/bolna",
+      "path": ["Voice"]
+    },
+    {
+      "name": "cognee",
+      "url": "https://github.com/topoteretes/cognee",
+      "path": ["Memory"]
+    },
+    {
+      "name": "Vision-Agents",
+      "url": "https://github.com/GetStream/Vision-Agents",
+      "path": ["Agents", "Vision"]
+    },
+    {
+      "name": "Crucix",
+      "url": "https://github.com/calesthio/Crucix",
+      "path": ["Agents", "Personal Focused"]
+    },
+    {
+      "name": "pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "path": ["Agents", "Purpose Specific", "Penetration Testing"]
+    },
+    {
+      "name": "AgentForge",
+      "url": "https://github.com/DataBassGit/AgentForge",
+      "path": ["Frameworks"]
+    },
+    {
+      "name": "EvoAgentX",
+      "url": "https://github.com/EvoAgentX/EvoAgentX",
+      "path": ["Frameworks"]
+    },
+    {
+      "name": "gibberlink",
+      "url": "https://github.com/PennyroyalTea/gibberlink",
+      "path": ["Agent to Agent", "Experiments", "Voices"]
+    },
+    {
+      "name": "agent-scan",
+      "url": "https://github.com/snyk/agent-scan",
+      "path": ["Security"]
+    },
+    {
+      "name": "agentops",
+      "url": "https://github.com/AgentOps-AI/agentops",
+      "path": ["Monitoring"]
+    },
+    {
+      "name": "jupyter-ai",
+      "url": "https://github.com/jupyterlab/jupyter-ai",
+      "path": ["Software Extensions"]
+    },
+    {
+      "name": "letta",
+      "url": "https://github.com/letta-ai/letta",
+      "path": ["Frameworks", "Stateful Design"]
+    },
+    {
+      "name": "AICGSecEval",
+      "url": "https://github.com/Tencent/AICGSecEval",
+      "path": ["Benchmarks"]
+    },
+    {
+      "name": "hello-halo",
+      "url": "https://github.com/openkursar/hello-halo",
+      "path": ["Desktop GUIs"]
+    },
+    {
+      "name": "taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill",
+      "path": ["Skills", "Guides"]
+    },
+    {
+      "name": "camel",
+      "url": "https://github.com/camel-ai/camel",
+      "path": ["Frameworks", "Multi-agent"]
+    },
+    {
+      "name": "openagents",
+      "url": "https://github.com/openagents-org/openagents",
+      "path": ["Agent to Agent"]
+    },
+    {
+      "name": "inkos",
+      "url": "https://github.com/Narcooo/inkos",
+      "path": ["Agents", "Purpose Specific"]
+    },
+    {
+      "name": "marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "path": ["Skills", "Bundles", "Claude Code"]
+    },
+    {
+      "name": "EnsoAI",
+      "url": "https://github.com/J3n5en/EnsoAI",
+      "path": ["Frameworks", "Optimisation", "Parallelisation"]
+    },
+    {
+      "name": "Roo-Code",
+      "url": "https://github.com/RooCodeInc/Roo-Code",
+      "path": ["Tooling", "IDE Tools"]
+    },
+    {
+      "name": "react-grab",
+      "url": "https://github.com/aidenybai/react-grab",
+      "path": ["Utilities", "Frontend"]
+    },
+    {
+      "name": "conductor",
+      "url": "https://github.com/conductor-oss/conductor",
+      "path": ["Orchestration"]
+    },
+    {
+      "name": "agent-skills (tech-leads-club)",
+      "url": "https://github.com/tech-leads-club/agent-skills",
+      "path": ["Agent Skills", "Registries"]
+    },
+    {
+      "name": "ai-data-science-team",
+      "url": "https://github.com/business-science/ai-data-science-team",
+      "path": ["Agents", "Teams"]
+    },
+    {
+      "name": "klavis",
+      "url": "https://github.com/Klavis-AI/klavis",
+      "path": ["MCP", "Aggregation"]
+    },
+    {
+      "name": "agentic-context-engine",
+      "url": "https://github.com/kayba-ai/agentic-context-engine",
+      "path": ["Memory", "Regressive"]
+    },
+    {
+      "name": "microsandbox",
+      "url": "https://github.com/superradcompany/microsandbox",
+      "path": ["Security", "Sandboxing"]
+    },
+    {
+      "name": "squad",
+      "url": "https://github.com/bradygaster/squad",
+      "path": ["Agents", "Team Formation"]
+    },
+    {
+      "name": "ai-maestro",
+      "url": "https://github.com/23blocks-OS/ai-maestro",
+      "path": ["Orchestration"]
+    },
+    {
+      "name": "agent-deck",
+      "url": "https://github.com/asheshgoplani/agent-deck",
+      "path": ["Frontends", "TUIs and CLIs"]
+    },
+    {
+      "name": "coze-loop",
+      "url": "https://github.com/coze-dev/coze-loop",
+      "path": ["Optimisation Platform"]
+    },
+    {
+      "name": "oh-my-openagent",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent",
+      "path": ["Harnesses"]
+    },
+    {
+      "name": "agentrc",
+      "url": "https://github.com/microsoft/agentrc",
+      "path": ["Dev Tools", "Repo Refactoring"]
+    },
+    {
+      "name": "Operit",
+      "url": "https://github.com/AAswordman/Operit",
+      "path": ["Frontends", "Android"]
+    },
+    {
+      "name": "RLinf",
+      "url": "https://github.com/RLinf/RLinf",
+      "path": ["Memory", "Reinforcement Learning"]
+    },
+    {
+      "name": "agentchattr",
+      "url": "https://github.com/bcurts/agentchattr",
+      "path": ["Agent to Agent"]
+    },
+    {
+      "name": "connectonion",
+      "url": "https://github.com/openonion/connectonion",
+      "path": ["Agent to Agent"]
+    },
+    {
+      "name": "AgentVerse",
+      "url": "https://github.com/Peiiii/AgentVerse",
+      "path": ["Agent Collaboration"]
+    },
+    {
+      "name": "agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory",
+      "path": ["Memory"]
+    },
+    {
+      "name": "agent-device",
+      "url": "https://github.com/callstackincubator/agent-device",
+      "path": ["Tools", "Android"]
+    },
+    {
+      "name": "cmux",
+      "url": "https://github.com/manaflow-ai/cmux",
+      "path": ["Tools", "macOS"]
+    },
+    {
+      "name": "OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "path": ["Runtimes"]
+    },
+    {
+      "name": "macOS-use",
+      "url": "https://github.com/browser-use/macOS-use",
+      "path": ["Computer Use", "Platform Specific", "macOS"]
+    },
+    {
+      "name": "langwatch",
+      "url": "https://github.com/langwatch/langwatch",
+      "path": ["Evaluations"]
+    },
+    {
+      "name": "rogue",
+      "url": "https://github.com/qualifire-dev/rogue",
+      "path": ["Security", "Red Team"]
+    },
+    {
+      "name": "vibium",
+      "url": "https://github.com/VibiumDev/vibium",
+      "path": ["Browser Automation"]
+    },
+    {
+      "name": "intentkit",
+      "url": "https://github.com/crestalnetwork/intentkit",
+      "path": ["Agent Clusters"]
+    }
+  ]
+}
