@@ -152,7 +152,6 @@ def render_examples(project_ids, projs) -> str:
     if not project_ids:
         return ""
     lines = ["## Examples", ""]
-    lines.append('<div class="gh-grid">')
     sorted_projects = sorted(project_ids, key=lambda pid: projs[pid]["label"].lower())
     for pid in sorted_projects:
         p = projs[pid]
@@ -161,11 +160,12 @@ def render_examples(project_ids, projs) -> str:
         gh = parse_github(url) if url else None
         if gh:
             owner, repo = gh
-            og = f"https://opengraph.githubassets.com/1/{owner}/{repo}"
+            stars = f"https://img.shields.io/github/stars/{owner}/{repo}?style=flat&logo=github&label=%E2%98%85"
+            updated = f"https://img.shields.io/github/last-commit/{owner}/{repo}?style=flat&label=updated"
             lines.append(
-                f'<a class="gh-card" href="{url}" target="_blank" rel="noopener" title="{owner}/{repo}">'
-                f'<img src="{og}" alt="{owner}/{repo}" loading="lazy">'
-                f'</a>'
+                f"- [**{owner}/{repo}**]({url}) "
+                f"![stars]({stars}) "
+                f"![updated]({updated})"
             )
         else:
             host = ""
@@ -173,14 +173,8 @@ def render_examples(project_ids, projs) -> str:
                 host = urlparse(url).netloc
             except Exception:
                 pass
-            lines.append(
-                f'<a class="gh-card gh-card--plain" href="{url}" target="_blank" rel="noopener">'
-                f'<span class="gh-icon">:material-web:</span>'
-                f'<span class="gh-name">{name}</span>'
-                f'<span class="gh-host">{host}</span>'
-                f'</a>'
-            )
-    lines.append("</div>")
+            suffix = f" — `{host}`" if host else ""
+            lines.append(f"- [**{name}**]({url}){suffix}")
     lines.append("")
     return "\n".join(lines)
 
