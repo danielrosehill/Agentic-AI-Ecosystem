@@ -133,18 +133,38 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Experiments
 <sub>`cat:agent-to-agent/experiments`</sub>
 
+*Experimental agent-to-agent communication projects that don't fit established transport or protocol categories.*
+
+Research-grade and exploratory work on how agents might talk to each other — novel channels, encodings, or interaction modes. Sits alongside formal A2A protocols as a sandbox for ideas that haven't hardened into standards.
+
 #### Voices
 <sub>`cat:agent-to-agent/experiments/voices`</sub>
 
+*Audio-channel experiments where agents communicate via sound rather than text or structured messages.*
+
+Projects exploring voice or acoustic signaling as an inter-agent transport — agents emitting tones, speech, or compressed audio protocols to exchange information. A narrow experimental slot within agent-to-agent research.
+
 - [Gibberlink](https://github.com/PennyroyalTea/gibberlink)
+
+Gibberlink is the canonical example, where two voice agents detect each other and switch to a machine-efficient acoustic protocol.
 
 ## Agent Tools
 <sub>`cat:agent-tools`</sub>
 
+*Tools and services that agents invoke as capabilities, rather than frameworks for building agents themselves.*
+
+Top-level segment for utilities designed to be called by agents — communications, side-effect actions, and similar capability providers. Distinct from runtimes, frameworks, or harnesses; these are the things at the other end of a tool call.
+
 ### Comms
 <sub>`cat:agent-tools/comms`</sub>
 
+*Messaging and communication tools that agents use to send, receive, or coordinate via human-style channels.*
+
+Services exposing email, chat, or mailbox-like primitives to agents as callable tools. Typically shipped as MCP servers or SDKs so an agent can send messages, read inboxes, and coordinate over standard comms channels.
+
 - [MCP Agent Mail](https://github.com/Dicklesworthstone/mcp_agent_mail)
+
+MCP Agent Mail illustrates the slot by giving agents a mailbox-style interface over MCP.
 
 ## Agents
 <sub>`cat:agents`</sub>
@@ -156,28 +176,60 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Autonomous
 <sub>`cat:agents/autonomous`</sub>
 
+*Long-running autonomous agents that pursue goals with minimal human supervision.*
+
+Agents designed to operate open-endedly against a goal, planning and executing over extended horizons without turn-by-turn prompting. Distinct from chat assistants, harnesses, or task-specific agents — the defining trait is self-directed operation.
+
 #### Trading
 <sub>`cat:agents/autonomous/trading`</sub>
 
+*Autonomous agents that execute trading strategies in financial or crypto markets.*
+
+Self-directed agents that monitor markets, form views, and place trades without per-decision human approval. Typically shipped as runnable services or bots wired into exchange APIs.
+
 - [AI-Trader](https://github.com/HKUDS/AI-Trader)
+
+AI-Trader is an example of a goal-driven trading agent operating autonomously against market data.
 
 ### Autonomous Agent Creation
 <sub>`cat:agents/autonomous-agent-creation`</sub>
 
+*Agents (or platforms) whose purpose is to spawn and configure other autonomous agents.*
+
+Meta-level tools where the output is a new agent — skill bundles, agent factories, or systems that compose runnable agents from specs. Sits above individual agents in the stack as a creation layer.
+
 - [BankrBot Skills](https://github.com/BankrBot/skills)
+
+BankrBot Skills illustrates a skills-as-agents creation surface.
 
 ### Backend Platforms
 <sub>`cat:agents/backend-platforms`</sub>
 
+*Self-hostable backend platforms for building, deploying, and serving LLM-powered agents and apps.*
+
+Full-stack platforms — usually open source, often with a UI — that provide workflow, RAG, tool, and model plumbing behind an API. Contrast with libraries (frameworks) or managed SaaS: these are deployable services developers run to host agent applications.
+
 - [Dify](https://github.com/langgenius/dify)
+
+Dify is a representative self-hosted agent/LLM app backend platform.
 
 ### CLIs/Toolkits
 <sub>`cat:agents/clis-toolkits`</sub>
 
+*Command-line agents and developer toolkits for running agents from the terminal.*
+
+CLI-first agent surfaces — coding agents, general assistants, and SDK-style toolkits invoked from a shell. Sits at the developer-interface layer of the stack, distinct from web frontends or backend services.
+
 #### Vendor
 <sub>`cat:agents/clis-toolkits/vendor`</sub>
 
+*Vendor-published official CLI agents shipped by model providers as first-party terminal tools.*
+
+Official command-line agents released by the companies that train or host the underlying models. Distinguished from community CLIs by being the canonical vendor distribution.
+
 - [Qwen Code](https://github.com/QwenLM/qwen-code)
+
+Qwen Code is Alibaba's official terminal coding agent for the Qwen models.
 
 ### Computer Use
 <sub>`cat:agents/computer-use`</sub>
@@ -196,13 +248,27 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Development
 <sub>`cat:agents/development`</sub>
 
+*Software-engineering agents that read, write, and modify code to complete development tasks.*
+
+Agents purpose-built for coding work — repo navigation, patch generation, test running, PR authoring. Distinct from general assistants by their tight integration with code, shells, and dev-loop feedback.
+
 - [OpenHands](https://github.com/OpenHands/OpenHands)
+
+OpenHands is a canonical autonomous software-engineering agent.
 
 ### Domain Specific
 <sub>`cat:agents/domain-specific`</sub>
 
+*Agents specialised for a particular vertical or professional domain rather than general use.*
+
+Parent slot for agents whose value comes from domain expertise — biotech, legal, finance, and similar. Children split by the specific field; membership implies the agent is meaningfully tailored to that domain's data, tools, or workflows.
+
 #### Biotech
 <sub>`cat:agents/domain-specific/biotech`</sub>
+
+*Agents specialised for biotech, bioinformatics, and life-sciences research workflows.*
+
+Agents built to assist with biology and biotech tasks such as literature mining, sequence analysis, lab protocol generation, and experiment planning. They typically wrap domain tools and datasets behind an LLM-driven interface.
 
 - [Biomni](https://github.com/snap-stanford/Biomni)
 
@@ -213,6 +279,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 #### Open Source
 <sub>`cat:agents/frameworks/open-source`</sub>
+
+*Open-source general-purpose agent frameworks under permissive or copyleft licences.*
+
+Freely available frameworks for building agents and agentic applications, distinguished from proprietary or hosted alternatives by their open codebases. They provide core loops, tool integration, and orchestration primitives developers can run and modify locally.
 
 - [Hermes Agent](https://github.com/NousResearch/hermes-agent)
 
@@ -231,13 +301,25 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 #### CLIs
 <sub>`cat:agents/harnesses/clis`</sub>
 
+*Command-line harnesses that host and run agents in a terminal environment.*
+
+CLI-shaped runners that execute agents interactively or non-interactively from the shell. They sit at the execution layer of the stack, wrapping a model plus tools behind a terminal UX, and split into vendor-built and third-party implementations.
+
 ##### Third Party
 <sub>`cat:agents/harnesses/clis/third-party`</sub>
+
+*Third-party CLI harnesses not built by the underlying model vendor.*
+
+Community or independent CLI runners that host agents against one or more model providers. They offer alternative terminal UXs and feature sets distinct from vendor-shipped CLIs.
 
 - [Crush](https://github.com/charmbracelet/crush)
 
 ##### Vendor
 <sub>`cat:agents/harnesses/clis/vendor`</sub>
+
+*Vendor-shipped CLI harnesses built by the model provider themselves.*
+
+Official terminal agent runners published by the company behind the underlying model, such as Google's Gemini CLI or Anthropic's Claude Code. They provide a first-party execution surface tightly coupled to the vendor's models and APIs.
 
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli)
 
@@ -249,30 +331,54 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 #### Graph Builders
 <sub>`cat:agents/memory/graph-builders`</sub>
 
+*Memory systems that construct and maintain knowledge graphs from agent interactions.*
+
+Tools that extract entities and relations from conversations, documents, or events and persist them as a graph used for long-term agent memory. They sit between raw logs and retrieval, turning unstructured history into structured, queryable memory.
+
 - [Graphiti](https://github.com/getzep/graphiti)
 
 ### Purpose Specific
 <sub>`cat:agents/purpose-specific`</sub>
+
+*Agents built for a specific operational purpose that does not map to a domain vertical.*
+
+A slot for agents defined by the task they perform (e.g. penetration testing, QA, triage) rather than by industry or framework. Distinguished from Domain Specific, which groups by vertical, and from Frameworks, which group by building blocks.
 
 - [INKOS](https://github.com/Narcooo/inkos)
 
 #### Penetration Testing
 <sub>`cat:agents/purpose-specific/penetration-testing`</sub>
 
+*Agents that autonomously perform offensive security and penetration testing tasks.*
+
+Security-focused agents that enumerate, probe, and exploit systems in a controlled way, chaining recon and exploitation tools under LLM direction. They sit alongside traditional pentesting frameworks as an autonomous execution layer.
+
 - [Pentagi](https://github.com/vxcontrol/pentagi)
 
 ### Team Formation
 <sub>`cat:agents/team-formation`</sub>
+
+*Tools that assemble and configure multi-agent teams from roles or task descriptions.*
+
+Systems whose job is to decide which agents to spawn, with what roles, tools, and prompts, to tackle a given objective. They sit upstream of multi-agent runtimes, producing the team that another layer then executes.
 
 - [Squad](https://github.com/bradygaster/squad)
 
 ### Teams
 <sub>`cat:agents/teams`</sub>
 
+*Preconfigured multi-agent teams targeting a specific workflow or domain.*
+
+Ready-made collections of cooperating agents wired together for a particular use case, such as data science or content production. Distinct from Team Formation (which builds teams) and from Frameworks (which provide the primitives).
+
 - [AI Data Science Team](https://github.com/business-science/ai-data-science-team)
 
 ### Vision
 <sub>`cat:agents/vision`</sub>
+
+*Agents whose primary modality is visual perception of images or video.*
+
+Agents built around vision models that analyse, describe, or act on image and video inputs, often as part of a broader multimodal loop. They sit alongside text and computer-use agents as a distinct perceptual slot in the stack.
 
 - [Vision Agents](https://github.com/GetStream/Vision-Agents)
 
@@ -285,6 +391,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 ### Headless
 <sub>`cat:ai-browsers/headless`</sub>
+
+*Headless browsers optimised for programmatic navigation by AI agents.*
+
+Browser engines without a visible UI, tuned for automated page loading, DOM access, and scraping under agent control. They sit below agent frameworks as the execution substrate for web interaction, competing with general-purpose headless tools repurposed for AI use.
 
 - [Lightpanda Browser](https://github.com/lightpanda-io/browser)
 - [Steel Browser](https://github.com/steel-dev/steel-browser)
@@ -302,8 +412,16 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Open Source
 <sub>`cat:automation/open-source`</sub>
 
+*Open-source automation platforms and frameworks for building agentic workflows.*
+
+Self-hostable automation tools that power agent-driven workflows, spanning GUI-first builders and script-based engines. Sits alongside proprietary SaaS automation platforms but distinguished by open licensing and self-hosting.
+
 #### GUI Based
 <sub>`cat:automation/open-source/gui-based`</sub>
+
+*Open-source visual/no-code builders for composing automation and agent workflows.*
+
+Drag-and-drop canvas tools where flows, triggers and agent steps are wired visually rather than in code. Typically self-hosted, targeting makers who want n8n/Zapier-style UX with open licensing.
 
 - [Activepieces](https://github.com/activepieces/activepieces)
 - [Flowise](https://github.com/FlowiseAI/Flowise)
@@ -355,8 +473,16 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Platform Specific
 <sub>`cat:computer-use/platform-specific`</sub>
 
+*Computer-use agents targeted at a specific operating system rather than cross-platform.*
+
+Groups computer-use implementations that exploit OS-native APIs, accessibility layers or UI conventions of one platform. Sits beside CLI and vision-based UI approaches as a delivery form factor for computer-use agents.
+
 #### macOS
 <sub>`cat:computer-use/platform-specific/macos`</sub>
+
+*Computer-use agents built specifically for macOS desktops.*
+
+Agents that drive macOS via AppleScript, Accessibility APIs, or native automation hooks to control apps and the desktop. Distinct from generic vision-based computer-use by leaning on Mac-specific primitives.
 
 - [cmux](https://github.com/manaflow-ai/cmux)
 - [macOS-use](https://github.com/browser-use/macOS-use)
@@ -379,15 +505,27 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Context Optimisation
 <sub>`cat:context/context-optimisation`</sub>
 
+*Tools that shrink, prioritise or restructure context before it reaches the model.*
+
+Middleware focused on making the context window more efficient — pruning, compressing, reordering or mode-switching content for an LLM call. Sits between context assembly and the model itself.
+
 - [context-mode](https://github.com/mksglu/context-mode)
 
 ### Engines
 <sub>`cat:context/engines`</sub>
 
+*Runtime engines that assemble and serve context to agents on demand.*
+
+Backends that fetch, merge and format context from multiple sources into a prompt-ready payload. The server-side counterpart to context optimisation and visualisation tools.
+
 - [Contexto](https://github.com/ekailabs/contexto)
 
 ### Frontend Tools
 <sub>`cat:context/frontend-tools`</sub>
+
+*Client-side tools for capturing or selecting context from a running UI.*
+
+Browser/app-side utilities that let users grab DOM fragments, components or page state and feed them into an agent. Typically a bridge between a live frontend and a context engine.
 
 - [react-grab](https://github.com/aidenybai/react-grab)
 
@@ -399,10 +537,18 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 #### Context Managers
 <sub>`cat:context/tools/context-managers`</sub>
 
+*Utilities that organise, persist and version the context a developer feeds into coding agents.*
+
+Tooling for curating dotfile-style context bundles, rules and memory snippets used by AI coding assistants. Acts as a local source of truth for what gets injected into each session.
+
 - [dotai](https://github.com/udecode/dotai)
 
 ### Visualisation
 <sub>`cat:context/visualisation`</sub>
+
+*Tools for inspecting and visualising what is inside an LLM context window.*
+
+Debug and introspection utilities that render tokens, messages and attached artefacts so developers can see exactly what the model received. Complements context optimisation by exposing waste and overlap.
 
 - [context-lens](https://github.com/larsderidder/context-lens)
 
@@ -428,6 +574,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Financial
 <sub>`cat:data-sources/financial`</sub>
 
+*Financial and markets data feeds exposed as tools or sources for agents.*
+
+Providers of equities, crypto, macro and company fundamentals data packaged for programmatic agent consumption. Sits in the data layer beneath research and trading agents.
+
 - [OpenBB](https://github.com/OpenBB-finance/OpenBB)
 
 ## Databases
@@ -449,6 +599,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 ### Serverless
 <sub>`cat:deployment-platforms/serverless`</sub>
+
+*Serverless runtimes for hosting agents without managing long-lived infrastructure.*
+
+Platforms that run agent workflows on-demand with managed scaling, state and scheduling. Occupies the same slot as containerised agent hosts but with a function-style execution model.
 
 - [Julep](https://github.com/julep-ai/julep)
 
@@ -473,6 +627,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 ### Repo Refactoring
 <sub>`cat:dev-tools/repo-refactoring`</sub>
+
+*Agent-assisted tooling for restructuring and refactoring entire repositories.*
+
+Tools that apply large-scale, agent-driven transformations across a codebase — renames, moves, config migrations, architectural shifts. Distinct from IDE-level assistants by operating at repo scope.
 
 - [AgentRC](https://github.com/microsoft/agentrc)
 
@@ -507,6 +665,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 ### OS
 <sub>`cat:environments/os`</sub>
+
+*Agent-native operating systems providing a full OS abstraction for autonomous agents to run within.*
+
+OS-level environments purpose-built as runtimes for agents, exposing processes, filesystem, and system calls as primitives the agent can control. Sits below frameworks and harnesses as the host substrate.
 
 - [agent-os](https://github.com/rivet-dev/agent-os)
 
@@ -586,6 +748,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### .NET
 <sub>`cat:frameworks/net`</sub>
 
+*.NET/C# agent frameworks for building agents in the Microsoft ecosystem.*
+
+Agent-building frameworks targeting the .NET runtime and C# developers. Provides idiomatic APIs, DI, and tooling for embedding LLM agents into .NET applications and services.
+
 - [BotSharp](https://github.com/SciSharp/BotSharp)
 
 ### Computer Use
@@ -598,30 +764,54 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Multiagent Orchestration
 <sub>`cat:frameworks/multiagent-orchestration`</sub>
 
+*Frameworks for coordinating multiple cooperating agents with roles, messaging, and task delegation.*
+
+Frameworks whose primary abstraction is a team of agents: role assignment, inter-agent messaging, shared state, and task routing. Used to compose workflows where specialised agents collaborate rather than a single monolithic agent.
+
 - [CAMEL](https://github.com/camel-ai/camel)
 - [CrewAI](https://github.com/crewAIInc/crewAI)
 
 ### Multimodal
 <sub>`cat:frameworks/multimodal`</sub>
 
+*Agent frameworks with first-class support for non-text modalities such as audio, image, and video.*
+
+Frameworks designed around multimodal input and output — video, image, audio streams — rather than text-only chat. Handles media I/O plumbing, streaming, and model routing for agents that perceive or produce rich media.
+
 - [VideoSDK Agents](https://github.com/videosdk-live/agents)
 
 ### Optimisation
 <sub>`cat:frameworks/optimisation`</sub>
 
+*Frameworks focused on optimising agent execution — latency, cost, throughput, parallelism.*
+
+Frameworks whose differentiator is execution efficiency rather than abstractions for authoring agents. Covers parallel dispatch, batching, and cost/latency tradeoffs.
+
 #### Parallelisation
 <sub>`cat:frameworks/optimisation/parallelisation`</sub>
+
+*Frameworks that parallelise agent or subtask execution across workers for throughput.*
+
+Tools that fan out agent work — steps, tool calls, or whole agent runs — across parallel workers. Targets throughput-bound workloads where serial agent loops are the bottleneck.
 
 - [EnsoAI](https://github.com/J3n5en/EnsoAI)
 
 ### Social Simulations
 <sub>`cat:frameworks/social-simulations`</sub>
 
+*Frameworks for simulating populations of agents modelling social, economic, or behavioural dynamics.*
+
+Frameworks for agent-based social simulation: many LLM-backed personas interacting under rules to study emergent group behaviour. Used for research, game-like worlds, and counterfactual studies rather than task execution.
+
 - [Concordia](https://github.com/google-deepmind/concordia)
 - Moltbook
 
 ### Stateful Design
 <sub>`cat:frameworks/stateful-design`</sub>
+
+*Frameworks built around persistent, long-lived agent state and memory as the core abstraction.*
+
+Frameworks where durable agent state — memory, identity, long-running context — is the central primitive rather than a bolt-on. Agents persist across sessions and evolve their internal state over time.
 
 - [Letta](https://github.com/letta-ai/letta)
 
@@ -641,20 +831,36 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Android
 <sub>`cat:frontends/android`</sub>
 
+*Native Android apps that serve as frontends for interacting with agents on mobile.*
+
+Android-specific client applications for chatting with and operating agents from a phone. Handles mobile UX, background behaviour, and on-device integrations distinct from web or desktop clients.
+
 - [Operit](https://github.com/AAswordman/Operit)
 
 ### Chat UIs
 <sub>`cat:frontends/chat-uis`</sub>
+
+*Web or desktop chat interfaces purpose-built as frontends for agents rather than plain LLMs.*
+
+Chat-style user interfaces tailored for agent interaction — tool call rendering, step traces, artefact display — rather than generic LLM chat. Typically web-based and framework-agnostic on the backend.
 
 - [Agent UI](https://github.com/agno-agi/agent-ui)
 
 ### GUIs and CLIs
 <sub>`cat:frontends/guis-and-clis`</sub>
 
+*Dual GUI-and-CLI agent clients offering both graphical and command-line interaction modes.*
+
+Agent frontends that ship as both a graphical desktop app and a command-line tool, sharing a backend. Lets users pick interaction style per task without switching agents.
+
 - [Goose](https://github.com/aaif-goose/goose)
 
 ### TUIs and CLIs
 <sub>`cat:frontends/tuis-and-clis`</sub>
+
+*Terminal user interfaces and command-line clients for interacting with agents.*
+
+Text-mode frontends — TUIs and CLIs — for driving agents from the terminal. Favoured by developers for scriptability, low overhead, and integration into shell workflows.
 
 - [Agent Deck](https://github.com/asheshgoplani/agent-deck)
 
@@ -665,6 +871,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 ### Context Compression
 <sub>`cat:gateways/context-compression`</sub>
+
+*Gateways that compress or distill context before it reaches the model.*
+
+Proxy-layer services that sit between agents and LLMs to shrink prompts, summarize history, or prune tool output, reducing token spend and latency. Distinct from memory systems in that they operate inline on the request path rather than storing state.
 
 - [Context-Gateway](https://github.com/Compresr-ai/Context-Gateway)
 
@@ -764,10 +974,18 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 ### Agent Specific
 <sub>`cat:llms/agent-specific`</sub>
 
+*LLMs trained or tuned specifically for agentic and multi-agent workloads.*
+
+Models whose training objective, post-training, or native harness targets tool use, planning, or multi-agent coordination rather than general chat. Sits at the model layer of the stack and is chosen when vanilla instruction-tuned models fall short on agent benchmarks.
+
 - [Grok 4.20 Multi-Agent](https://openrouter.ai/x-ai/grok-4.20-multi-agent)
 
 ### By Use Case
 <sub>`cat:llms/by-use-case`</sub>
+
+*LLMs grouped by the agentic use case they are optimized for.*
+
+Organizes models by the downstream agentic task they target — computer use, coding, browsing, and so on — rather than by vendor or size. A parent bucket whose children are the specific use-case slots.
 
 #### Computer Use
 <sub>`cat:llms/by-use-case/computer-use`</sub>
@@ -799,6 +1017,10 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 ### Aggregation
 <sub>`cat:mcp/aggregation`</sub>
 
+*Aggregators that bundle many MCP servers behind a single endpoint.*
+
+Meta-MCP services that expose dozens or hundreds of upstream MCP servers through one unified connection, handling discovery, auth, and routing. Reduces per-client configuration burden when an agent needs access to a broad tool surface.
+
 - [Klavis](https://github.com/Klavis-AI/klavis)
 
 ### Gateways
@@ -810,6 +1032,10 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 
 ### Third Party
 <sub>`cat:mcp/third-party`</sub>
+
+*Community-built MCP servers wrapping third-party SaaS and APIs.*
+
+Unofficial MCP server implementations that expose external products and APIs (Airbnb, Spotify, etc.) as MCP tools, built outside the vendor. The catch-all slot for community MCP coverage of commercial services.
 
 - [MCP Server Airbnb](https://github.com/openbnb-org/mcp-server-airbnb)
 
@@ -826,10 +1052,18 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 ### File
 <sub>`cat:memory/file`</sub>
 
+*File-backed memory stores for agents.*
+
+Memory backends that persist agent state to files — flat, encoded, or media-container formats — rather than databases or vector stores. Useful for portable, inspectable, or offline agent memory.
+
 - [Memvid](https://github.com/memvid/memvid)
 
 ### Regressive
 <sub>`cat:memory/regressive`</sub>
+
+*Memory that refines itself by regressing over past interactions.*
+
+Memory systems that iteratively re-process prior context to extract, correct, or compress learned signal, rather than just appending new entries. Targets long-running agents whose context quality must improve over time.
 
 - [Agentic Context Engine](https://github.com/kayba-ai/agentic-context-engine)
 
@@ -848,10 +1082,18 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 ### Large Scale Experiments
 <sub>`cat:multiagent/large-scale-experiments`</sub>
 
+*Frameworks for running simulations with thousands of agents.*
+
+Engines built to scale multi-agent populations into the thousands or millions for social, economic, or emergent-behavior experiments. Distinct from production orchestration — the goal is research and simulation, not task delivery.
+
 - [AgentTorch](https://github.com/AgentTorch/AgentTorch)
 
 ### Swarm Prediction
 <sub>`cat:multiagent/swarm-prediction`</sub>
+
+*Swarms of agents aggregated to produce forecasts or predictions.*
+
+Multi-agent systems where many independent agents vote, bid, or debate to generate a collective prediction, mimicking prediction-market or wisdom-of-crowds dynamics. The output is a forecast signal rather than a completed task.
 
 - [MiroFish](https://github.com/666ghj/MiroFish)
 
@@ -884,6 +1126,10 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 ### SBCs
 <sub>`cat:on-device-agents/sbcs`</sub>
 
+*Agent runtimes targeting single-board computers and edge hardware.*
+
+Agent stacks built for Raspberry Pi class boards and similar SBCs, optimized for constrained CPU, RAM, and power budgets. Sibling to phone-specific runtimes in the on-device layer.
+
 - [be-more-agent](https://github.com/brenpoly/be-more-agent)
 
 ## Operations
@@ -893,6 +1139,10 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 
 ### Cost Monitoring
 <sub>`cat:operations/cost-monitoring`</sub>
+
+*Tools that track token spend and cost for production agents.*
+
+Observability systems focused on financial metrics — per-run, per-agent, and per-tool cost attribution for LLM and tool calls. Distinct from general tracing or evals; the primary surface is a spend dashboard.
 
 - [AgentOps](https://github.com/AgentOps-AI/agentops)
 
@@ -915,6 +1165,10 @@ Harnesses sit between frameworks (which define agent shape) and runtimes (which 
 
 ### Platform-Specific
 <sub>`cat:orchestration/platform-specific`</sub>
+
+*Orchestration frameworks tied to a specific cloud or vendor platform.*
+
+Agent orchestration engines that are coupled to one provider's runtime, SDKs, or services rather than being platform-neutral. Chosen when a team has already committed to that platform's ecosystem.
 
 - [Agent Squad](https://github.com/awslabs/agent-squad)
 

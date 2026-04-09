@@ -72,8 +72,8 @@
         "Agent to Agent",
         "Experiments"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Experimental agent-to-agent communication projects that don't fit established transport or protocol categories.",
+      "long_description": "Research-grade and exploratory work on how agents might talk to each other \u2014 novel channels, encodings, or interaction modes. Sits alongside formal A2A protocols as a sandbox for ideas that haven't hardened into standards.",
       "examples_narrative": ""
     },
     {
@@ -85,9 +85,9 @@
         "Experiments",
         "Voices"
       ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
+      "short_description": "Audio-channel experiments where agents communicate via sound rather than text or structured messages.",
+      "long_description": "Projects exploring voice or acoustic signaling as an inter-agent transport \u2014 agents emitting tones, speech, or compressed audio protocols to exchange information. A narrow experimental slot within agent-to-agent research.",
+      "examples_narrative": "Gibberlink is the canonical example, where two voice agents detect each other and switch to a machine-efficient acoustic protocol."
     },
     {
       "id": "proj:gibberlink",
@@ -102,8 +102,8 @@
       "path": [
         "Agent Tools"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Tools and services that agents invoke as capabilities, rather than frameworks for building agents themselves.",
+      "long_description": "Top-level segment for utilities designed to be called by agents \u2014 communications, side-effect actions, and similar capability providers. Distinct from runtimes, frameworks, or harnesses; these are the things at the other end of a tool call.",
       "examples_narrative": ""
     },
     {
@@ -114,9 +114,9 @@
         "Agent Tools",
         "Comms"
       ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
+      "short_description": "Messaging and communication tools that agents use to send, receive, or coordinate via human-style channels.",
+      "long_description": "Services exposing email, chat, or mailbox-like primitives to agents as callable tools. Typically shipped as MCP servers or SDKs so an agent can send messages, read inboxes, and coordinate over standard comms channels.",
+      "examples_narrative": "MCP Agent Mail illustrates the slot by giving agents a mailbox-style interface over MCP."
     },
     {
       "id": "proj:mcp-agent-mail",
@@ -149,8 +149,8 @@
         "Agents",
         "Autonomous"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Long-running autonomous agents that pursue goals with minimal human supervision.",
+      "long_description": "Agents designed to operate open-endedly against a goal, planning and executing over extended horizons without turn-by-turn prompting. Distinct from chat assistants, harnesses, or task-specific agents \u2014 the defining trait is self-directed operation.",
       "examples_narrative": ""
     },
     {
@@ -162,9 +162,9 @@
         "Autonomous",
         "Trading"
       ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
+      "short_description": "Autonomous agents that execute trading strategies in financial or crypto markets.",
+      "long_description": "Self-directed agents that monitor markets, form views, and place trades without per-decision human approval. Typically shipped as runnable services or bots wired into exchange APIs.",
+      "examples_narrative": "AI-Trader is an example of a goal-driven trading agent operating autonomously against market data."
     },
     {
       "id": "proj:ai-trader",
@@ -180,9 +180,9 @@
         "Agents",
         "Autonomous Agent Creation"
       ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
+      "short_description": "Agents (or platforms) whose purpose is to spawn and configure other autonomous agents.",
+      "long_description": "Meta-level tools where the output is a new agent \u2014 skill bundles, agent factories, or systems that compose runnable agents from specs. Sits above individual agents in the stack as a creation layer.",
+      "examples_narrative": "BankrBot Skills illustrates a skills-as-agents creation surface."
     },
     {
       "id": "proj:bankrbot-skills",
@@ -198,9 +198,9 @@
         "Agents",
         "Backend Platforms"
       ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
+      "short_description": "Self-hostable backend platforms for building, deploying, and serving LLM-powered agents and apps.",
+      "long_description": "Full-stack platforms \u2014 usually open source, often with a UI \u2014 that provide workflow, RAG, tool, and model plumbing behind an API. Contrast with libraries (frameworks) or managed SaaS: these are deployable services developers run to host agent applications.",
+      "examples_narrative": "Dify is a representative self-hosted agent/LLM app backend platform."
     },
     {
       "id": "proj:dify",
@@ -216,8 +216,8 @@
         "Agents",
         "CLIs/Toolkits"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Command-line agents and developer toolkits for running agents from the terminal.",
+      "long_description": "CLI-first agent surfaces \u2014 coding agents, general assistants, and SDK-style toolkits invoked from a shell. Sits at the developer-interface layer of the stack, distinct from web frontends or backend services.",
       "examples_narrative": ""
     },
     {
@@ -229,9 +229,9 @@
         "CLIs/Toolkits",
         "Vendor"
       ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
+      "short_description": "Vendor-published official CLI agents shipped by model providers as first-party terminal tools.",
+      "long_description": "Official command-line agents released by the companies that train or host the underlying models. Distinguished from community CLIs by being the canonical vendor distribution.",
+      "examples_narrative": "Qwen Code is Alibaba's official terminal coding agent for the Qwen models."
     },
     {
       "id": "proj:qwen-code",
@@ -265,9 +265,9 @@
         "Agents",
         "Development"
       ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
+      "short_description": "Software-engineering agents that read, write, and modify code to complete development tasks.",
+      "long_description": "Agents purpose-built for coding work \u2014 repo navigation, patch generation, test running, PR authoring. Distinct from general assistants by their tight integration with code, shells, and dev-loop feedback.",
+      "examples_narrative": "OpenHands is a canonical autonomous software-engineering agent."
     },
     {
       "id": "proj:openhands",
@@ -283,8 +283,8 @@
         "Agents",
         "Domain Specific"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agents specialised for a particular vertical or professional domain rather than general use.",
+      "long_description": "Parent slot for agents whose value comes from domain expertise \u2014 biotech, legal, finance, and similar. Children split by the specific field; membership implies the agent is meaningfully tailored to that domain's data, tools, or workflows.",
       "examples_narrative": ""
     },
     {
@@ -296,8 +296,8 @@
         "Domain Specific",
         "Biotech"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agents specialised for biotech, bioinformatics, and life-sciences research workflows.",
+      "long_description": "Agents built to assist with biology and biotech tasks such as literature mining, sequence analysis, lab protocol generation, and experiment planning. They typically wrap domain tools and datasets behind an LLM-driven interface.",
       "examples_narrative": ""
     },
     {
@@ -327,8 +327,8 @@
         "Frameworks",
         "Open Source"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Open-source general-purpose agent frameworks under permissive or copyleft licences.",
+      "long_description": "Freely available frameworks for building agents and agentic applications, distinguished from proprietary or hosted alternatives by their open codebases. They provide core loops, tool integration, and orchestration primitives developers can run and modify locally.",
       "examples_narrative": ""
     },
     {
@@ -376,8 +376,8 @@
         "Harnesses",
         "CLIs"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Command-line harnesses that host and run agents in a terminal environment.",
+      "long_description": "CLI-shaped runners that execute agents interactively or non-interactively from the shell. They sit at the execution layer of the stack, wrapping a model plus tools behind a terminal UX, and split into vendor-built and third-party implementations.",
       "examples_narrative": ""
     },
     {
@@ -390,8 +390,8 @@
         "CLIs",
         "Third Party"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Third-party CLI harnesses not built by the underlying model vendor.",
+      "long_description": "Community or independent CLI runners that host agents against one or more model providers. They offer alternative terminal UXs and feature sets distinct from vendor-shipped CLIs.",
       "examples_narrative": ""
     },
     {
@@ -410,8 +410,8 @@
         "CLIs",
         "Vendor"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Vendor-shipped CLI harnesses built by the model provider themselves.",
+      "long_description": "Official terminal agent runners published by the company behind the underlying model, such as Google's Gemini CLI or Anthropic's Claude Code. They provide a first-party execution surface tightly coupled to the vendor's models and APIs.",
       "examples_narrative": ""
     },
     {
@@ -441,8 +441,8 @@
         "Memory",
         "Graph Builders"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Memory systems that construct and maintain knowledge graphs from agent interactions.",
+      "long_description": "Tools that extract entities and relations from conversations, documents, or events and persist them as a graph used for long-term agent memory. They sit between raw logs and retrieval, turning unstructured history into structured, queryable memory.",
       "examples_narrative": ""
     },
     {
@@ -465,8 +465,8 @@
         "Agents",
         "Purpose Specific"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agents built for a specific operational purpose that does not map to a domain vertical.",
+      "long_description": "A slot for agents defined by the task they perform (e.g. penetration testing, QA, triage) rather than by industry or framework. Distinguished from Domain Specific, which groups by vertical, and from Frameworks, which group by building blocks.",
       "examples_narrative": ""
     },
     {
@@ -484,8 +484,8 @@
         "Purpose Specific",
         "Penetration Testing"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agents that autonomously perform offensive security and penetration testing tasks.",
+      "long_description": "Security-focused agents that enumerate, probe, and exploit systems in a controlled way, chaining recon and exploitation tools under LLM direction. They sit alongside traditional pentesting frameworks as an autonomous execution layer.",
       "examples_narrative": ""
     },
     {
@@ -502,8 +502,8 @@
         "Agents",
         "Team Formation"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Tools that assemble and configure multi-agent teams from roles or task descriptions.",
+      "long_description": "Systems whose job is to decide which agents to spawn, with what roles, tools, and prompts, to tackle a given objective. They sit upstream of multi-agent runtimes, producing the team that another layer then executes.",
       "examples_narrative": ""
     },
     {
@@ -520,8 +520,8 @@
         "Agents",
         "Teams"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Preconfigured multi-agent teams targeting a specific workflow or domain.",
+      "long_description": "Ready-made collections of cooperating agents wired together for a particular use case, such as data science or content production. Distinct from Team Formation (which builds teams) and from Frameworks (which provide the primitives).",
       "examples_narrative": ""
     },
     {
@@ -538,8 +538,8 @@
         "Agents",
         "Vision"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agents whose primary modality is visual perception of images or video.",
+      "long_description": "Agents built around vision models that analyse, describe, or act on image and video inputs, often as part of a broader multimodal loop. They sit alongside text and computer-use agents as a distinct perceptual slot in the stack.",
       "examples_narrative": ""
     },
     {
@@ -573,8 +573,8 @@
         "AI Browsers",
         "Headless"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Headless browsers optimised for programmatic navigation by AI agents.",
+      "long_description": "Browser engines without a visible UI, tuned for automated page loading, DOM access, and scraping under agent control. They sit below agent frameworks as the execution substrate for web interaction, competing with general-purpose headless tools repurposed for AI use.",
       "examples_narrative": ""
     },
     {
@@ -608,8 +608,8 @@
         "Automation",
         "Open Source"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Open-source automation platforms and frameworks for building agentic workflows.",
+      "long_description": "Self-hostable automation tools that power agent-driven workflows, spanning GUI-first builders and script-based engines. Sits alongside proprietary SaaS automation platforms but distinguished by open licensing and self-hosting.",
       "examples_narrative": ""
     },
     {
@@ -621,8 +621,8 @@
         "Open Source",
         "GUI Based"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Open-source visual/no-code builders for composing automation and agent workflows.",
+      "long_description": "Drag-and-drop canvas tools where flows, triggers and agent steps are wired visually rather than in code. Typically self-hosted, targeting makers who want n8n/Zapier-style UX with open licensing.",
       "examples_narrative": ""
     },
     {
@@ -730,8 +730,8 @@
         "Computer Use",
         "Platform Specific"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Computer-use agents targeted at a specific operating system rather than cross-platform.",
+      "long_description": "Groups computer-use implementations that exploit OS-native APIs, accessibility layers or UI conventions of one platform. Sits beside CLI and vision-based UI approaches as a delivery form factor for computer-use agents.",
       "examples_narrative": ""
     },
     {
@@ -743,8 +743,8 @@
         "Platform Specific",
         "macOS"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Computer-use agents built specifically for macOS desktops.",
+      "long_description": "Agents that drive macOS via AppleScript, Accessibility APIs, or native automation hooks to control apps and the desktop. Distinct from generic vision-based computer-use by leaning on Mac-specific primitives.",
       "examples_narrative": ""
     },
     {
@@ -784,8 +784,8 @@
         "Context",
         "Context Optimisation"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Tools that shrink, prioritise or restructure context before it reaches the model.",
+      "long_description": "Middleware focused on making the context window more efficient \u2014 pruning, compressing, reordering or mode-switching content for an LLM call. Sits between context assembly and the model itself.",
       "examples_narrative": ""
     },
     {
@@ -802,8 +802,8 @@
         "Context",
         "Engines"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Runtime engines that assemble and serve context to agents on demand.",
+      "long_description": "Backends that fetch, merge and format context from multiple sources into a prompt-ready payload. The server-side counterpart to context optimisation and visualisation tools.",
       "examples_narrative": ""
     },
     {
@@ -820,8 +820,8 @@
         "Context",
         "Frontend Tools"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Client-side tools for capturing or selecting context from a running UI.",
+      "long_description": "Browser/app-side utilities that let users grab DOM fragments, components or page state and feed them into an agent. Typically a bridge between a live frontend and a context engine.",
       "examples_narrative": ""
     },
     {
@@ -851,8 +851,8 @@
         "Tools",
         "Context Managers"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Utilities that organise, persist and version the context a developer feeds into coding agents.",
+      "long_description": "Tooling for curating dotfile-style context bundles, rules and memory snippets used by AI coding assistants. Acts as a local source of truth for what gets injected into each session.",
       "examples_narrative": ""
     },
     {
@@ -869,8 +869,8 @@
         "Context",
         "Visualisation"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Tools for inspecting and visualising what is inside an LLM context window.",
+      "long_description": "Debug and introspection utilities that render tokens, messages and attached artefacts so developers can see exactly what the model received. Complements context optimisation by exposing waste and overlap.",
       "examples_narrative": ""
     },
     {
@@ -932,8 +932,8 @@
         "Data Sources",
         "Financial"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Financial and markets data feeds exposed as tools or sources for agents.",
+      "long_description": "Providers of equities, crypto, macro and company fundamentals data packaged for programmatic agent consumption. Sits in the data layer beneath research and trading agents.",
       "examples_narrative": ""
     },
     {
@@ -990,8 +990,8 @@
         "Deployment Platforms",
         "Serverless"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Serverless runtimes for hosting agents without managing long-lived infrastructure.",
+      "long_description": "Platforms that run agent workflows on-demand with managed scaling, state and scheduling. Occupies the same slot as containerised agent hosts but with a function-style execution model.",
       "examples_narrative": ""
     },
     {
@@ -1025,8 +1025,8 @@
         "Dev Tools",
         "Repo Refactoring"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agent-assisted tooling for restructuring and refactoring entire repositories.",
+      "long_description": "Tools that apply large-scale, agent-driven transformations across a codebase \u2014 renames, moves, config migrations, architectural shifts. Distinct from IDE-level assistants by operating at repo scope.",
       "examples_narrative": ""
     },
     {
@@ -1110,8 +1110,8 @@
         "Environments",
         "OS"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agent-native operating systems providing a full OS abstraction for autonomous agents to run within.",
+      "long_description": "OS-level environments purpose-built as runtimes for agents, exposing processes, filesystem, and system calls as primitives the agent can control. Sits below frameworks and harnesses as the host substrate.",
       "examples_narrative": ""
     },
     {
@@ -1326,8 +1326,8 @@
         "Frameworks",
         ".NET"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": ".NET/C# agent frameworks for building agents in the Microsoft ecosystem.",
+      "long_description": "Agent-building frameworks targeting the .NET runtime and C# developers. Provides idiomatic APIs, DI, and tooling for embedding LLM agents into .NET applications and services.",
       "examples_narrative": ""
     },
     {
@@ -1368,8 +1368,8 @@
         "Frameworks",
         "Multiagent Orchestration"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Frameworks for coordinating multiple cooperating agents with roles, messaging, and task delegation.",
+      "long_description": "Frameworks whose primary abstraction is a team of agents: role assignment, inter-agent messaging, shared state, and task routing. Used to compose workflows where specialised agents collaborate rather than a single monolithic agent.",
       "examples_narrative": ""
     },
     {
@@ -1386,8 +1386,8 @@
         "Frameworks",
         "Multimodal"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agent frameworks with first-class support for non-text modalities such as audio, image, and video.",
+      "long_description": "Frameworks designed around multimodal input and output \u2014 video, image, audio streams \u2014 rather than text-only chat. Handles media I/O plumbing, streaming, and model routing for agents that perceive or produce rich media.",
       "examples_narrative": ""
     },
     {
@@ -1404,8 +1404,8 @@
         "Frameworks",
         "Optimisation"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Frameworks focused on optimising agent execution \u2014 latency, cost, throughput, parallelism.",
+      "long_description": "Frameworks whose differentiator is execution efficiency rather than abstractions for authoring agents. Covers parallel dispatch, batching, and cost/latency tradeoffs.",
       "examples_narrative": ""
     },
     {
@@ -1417,8 +1417,8 @@
         "Optimisation",
         "Parallelisation"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Frameworks that parallelise agent or subtask execution across workers for throughput.",
+      "long_description": "Tools that fan out agent work \u2014 steps, tool calls, or whole agent runs \u2014 across parallel workers. Targets throughput-bound workloads where serial agent loops are the bottleneck.",
       "examples_narrative": ""
     },
     {
@@ -1435,8 +1435,8 @@
         "Frameworks",
         "Social Simulations"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Frameworks for simulating populations of agents modelling social, economic, or behavioural dynamics.",
+      "long_description": "Frameworks for agent-based social simulation: many LLM-backed personas interacting under rules to study emergent group behaviour. Used for research, game-like worlds, and counterfactual studies rather than task execution.",
       "examples_narrative": ""
     },
     {
@@ -1459,8 +1459,8 @@
         "Frameworks",
         "Stateful Design"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Frameworks built around persistent, long-lived agent state and memory as the core abstraction.",
+      "long_description": "Frameworks where durable agent state \u2014 memory, identity, long-running context \u2014 is the central primitive rather than a bolt-on. Agents persist across sessions and evolve their internal state over time.",
       "examples_narrative": ""
     },
     {
@@ -1512,8 +1512,8 @@
         "Frontends",
         "Android"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Native Android apps that serve as frontends for interacting with agents on mobile.",
+      "long_description": "Android-specific client applications for chatting with and operating agents from a phone. Handles mobile UX, background behaviour, and on-device integrations distinct from web or desktop clients.",
       "examples_narrative": ""
     },
     {
@@ -1530,8 +1530,8 @@
         "Frontends",
         "Chat UIs"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Web or desktop chat interfaces purpose-built as frontends for agents rather than plain LLMs.",
+      "long_description": "Chat-style user interfaces tailored for agent interaction \u2014 tool call rendering, step traces, artefact display \u2014 rather than generic LLM chat. Typically web-based and framework-agnostic on the backend.",
       "examples_narrative": ""
     },
     {
@@ -1548,8 +1548,8 @@
         "Frontends",
         "GUIs and CLIs"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Dual GUI-and-CLI agent clients offering both graphical and command-line interaction modes.",
+      "long_description": "Agent frontends that ship as both a graphical desktop app and a command-line tool, sharing a backend. Lets users pick interaction style per task without switching agents.",
       "examples_narrative": ""
     },
     {
@@ -1566,8 +1566,8 @@
         "Frontends",
         "TUIs and CLIs"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Terminal user interfaces and command-line clients for interacting with agents.",
+      "long_description": "Text-mode frontends \u2014 TUIs and CLIs \u2014 for driving agents from the terminal. Favoured by developers for scriptability, low overhead, and integration into shell workflows.",
       "examples_narrative": ""
     },
     {
@@ -1595,8 +1595,8 @@
         "Gateways",
         "Context Compression"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Gateways that compress or distill context before it reaches the model.",
+      "long_description": "Proxy-layer services that sit between agents and LLMs to shrink prompts, summarize history, or prune tool output, reducing token spend and latency. Distinct from memory systems in that they operate inline on the request path rather than storing state.",
       "examples_narrative": ""
     },
     {
@@ -1706,8 +1706,8 @@
         "LLMs",
         "Agent Specific"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "LLMs trained or tuned specifically for agentic and multi-agent workloads.",
+      "long_description": "Models whose training objective, post-training, or native harness targets tool use, planning, or multi-agent coordination rather than general chat. Sits at the model layer of the stack and is chosen when vanilla instruction-tuned models fall short on agent benchmarks.",
       "examples_narrative": ""
     },
     {
@@ -1724,8 +1724,8 @@
         "LLMs",
         "By Use Case"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "LLMs grouped by the agentic use case they are optimized for.",
+      "long_description": "Organizes models by the downstream agentic task they target \u2014 computer use, coding, browsing, and so on \u2014 rather than by vendor or size. A parent bucket whose children are the specific use-case slots.",
       "examples_narrative": ""
     },
     {
@@ -1806,8 +1806,8 @@
         "MCP",
         "Aggregation"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Aggregators that bundle many MCP servers behind a single endpoint.",
+      "long_description": "Meta-MCP services that expose dozens or hundreds of upstream MCP servers through one unified connection, handling discovery, auth, and routing. Reduces per-client configuration burden when an agent needs access to a broad tool surface.",
       "examples_narrative": ""
     },
     {
@@ -1842,8 +1842,8 @@
         "MCP",
         "Third Party"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Community-built MCP servers wrapping third-party SaaS and APIs.",
+      "long_description": "Unofficial MCP server implementations that expose external products and APIs (Airbnb, Spotify, etc.) as MCP tools, built outside the vendor. The catch-all slot for community MCP coverage of commercial services.",
       "examples_narrative": ""
     },
     {
@@ -1895,8 +1895,8 @@
         "Memory",
         "File"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "File-backed memory stores for agents.",
+      "long_description": "Memory backends that persist agent state to files \u2014 flat, encoded, or media-container formats \u2014 rather than databases or vector stores. Useful for portable, inspectable, or offline agent memory.",
       "examples_narrative": ""
     },
     {
@@ -1913,8 +1913,8 @@
         "Memory",
         "Regressive"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Memory that refines itself by regressing over past interactions.",
+      "long_description": "Memory systems that iteratively re-process prior context to extract, correct, or compress learned signal, rather than just appending new entries. Targets long-running agents whose context quality must improve over time.",
       "examples_narrative": ""
     },
     {
@@ -1960,8 +1960,8 @@
         "Multiagent",
         "Large Scale Experiments"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Frameworks for running simulations with thousands of agents.",
+      "long_description": "Engines built to scale multi-agent populations into the thousands or millions for social, economic, or emergent-behavior experiments. Distinct from production orchestration \u2014 the goal is research and simulation, not task delivery.",
       "examples_narrative": ""
     },
     {
@@ -1978,8 +1978,8 @@
         "Multiagent",
         "Swarm Prediction"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Swarms of agents aggregated to produce forecasts or predictions.",
+      "long_description": "Multi-agent systems where many independent agents vote, bid, or debate to generate a collective prediction, mimicking prediction-market or wisdom-of-crowds dynamics. The output is a forecast signal rather than a completed task.",
       "examples_narrative": ""
     },
     {
@@ -2053,8 +2053,8 @@
         "On Device Agents",
         "SBCs"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Agent runtimes targeting single-board computers and edge hardware.",
+      "long_description": "Agent stacks built for Raspberry Pi class boards and similar SBCs, optimized for constrained CPU, RAM, and power budgets. Sibling to phone-specific runtimes in the on-device layer.",
       "examples_narrative": ""
     },
     {
@@ -2082,8 +2082,8 @@
         "Operations",
         "Cost Monitoring"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Tools that track token spend and cost for production agents.",
+      "long_description": "Observability systems focused on financial metrics \u2014 per-run, per-agent, and per-tool cost attribution for LLM and tool calls. Distinct from general tracing or evals; the primary surface is a spend dashboard.",
       "examples_narrative": ""
     },
     {
@@ -2152,8 +2152,8 @@
         "Orchestration",
         "Platform-Specific"
       ],
-      "short_description": "",
-      "long_description": "",
+      "short_description": "Orchestration frameworks tied to a specific cloud or vendor platform.",
+      "long_description": "Agent orchestration engines that are coupled to one provider's runtime, SDKs, or services rather than being platform-neutral. Chosen when a team has already committed to that platform's ecosystem.",
       "examples_narrative": ""
     },
     {
