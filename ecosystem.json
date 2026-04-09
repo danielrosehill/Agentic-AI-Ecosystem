@@ -1217,6 +1217,20 @@
       "name": "Harnesses",
       "children": [
         {
+          "name": "Checkpointing",
+          "examples": [],
+          "short_description": "Save and restore agent execution state across interruptions, crashes, or session boundaries.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
+          "name": "Context Compression",
+          "examples": [],
+          "short_description": "Harness-level summarisation and pruning that rolls the context window during a run, distinct from gateway-level compression in the request path.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
           "name": "Deep Research",
           "examples": [
             {
@@ -1224,19 +1238,48 @@
               "url": "https://github.com/langchain-ai/deepagents"
             }
           ],
-          "short_description": "",
+          "short_description": "Harnesses for multi-step research workflows with planning, tool use, and synthesis.",
           "long_description": "",
           "examples_narrative": ""
         },
         {
-          "name": "macOS",
-          "examples": [
+          "name": "Platform Specific",
+          "children": [
             {
-              "name": "Osaurus",
-              "url": "https://github.com/osaurus-ai/osaurus"
+              "name": "macOS",
+              "examples": [
+                {
+                  "name": "Osaurus",
+                  "url": "https://github.com/osaurus-ai/osaurus"
+                }
+              ],
+              "short_description": "Harnesses that run agents natively on macOS.",
+              "long_description": "",
+              "examples_narrative": ""
             }
           ],
-          "short_description": "Harnesses that run agents natively on macOS.",
+          "short_description": "Harnesses that target a specific host OS or environment for native integration.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
+          "name": "Retry and Recovery",
+          "examples": [],
+          "short_description": "Failure handling, automatic rerun on tool errors, and partial-result recovery for agent loops.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
+          "name": "Sub-agent Dispatch",
+          "examples": [],
+          "short_description": "Libraries and runtimes that spawn isolated sub-agent contexts to offload work and preserve main-thread coherence.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
+          "name": "Task Coherence",
+          "examples": [],
+          "short_description": "Progress trackers, self-reflection loops, and plan-revision utilities that keep long-running agent tasks on course.",
           "long_description": "",
           "examples_narrative": ""
         }
@@ -1251,8 +1294,8 @@
           "url": "https://github.com/code-yeongyu/oh-my-openagent"
         }
       ],
-      "short_description": "Test harnesses and runner frameworks that host and exercise agents.",
-      "long_description": "",
+      "short_description": "Execution-layer scaffolding that wraps agents for real runs \u2014 sub-agent dispatch, long-horizon coherence, checkpointing, platform-specific runtimes.",
+      "long_description": "Harnesses sit between frameworks (which define agent shape) and runtimes (which provide the sandbox). They're the execution-layer utilities that make long-running, multi-step agent runs actually work in practice: spawning isolated sub-agent contexts, resuming from checkpoints, recovering from tool failures, keeping the main thread coherent over time, and adapting to the host platform.",
       "examples_narrative": ""
     },
     {

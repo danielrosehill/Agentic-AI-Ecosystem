@@ -767,13 +767,13 @@
       "type": "CATEGORY_OF"
     },
     {
-      "from": "cat:harnesses/macos",
-      "to": "cat:harnesses",
+      "from": "cat:harnesses/platform-specific/macos",
+      "to": "cat:harnesses/platform-specific",
       "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:osaurus",
-      "to": "cat:harnesses/macos",
+      "to": "cat:harnesses/platform-specific/macos",
       "type": "CATEGORY_OF"
     },
     {
@@ -1554,6 +1554,36 @@
     {
       "from": "cat:agents/desktop-guis",
       "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/sub-agent-dispatch",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/checkpointing",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/task-coherence",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/retry-and-recovery",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/context-compression",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/platform-specific",
+      "to": "cat:harnesses",
       "type": "SUBCATEGORY_OF"
     }
   ]

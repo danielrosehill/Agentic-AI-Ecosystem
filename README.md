@@ -686,22 +686,56 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ## Harnesses
 <sub>`cat:harnesses`</sub>
 
-*Test harnesses and runner frameworks that host and exercise agents.*
+*Execution-layer scaffolding that wraps agents for real runs — sub-agent dispatch, long-horizon coherence, checkpointing, platform-specific runtimes.*
+
+Harnesses sit between frameworks (which define agent shape) and runtimes (which provide the sandbox). They're the execution-layer utilities that make long-running, multi-step agent runs actually work in practice: spawning isolated sub-agent contexts, resuming from checkpoints, recovering from tool failures, keeping the main thread coherent over time, and adapting to the host platform.
 
 - [Hive](https://github.com/aden-hive/hive)
 - [oh-my-openagent](https://github.com/code-yeongyu/oh-my-openagent)
 
+### Checkpointing
+<sub>`cat:harnesses/checkpointing`</sub>
+
+*Save and restore agent execution state across interruptions, crashes, or session boundaries.*
+
+### Context Compression
+<sub>`cat:harnesses/context-compression`</sub>
+
+*Harness-level summarisation and pruning that rolls the context window during a run, distinct from gateway-level compression in the request path.*
+
 ### Deep Research
 <sub>`cat:harnesses/deep-research`</sub>
 
+*Harnesses for multi-step research workflows with planning, tool use, and synthesis.*
+
 - [DeepAgents](https://github.com/langchain-ai/deepagents)
 
-### macOS
-<sub>`cat:harnesses/macos`</sub>
+### Platform Specific
+<sub>`cat:harnesses/platform-specific`</sub>
+
+*Harnesses that target a specific host OS or environment for native integration.*
+
+#### macOS
+<sub>`cat:harnesses/platform-specific/macos`</sub>
 
 *Harnesses that run agents natively on macOS.*
 
 - [Osaurus](https://github.com/osaurus-ai/osaurus)
+
+### Retry and Recovery
+<sub>`cat:harnesses/retry-and-recovery`</sub>
+
+*Failure handling, automatic rerun on tool errors, and partial-result recovery for agent loops.*
+
+### Sub-agent Dispatch
+<sub>`cat:harnesses/sub-agent-dispatch`</sub>
+
+*Libraries and runtimes that spawn isolated sub-agent contexts to offload work and preserve main-thread coherence.*
+
+### Task Coherence
+<sub>`cat:harnesses/task-coherence`</sub>
+
+*Progress trackers, self-reflection loops, and plan-revision utilities that keep long-running agent tasks on course.*
 
 ## Identity and Auth
 <sub>`cat:identity-and-auth`</sub>

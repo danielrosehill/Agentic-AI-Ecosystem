@@ -65,8 +65,8 @@ Benchmarks,AICGSecEval,HAS_EXAMPLE
 Benchmarks,OSWorld,HAS_EXAMPLE
 Browser Automation,Vibium,HAS_EXAMPLE
 Browser Tooling,Agent Browser,HAS_EXAMPLE
-Computer Use,Platform Specific,CONTAINS
-Platform Specific,macOS (Platform Specific),CONTAINS
+Computer Use,Platform Specific (Computer Use),CONTAINS
+Platform Specific (Computer Use),macOS (Platform Specific),CONTAINS
 macOS (Platform Specific),macOS-use,HAS_EXAMPLE
 Context,PromptX,HAS_EXAMPLE
 Context,WeKnora,HAS_EXAMPLE
@@ -143,8 +143,8 @@ Frontends,GUIs and CLIs,CONTAINS
 GUIs and CLIs,Goose,HAS_EXAMPLE
 Frontends,TUIs and CLIs,CONTAINS
 TUIs and CLIs,Agent Deck,HAS_EXAMPLE
-Gateways,Context Compression,CONTAINS
-Context Compression,Context-Gateway,HAS_EXAMPLE
+Gateways,Context Compression (Gateways),CONTAINS
+Context Compression (Gateways),Context-Gateway,HAS_EXAMPLE
 Geopolitical Simulation,WargamesAI,HAS_EXAMPLE
 Geopolitical Simulation,Snowglobe,HAS_EXAMPLE
 Harnesses,Hive,HAS_EXAMPLE
@@ -152,8 +152,8 @@ Harnesses,oh-my-openagent,HAS_EXAMPLE
 Harnesses,Deep Research,CONTAINS
 Deep Research,DeepAgents,HAS_EXAMPLE
 Guardrails,Shellfirm,HAS_EXAMPLE
-Harnesses,macOS (Harnesses),CONTAINS
-macOS (Harnesses),Osaurus,HAS_EXAMPLE
+Platform Specific (Harnesses),macOS (Platform Specific),CONTAINS
+macOS (Platform Specific),Osaurus,HAS_EXAMPLE
 LLMs,Gemini 3.1,HAS_EXAMPLE
 LLMs,Agent Specific,CONTAINS
 Agent Specific,Grok 4.20 Multi-Agent,HAS_EXAMPLE
@@ -310,3 +310,9 @@ Dev Tools,IDE Integrations,CONTAINS
 Computer Use,Vision UI,CONTAINS
 World Generation,MCP (World Generation),CONTAINS
 Agents,Desktop GUIs,CONTAINS
+Harnesses,Sub-agent Dispatch,CONTAINS
+Harnesses,Checkpointing,CONTAINS
+Harnesses,Task Coherence,CONTAINS
+Harnesses,Retry and Recovery,CONTAINS
+Harnesses,Context Compression (Harnesses),CONTAINS
+Harnesses,Platform Specific (Harnesses),CONTAINS

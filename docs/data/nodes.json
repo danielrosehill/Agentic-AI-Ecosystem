@@ -1635,8 +1635,8 @@
       "path": [
         "Harnesses"
       ],
-      "short_description": "Test harnesses and runner frameworks that host and exercise agents.",
-      "long_description": "",
+      "short_description": "Execution-layer scaffolding that wraps agents for real runs \u2014 sub-agent dispatch, long-horizon coherence, checkpointing, platform-specific runtimes.",
+      "long_description": "Harnesses sit between frameworks (which define agent shape) and runtimes (which provide the sandbox). They're the execution-layer utilities that make long-running, multi-step agent runs actually work in practice: spawning isolated sub-agent contexts, resuming from checkpoints, recovering from tool failures, keeping the main thread coherent over time, and adapting to the host platform.",
       "examples_narrative": ""
     },
     {
@@ -1659,7 +1659,7 @@
         "Harnesses",
         "Deep Research"
       ],
-      "short_description": "",
+      "short_description": "Harnesses for multi-step research workflows with planning, tool use, and synthesis.",
       "long_description": "",
       "examples_narrative": ""
     },
@@ -1674,18 +1674,6 @@
       "type": "Project",
       "label": "Shellfirm",
       "url": "https://github.com/kaplanelad/shellfirm"
-    },
-    {
-      "id": "cat:harnesses/macos",
-      "type": "Category",
-      "label": "macOS",
-      "path": [
-        "Harnesses",
-        "macOS"
-      ],
-      "short_description": "Harnesses that run agents natively on macOS.",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:osaurus",
@@ -3508,6 +3496,91 @@
         "Desktop GUIs"
       ],
       "short_description": "Desktop graphical interfaces for interacting with agents.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:harnesses/sub-agent-dispatch",
+      "type": "Category",
+      "label": "Sub-agent Dispatch",
+      "path": [
+        "Harnesses",
+        "Sub-agent Dispatch"
+      ],
+      "short_description": "Libraries and runtimes that spawn isolated sub-agent contexts to offload work and preserve main-thread coherence.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:harnesses/checkpointing",
+      "type": "Category",
+      "label": "Checkpointing",
+      "path": [
+        "Harnesses",
+        "Checkpointing"
+      ],
+      "short_description": "Save and restore agent execution state across interruptions, crashes, or session boundaries.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:harnesses/task-coherence",
+      "type": "Category",
+      "label": "Task Coherence",
+      "path": [
+        "Harnesses",
+        "Task Coherence"
+      ],
+      "short_description": "Progress trackers, self-reflection loops, and plan-revision utilities that keep long-running agent tasks on course.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:harnesses/retry-and-recovery",
+      "type": "Category",
+      "label": "Retry and Recovery",
+      "path": [
+        "Harnesses",
+        "Retry and Recovery"
+      ],
+      "short_description": "Failure handling, automatic rerun on tool errors, and partial-result recovery for agent loops.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:harnesses/context-compression",
+      "type": "Category",
+      "label": "Context Compression",
+      "path": [
+        "Harnesses",
+        "Context Compression"
+      ],
+      "short_description": "Harness-level summarisation and pruning that rolls the context window during a run, distinct from gateway-level compression in the request path.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:harnesses/platform-specific",
+      "type": "Category",
+      "label": "Platform Specific",
+      "path": [
+        "Harnesses",
+        "Platform Specific"
+      ],
+      "short_description": "Harnesses that target a specific host OS or environment for native integration.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:harnesses/platform-specific/macos",
+      "type": "Category",
+      "label": "macOS",
+      "path": [
+        "Harnesses",
+        "Platform Specific",
+        "macOS"
+      ],
+      "short_description": "Harnesses that run agents natively on macOS.",
       "long_description": "",
       "examples_narrative": ""
     }

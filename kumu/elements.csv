@@ -77,7 +77,7 @@ Vibium,Project,,https://github.com/VibiumDev/vibium,Browser Automation
 Browser Tooling,Category,Utilities and SDKs that sit alongside browsers to support agentic workflows.,,Browser Tooling
 Agent Browser,Project,,https://github.com/vercel-labs/agent-browser,Browser Tooling
 Computer Use,Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Computer Use
-Platform Specific,Category,,,Computer Use › Platform Specific
+Platform Specific (Computer Use),Category,,,Computer Use › Platform Specific
 macOS (Platform Specific),Category,,,Computer Use › Platform Specific › macOS
 macOS-use,Project,,https://github.com/browser-use/macOS-use,Computer Use › Platform Specific › macOS
 Context,Category,"Tools for building, optimising, managing and visualising the context window supplied to LLMs.",,Context
@@ -175,19 +175,18 @@ Goose,Project,,https://github.com/aaif-goose/goose,Frontends › GUIs and CLIs
 TUIs and CLIs,Category,,,Frontends › TUIs and CLIs
 Agent Deck,Project,,https://github.com/asheshgoplani/agent-deck,Frontends › TUIs and CLIs
 Gateways,Category,"Gateway services that sit between agents and upstream services (LLMs, tools, data).",,Gateways
-Context Compression,Category,,,Gateways › Context Compression
+Context Compression (Gateways),Category,,,Gateways › Context Compression
 Context-Gateway,Project,,https://github.com/Compresr-ai/Context-Gateway,Gateways › Context Compression
 Geopolitical Simulation,Category,Simulations focused specifically on geopolitical scenarios and dynamics.,,Geopolitical Simulation
 WargamesAI,Project,,https://github.com/user1342/WargamesAI,Geopolitical Simulation
 Snowglobe,Project,,https://github.com/IQTLabs/snowglobe,Geopolitical Simulation
-Harnesses,Category,Test harnesses and runner frameworks that host and exercise agents.,,Harnesses
+Harnesses,Category,"Execution-layer scaffolding that wraps agents for real runs — sub-agent dispatch, long-horizon coherence, checkpointing, platform-specific runtimes.",,Harnesses
 Hive,Project,,https://github.com/aden-hive/hive,Harnesses
 oh-my-openagent,Project,,https://github.com/code-yeongyu/oh-my-openagent,Harnesses
-Deep Research,Category,,,Harnesses › Deep Research
+Deep Research,Category,"Harnesses for multi-step research workflows with planning, tool use, and synthesis.",,Harnesses › Deep Research
 DeepAgents,Project,,https://github.com/langchain-ai/deepagents,Harnesses › Deep Research
 Shellfirm,Project,,https://github.com/kaplanelad/shellfirm,Guardrails
-macOS (Harnesses),Category,Harnesses that run agents natively on macOS.,,Harnesses › macOS
-Osaurus,Project,,https://github.com/osaurus-ai/osaurus,Harnesses › macOS
+Osaurus,Project,,https://github.com/osaurus-ai/osaurus,Harnesses › Platform Specific › macOS
 LLMs,Category,"Language models, including those trained or tuned specifically for agentic use cases.",,LLMs
 Gemini 3.1,Project,,,LLMs
 Agent Specific,Category,,,LLMs › Agent Specific
@@ -395,3 +394,10 @@ PII and Redaction,Category,"PII detection, content sanitization, and safety filt
 Agent Analytics,Category,"Product analytics for agent behaviour: funnels, retention, conversation quality, task success.",,Agent Analytics
 Guardrails,Category,Guardrails and pre-execution safety checks that gate what running agents can do.,,Guardrails
 Desktop GUIs,Category,Desktop graphical interfaces for interacting with agents.,,Agents › Desktop GUIs
+Sub-agent Dispatch,Category,Libraries and runtimes that spawn isolated sub-agent contexts to offload work and preserve main-thread coherence.,,Harnesses › Sub-agent Dispatch
+Checkpointing,Category,"Save and restore agent execution state across interruptions, crashes, or session boundaries.",,Harnesses › Checkpointing
+Task Coherence,Category,"Progress trackers, self-reflection loops, and plan-revision utilities that keep long-running agent tasks on course.",,Harnesses › Task Coherence
+Retry and Recovery,Category,"Failure handling, automatic rerun on tool errors, and partial-result recovery for agent loops.",,Harnesses › Retry and Recovery
+Context Compression (Harnesses),Category,"Harness-level summarisation and pruning that rolls the context window during a run, distinct from gateway-level compression in the request path.",,Harnesses › Context Compression
+Platform Specific (Harnesses),Category,Harnesses that target a specific host OS or environment for native integration.,,Harnesses › Platform Specific
+macOS (Platform Specific),Category,Harnesses that run agents natively on macOS.,,Harnesses › Platform Specific › macOS
