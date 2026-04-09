@@ -1,0 +1,62 @@
+site_name: Agentic AI Ecosystem
+site_description: A hand-curated taxonomy of the agentic AI tooling landscape.
+site_url: https://danielrosehill.github.io/Agentic-AI-Ecosystem/
+repo_url: https://github.com/danielrosehill/Agentic-AI-Ecosystem
+repo_name: danielrosehill/Agentic-AI-Ecosystem
+edit_uri: ""
+
+docs_dir: mkdocs_src
+site_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - awesome-pages
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/danielrosehill/Agentic-AI-Ecosystem
