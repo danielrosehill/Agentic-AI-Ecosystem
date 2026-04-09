@@ -503,6 +503,36 @@
       "name": "intentkit",
       "url": "https://github.com/crestalnetwork/intentkit",
       "path": ["Agent Clusters"]
+    },
+    {
+      "name": "be-more-agent",
+      "url": "https://github.com/brenpoly/be-more-agent",
+      "path": ["On Device Agents", "SBCs"]
+    },
+    {
+      "name": "trulens",
+      "url": "https://github.com/truera/trulens",
+      "path": ["Evals and Experiment Tracking"]
+    },
+    {
+      "name": "AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab",
+      "path": ["Frameworks"]
+    },
+    {
+      "name": "bub",
+      "url": "https://github.com/bubbuild/bub",
+      "path": ["Personification"]
+    },
+    {
+      "name": "mcp_agent_mail",
+      "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+      "path": ["Agent Tools", "Comms"]
+    },
+    {
+      "name": "tracecat",
+      "url": "https://github.com/TracecatHQ/tracecat",
+      "path": ["Security", "Automation"]
     }
   ]
 }

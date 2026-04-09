@@ -2,17 +2,18 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**100 projects** across **51 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**106 projects** across **55 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
-Each project is tagged with a hierarchical `path` (top category → subcategory → …). This README is generated from `ecosystem.json` — edit the JSON, then regenerate.
+Each project is tagged with a hierarchical `path` (top category → subcategory → …). This README is generated from `ecosystem.json` — edit the JSON, then run `python scripts/generate_readme.py`.
 
 ## Segments
 
 - [Agent Clusters](#agent-clusters) (1)
 - [Agent Collaboration](#agent-collaboration) (1)
 - [Agent Skills](#agent-skills) (1)
+- [Agent Tools](#agent-tools) (1)
 - [Agent to Agent](#agent-to-agent) (4)
 - [Agents](#agents) (18)
 - [Automation](#automation) (2)
@@ -29,10 +30,11 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Dev Tools](#dev-tools) (1)
 - [Development Platforms](#development-platforms) (1)
 - [Engineering Platforms](#engineering-platforms) (1)
+- [Evals and Experiment Tracking](#evals-and-experiment-tracking) (1)
 - [Evaluations](#evaluations) (1)
 - [Feedback Formatting](#feedback-formatting) (1)
 - [Financial Tools](#financial-tools) (1)
-- [Frameworks](#frameworks) (11)
+- [Frameworks](#frameworks) (12)
 - [Frontend Components](#frontend-components) (1)
 - [Frontends](#frontends) (3)
 - [Harnesses](#harnesses) (3)
@@ -42,14 +44,16 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Monitoring](#monitoring) (1)
 - [Multiagent](#multiagent) (1)
 - [Observability](#observability) (1)
+- [On Device Agents](#on-device-agents) (1)
 - [Optimisation Platform](#optimisation-platform) (1)
 - [Orchestration](#orchestration) (4)
 - [Personal](#personal) (1)
+- [Personification](#personification) (1)
 - [Pipelines](#pipelines) (1)
 - [Proxy](#proxy) (1)
 - [RAG](#rag) (1)
 - [Runtimes](#runtimes) (2)
-- [Security](#security) (3)
+- [Security](#security) (4)
 - [Skills](#skills) (2)
 - [Skills Baskets](#skills-baskets) (1)
 - [Software Extensions](#software-extensions) (1)
@@ -77,6 +81,12 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Registries
 
 - [agent-skills (tech-leads-club)](https://github.com/tech-leads-club/agent-skills)
+
+## Agent Tools
+
+### Comms
+
+- [mcp_agent_mail](https://github.com/Dicklesworthstone/mcp_agent_mail)
 
 ## Agent to Agent
 
@@ -227,6 +237,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [voltagent](https://github.com/VoltAgent/voltagent)
 
+## Evals and Experiment Tracking
+
+- [trulens](https://github.com/truera/trulens)
+
 ## Evaluations
 
 - [langwatch](https://github.com/langwatch/langwatch)
@@ -242,6 +256,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ## Frameworks
 
 - [AgentForge](https://github.com/DataBassGit/AgentForge)
+- [AIOpsLab](https://github.com/microsoft/AIOpsLab)
 - [autogen](https://github.com/microsoft/autogen)
 - [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX)
 - [ii-agent](https://github.com/Intelligent-Internet/ii-agent)
@@ -337,6 +352,12 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [RagaAI-Catalyst](https://github.com/raga-ai-hub/RagaAI-Catalyst)
 
+## On Device Agents
+
+### SBCs
+
+- [be-more-agent](https://github.com/brenpoly/be-more-agent)
+
 ## Optimisation Platform
 
 - [coze-loop](https://github.com/coze-dev/coze-loop)
@@ -354,6 +375,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ## Personal
 
 - [nanobot](https://github.com/HKUDS/nanobot)
+
+## Personification
+
+- [bub](https://github.com/bubbuild/bub)
 
 ## Pipelines
 
@@ -378,6 +403,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ## Security
 
 - [agent-scan](https://github.com/snyk/agent-scan)
+
+### Automation
+
+- [tracecat](https://github.com/TracecatHQ/tracecat)
 
 ### Red Team
 
