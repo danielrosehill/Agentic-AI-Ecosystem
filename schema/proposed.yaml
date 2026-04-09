@@ -1,0 +1,137 @@
+version: 4
+notes: |
+  v1: Initial 21-segment proposal aligned to Agentic-AI-Architecture-Visualisation
+      runtime layers (Prompts, Models, Inference, Agents, MCP, Actions, HITL,
+      Grounding, Context Store, Storage, Frontends, Safety, Observability,
+      Destinations) plus 7 meta segments.
+  v2: HITL folded into Safety; added "Agent in the Loop" (supervisory agents)
+      as sibling of Human-in-the-Loop. Runtime count now 13.
+  v3: Added Session State Management and In-Thread Context Truncation as
+      children under Context Store. Session State groups tools for tracking
+      per-conversation state (scratchpad, accumulated tool outputs, loop
+      cursors). In-Thread Truncation is a sub-slot under Context Optimisation
+      for tools that prune/compress context within a single running thread.
+  v4: Added "Character & Roleplay" as a child of Simulations & Worlds, with
+      sub-slots for Character Definition, Lore & Worldbuilding, and Roleplay
+      Runtimes. Covers AI agents with backstories, character-driven games, and
+      tooling for defining personas/legends/world state.
+
+segments:
+  # --- Runtime-layer segments (13) ---
+  - name: Prompts
+    kind: runtime
+    absorbs: [Prompt Management, Workflow Definition, Conversational Control, Formatting, Feedback Formatting, Structured Output]
+
+  - name: Models
+    kind: runtime
+    absorbs: [LLMs, Embedding Models, Trainers, Reinforcement Learning, Synthetic Data, Foundations]
+
+  - name: Inference
+    kind: runtime
+    absorbs: [Inference Servers, Gateways, Routers, Proxy, Semantic Caching]
+
+  - name: Agents
+    kind: runtime
+    absorbs: [Agents, Personification, Synthesised Perspectives, Agent Clusters, Agent Collaboration, Multiagent, Networks, Task Specific]
+
+  - name: MCP
+    kind: runtime
+    absorbs: [MCP]
+
+  - name: Actions
+    kind: runtime
+    absorbs: [Computer Use, Browser Automation, Browser Tooling, AI Browsers, Software Extensions, Marketplaces, Financial Tools, Voice, Upserting Tools, Data Extraction and Structuring, Integrations]
+
+  - name: Grounding
+    kind: runtime
+    absorbs: [Data Sources]
+    children:
+      - name: Grounding Tools
+      - name: Search Utilities          # Tavily, Exa, Brave Search API, ...
+
+  - name: Context Store
+    kind: runtime
+    absorbs: [Context, Memory, RAG, Semantic Search, Vector Databases, Embedding Pipeline Orchestrators, Personal AI]
+    children:
+      - name: Session State Management        # v3 — per-thread scratchpad, tool-result accumulation, loop cursors
+      - name: Context Optimisation
+        children:
+          - name: In-Thread Truncation        # v3 — prune/compress context inside a single running thread
+          - name: Cross-Thread Compression    # e.g. conversation summarisation between sessions
+
+  - name: Storage
+    kind: runtime
+    absorbs: [Databases, Backend Querying]
+
+  - name: Frontends
+    kind: runtime
+    absorbs: [Frontends]
+    children:
+      - name: Desktop Clients
+        children:
+          - name: Windows
+          - name: macOS
+          - name: Linux
+          - name: Cross-Platform
+      - name: Mobile Clients
+        children:
+          - name: Android
+          - name: iOS
+      - name: Web Clients
+      - name: Terminal Clients
+      - name: Server Software           # self-hostable apps that expose a frontend
+
+  - name: Safety
+    kind: runtime
+    absorbs: [Security, Guardrails, Identity and Auth, PII and Redaction]
+    children:
+      - name: Human in the Loop        # moved from UX (v2)
+      - name: Agent in the Loop        # supervisory agents (new, v2)
+
+  - name: Observability
+    kind: runtime
+    absorbs: [Operations, Observability, Evals and Experiment Tracking, Benchmarks, Agent Analytics]
+
+  - name: Destinations
+    kind: runtime
+    absorbs: []
+    notes: "Empty skeleton — outbound data flow targets. Delete if no evidence lands."
+
+  # --- Meta / ecosystem segments (7) ---
+  - name: Frameworks & Runtimes
+    kind: meta
+    absorbs: [Frameworks, Runtimes, Harnesses, Loops, Orchestration, Environments, Starter Kits]
+
+  - name: Builders & Platforms
+    kind: meta
+    absorbs: [SaaS Builders, Automation, Development Platforms, Engineering Platforms, Platforms, Optimisation Platform, Deployment Platforms, On Device Agents]
+
+  - name: Interfaces & Workspaces
+    kind: meta
+    absorbs: [Workspaces, UX, Annotation]
+
+  - name: Dev Tools & Skills
+    kind: meta
+    absorbs: [Dev Tools, Skills]
+
+  - name: Standards
+    kind: meta
+    absorbs: [Standards]
+
+  - name: Simulations & Worlds
+    kind: meta
+    absorbs: [Societal Simulations, Geopolitical Simulation, World Generation]
+    children:
+      - name: Character & Roleplay        # v4 — AI agents with backstories, character games
+        children:
+          - name: Character Definition    # tools for defining personas, stats, backstories
+          - name: Lore & Worldbuilding    # legend/world-state definition tooling
+          - name: Roleplay Runtimes       # engines that run character-driven interactions
+
+  - name: Organisations
+    kind: meta
+    absorbs: [Foundations]              # absorbs the old "Foundations" industry-bodies segment
+    children:
+      - name: Companies
+      - name: Government Bodies
+      - name: Foundations & Consortia   # where AAIF lands

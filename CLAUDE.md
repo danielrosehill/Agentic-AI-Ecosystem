@@ -20,6 +20,8 @@ Think of it as: "What are the real functional categories in agentic AI tooling r
 
 6. **`OpenClaw`-style mistakes to avoid**: a specific project name should never become a subcategory. Subcategories are *functional slots*; projects live inside them.
 
+7. **Narrow top, deep middle.** The first level of the hierarchy should be *narrow* — aim for roughly 10–15 top-level segments, not 80+. Value accrues at depth: precise distinctions belong in level 2/3/4 subcategories, not as sibling top-level buckets. When a new project seems to need a new top-level segment, the default answer is *no* — find the right parent and push the specificity downward. Top-level segments should read as broad functional domains ("Browser & Computer Use", "Context, Memory & Data"), not as narrow slots ("AI Browsers", "Browser Tooling", "Vision-Based UIs" as peers).
+
 ## Data model
 
 **Source of truth is the graph**: `graph/nodes.json` + `graph/edges.json`. `ecosystem.json` is a *regenerated* tree view kept around for `generate_readme.py` and downstream consumers.
@@ -68,7 +70,7 @@ Current edge types: `SUBCATEGORY_OF`, `CATEGORY_OF`. Future types (not yet popul
 - Projects: `proj:<slug-name>`; on collision append `--<parent-slug>`
 - Slug: lowercase, non-alphanumerics → `-`, trimmed
 
-**Depth**: typically 2 levels of category (segment → subcat), occasionally 3. Avoid going deeper.
+**Depth**: deep recursion is encouraged where it sharpens classification. Aim for 3–5 levels of category, and go as deep as **10 levels** when each additional level draws a *real functional distinction* (e.g. `Agents → Multiagent → Swarm Prediction`, or `Tooling & Integrations → Financial → Digital Wallets → Fiat → <slot>`). Hard cap: **10 category levels**. The top level stays narrow (principle 7); the value lives in the deeper, more precise slots.
 
 ### Build pipeline
 

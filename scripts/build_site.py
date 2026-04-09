@@ -128,6 +128,7 @@ def header_html(depth: int) -> str:
   <a href="{r}index.html">Home</a>
   <a href="{r}explore.html">Explore</a>
   <a href="{r}graph.html">Graph</a>
+  <a href="https://github.com/danielrosehill/Agentic-AI-Architecture-Visualisation">Architecture</a>
   <a href="https://github.com/danielrosehill/Agentic-AI-Ecosystem">GitHub</a>
 </nav>
 </header>"""
@@ -346,7 +347,10 @@ def write_landing(tree: dict):
         f'<div class="subtitle">{len(segments)} top-level segments · updated '
         f'{escape(tree.get("updated", ""))}</div>',
         '<div class="long">A hand-curated taxonomy of the agentic AI tooling landscape. '
-        "Browse by segment below, explore interactively, or view the full graph.</div>",
+        "Browse by segment below, explore interactively, or view the full graph. "
+        'Sister project: <a href="https://github.com/danielrosehill/Agentic-AI-Architecture-Visualisation">'
+        "Agentic-AI-Architecture-Visualisation</a> — a framework-agnostic runtime model of an "
+        "agentic AI system. The top-level segments here are aligned to those runtime layers.</div>",
         '<h2 class="section">Segments</h2>',
         '<div class="grid">',
     ]

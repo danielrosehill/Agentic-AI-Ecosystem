@@ -84,6 +84,8 @@ lines = [
     "",
     "**Interactive 3D viz**: [danielrosehill.github.io/Agentic-AI-Ecosystem/viz/](https://danielrosehill.github.io/Agentic-AI-Ecosystem/viz/)",
     "",
+    "**Sister project — runtime architecture model**: [danielrosehill/Agentic-AI-Architecture-Visualisation](https://github.com/danielrosehill/Agentic-AI-Architecture-Visualisation) — framework-agnostic data model mapping the runtime layers of an agentic AI system (prompts, models, inference, agents, mcp, grounding, context store, frontends, safety, observability …). This repo's top-level taxonomy is aligned to those layers.",
+    "",
     "## Segments",
     "",
 ]
