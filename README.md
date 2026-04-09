@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**134 projects** across **63 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**140 projects** across **64 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -36,7 +36,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Evaluations](#evaluations) (1)
 - [Feedback Formatting](#feedback-formatting) (1)
 - [Financial Tools](#financial-tools) (1)
-- [Frameworks](#frameworks) (15)
+- [Frameworks](#frameworks) (16)
 - [Frontend Components](#frontend-components) (1)
 - [Frontends](#frontends) (3)
 - [Geopolitical Simulation](#geopolitical-simulation) (2)
@@ -47,7 +47,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Memory](#memory) (5)
 - [Memory Layers](#memory-layers) (1)
 - [Monitoring](#monitoring) (1)
-- [Multiagent](#multiagent) (1)
+- [Multiagent](#multiagent) (4)
 - [Observability](#observability) (1)
 - [On Device Agents](#on-device-agents) (1)
 - [Optimisation Platform](#optimisation-platform) (1)
@@ -64,9 +64,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Skills Baskets](#skills-baskets) (1)
 - [Software Extensions](#software-extensions) (1)
 - [Standards](#standards) (1)
+- [Starter Kits](#starter-kits) (1)
 - [Synthesised Perspectives](#synthesised-perspectives) (2)
 - [Task Specific](#task-specific) (1)
-- [Tooling](#tooling) (6)
+- [Tooling](#tooling) (7)
 - [Toolkits](#toolkits) (1)
 - [Tools](#tools) (4)
 - [Trainers](#trainers) (1)
@@ -319,6 +320,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [EnsoAI](https://github.com/J3n5en/EnsoAI)
 
+### Social Simulations
+
+- [concordia](https://github.com/google-deepmind/concordia)
+
 ### Stateful Design
 
 - [letta](https://github.com/letta-ai/letta)
@@ -419,9 +424,21 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 ## Multiagent
 
+### Large Scale Experiments
+
+- [AgentTorch](https://github.com/AgentTorch/AgentTorch)
+
+### Swarm Prediction
+
+- [MiroFish](https://github.com/666ghj/MiroFish)
+
 ### Workspace
 
 - [AgentsMesh](https://github.com/AgentsMesh/AgentsMesh)
+
+### Workspaces
+
+- [gastown](https://github.com/gastownhall/gastown)
 
 ## Observability
 
@@ -528,6 +545,12 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [gitagent](https://github.com/open-gitagent/gitagent)
 
+## Starter Kits
+
+### Social Simulations
+
+- [ai-town](https://github.com/a16z-infra/ai-town)
+
 ## Synthesised Perspectives
 
 - [llm-council](https://github.com/karpathy/llm-council)
@@ -564,6 +587,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### IDE Tools
 
 - [Roo-Code](https://github.com/RooCodeInc/Roo-Code)
+
+### World Creation → MCP
+
+- [unreal-engine-mcp](https://github.com/flopperam/unreal-engine-mcp)
 
 ## Toolkits
 

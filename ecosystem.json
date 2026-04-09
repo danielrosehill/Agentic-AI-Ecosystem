@@ -673,6 +673,36 @@
       "name": "mcp-context-forge",
       "url": "https://github.com/IBM/mcp-context-forge",
       "path": ["MCP", "Gateways"]
+    },
+    {
+      "name": "concordia",
+      "url": "https://github.com/google-deepmind/concordia",
+      "path": ["Frameworks", "Social Simulations"]
+    },
+    {
+      "name": "ai-town",
+      "url": "https://github.com/a16z-infra/ai-town",
+      "path": ["Starter Kits", "Social Simulations"]
+    },
+    {
+      "name": "gastown",
+      "url": "https://github.com/gastownhall/gastown",
+      "path": ["Multiagent", "Workspaces"]
+    },
+    {
+      "name": "AgentTorch",
+      "url": "https://github.com/AgentTorch/AgentTorch",
+      "path": ["Multiagent", "Large Scale Experiments"]
+    },
+    {
+      "name": "MiroFish",
+      "url": "https://github.com/666ghj/MiroFish",
+      "path": ["Multiagent", "Swarm Prediction"]
+    },
+    {
+      "name": "unreal-engine-mcp",
+      "url": "https://github.com/flopperam/unreal-engine-mcp",
+      "path": ["Tooling", "World Creation", "MCP"]
     }
   ]
 }
