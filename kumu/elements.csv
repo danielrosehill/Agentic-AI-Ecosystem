@@ -7,65 +7,65 @@ Agent to Agent,Category,Communication protocols and transports that let agents t
 openagents,Project,,https://github.com/openagents-org/openagents,Agent to Agent
 agentchattr,Project,,https://github.com/bcurts/agentchattr,Agent to Agent
 connectonion,Project,,https://github.com/openonion/connectonion,Agent to Agent
-Agent to Agent › Experiments,Category,,,Agent to Agent › Experiments
-Agent to Agent › Experiments › Voices,Category,,,Agent to Agent › Experiments › Voices
+Experiments,Category,,,Agent to Agent › Experiments
+Voices,Category,,,Agent to Agent › Experiments › Voices
 gibberlink,Project,,https://github.com/PennyroyalTea/gibberlink,Agent to Agent › Experiments › Voices
 Agent Tools,Category,,,Agent Tools
-Agent Tools › Comms,Category,,,Agent Tools › Comms
+Comms,Category,,,Agent Tools › Comms
 mcp_agent_mail,Project,,https://github.com/Dicklesworthstone/mcp_agent_mail,Agent Tools › Comms
 Agents,Category,General agent projects and agent subtypes that do not fit more specific segments.,,Agents
 xataio/agent,Project,,https://github.com/xataio/agent,Agents
-Agents › Autonomous,Category,,,Agents › Autonomous
-Agents › Autonomous › Trading,Category,,,Agents › Autonomous › Trading
+Autonomous,Category,,,Agents › Autonomous
+Trading,Category,,,Agents › Autonomous › Trading
 AI-Trader,Project,,https://github.com/HKUDS/AI-Trader,Agents › Autonomous › Trading
-Agents › Autonomous Agent Creation,Category,,,Agents › Autonomous Agent Creation
+Autonomous Agent Creation,Category,,,Agents › Autonomous Agent Creation
 BankrBot/skills,Project,,https://github.com/BankrBot/skills,Agents › Autonomous Agent Creation
-Agents › Backend Platforms,Category,,,Agents › Backend Platforms
+Backend Platforms,Category,,,Agents › Backend Platforms
 dify,Project,,https://github.com/langgenius/dify,Agents › Backend Platforms
-Agents › CLIs/Toolkits,Category,,,Agents › CLIs/Toolkits
-Agents › CLIs/Toolkits › Vendor,Category,,,Agents › CLIs/Toolkits › Vendor
+CLIs/Toolkits,Category,,,Agents › CLIs/Toolkits
+Vendor (CLIs/Toolkits),Category,,,Agents › CLIs/Toolkits › Vendor
 qwen-code,Project,,https://github.com/QwenLM/qwen-code,Agents › CLIs/Toolkits › Vendor
-Agents › Computer Use,Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Agents › Computer Use
+Computer Use (Agents),Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Agents › Computer Use
 open-computer-use,Project,,https://github.com/coasty-ai/open-computer-use,Agents › Computer Use
-Agents › Development,Category,,,Agents › Development
+Development,Category,,,Agents › Development
 OpenHands,Project,,https://github.com/OpenHands/OpenHands,Agents › Development
-Agents › Domain Specific,Category,,,Agents › Domain Specific
-Agents › Domain Specific › Biotech,Category,,,Agents › Domain Specific › Biotech
+Domain Specific,Category,,,Agents › Domain Specific
+Biotech,Category,,,Agents › Domain Specific › Biotech
 Biomni,Project,,https://github.com/snap-stanford/Biomni,Agents › Domain Specific › Biotech
-Agents › Frameworks,Category,General-purpose frameworks for building agents and agentic applications.,,Agents › Frameworks
-Agents › Frameworks › Open Source,Category,,,Agents › Frameworks › Open Source
+Frameworks (Agents),Category,General-purpose frameworks for building agents and agentic applications.,,Agents › Frameworks
+Open Source (Frameworks),Category,,,Agents › Frameworks › Open Source
 hermes-agent,Project,,https://github.com/NousResearch/hermes-agent,Agents › Frameworks › Open Source
-Agents › Frontends,Category,"User-facing interfaces — web, desktop, mobile, terminal — for interacting with agents.",,Agents › Frontends
+Frontends (Agents),Category,"User-facing interfaces — web, desktop, mobile, terminal — for interacting with agents.",,Agents › Frontends
 openclaw-mission-control,Project,,https://github.com/abhi1693/openclaw-mission-control,Agents › Frontends
-Agents › Harnesses,Category,Test harnesses and runner frameworks that host and exercise agents.,,Agents › Harnesses
-Agents › Harnesses › CLIs,Category,,,Agents › Harnesses › CLIs
-Agents › Harnesses › CLIs › Third Party,Category,,,Agents › Harnesses › CLIs › Third Party
+Harnesses (Agents),Category,Test harnesses and runner frameworks that host and exercise agents.,,Agents › Harnesses
+CLIs,Category,,,Agents › Harnesses › CLIs
+Third Party (CLIs),Category,,,Agents › Harnesses › CLIs › Third Party
 crush,Project,,https://github.com/charmbracelet/crush,Agents › Harnesses › CLIs › Third Party
-Agents › Harnesses › CLIs › Vendor,Category,,,Agents › Harnesses › CLIs › Vendor
+Vendor (CLIs),Category,,,Agents › Harnesses › CLIs › Vendor
 gemini-cli,Project,,https://github.com/google-gemini/gemini-cli,Agents › Harnesses › CLIs › Vendor
-Agents › Memory,Category,"Memory systems for agents — short-term, long-term, episodic, file-backed, graph-backed.",,Agents › Memory
-Agents › Memory › Graph Builders,Category,,,Agents › Memory › Graph Builders
+Memory (Agents),Category,"Memory systems for agents — short-term, long-term, episodic, file-backed, graph-backed.",,Agents › Memory
+Graph Builders,Category,,,Agents › Memory › Graph Builders
 graphiti,Project,,https://github.com/getzep/graphiti,Agents › Memory › Graph Builders
-Agents › Personal Focused,Category,,,Agents › Personal Focused
+Personal Focused,Category,,,Agents › Personal Focused
 Crucix,Project,,https://github.com/calesthio/Crucix,Agents › Personal Focused
-Agents › Purpose Specific,Category,,,Agents › Purpose Specific
+Purpose Specific,Category,,,Agents › Purpose Specific
 inkos,Project,,https://github.com/Narcooo/inkos,Agents › Purpose Specific
-Agents › Purpose Specific › Penetration Testing,Category,,,Agents › Purpose Specific › Penetration Testing
+Penetration Testing,Category,,,Agents › Purpose Specific › Penetration Testing
 pentagi,Project,,https://github.com/vxcontrol/pentagi,Agents › Purpose Specific › Penetration Testing
-Agents › Team Formation,Category,,,Agents › Team Formation
+Team Formation,Category,,,Agents › Team Formation
 squad,Project,,https://github.com/bradygaster/squad,Agents › Team Formation
-Agents › Teams,Category,,,Agents › Teams
+Teams,Category,,,Agents › Teams
 ai-data-science-team,Project,,https://github.com/business-science/ai-data-science-team,Agents › Teams
-Agents › Vision,Category,,,Agents › Vision
+Vision,Category,,,Agents › Vision
 Vision-Agents,Project,,https://github.com/GetStream/Vision-Agents,Agents › Vision
 AI Browsers,Category,"Browsers built or adapted specifically for AI agent use, including headless variants optimised for programmatic navigation.",,AI Browsers
 BrowserOS,Project,,https://github.com/browseros-ai/BrowserOS,AI Browsers
-AI Browsers › Headless,Category,,,AI Browsers › Headless
+Headless,Category,,,AI Browsers › Headless
 Lightpanda Browser,Project,,https://github.com/lightpanda-io/browser,AI Browsers › Headless
 Steel Browser,Project,,https://github.com/steel-dev/steel-browser,AI Browsers › Headless
 Automation,Category,"General-purpose automation tools and frameworks, including GUI-driven and script-driven flows.",,Automation
-Automation › Open Source,Category,,,Automation › Open Source
-Automation › Open Source › GUI Based,Category,,,Automation › Open Source › GUI Based
+Open Source (Automation),Category,,,Automation › Open Source
+GUI Based,Category,,,Automation › Open Source › GUI Based
 activepieces,Project,,https://github.com/activepieces/activepieces,Automation › Open Source › GUI Based
 Flowise,Project,,https://github.com/FlowiseAI/Flowise,Automation › Open Source › GUI Based
 Backend Querying,Category,"Tools that let agents query backend systems, databases and APIs.",,Backend Querying
@@ -78,40 +78,40 @@ vibium,Project,,https://github.com/VibiumDev/vibium,Browser Automation
 Browser Tooling,Category,Utilities and SDKs that sit alongside browsers to support agentic workflows.,,Browser Tooling
 agent-browser,Project,,https://github.com/vercel-labs/agent-browser,Browser Tooling
 Computer Use,Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Computer Use
-Computer Use › Platform Specific,Category,,,Computer Use › Platform Specific
-Computer Use › Platform Specific › macOS,Category,,,Computer Use › Platform Specific › macOS
+Platform Specific,Category,,,Computer Use › Platform Specific
+macOS (Platform Specific),Category,,,Computer Use › Platform Specific › macOS
 macOS-use,Project,,https://github.com/browser-use/macOS-use,Computer Use › Platform Specific › macOS
 Context,Category,"Tools for building, optimising, managing and visualising the context window supplied to LLMs.",,Context
 PromptX,Project,,https://github.com/Deepractice/PromptX,Context
 WeKnora,Project,,https://github.com/Tencent/WeKnora,Context
-Context › Context Optimisation,Category,,,Context › Context Optimisation
+Context Optimisation,Category,,,Context › Context Optimisation
 context-mode,Project,,https://github.com/mksglu/context-mode,Context › Context Optimisation
-Context › Engines,Category,,,Context › Engines
+Engines (Context),Category,,,Context › Engines
 contexto,Project,,https://github.com/ekailabs/contexto,Context › Engines
-Context › Frontend Tools,Category,,,Context › Frontend Tools
+Frontend Tools,Category,,,Context › Frontend Tools
 react-grab,Project,,https://github.com/aidenybai/react-grab,Context › Frontend Tools
-Context › Tools,Category,"Utility tools, SDKs and toolkits for building, debugging and extending agentic systems.",,Context › Tools
-Context › Tools › Context Managers,Category,,,Context › Tools › Context Managers
+Tools (Context),Category,"Utility tools, SDKs and toolkits for building, debugging and extending agentic systems.",,Context › Tools
+Context Managers,Category,,,Context › Tools › Context Managers
 dotai,Project,,https://github.com/udecode/dotai,Context › Tools › Context Managers
-Context › Visualisation,Category,,,Context › Visualisation
+Visualisation,Category,,,Context › Visualisation
 context-lens,Project,,https://github.com/larsderidder/context-lens,Context › Visualisation
 Conversational Control,Category,Systems that steer or constrain multi-turn conversations with agents.,,Conversational Control
 parlant,Project,,https://github.com/emcie-co/parlant,Conversational Control
 Data Extraction and Structuring,Category,Tools that convert unstructured data into structured form for agents to consume.,,Data Extraction and Structuring
 firecrawl,Project,,https://github.com/firecrawl/firecrawl,Data Extraction and Structuring
 Data Sources,Category,Curated data feeds and providers that agents can draw on.,,Data Sources
-Data Sources › Financial,Category,,,Data Sources › Financial
+Financial (Data Sources),Category,,,Data Sources › Financial
 OpenBB,Project,,https://github.com/OpenBB-finance/OpenBB,Data Sources › Financial
 Databases,Category,"Database systems used in agentic stacks, including purpose-built context and vector stores.",,Databases
-Databases › Context Databases,Category,Databases specifically designed for storing and retrieving agent/LLM context.,,Databases › Context Databases
+Context Databases,Category,Databases specifically designed for storing and retrieving agent/LLM context.,,Databases › Context Databases
 OpenViking,Project,,https://github.com/volcengine/OpenViking,Databases › Context Databases
 Deployment Platforms,Category,Platforms for deploying and hosting agents and agentic services.,,Deployment Platforms
-Deployment Platforms › Serverless,Category,,,Deployment Platforms › Serverless
+Serverless,Category,,,Deployment Platforms › Serverless
 julep,Project,,https://github.com/julep-ai/julep,Deployment Platforms › Serverless
 Desktop GUIs,Category,Desktop graphical interfaces for interacting with agents.,,Desktop GUIs
 hello-halo,Project,,https://github.com/openkursar/hello-halo,Desktop GUIs
 Dev Tools,Category,Developer tooling that uses agents or supports agent development workflows.,,Dev Tools
-Dev Tools › Repo Refactoring,Category,,,Dev Tools › Repo Refactoring
+Repo Refactoring,Category,,,Dev Tools › Repo Refactoring
 agentrc,Project,,https://github.com/microsoft/agentrc,Dev Tools › Repo Refactoring
 Development Platforms,Category,End-to-end platforms for building agentic applications.,,Development Platforms
 coze-studio,Project,,https://github.com/coze-dev/coze-studio,Development Platforms
@@ -120,17 +120,17 @@ Embedding Pipeline Orchestrators,Category,Orchestration tools that manage embedd
 Engineering Platforms,Category,Platforms targeted at engineering teams building with LLMs and agents.,,Engineering Platforms
 voltagent,Project,,https://github.com/VoltAgent/voltagent,Engineering Platforms
 Environments,Category,"Sandboxed environments — OS, simulated worlds, virtual machines — in which agents run.",,Environments
-Environments › OS,Category,,,Environments › OS
+OS,Category,,,Environments › OS
 agent-os,Project,,https://github.com/rivet-dev/agent-os,Environments › OS
-Environments › Remote Desktops,Category,Hosted remote desktop / VM services providing agents with a persistent GUI environment to operate.,,Environments › Remote Desktops
+Remote Desktops,Category,Hosted remote desktop / VM services providing agents with a persistent GUI environment to operate.,,Environments › Remote Desktops
 Abacus Desktop,Project,,https://desktop.abacus.ai/,Environments › Remote Desktops
 cua.ai,Project,,https://cua.ai/,Environments › Remote Desktops
 Evals and Experiment Tracking,Category,"Frameworks, harnesses and platforms for evaluating agents and tracking experiments.",,Evals and Experiment Tracking
 trulens,Project,,https://github.com/truera/trulens,Evals and Experiment Tracking
 langwatch,Project,,https://github.com/langwatch/langwatch,Evals and Experiment Tracking
-Evals and Experiment Tracking › Frameworks,Category,General-purpose frameworks for building agents and agentic applications.,,Evals and Experiment Tracking › Frameworks
+Frameworks (Evals and Experiment Tracking),Category,General-purpose frameworks for building agents and agentic applications.,,Evals and Experiment Tracking › Frameworks
 deepeval,Project,,https://github.com/confident-ai/deepeval,Evals and Experiment Tracking › Frameworks
-Evals and Experiment Tracking › Observability,Category,"Logging, tracing and observability specifically for agent and LLM systems.",,Evals and Experiment Tracking › Observability
+Observability (Evals and Experiment Tracking),Category,"Logging, tracing and observability specifically for agent and LLM systems.",,Evals and Experiment Tracking › Observability
 langfuse,Project,,https://github.com/langfuse/langfuse,Evals and Experiment Tracking › Observability
 Feedback Formatting,Category,"Tools that shape feedback signals (tool output, user input) into forms agents can act on.",,Feedback Formatting
 agentation,Project,,https://github.com/benjitaylor/agentation,Feedback Formatting
@@ -147,38 +147,38 @@ ii-agent,Project,,https://github.com/Intelligent-Internet/ii-agent,Frameworks
 AgentForge,Project,,https://github.com/DataBassGit/AgentForge,Frameworks
 EvoAgentX,Project,,https://github.com/EvoAgentX/EvoAgentX,Frameworks
 AIOpsLab,Project,,https://github.com/microsoft/AIOpsLab,Frameworks
-Frameworks › .NET,Category,,,Frameworks › .NET
+.NET,Category,,,Frameworks › .NET
 BotSharp,Project,,https://github.com/SciSharp/BotSharp,Frameworks › .NET
-Frameworks › Computer Use,Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Frameworks › Computer Use
+Computer Use (Frameworks),Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Frameworks › Computer Use
 Agent-S,Project,,https://github.com/simular-ai/Agent-S,Frameworks › Computer Use
-Frameworks › Multi-agent,Category,,,Frameworks › Multi-agent
+Multi-agent,Category,,,Frameworks › Multi-agent
 camel,Project,,https://github.com/camel-ai/camel,Frameworks › Multi-agent
-Frameworks › Multiagent Orchestration,Category,,,Frameworks › Multiagent Orchestration
+Multiagent Orchestration,Category,,,Frameworks › Multiagent Orchestration
 crewAI,Project,,https://github.com/crewAIInc/crewAI,Frameworks › Multiagent Orchestration
-Frameworks › Multimodal,Category,,,Frameworks › Multimodal
+Multimodal,Category,,,Frameworks › Multimodal
 videosdk-live/agents,Project,,https://github.com/videosdk-live/agents,Frameworks › Multimodal
-Frameworks › Optimisation,Category,,,Frameworks › Optimisation
-Frameworks › Optimisation › Parallelisation,Category,,,Frameworks › Optimisation › Parallelisation
+Optimisation,Category,,,Frameworks › Optimisation
+Parallelisation,Category,,,Frameworks › Optimisation › Parallelisation
 EnsoAI,Project,,https://github.com/J3n5en/EnsoAI,Frameworks › Optimisation › Parallelisation
-Frameworks › Social Simulations,Category,,,Frameworks › Social Simulations
+Social Simulations (Frameworks),Category,,,Frameworks › Social Simulations
 concordia,Project,,https://github.com/google-deepmind/concordia,Frameworks › Social Simulations
 moltbook,Project,,,Frameworks › Social Simulations
-Frameworks › Stateful Design,Category,,,Frameworks › Stateful Design
+Stateful Design,Category,,,Frameworks › Stateful Design
 letta,Project,,https://github.com/letta-ai/letta,Frameworks › Stateful Design
-Frameworks › Voice,Category,Voice-first agents and voice interaction frameworks.,,Frameworks › Voice
+Voice (Frameworks),Category,Voice-first agents and voice interaction frameworks.,,Frameworks › Voice
 livekit/agents,Project,,https://github.com/livekit/agents,Frameworks › Voice
 ten-framework,Project,,https://github.com/TEN-framework/ten-framework,Frameworks › Voice
 Frontends,Category,"User-facing interfaces — web, desktop, mobile, terminal — for interacting with agents.",,Frontends
-Frontends › Android,Category,,,Frontends › Android
+Android (Frontends),Category,,,Frontends › Android
 Operit,Project,,https://github.com/AAswordman/Operit,Frontends › Android
-Frontends › Chat UIs,Category,,,Frontends › Chat UIs
+Chat UIs,Category,,,Frontends › Chat UIs
 agent-ui,Project,,https://github.com/agno-agi/agent-ui,Frontends › Chat UIs
-Frontends › GUIs and CLIs,Category,,,Frontends › GUIs and CLIs
+GUIs and CLIs,Category,,,Frontends › GUIs and CLIs
 goose,Project,,https://github.com/aaif-goose/goose,Frontends › GUIs and CLIs
-Frontends › TUIs and CLIs,Category,,,Frontends › TUIs and CLIs
+TUIs and CLIs,Category,,,Frontends › TUIs and CLIs
 agent-deck,Project,,https://github.com/asheshgoplani/agent-deck,Frontends › TUIs and CLIs
 Gateways,Category,"Gateway services that sit between agents and upstream services (LLMs, tools, data).",,Gateways
-Gateways › Context Compression,Category,,,Gateways › Context Compression
+Context Compression,Category,,,Gateways › Context Compression
 Context-Gateway,Project,,https://github.com/Compresr-ai/Context-Gateway,Gateways › Context Compression
 Geopolitical Simulation,Category,Simulations focused specifically on geopolitical scenarios and dynamics.,,Geopolitical Simulation
 WargamesAI,Project,,https://github.com/user1342/WargamesAI,Geopolitical Simulation
@@ -186,18 +186,18 @@ snowglobe,Project,,https://github.com/IQTLabs/snowglobe,Geopolitical Simulation
 Harnesses,Category,Test harnesses and runner frameworks that host and exercise agents.,,Harnesses
 hive,Project,,https://github.com/aden-hive/hive,Harnesses
 oh-my-openagent,Project,,https://github.com/code-yeongyu/oh-my-openagent,Harnesses
-Harnesses › Deep Research,Category,,,Harnesses › Deep Research
+Deep Research,Category,,,Harnesses › Deep Research
 deepagents,Project,,https://github.com/langchain-ai/deepagents,Harnesses › Deep Research
-Harnesses › Guardrails,Category,Guardrails and pre-execution safety checks that gate what running agents can do.,,Harnesses › Guardrails
+Guardrails,Category,Guardrails and pre-execution safety checks that gate what running agents can do.,,Harnesses › Guardrails
 shellfirm,Project,,https://github.com/kaplanelad/shellfirm,Harnesses › Guardrails
-Harnesses › macOS,Category,Harnesses that run agents natively on macOS.,,Harnesses › macOS
+macOS (Harnesses),Category,Harnesses that run agents natively on macOS.,,Harnesses › macOS
 osaurus,Project,,https://github.com/osaurus-ai/osaurus,Harnesses › macOS
 LLMs,Category,"Language models, including those trained or tuned specifically for agentic use cases.",,LLMs
 Gemini 3.1,Project,,,LLMs
-LLMs › Agent Specific,Category,,,LLMs › Agent Specific
+Agent Specific,Category,,,LLMs › Agent Specific
 Grok 4.20 Multi-Agent,Project,,https://openrouter.ai/x-ai/grok-4.20-multi-agent,LLMs › Agent Specific
-LLMs › By Use Case,Category,,,LLMs › By Use Case
-LLMs › By Use Case › Computer Use,Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,LLMs › By Use Case › Computer Use
+By Use Case,Category,,,LLMs › By Use Case
+Computer Use (By Use Case),Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,LLMs › By Use Case › Computer Use
 fara,Project,,https://github.com/microsoft/fara,LLMs › By Use Case › Computer Use
 Loops,Category,Agent loop implementations — the core think/act/observe cycle.,,Loops
 ralph,Project,,https://github.com/snarktank/ralph,Loops
@@ -205,41 +205,41 @@ Marketplaces,Category,"Marketplaces and stores for discovering, listing, or tran
 agen.cy marketplace,Project,,https://marketplace.agen.cy/,Marketplaces
 AI Agent Store,Project,,https://aiagentstore.ai/,Marketplaces
 MCP,Category,"Projects in the Model Context Protocol ecosystem — servers, gateways, aggregators, clients.",,MCP
-MCP › Aggregation,Category,,,MCP › Aggregation
+Aggregation,Category,,,MCP › Aggregation
 klavis,Project,,https://github.com/Klavis-AI/klavis,MCP › Aggregation
-MCP › Gateways,Category,"Gateway services that sit between agents and upstream services (LLMs, tools, data).",,MCP › Gateways
+Gateways (MCP),Category,"Gateway services that sit between agents and upstream services (LLMs, tools, data).",,MCP › Gateways
 mcp-context-forge,Project,,https://github.com/IBM/mcp-context-forge,MCP › Gateways
-MCP › Third Party,Category,,,MCP › Third Party
+Third Party (MCP),Category,,,MCP › Third Party
 mcp-server-airbnb,Project,,https://github.com/openbnb-org/mcp-server-airbnb,MCP › Third Party
 Memory,Category,"Memory systems for agents — short-term, long-term, episodic, file-backed, graph-backed.",,Memory
 cognee,Project,,https://github.com/topoteretes/cognee,Memory
 agentmemory,Project,,https://github.com/rohitg00/agentmemory,Memory
 mem0,Project,,https://github.com/mem0ai/mem0,Memory
 MemOS,Project,,https://github.com/MemTensor/MemOS,Memory
-Memory › File,Category,,,Memory › File
+File,Category,,,Memory › File
 memvid,Project,,https://github.com/memvid/memvid,Memory › File
-Memory › Regressive,Category,,,Memory › Regressive
+Regressive,Category,,,Memory › Regressive
 agentic-context-engine,Project,,https://github.com/kayba-ai/agentic-context-engine,Memory › Regressive
-Memory › Skills,Category,"Agent skills ecosystems — registries, bundles, standards, guides and package libraries.",,Memory › Skills
+Skills (Memory),Category,"Agent skills ecosystems — registries, bundles, standards, guides and package libraries.",,Memory › Skills
 Acontext,Project,,https://github.com/memodb-io/Acontext,Memory › Skills
 Multiagent,Category,Systems built around multiple cooperating or competing agents.,,Multiagent
-Multiagent › Large Scale Experiments,Category,,,Multiagent › Large Scale Experiments
+Large Scale Experiments,Category,,,Multiagent › Large Scale Experiments
 AgentTorch,Project,,https://github.com/AgentTorch/AgentTorch,Multiagent › Large Scale Experiments
-Multiagent › Swarm Prediction,Category,,,Multiagent › Swarm Prediction
+Swarm Prediction,Category,,,Multiagent › Swarm Prediction
 MiroFish,Project,,https://github.com/666ghj/MiroFish,Multiagent › Swarm Prediction
-Multiagent › Workspace,Category,,,Multiagent › Workspace
+Workspace,Category,,,Multiagent › Workspace
 AgentsMesh,Project,,https://github.com/AgentsMesh/AgentsMesh,Multiagent › Workspace
-Multiagent › Workspaces,Category,Shared workspaces where agents and humans (or multiple agents) collaborate.,,Multiagent › Workspaces
+Workspaces (Multiagent),Category,Shared workspaces where agents and humans (or multiple agents) collaborate.,,Multiagent › Workspaces
 gastown,Project,,https://github.com/gastownhall/gastown,Multiagent › Workspaces
 Networks,Category,Agent networks and directories — social/professional platforms where agents and their creators are listed and interconnected.,,Networks
 agent.ai,Project,,https://agent.ai/,Networks
 Observability,Category,"Logging, tracing and observability specifically for agent and LLM systems.",,Observability
 RagaAI-Catalyst,Project,,https://github.com/raga-ai-hub/RagaAI-Catalyst,Observability
 On Device Agents,Category,"Agents designed to run on-device, including phones, SBCs and edge hardware.",,On Device Agents
-On Device Agents › SBCs,Category,,,On Device Agents › SBCs
+SBCs,Category,,,On Device Agents › SBCs
 be-more-agent,Project,,https://github.com/brenpoly/be-more-agent,On Device Agents › SBCs
 Operations,Category,"Operational concerns for running agents in production — cost, monitoring, reliability.",,Operations
-Operations › Cost Monitoring,Category,,,Operations › Cost Monitoring
+Cost Monitoring,Category,,,Operations › Cost Monitoring
 agentops,Project,,https://github.com/AgentOps-AI/agentops,Operations › Cost Monitoring
 Optimisation Platform,Category,Platforms focused on optimising agent/LLM pipelines.,,Optimisation Platform
 coze-loop,Project,,https://github.com/coze-dev/coze-loop,Optimisation Platform
@@ -248,12 +248,12 @@ Shannon,Project,,https://github.com/Kocoro-lab/Shannon,Orchestration
 conductor,Project,,https://github.com/conductor-oss/conductor,Orchestration
 ai-maestro,Project,,https://github.com/23blocks-OS/ai-maestro,Orchestration
 agent-orchestrator,Project,,https://github.com/ComposioHQ/agent-orchestrator,Orchestration
-Orchestration › Platform-Specific,Category,,,Orchestration › Platform-Specific
+Platform-Specific,Category,,,Orchestration › Platform-Specific
 agent-squad,Project,,https://github.com/awslabs/agent-squad,Orchestration › Platform-Specific
 Personal,Category,Personal-use agent projects and personal AI tooling.,,Personal
 nanobot,Project,,https://github.com/HKUDS/nanobot,Personal
 Personal AI,Category,Personal AI assistants and related projects.,,Personal AI
-Personal AI › Assistants,Category,,,Personal AI › Assistants
+Assistants,Category,,,Personal AI › Assistants
 openclaw,Project,,https://github.com/openclaw/openclaw,Personal AI › Assistants
 leon,Project,,https://github.com/leon-ai/leon,Personal AI › Assistants
 Personification,Category,"Tools for giving agents distinct personas, voices and identities.",,Personification
@@ -261,125 +261,125 @@ bub,Project,,https://github.com/bubbuild/bub,Personification
 Pipelines,Category,Reusable pipelines for common agentic workloads.,,Pipelines
 Paper2Agent,Project,,https://github.com/jmiao24/Paper2Agent,Pipelines
 Platforms,Category,General platforms that host or enable agentic applications.,,Platforms
-Platforms › Embodied,Category,,,Platforms › Embodied
+Embodied,Category,,,Platforms › Embodied
 fairo,Project,,https://github.com/facebookresearch/fairo,Platforms › Embodied
 Proxy,Category,Proxy services that sit between clients and LLM/agent backends.,,Proxy
-Proxy › Gateways,Category,"Gateway services that sit between agents and upstream services (LLMs, tools, data).",,Proxy › Gateways
+Gateways (Proxy),Category,"Gateway services that sit between agents and upstream services (LLMs, tools, data).",,Proxy › Gateways
 agentgateway,Project,,https://github.com/agentgateway/agentgateway,Proxy › Gateways
 litellm,Project,,https://github.com/BerriAI/litellm,Proxy › Gateways
-Proxy › MCP to OpenAI,Category,,,Proxy › MCP to OpenAI
+MCP to OpenAI,Category,,,Proxy › MCP to OpenAI
 mcpo,Project,,https://github.com/open-webui/mcpo,Proxy › MCP to OpenAI
 RAG,Category,"Retrieval-augmented generation engines, frameworks and components.",,RAG
 airweave,Project,,https://github.com/airweave-ai/airweave,RAG
-RAG › Engines,Category,,,RAG › Engines
+Engines (RAG),Category,,,RAG › Engines
 ragflow,Project,,https://github.com/infiniflow/ragflow,RAG › Engines
 Reinforcement Learning,Category,RL frameworks and environments used to train agentic behaviour.,,Reinforcement Learning
 RLinf,Project,,https://github.com/RLinf/RLinf,Reinforcement Learning
 acme,Project,,https://github.com/google-deepmind/acme,Reinforcement Learning
 Routers,Category,"Routing layers that select between models, tools or agents based on cost, capability or intent.",,Routers
-Routers › Cost Optimisation,Category,,,Routers › Cost Optimisation
+Cost Optimisation,Category,,,Routers › Cost Optimisation
 RelayPlane proxy,Project,,https://github.com/RelayPlane/proxy,Routers › Cost Optimisation
-Routers › Intelligent,Category,,,Routers › Intelligent
+Intelligent,Category,,,Routers › Intelligent
 semantic-router,Project,,https://github.com/vllm-project/semantic-router,Routers › Intelligent
-Routers › Tool Specific,Category,,,Routers › Tool Specific
+Tool Specific,Category,,,Routers › Tool Specific
 ClawRouter,Project,,https://github.com/BlockRunAI/ClawRouter,Routers › Tool Specific
 Runtimes,Category,"Execution runtimes — sandboxes, data layers, kernels — that host running agents.",,Runtimes
 OpenShell,Project,,https://github.com/NVIDIA/OpenShell,Runtimes
-Runtimes › Data Layers,Category,,,Runtimes › Data Layers
+Data Layers,Category,,,Runtimes › Data Layers
 deeplake,Project,,https://github.com/activeloopai/deeplake,Runtimes › Data Layers
-Runtimes › Policy Engines,Category,Runtime policy engines that evaluate and enforce rules on agent actions.,,Runtimes › Policy Engines
+Policy Engines,Category,Runtime policy engines that evaluate and enforce rules on agent actions.,,Runtimes › Policy Engines
 Aegis,Project,,https://github.com/Justin0504/Aegis,Runtimes › Policy Engines
-Runtimes › Sandboxes,Category,,,Runtimes › Sandboxes
+Sandboxes,Category,,,Runtimes › Sandboxes
 OpenSandbox,Project,,https://github.com/alibaba/OpenSandbox,Runtimes › Sandboxes
 SaaS Builders,Category,"Hosted SaaS platforms for building agents and agentic workflows, spanning no-code, visual, and code-defined paradigms.",,SaaS Builders
-SaaS Builders › No Code,Category,"Builders targeted at non-programmers, typically form- and config-driven with minimal visual wiring.",,SaaS Builders › No Code
-SaaS Builders › Visual Programming,Category,Builders where flows are expressed as node-and-edge graphs or canvas-based visual programs.,,SaaS Builders › Visual Programming
+No Code,Category,"Builders targeted at non-programmers, typically form- and config-driven with minimal visual wiring.",,SaaS Builders › No Code
+Visual Programming,Category,Builders where flows are expressed as node-and-edge graphs or canvas-based visual programs.,,SaaS Builders › Visual Programming
 n8n,Project,,https://n8n.io/,SaaS Builders › Visual Programming
-SaaS Builders › Visual Programming › Workflow Focused,Category,"Visual builders oriented around structured, multi-step workflows rather than free-form agents.",,SaaS Builders › Visual Programming › Workflow Focused
+Workflow Focused,Category,"Visual builders oriented around structured, multi-step workflows rather than free-form agents.",,SaaS Builders › Visual Programming › Workflow Focused
 Gumloop,Project,,https://www.gumloop.com/,SaaS Builders › Visual Programming › Workflow Focused
 MindStudio,Project,,https://www.mindstudio.ai/,SaaS Builders › Visual Programming › Workflow Focused
-SaaS Builders › Code-Defined,Category,"Hosted builders where agents and workflows are primarily defined in code (SDK, DSL, or config-as-code).",,SaaS Builders › Code-Defined
+Code-Defined,Category,"Hosted builders where agents and workflows are primarily defined in code (SDK, DSL, or config-as-code).",,SaaS Builders › Code-Defined
 Security,Category,"Security tooling for agents: sandboxing, red teaming, defensive automation.",,Security
 agent-scan,Project,,https://github.com/snyk/agent-scan,Security
 agentguard,Project,,https://github.com/GoPlusSecurity/agentguard,Security
-Security › Automation,Category,"General-purpose automation tools and frameworks, including GUI-driven and script-driven flows.",,Security › Automation
+Automation (Security),Category,"General-purpose automation tools and frameworks, including GUI-driven and script-driven flows.",,Security › Automation
 tracecat,Project,,https://github.com/TracecatHQ/tracecat,Security › Automation
-Security › Control Planes,Category,"Centralised control planes for governing, auditing, and enforcing policy across agent fleets.",,Security › Control Planes
+Control Planes,Category,"Centralised control planes for governing, auditing, and enforcing policy across agent fleets.",,Security › Control Planes
 cordum,Project,,https://github.com/cordum-io/cordum,Security › Control Planes
-Security › Red Team,Category,,,Security › Red Team
+Red Team,Category,,,Security › Red Team
 rogue,Project,,https://github.com/qualifire-dev/rogue,Security › Red Team
-Security › Sandboxing,Category,,,Security › Sandboxing
+Sandboxing,Category,,,Security › Sandboxing
 microsandbox,Project,,https://github.com/superradcompany/microsandbox,Security › Sandboxing
 Skills,Category,"Agent skills ecosystems — registries, bundles, standards, guides and package libraries.",,Skills
 agent-skills,Project,,https://github.com/addyosmani/agent-skills,Skills
-Skills › Bundles,Category,,,Skills › Bundles
-Skills › Bundles › Claude Code,Category,,,Skills › Bundles › Claude Code
+Bundles,Category,,,Skills › Bundles
+Claude Code,Category,,,Skills › Bundles › Claude Code
 marketingskills,Project,,https://github.com/coreyhaines31/marketingskills,Skills › Bundles › Claude Code
-Skills › Guides,Category,,,Skills › Guides
+Guides,Category,,,Skills › Guides
 taste-skill,Project,,https://github.com/Leonxlnx/taste-skill,Skills › Guides
-Skills › Package Library,Category,,,Skills › Package Library
+Package Library,Category,,,Skills › Package Library
 vercel-labs/skills,Project,,https://github.com/vercel-labs/skills,Skills › Package Library
-Skills › Registries,Category,,,Skills › Registries
+Registries,Category,,,Skills › Registries
 agent-skills (tech-leads-club),Project,,https://github.com/tech-leads-club/agent-skills,Skills › Registries
-Skills › Standards,Category,Proposed and emerging standards across the agentic ecosystem.,,Skills › Standards
+Standards (Skills),Category,Proposed and emerging standards across the agentic ecosystem.,,Skills › Standards
 agentskills,Project,,https://github.com/agentskills/agentskills,Skills › Standards
 Societal Simulations,Category,Large-scale simulations of societies and human behaviour using agent populations.,,Societal Simulations
 oasis,Project,,https://github.com/camel-ai/oasis,Societal Simulations
 Software Extensions,Category,Extensions and plugins that add agentic capabilities to existing software.,,Software Extensions
 jupyter-ai,Project,,https://github.com/jupyterlab/jupyter-ai,Software Extensions
 Standards,Category,Proposed and emerging standards across the agentic ecosystem.,,Standards
-Standards › Emerging (Ecosystem-Tied),Category,Emerging standards whose adoption is tied to a specific host ecosystem (e.g. a browser engine or platform vendor) rather than being fully vendor-neutral.,,Standards › Emerging (Ecosystem-Tied)
+Emerging (Ecosystem-Tied),Category,Emerging standards whose adoption is tied to a specific host ecosystem (e.g. a browser engine or platform vendor) rather than being fully vendor-neutral.,,Standards › Emerging (Ecosystem-Tied)
 WebMCP,Project,,https://webmcp.dev/,Standards › Emerging (Ecosystem-Tied)
 WebMCP (Chrome EPP),Project,,https://developer.chrome.com/blog/webmcp-epp,Standards › Emerging (Ecosystem-Tied)
-Standards › Proposed,Category,,,Standards › Proposed
+Proposed,Category,,,Standards › Proposed
 gitagent,Project,,https://github.com/open-gitagent/gitagent,Standards › Proposed
 AIUC-1,Project,,https://www.aiuc-1.com/,Standards › Proposed
-Standards › Ratified,Category,Standards with a published specification and active governance.,,Standards › Ratified
+Ratified,Category,Standards with a published specification and active governance.,,Standards › Ratified
 A2A (Agent2Agent Protocol),Project,,https://github.com/a2aproject/A2A,Standards › Ratified
 AG-UI (Agent User Interaction Protocol),Project,,https://docs.ag-ui.com/introduction,Standards › Ratified
 MCP (Model Context Protocol),Project,,https://modelcontextprotocol.io/specification/2025-11-25,Standards › Ratified
 Starter Kits,Category,Opinionated starter kits and templates for kicking off agentic projects.,,Starter Kits
-Starter Kits › Social Simulations,Category,,,Starter Kits › Social Simulations
+Social Simulations (Starter Kits),Category,,,Starter Kits › Social Simulations
 ai-town,Project,,https://github.com/a16z-infra/ai-town,Starter Kits › Social Simulations
 Synthesised Perspectives,Category,Tools that synthesise multiple viewpoints or agent outputs into a unified perspective.,,Synthesised Perspectives
 Plurals,Project,,https://github.com/josh-ashkinaze/plurals,Synthesised Perspectives
 llm-council,Project,,https://github.com/karpathy/llm-council,Synthesised Perspectives
 Task Specific,Category,Agents and tools built for a single specific task rather than general use.,,Task Specific
-Task Specific › Product Design,Category,,,Task Specific › Product Design
+Product Design,Category,,,Task Specific › Product Design
 superdesign,Project,,https://github.com/superdesigndev/superdesign,Task Specific › Product Design
 Tools,Category,"Utility tools, SDKs and toolkits for building, debugging and extending agentic systems.",,Tools
 vercel/ai,Project,,https://github.com/vercel/ai,Tools
 langflow,Project,,https://github.com/langflow-ai/langflow,Tools
-Tools › Android,Category,,,Tools › Android
+Android (Tools),Category,,,Tools › Android
 agent-device,Project,,https://github.com/callstackincubator/agent-device,Tools › Android
-Tools › Browser Utils,Category,,,Tools › Browser Utils
-Tools › Browser Utils › SDK,Category,,,Tools › Browser Utils › SDK
+Browser Utils,Category,,,Tools › Browser Utils
+SDK,Category,,,Tools › Browser Utils › SDK
 stagehand,Project,,https://github.com/browserbase/stagehand,Tools › Browser Utils › SDK
-Tools › Computer Use,Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Tools › Computer Use
+Computer Use (Tools),Category,"Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",,Tools › Computer Use
 cua,Project,,https://github.com/trycua/cua,Tools › Computer Use
-Tools › Computer Use › CLI,Category,,,Tools › Computer Use › CLI
+CLI,Category,,,Tools › Computer Use › CLI
 usecomputer,Project,,https://github.com/remorses/usecomputer,Tools › Computer Use › CLI
-Tools › Data Ingestion,Category,,,Tools › Data Ingestion
+Data Ingestion,Category,,,Tools › Data Ingestion
 Agent-Reach,Project,,https://github.com/Panniantong/Agent-Reach,Tools › Data Ingestion
-Tools › Debugging,Category,,,Tools › Debugging
+Debugging,Category,,,Tools › Debugging
 vllora,Project,,https://github.com/vllora/vllora,Tools › Debugging
-Tools › Financial,Category,,,Tools › Financial
+Financial (Tools),Category,,,Tools › Financial
 agentkit,Project,,https://github.com/coinbase/agentkit,Tools › Financial
-Tools › IDE Tools,Category,,,Tools › IDE Tools
+IDE Tools,Category,,,Tools › IDE Tools
 Roo-Code,Project,,https://github.com/RooCodeInc/Roo-Code,Tools › IDE Tools
-Tools › Integration Platforms,Category,,,Tools › Integration Platforms
-Tools › Integration Platforms › SaaS,Category,,,Tools › Integration Platforms › SaaS
+Integration Platforms,Category,,,Tools › Integration Platforms
+SaaS,Category,,,Tools › Integration Platforms › SaaS
 composio,Project,,https://github.com/ComposioHQ/composio,Tools › Integration Platforms › SaaS
-Tools › macOS,Category,,,Tools › macOS
+macOS (Tools),Category,,,Tools › macOS
 cmux,Project,,https://github.com/manaflow-ai/cmux,Tools › macOS
-Tools › Model Routing,Category,,,Tools › Model Routing
+Model Routing,Category,,,Tools › Model Routing
 agentic-flow,Project,,https://github.com/ruvnet/agentic-flow,Tools › Model Routing
-Tools › Semantic Search,Category,Semantic search tools for agents operating over codebases and local content.,,Tools › Semantic Search
+Semantic Search,Category,Semantic search tools for agents operating over codebases and local content.,,Tools › Semantic Search
 osgrep,Project,,https://github.com/Ryandonofrio3/osgrep,Tools › Semantic Search
-Tools › Vision UI,Category,,,Tools › Vision UI
+Vision UI,Category,,,Tools › Vision UI
 UI-Venus,Project,,https://github.com/inclusionAI/UI-Venus,Tools › Vision UI
-Tools › World Creation,Category,,,Tools › World Creation
-Tools › World Creation › MCP,Category,"Projects in the Model Context Protocol ecosystem — servers, gateways, aggregators, clients.",,Tools › World Creation › MCP
+World Creation,Category,,,Tools › World Creation
+MCP (World Creation),Category,"Projects in the Model Context Protocol ecosystem — servers, gateways, aggregators, clients.",,Tools › World Creation › MCP
 unreal-engine-mcp,Project,,https://github.com/flopperam/unreal-engine-mcp,Tools › World Creation › MCP
 Trainers,Category,Training frameworks and tools for agent models.,,Trainers
 agent-lightning,Project,,https://github.com/microsoft/agent-lightning,Trainers
@@ -387,7 +387,7 @@ Uncategorized,Category,"Holding area for projects awaiting classification. Entri
 agency-agents,Project,,https://github.com/msitarzewski/agency-agents,Uncategorized
 Upserting Tools,Category,Tools that manage upserting data into vector stores and retrieval indexes.,,Upserting Tools
 UX,Category,User-experience patterns and components specifically for agent systems.,,UX
-UX › Human in the Loop,Category,"Interfaces and workflows for inserting humans into agent execution — approvals, task handoff, review queues.",,UX › Human in the Loop
+Human in the Loop,Category,"Interfaces and workflows for inserting humans into agent execution — approvals, task handoff, review queues.",,UX › Human in the Loop
 agent-inbox,Project,,https://github.com/langchain-ai/agent-inbox,UX › Human in the Loop
 orchestra,Project,,https://github.com/b12io/orchestra,UX › Human in the Loop
 Vector Databases,Category,Vector databases used for embedding storage and similarity search.,,Vector Databases
