@@ -2,9 +2,13 @@ digraph G {
   graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="On Device Agents", fontsize=22, pad=0.4];
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
-  "cat:on-device-agents" [label="On Device Agents", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Agents designed to run on-device, including phones, SBCs and edge hardware."];
+  "cat:on-device-agents" [label="On Device Agents", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Agents designed to run on-device, including phones, SBCs and edge hardware."];
   "cat:on-device-agents/sbcs" [label="SBCs", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
   "proj:be-more-agent" [label="be-more-agent", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/brenpoly/be-more-agent", URL="https://github.com/brenpoly/be-more-agent"];
+  "proj:agent-device" [label="Agent Device", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/callstackincubator/agent-device", URL="https://github.com/callstackincubator/agent-device"];
+  "cat:on-device-agents/android" [label="Android", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Android-specific agent runtimes and device-level automation."];
   "cat:on-device-agents" -> "cat:on-device-agents/sbcs";
   "cat:on-device-agents/sbcs" -> "proj:be-more-agent";
+  "cat:on-device-agents/android" -> "proj:agent-device";
+  "cat:on-device-agents" -> "cat:on-device-agents/android";
 }

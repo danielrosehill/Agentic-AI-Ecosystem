@@ -3,6 +3,6 @@ digraph G {
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:backend-querying" [label="Backend Querying", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Tools that let agents query backend systems, databases and APIs."];
-  "proj:mindsdb" [label="mindsdb", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/mindsdb/mindsdb", URL="https://github.com/mindsdb/mindsdb"];
+  "proj:mindsdb" [label="MindsDB", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/mindsdb/mindsdb", URL="https://github.com/mindsdb/mindsdb"];
   "cat:backend-querying" -> "proj:mindsdb";
 }

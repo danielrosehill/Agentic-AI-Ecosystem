@@ -2,21 +2,13 @@ digraph G {
   graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Multiagent", fontsize=22, pad=0.4];
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
-  "cat:multiagent" [label="Multiagent", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="Systems built around multiple cooperating or competing agents."];
+  "cat:multiagent" [label="Multiagent", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Systems built around multiple cooperating or competing agents."];
   "cat:multiagent/large-scale-experiments" [label="Large Scale Experiments", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
   "proj:agenttorch" [label="AgentTorch", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/AgentTorch/AgentTorch", URL="https://github.com/AgentTorch/AgentTorch"];
   "cat:multiagent/swarm-prediction" [label="Swarm Prediction", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
   "proj:mirofish" [label="MiroFish", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/666ghj/MiroFish", URL="https://github.com/666ghj/MiroFish"];
-  "cat:multiagent/workspace" [label="Workspace", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:agentsmesh" [label="AgentsMesh", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/AgentsMesh/AgentsMesh", URL="https://github.com/AgentsMesh/AgentsMesh"];
-  "cat:multiagent/workspaces" [label="Workspaces", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Shared workspaces where agents and humans (or multiple agents) collaborate."];
-  "proj:gastown" [label="gastown", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/gastownhall/gastown", URL="https://github.com/gastownhall/gastown"];
   "cat:multiagent" -> "cat:multiagent/large-scale-experiments";
   "cat:multiagent/large-scale-experiments" -> "proj:agenttorch";
   "cat:multiagent" -> "cat:multiagent/swarm-prediction";
   "cat:multiagent/swarm-prediction" -> "proj:mirofish";
-  "cat:multiagent" -> "cat:multiagent/workspace";
-  "cat:multiagent/workspace" -> "proj:agentsmesh";
-  "cat:multiagent" -> "cat:multiagent/workspaces";
-  "cat:multiagent/workspaces" -> "proj:gastown";
 }

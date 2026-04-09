@@ -3,6 +3,6 @@ digraph G {
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:feedback-formatting" [label="Feedback Formatting", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Tools that shape feedback signals (tool output, user input) into forms agents can act on."];
-  "proj:agentation" [label="agentation", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/benjitaylor/agentation", URL="https://github.com/benjitaylor/agentation"];
+  "proj:agentation" [label="Agentation", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/benjitaylor/agentation", URL="https://github.com/benjitaylor/agentation"];
   "cat:feedback-formatting" -> "proj:agentation";
 }

@@ -212,13 +212,8 @@
       "type": "CATEGORY_OF"
     },
     {
-      "from": "cat:agents/personal-focused",
-      "to": "cat:agents",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
       "from": "proj:crucix",
-      "to": "cat:agents/personal-focused",
+      "to": "cat:personal-ai",
       "type": "CATEGORY_OF"
     },
     {
@@ -458,7 +453,7 @@
     },
     {
       "from": "proj:hello-halo",
-      "to": "cat:desktop-guis",
+      "to": "cat:agents/desktop-guis",
       "type": "CATEGORY_OF"
     },
     {
@@ -607,13 +602,8 @@
       "type": "CATEGORY_OF"
     },
     {
-      "from": "cat:frameworks/multi-agent",
-      "to": "cat:frameworks",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
       "from": "proj:camel",
-      "to": "cat:frameworks/multi-agent",
+      "to": "cat:frameworks/multiagent-orchestration",
       "type": "CATEGORY_OF"
     },
     {
@@ -772,13 +762,8 @@
       "type": "CATEGORY_OF"
     },
     {
-      "from": "cat:harnesses/guardrails",
-      "to": "cat:harnesses",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
       "from": "proj:shellfirm",
-      "to": "cat:harnesses/guardrails",
+      "to": "cat:guardrails",
       "type": "CATEGORY_OF"
     },
     {
@@ -937,23 +922,13 @@
       "type": "CATEGORY_OF"
     },
     {
-      "from": "cat:multiagent/workspace",
-      "to": "cat:multiagent",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
       "from": "proj:agentsmesh",
-      "to": "cat:multiagent/workspace",
+      "to": "cat:workspaces",
       "type": "CATEGORY_OF"
     },
     {
-      "from": "cat:multiagent/workspaces",
-      "to": "cat:multiagent",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
       "from": "proj:gastown",
-      "to": "cat:multiagent/workspaces",
+      "to": "cat:workspaces",
       "type": "CATEGORY_OF"
     },
     {
@@ -1023,7 +998,7 @@
     },
     {
       "from": "proj:nanobot",
-      "to": "cat:personal",
+      "to": "cat:personal-ai",
       "type": "CATEGORY_OF"
     },
     {
@@ -1413,167 +1388,82 @@
     },
     {
       "from": "proj:vercel-ai",
-      "to": "cat:tools",
+      "to": "cat:frameworks",
       "type": "CATEGORY_OF"
     },
     {
       "from": "proj:langflow",
-      "to": "cat:tools",
+      "to": "cat:frameworks",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/android",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:agent-device",
-      "to": "cat:tools/android",
+      "to": "cat:on-device-agents/android",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/browser-utils",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/browser-utils/sdk",
-      "to": "cat:tools/browser-utils",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:stagehand",
-      "to": "cat:tools/browser-utils/sdk",
+      "to": "cat:browser-tooling",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/computer-use",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:cua",
-      "to": "cat:tools/computer-use",
+      "to": "cat:computer-use",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/computer-use/cli",
-      "to": "cat:tools/computer-use",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:usecomputer",
-      "to": "cat:tools/computer-use/cli",
+      "to": "cat:computer-use/cli",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/data-ingestion",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:agent-reach",
-      "to": "cat:tools/data-ingestion",
+      "to": "cat:rag/ingestion",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/debugging",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:vllora",
-      "to": "cat:tools/debugging",
+      "to": "cat:dev-tools/debugging",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/financial",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:agentkit",
-      "to": "cat:tools/financial",
+      "to": "cat:financial-tools",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/ide-tools",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:roo-code",
-      "to": "cat:tools/ide-tools",
+      "to": "cat:dev-tools/ide-integrations",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/integration-platforms",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/integration-platforms/saas",
-      "to": "cat:tools/integration-platforms",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:composio",
-      "to": "cat:tools/integration-platforms/saas",
+      "to": "cat:integrations",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/macos",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:cmux",
-      "to": "cat:tools/macos",
+      "to": "cat:computer-use/platform-specific/macos",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/model-routing",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:agentic-flow",
-      "to": "cat:tools/model-routing",
+      "to": "cat:routers/intelligent",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/semantic-search",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:osgrep",
-      "to": "cat:tools/semantic-search",
+      "to": "cat:semantic-search",
       "type": "CATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/vision-ui",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
     },
     {
       "from": "proj:ui-venus",
-      "to": "cat:tools/vision-ui",
+      "to": "cat:computer-use/vision-ui",
       "type": "CATEGORY_OF"
     },
     {
-      "from": "cat:tools/world-creation",
-      "to": "cat:tools",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
-      "from": "cat:tools/world-creation/mcp",
-      "to": "cat:tools/world-creation",
-      "type": "SUBCATEGORY_OF"
-    },
-    {
       "from": "proj:unreal-engine-mcp",
-      "to": "cat:tools/world-creation/mcp",
+      "to": "cat:world-generation/mcp",
       "type": "CATEGORY_OF"
     },
     {
@@ -1625,6 +1515,46 @@
       "from": "proj:ml-agents",
       "to": "cat:world-generation",
       "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:on-device-agents/android",
+      "to": "cat:on-device-agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:computer-use/cli",
+      "to": "cat:computer-use",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:rag/ingestion",
+      "to": "cat:rag",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:dev-tools/debugging",
+      "to": "cat:dev-tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:dev-tools/ide-integrations",
+      "to": "cat:dev-tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:computer-use/vision-ui",
+      "to": "cat:computer-use",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:world-generation/mcp",
+      "to": "cat:world-generation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/desktop-guis",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
     }
   ]
 }

@@ -5,7 +5,7 @@ digraph G {
   "cat:runtimes" [label="Runtimes", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="Execution runtimes — sandboxes, data layers, kernels — that host running agents."];
   "proj:openshell" [label="OpenShell", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/NVIDIA/OpenShell", URL="https://github.com/NVIDIA/OpenShell"];
   "cat:runtimes/data-layers" [label="Data Layers", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:deeplake" [label="deeplake", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/activeloopai/deeplake", URL="https://github.com/activeloopai/deeplake"];
+  "proj:deeplake" [label="Deep Lake", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/activeloopai/deeplake", URL="https://github.com/activeloopai/deeplake"];
   "cat:runtimes/policy-engines" [label="Policy Engines", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Runtime policy engines that evaluate and enforce rules on agent actions."];
   "proj:aegis" [label="Aegis", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Justin0504/Aegis", URL="https://github.com/Justin0504/Aegis"];
   "cat:runtimes/sandboxes" [label="Sandboxes", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];

@@ -2,7 +2,11 @@ digraph G {
   graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Workspaces", fontsize=22, pad=0.4];
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
-  "cat:workspaces" [label="Workspaces", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Shared workspaces where agents and humans (or multiple agents) collaborate."];
-  "proj:lobehub" [label="lobehub", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/lobehub/lobehub", URL="https://github.com/lobehub/lobehub"];
+  "proj:agentsmesh" [label="AgentsMesh", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/AgentsMesh/AgentsMesh", URL="https://github.com/AgentsMesh/AgentsMesh"];
+  "proj:gastown" [label="Gastown", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/gastownhall/gastown", URL="https://github.com/gastownhall/gastown"];
+  "cat:workspaces" [label="Workspaces", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Shared workspaces where agents and humans (or multiple agents) collaborate."];
+  "proj:lobehub" [label="LobeHub", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/lobehub/lobehub", URL="https://github.com/lobehub/lobehub"];
+  "cat:workspaces" -> "proj:agentsmesh";
+  "cat:workspaces" -> "proj:gastown";
   "cat:workspaces" -> "proj:lobehub";
 }

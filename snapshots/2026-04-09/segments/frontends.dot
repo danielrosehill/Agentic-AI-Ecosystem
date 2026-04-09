@@ -6,11 +6,11 @@ digraph G {
   "cat:frontends/android" [label="Android", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
   "proj:operit" [label="Operit", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/AAswordman/Operit", URL="https://github.com/AAswordman/Operit"];
   "cat:frontends/chat-uis" [label="Chat UIs", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:agent-ui" [label="agent-ui", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/agno-agi/agent-ui", URL="https://github.com/agno-agi/agent-ui"];
+  "proj:agent-ui" [label="Agent UI", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/agno-agi/agent-ui", URL="https://github.com/agno-agi/agent-ui"];
   "cat:frontends/guis-and-clis" [label="GUIs and CLIs", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:goose" [label="goose", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/aaif-goose/goose", URL="https://github.com/aaif-goose/goose"];
+  "proj:goose" [label="Goose", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/aaif-goose/goose", URL="https://github.com/aaif-goose/goose"];
   "cat:frontends/tuis-and-clis" [label="TUIs and CLIs", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:agent-deck" [label="agent-deck", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/asheshgoplani/agent-deck", URL="https://github.com/asheshgoplani/agent-deck"];
+  "proj:agent-deck" [label="Agent Deck", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/asheshgoplani/agent-deck", URL="https://github.com/asheshgoplani/agent-deck"];
   "cat:frontends" -> "cat:frontends/android";
   "cat:frontends/android" -> "proj:operit";
   "cat:frontends" -> "cat:frontends/chat-uis";

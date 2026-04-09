@@ -4,7 +4,7 @@ digraph G {
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:reinforcement-learning" [label="Reinforcement Learning", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="RL frameworks and environments used to train agentic behaviour."];
   "proj:rlinf" [label="RLinf", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/RLinf/RLinf", URL="https://github.com/RLinf/RLinf"];
-  "proj:acme" [label="acme", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/google-deepmind/acme", URL="https://github.com/google-deepmind/acme"];
+  "proj:acme" [label="Acme", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/google-deepmind/acme", URL="https://github.com/google-deepmind/acme"];
   "cat:reinforcement-learning" -> "proj:rlinf";
   "cat:reinforcement-learning" -> "proj:acme";
 }

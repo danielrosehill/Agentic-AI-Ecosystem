@@ -2,9 +2,17 @@ digraph G {
   graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Dev Tools", fontsize=22, pad=0.4];
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
-  "cat:dev-tools" [label="Dev Tools", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Developer tooling that uses agents or supports agent development workflows."];
+  "cat:dev-tools" [label="Dev Tools", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Developer tooling that uses agents or supports agent development workflows."];
   "cat:dev-tools/repo-refactoring" [label="Repo Refactoring", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:agentrc" [label="agentrc", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/microsoft/agentrc", URL="https://github.com/microsoft/agentrc"];
+  "proj:agentrc" [label="AgentRC", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/microsoft/agentrc", URL="https://github.com/microsoft/agentrc"];
+  "proj:vllora" [label="vLLora", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/vllora/vllora", URL="https://github.com/vllora/vllora"];
+  "proj:roo-code" [label="Roo-Code", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/RooCodeInc/Roo-Code", URL="https://github.com/RooCodeInc/Roo-Code"];
+  "cat:dev-tools/debugging" [label="Debugging", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Debugging and introspection tools for agent development."];
+  "cat:dev-tools/ide-integrations" [label="IDE Integrations", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="IDE extensions and plugins for agent-assisted development."];
   "cat:dev-tools" -> "cat:dev-tools/repo-refactoring";
   "cat:dev-tools/repo-refactoring" -> "proj:agentrc";
+  "cat:dev-tools/debugging" -> "proj:vllora";
+  "cat:dev-tools/ide-integrations" -> "proj:roo-code";
+  "cat:dev-tools" -> "cat:dev-tools/debugging";
+  "cat:dev-tools" -> "cat:dev-tools/ide-integrations";
 }

@@ -7,7 +7,7 @@ digraph G {
   "proj:webmcp" [label="WebMCP", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://webmcp.dev/", URL="https://webmcp.dev/"];
   "proj:webmcp-chrome-epp" [label="WebMCP (Chrome EPP)", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://developer.chrome.com/blog/webmcp-epp", URL="https://developer.chrome.com/blog/webmcp-epp"];
   "cat:standards/proposed" [label="Proposed", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip=""];
-  "proj:gitagent" [label="gitagent", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/open-gitagent/gitagent", URL="https://github.com/open-gitagent/gitagent"];
+  "proj:gitagent" [label="GitAgent", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/open-gitagent/gitagent", URL="https://github.com/open-gitagent/gitagent"];
   "proj:aiuc-1" [label="AIUC-1", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://www.aiuc-1.com/", URL="https://www.aiuc-1.com/"];
   "cat:standards/ratified" [label="Ratified", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="Standards with a published specification and active governance."];
   "proj:a2a-agent2agent-protocol" [label="A2A (Agent2Agent Protocol)", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/a2aproject/A2A", URL="https://github.com/a2aproject/A2A"];

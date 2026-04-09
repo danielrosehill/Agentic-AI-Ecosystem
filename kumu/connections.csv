@@ -41,8 +41,7 @@ Vendor (CLIs),Gemini CLI,HAS_EXAMPLE
 Agents,Memory (Agents),CONTAINS
 Memory (Agents),Graph Builders,CONTAINS
 Graph Builders,Graphiti,HAS_EXAMPLE
-Agents,Personal Focused,CONTAINS
-Personal Focused,Crucix,HAS_EXAMPLE
+Personal AI,Crucix,HAS_EXAMPLE
 Agents,Purpose Specific,CONTAINS
 Purpose Specific,INKOS,HAS_EXAMPLE
 Purpose Specific,Penetration Testing,CONTAINS
@@ -77,15 +76,15 @@ Context,Engines (Context),CONTAINS
 Engines (Context),Contexto,HAS_EXAMPLE
 Context,Frontend Tools,CONTAINS
 Frontend Tools,react-grab,HAS_EXAMPLE
-Context,Tools (Context),CONTAINS
-Tools (Context),Context Managers,CONTAINS
+Context,Tools,CONTAINS
+Tools,Context Managers,CONTAINS
 Context Managers,dotai,HAS_EXAMPLE
 Context,Visualisation,CONTAINS
 Visualisation,context-lens,HAS_EXAMPLE
 Conversational Control,Parlant,HAS_EXAMPLE
 Data Extraction and Structuring,Firecrawl,HAS_EXAMPLE
-Data Sources,Financial (Data Sources),CONTAINS
-Financial (Data Sources),OpenBB,HAS_EXAMPLE
+Data Sources,Financial,CONTAINS
+Financial,OpenBB,HAS_EXAMPLE
 Databases,Context Databases,CONTAINS
 Context Databases,OpenViking,HAS_EXAMPLE
 Deployment Platforms,Serverless,CONTAINS
@@ -120,8 +119,7 @@ Frameworks,.NET,CONTAINS
 .NET,BotSharp,HAS_EXAMPLE
 Frameworks,Computer Use (Frameworks),CONTAINS
 Computer Use (Frameworks),Agent-S,HAS_EXAMPLE
-Frameworks,Multi-agent,CONTAINS
-Multi-agent,CAMEL,HAS_EXAMPLE
+Multiagent Orchestration,CAMEL,HAS_EXAMPLE
 Frameworks,Multiagent Orchestration,CONTAINS
 Multiagent Orchestration,CrewAI,HAS_EXAMPLE
 Frameworks,Multimodal,CONTAINS
@@ -153,7 +151,6 @@ Harnesses,Hive,HAS_EXAMPLE
 Harnesses,oh-my-openagent,HAS_EXAMPLE
 Harnesses,Deep Research,CONTAINS
 Deep Research,DeepAgents,HAS_EXAMPLE
-Harnesses,Guardrails,CONTAINS
 Guardrails,Shellfirm,HAS_EXAMPLE
 Harnesses,macOS (Harnesses),CONTAINS
 macOS (Harnesses),Osaurus,HAS_EXAMPLE
@@ -186,10 +183,8 @@ Multiagent,Large Scale Experiments,CONTAINS
 Large Scale Experiments,AgentTorch,HAS_EXAMPLE
 Multiagent,Swarm Prediction,CONTAINS
 Swarm Prediction,MiroFish,HAS_EXAMPLE
-Multiagent,Workspace,CONTAINS
-Workspace,AgentsMesh,HAS_EXAMPLE
-Multiagent,Workspaces (Multiagent),CONTAINS
-Workspaces (Multiagent),Gastown,HAS_EXAMPLE
+Workspaces,AgentsMesh,HAS_EXAMPLE
+Workspaces,Gastown,HAS_EXAMPLE
 Networks,agent.ai,HAS_EXAMPLE
 Observability,RagaAI Catalyst,HAS_EXAMPLE
 On Device Agents,SBCs,CONTAINS
@@ -203,7 +198,7 @@ Orchestration,AI Maestro,HAS_EXAMPLE
 Orchestration,Agent Orchestrator,HAS_EXAMPLE
 Orchestration,Platform-Specific,CONTAINS
 Platform-Specific,Agent Squad,HAS_EXAMPLE
-Personal,Nanobot,HAS_EXAMPLE
+Personal AI,Nanobot,HAS_EXAMPLE
 Personal AI,Assistants,CONTAINS
 Assistants,OpenClaw,HAS_EXAMPLE
 Assistants,Leon,HAS_EXAMPLE
@@ -281,39 +276,22 @@ Synthesised Perspectives,Plurals,HAS_EXAMPLE
 Synthesised Perspectives,LLM Council,HAS_EXAMPLE
 Task Specific,Product Design,CONTAINS
 Product Design,Superdesign,HAS_EXAMPLE
-Tools,Vercel AI SDK,HAS_EXAMPLE
-Tools,Langflow,HAS_EXAMPLE
-Tools,Android (Tools),CONTAINS
-Android (Tools),Agent Device,HAS_EXAMPLE
-Tools,Browser Utils,CONTAINS
-Browser Utils,SDK,CONTAINS
-SDK,Stagehand,HAS_EXAMPLE
-Tools,Computer Use (Tools),CONTAINS
-Computer Use (Tools),cua,HAS_EXAMPLE
-Computer Use (Tools),CLI,CONTAINS
+Frameworks,Vercel AI SDK,HAS_EXAMPLE
+Frameworks,Langflow,HAS_EXAMPLE
+Android (On Device Agents),Agent Device,HAS_EXAMPLE
+Browser Tooling,Stagehand,HAS_EXAMPLE
+Computer Use,cua,HAS_EXAMPLE
 CLI,usecomputer,HAS_EXAMPLE
-Tools,Data Ingestion,CONTAINS
-Data Ingestion,Agent-Reach,HAS_EXAMPLE
-Tools,Debugging,CONTAINS
+Ingestion,Agent-Reach,HAS_EXAMPLE
 Debugging,vLLora,HAS_EXAMPLE
-Tools,Financial (Tools),CONTAINS
-Financial (Tools),AgentKit,HAS_EXAMPLE
-Tools,IDE Tools,CONTAINS
-IDE Tools,Roo-Code,HAS_EXAMPLE
-Tools,Integration Platforms,CONTAINS
-Integration Platforms,SaaS,CONTAINS
-SaaS,Composio,HAS_EXAMPLE
-Tools,macOS (Tools),CONTAINS
-macOS (Tools),cmux,HAS_EXAMPLE
-Tools,Model Routing,CONTAINS
-Model Routing,Agentic Flow,HAS_EXAMPLE
-Tools,Semantic Search,CONTAINS
+Financial Tools,AgentKit,HAS_EXAMPLE
+IDE Integrations,Roo-Code,HAS_EXAMPLE
+Integrations,Composio,HAS_EXAMPLE
+macOS (Platform Specific),cmux,HAS_EXAMPLE
+Intelligent,Agentic Flow,HAS_EXAMPLE
 Semantic Search,osgrep,HAS_EXAMPLE
-Tools,Vision UI,CONTAINS
 Vision UI,UI-Venus,HAS_EXAMPLE
-Tools,World Creation,CONTAINS
-World Creation,MCP (World Creation),CONTAINS
-MCP (World Creation),Unreal Engine MCP,HAS_EXAMPLE
+MCP (World Generation),Unreal Engine MCP,HAS_EXAMPLE
 Trainers,Agent Lightning,HAS_EXAMPLE
 Uncategorized,Agency Agents,HAS_EXAMPLE
 UX,Human in the Loop,CONTAINS
@@ -324,3 +302,11 @@ Voice,Bolna,HAS_EXAMPLE
 Workflow Definition,Packmind,HAS_EXAMPLE
 Workspaces,LobeHub,HAS_EXAMPLE
 World Generation,ML-Agents,HAS_EXAMPLE
+On Device Agents,Android (On Device Agents),CONTAINS
+Computer Use,CLI,CONTAINS
+RAG,Ingestion,CONTAINS
+Dev Tools,Debugging,CONTAINS
+Dev Tools,IDE Integrations,CONTAINS
+Computer Use,Vision UI,CONTAINS
+World Generation,MCP (World Generation),CONTAINS
+Agents,Desktop GUIs,CONTAINS

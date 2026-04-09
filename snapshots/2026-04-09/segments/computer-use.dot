@@ -2,11 +2,23 @@ digraph G {
   graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Computer Use", fontsize=22, pad=0.4];
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
-  "cat:computer-use" [label="Computer Use", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."];
+  "cat:computer-use" [label="Computer Use", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."];
   "cat:computer-use/platform-specific" [label="Platform Specific", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "cat:computer-use/platform-specific/macos" [label="macOS", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "cat:computer-use/platform-specific/macos" [label="macOS", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip=""];
   "proj:macos-use" [label="macOS-use", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/browser-use/macOS-use", URL="https://github.com/browser-use/macOS-use"];
+  "proj:cua" [label="cua", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/trycua/cua", URL="https://github.com/trycua/cua"];
+  "proj:usecomputer" [label="usecomputer", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/remorses/usecomputer", URL="https://github.com/remorses/usecomputer"];
+  "proj:cmux" [label="cmux", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/manaflow-ai/cmux", URL="https://github.com/manaflow-ai/cmux"];
+  "proj:ui-venus" [label="UI-Venus", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/inclusionAI/UI-Venus", URL="https://github.com/inclusionAI/UI-Venus"];
+  "cat:computer-use/cli" [label="CLI", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="CLI-based computer-use agents and tools."];
+  "cat:computer-use/vision-ui" [label="Vision UI", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Vision-based UI understanding models for computer-use agents."];
   "cat:computer-use" -> "cat:computer-use/platform-specific";
   "cat:computer-use/platform-specific" -> "cat:computer-use/platform-specific/macos";
   "cat:computer-use/platform-specific/macos" -> "proj:macos-use";
+  "cat:computer-use" -> "proj:cua";
+  "cat:computer-use/cli" -> "proj:usecomputer";
+  "cat:computer-use/platform-specific/macos" -> "proj:cmux";
+  "cat:computer-use/vision-ui" -> "proj:ui-venus";
+  "cat:computer-use" -> "cat:computer-use/cli";
+  "cat:computer-use" -> "cat:computer-use/vision-ui";
 }

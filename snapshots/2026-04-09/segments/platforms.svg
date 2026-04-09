@@ -35,8 +35,8 @@
 <g id="node3" class="node">
 <title>proj:fairo</title>
 <g id="a_node3"><a xlink:href="https://github.com/facebookresearch/fairo" xlink:title="https://github.com/facebookresearch/fairo">
-<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="61,-29 28.57,-14.5 61,0 93.43,-14.5 61,-29"/>
-<text text-anchor="middle" x="61" y="-12.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">fairo</text>
+<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="61,-29 26.96,-14.5 61,0 95.04,-14.5 61,-29"/>
+<text text-anchor="middle" x="61" y="-12.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">Fairo</text>
 </a>
 </g>
 </g>

@@ -14,12 +14,14 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 ## Segments
 
+- [Agent Analytics](#agent-analytics)
 - [Agent Clusters](#agent-clusters)
 - [Agent Collaboration](#agent-collaboration)
 - [Agent to Agent](#agent-to-agent)
 - [Agent Tools](#agent-tools)
 - [Agents](#agents)
 - [AI Browsers](#ai-browsers)
+- [Annotation](#annotation)
 - [Automation](#automation)
 - [Backend Querying](#backend-querying)
 - [Benchmarks](#benchmarks)
@@ -32,7 +34,6 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 - [Data Sources](#data-sources)
 - [Databases](#databases)
 - [Deployment Platforms](#deployment-platforms)
-- [Desktop GUIs](#desktop-guis)
 - [Dev Tools](#dev-tools)
 - [Development Platforms](#development-platforms)
 - [Embedding Models](#embedding-models)
@@ -48,7 +49,11 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 - [Frontends](#frontends)
 - [Gateways](#gateways)
 - [Geopolitical Simulation](#geopolitical-simulation)
+- [Guardrails](#guardrails)
 - [Harnesses](#harnesses)
+- [Identity and Auth](#identity-and-auth)
+- [Inference Servers](#inference-servers)
+- [Integrations](#integrations)
 - [LLMs](#llms)
 - [Loops](#loops)
 - [Marketplaces](#marketplaces)
@@ -61,11 +66,12 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 - [Operations](#operations)
 - [Optimisation Platform](#optimisation-platform)
 - [Orchestration](#orchestration)
-- [Personal](#personal)
 - [Personal AI](#personal-ai)
 - [Personification](#personification)
+- [PII and Redaction](#pii-and-redaction)
 - [Pipelines](#pipelines)
 - [Platforms](#platforms)
+- [Prompt Management](#prompt-management)
 - [Proxy](#proxy)
 - [RAG](#rag)
 - [Reinforcement Learning](#reinforcement-learning)
@@ -73,14 +79,17 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 - [Runtimes](#runtimes)
 - [SaaS Builders](#saas-builders)
 - [Security](#security)
+- [Semantic Caching](#semantic-caching)
+- [Semantic Search](#semantic-search)
 - [Skills](#skills)
 - [Societal Simulations](#societal-simulations)
 - [Software Extensions](#software-extensions)
 - [Standards](#standards)
 - [Starter Kits](#starter-kits)
+- [Structured Output](#structured-output)
 - [Synthesised Perspectives](#synthesised-perspectives)
+- [Synthetic Data](#synthetic-data)
 - [Task Specific](#task-specific)
-- [Tools](#tools)
 - [Trainers](#trainers)
 - [Uncategorized](#uncategorized)
 - [Upserting Tools](#upserting-tools)
@@ -92,6 +101,11 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 - [World Generation](#world-generation)
 
 ---
+
+## Agent Analytics
+<sub>`cat:agent-analytics`</sub>
+
+*Product analytics for agent behaviour: funnels, retention, conversation quality, task success.*
 
 ## Agent Clusters
 <sub>`cat:agent-clusters`</sub>
@@ -172,6 +186,13 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [open-computer-use](https://github.com/coasty-ai/open-computer-use)
 
+### Desktop GUIs
+<sub>`cat:agents/desktop-guis`</sub>
+
+*Desktop graphical interfaces for interacting with agents.*
+
+- [Hello Halo](https://github.com/openkursar/hello-halo)
+
 ### Development
 <sub>`cat:agents/development`</sub>
 
@@ -230,11 +251,6 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [Graphiti](https://github.com/getzep/graphiti)
 
-### Personal Focused
-<sub>`cat:agents/personal-focused`</sub>
-
-- [Crucix](https://github.com/calesthio/Crucix)
-
 ### Purpose Specific
 <sub>`cat:agents/purpose-specific`</sub>
 
@@ -272,6 +288,11 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [Lightpanda Browser](https://github.com/lightpanda-io/browser)
 - [Steel Browser](https://github.com/steel-dev/steel-browser)
+
+## Annotation
+<sub>`cat:annotation`</sub>
+
+*Human labeling, RLHF, and feedback-collection platforms for agent training data.*
 
 ## Automation
 <sub>`cat:automation`</sub>
@@ -315,11 +336,21 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 *Utilities and SDKs that sit alongside browsers to support agentic workflows.*
 
 - [Agent Browser](https://github.com/vercel-labs/agent-browser)
+- [Stagehand](https://github.com/browserbase/stagehand)
 
 ## Computer Use
 <sub>`cat:computer-use`</sub>
 
 *Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).*
+
+- [cua](https://github.com/trycua/cua)
+
+### CLI
+<sub>`cat:computer-use/cli`</sub>
+
+*CLI-based computer-use agents and tools.*
+
+- [usecomputer](https://github.com/remorses/usecomputer)
 
 ### Platform Specific
 <sub>`cat:computer-use/platform-specific`</sub>
@@ -327,7 +358,15 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 #### macOS
 <sub>`cat:computer-use/platform-specific/macos`</sub>
 
+- [cmux](https://github.com/manaflow-ai/cmux)
 - [macOS-use](https://github.com/browser-use/macOS-use)
+
+### Vision UI
+<sub>`cat:computer-use/vision-ui`</sub>
+
+*Vision-based UI understanding models for computer-use agents.*
+
+- [UI-Venus](https://github.com/inclusionAI/UI-Venus)
 
 ## Context
 <sub>`cat:context`</sub>
@@ -413,17 +452,24 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [Julep](https://github.com/julep-ai/julep)
 
-## Desktop GUIs
-<sub>`cat:desktop-guis`</sub>
-
-*Desktop graphical interfaces for interacting with agents.*
-
-- [Hello Halo](https://github.com/openkursar/hello-halo)
-
 ## Dev Tools
 <sub>`cat:dev-tools`</sub>
 
 *Developer tooling that uses agents or supports agent development workflows.*
+
+### Debugging
+<sub>`cat:dev-tools/debugging`</sub>
+
+*Debugging and introspection tools for agent development.*
+
+- [vLLora](https://github.com/vllora/vllora)
+
+### IDE Integrations
+<sub>`cat:dev-tools/ide-integrations`</sub>
+
+*IDE extensions and plugins for agent-assisted development.*
+
+- [Roo-Code](https://github.com/RooCodeInc/Roo-Code)
 
 ### Repo Refactoring
 <sub>`cat:dev-tools/repo-refactoring`</sub>
@@ -506,6 +552,7 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 *Agent-oriented tools targeted at financial workflows.*
 
+- [AgentKit](https://github.com/coinbase/agentkit)
 - [GOAT](https://github.com/goat-sdk/goat)
 
 ## Formatting
@@ -532,7 +579,9 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 - [AutoGen](https://github.com/microsoft/autogen)
 - [EvoAgentX](https://github.com/EvoAgentX/EvoAgentX)
 - [II-Agent](https://github.com/Intelligent-Internet/ii-agent)
+- [Langflow](https://github.com/langflow-ai/langflow)
 - [uAgents](https://github.com/fetchai/uAgents)
+- [Vercel AI SDK](https://github.com/vercel/ai)
 
 ### .NET
 <sub>`cat:frameworks/net`</sub>
@@ -546,14 +595,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [Agent-S](https://github.com/simular-ai/Agent-S)
 
-### Multi-agent
-<sub>`cat:frameworks/multi-agent`</sub>
-
-- [CAMEL](https://github.com/camel-ai/camel)
-
 ### Multiagent Orchestration
 <sub>`cat:frameworks/multiagent-orchestration`</sub>
 
+- [CAMEL](https://github.com/camel-ai/camel)
 - [CrewAI](https://github.com/crewAIInc/crewAI)
 
 ### Multimodal
@@ -631,6 +676,13 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 - [Snowglobe](https://github.com/IQTLabs/snowglobe)
 - [WargamesAI](https://github.com/user1342/WargamesAI)
 
+## Guardrails
+<sub>`cat:guardrails`</sub>
+
+*Guardrails and pre-execution safety checks that gate what running agents can do.*
+
+- [Shellfirm](https://github.com/kaplanelad/shellfirm)
+
 ## Harnesses
 <sub>`cat:harnesses`</sub>
 
@@ -644,19 +696,29 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [DeepAgents](https://github.com/langchain-ai/deepagents)
 
-### Guardrails
-<sub>`cat:harnesses/guardrails`</sub>
-
-*Guardrails and pre-execution safety checks that gate what running agents can do.*
-
-- [Shellfirm](https://github.com/kaplanelad/shellfirm)
-
 ### macOS
 <sub>`cat:harnesses/macos`</sub>
 
 *Harnesses that run agents natively on macOS.*
 
 - [Osaurus](https://github.com/osaurus-ai/osaurus)
+
+## Identity and Auth
+<sub>`cat:identity-and-auth`</sub>
+
+*Agent identity, credential vaulting, and delegated authentication for tool access.*
+
+## Inference Servers
+<sub>`cat:inference-servers`</sub>
+
+*LLM inference servers and runtimes (vLLM, TGI, llama.cpp, SGLang) that agents call into.*
+
+## Integrations
+<sub>`cat:integrations`</sub>
+
+*Agent-to-SaaS connector platforms: Composio-style libraries exposing third-party APIs as agent tools.*
+
+- [Composio](https://github.com/ComposioHQ/composio)
 
 ## LLMs
 <sub>`cat:llms`</sub>
@@ -759,18 +821,6 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [MiroFish](https://github.com/666ghj/MiroFish)
 
-### Workspace
-<sub>`cat:multiagent/workspace`</sub>
-
-- [AgentsMesh](https://github.com/AgentsMesh/AgentsMesh)
-
-### Workspaces
-<sub>`cat:multiagent/workspaces`</sub>
-
-*Shared workspaces where agents and humans (or multiple agents) collaborate.*
-
-- [Gastown](https://github.com/gastownhall/gastown)
-
 ## Networks
 <sub>`cat:networks`</sub>
 
@@ -789,6 +839,13 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 <sub>`cat:on-device-agents`</sub>
 
 *Agents designed to run on-device, including phones, SBCs and edge hardware.*
+
+### Android
+<sub>`cat:on-device-agents/android`</sub>
+
+*Android-specific agent runtimes and device-level automation.*
+
+- [Agent Device](https://github.com/callstackincubator/agent-device)
 
 ### SBCs
 <sub>`cat:on-device-agents/sbcs`</sub>
@@ -827,17 +884,13 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [Agent Squad](https://github.com/awslabs/agent-squad)
 
-## Personal
-<sub>`cat:personal`</sub>
-
-*Personal-use agent projects and personal AI tooling.*
-
-- [Nanobot](https://github.com/HKUDS/nanobot)
-
 ## Personal AI
 <sub>`cat:personal-ai`</sub>
 
 *Personal AI assistants and related projects.*
+
+- [Crucix](https://github.com/calesthio/Crucix)
+- [Nanobot](https://github.com/HKUDS/nanobot)
 
 ### Assistants
 <sub>`cat:personal-ai/assistants`</sub>
@@ -851,6 +904,11 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 *Tools for giving agents distinct personas, voices and identities.*
 
 - [Bub](https://github.com/bubbuild/bub)
+
+## PII and Redaction
+<sub>`cat:pii-and-redaction`</sub>
+
+*PII detection, content sanitization, and safety filtering for agent I/O.*
 
 ## Pipelines
 <sub>`cat:pipelines`</sub>
@@ -868,6 +926,11 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 <sub>`cat:platforms/embodied`</sub>
 
 - [Fairo](https://github.com/facebookresearch/fairo)
+
+## Prompt Management
+<sub>`cat:prompt-management`</sub>
+
+*Versioning, registries, and lifecycle management for prompts as first-class artifacts.*
 
 ## Proxy
 <sub>`cat:proxy`</sub>
@@ -899,6 +962,13 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [RAGFlow](https://github.com/infiniflow/ragflow)
 
+### Ingestion
+<sub>`cat:rag/ingestion`</sub>
+
+*Pipelines that ingest and process documents into retrieval systems.*
+
+- [Agent-Reach](https://github.com/Panniantong/Agent-Reach)
+
 ## Reinforcement Learning
 <sub>`cat:reinforcement-learning`</sub>
 
@@ -920,6 +990,7 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 ### Intelligent
 <sub>`cat:routers/intelligent`</sub>
 
+- [Agentic Flow](https://github.com/ruvnet/agentic-flow)
 - [Semantic Router](https://github.com/vllm-project/semantic-router)
 
 ### Tool Specific
@@ -1013,6 +1084,18 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [Microsandbox](https://github.com/superradcompany/microsandbox)
 
+## Semantic Caching
+<sub>`cat:semantic-caching`</sub>
+
+*Cache layers that serve semantically equivalent LLM responses to cut cost and latency.*
+
+## Semantic Search
+<sub>`cat:semantic-search`</sub>
+
+*Semantic search tools for agents operating over codebases and local content.*
+
+- [osgrep](https://github.com/Ryandonofrio3/osgrep)
+
 ## Skills
 <sub>`cat:skills`</sub>
 
@@ -1102,6 +1185,11 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [AI Town](https://github.com/a16z-infra/ai-town)
 
+## Structured Output
+<sub>`cat:structured-output`</sub>
+
+*Libraries that constrain LLM outputs to typed schemas, JSON, or formal grammars.*
+
 ## Synthesised Perspectives
 <sub>`cat:synthesised-perspectives`</sub>
 
@@ -1109,6 +1197,11 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 - [LLM Council](https://github.com/karpathy/llm-council)
 - [Plurals](https://github.com/josh-ashkinaze/plurals)
+
+## Synthetic Data
+<sub>`cat:synthetic-data`</sub>
+
+*Tools for generating synthetic training and evaluation data for agents.*
 
 ## Task Specific
 <sub>`cat:task-specific`</sub>
@@ -1119,99 +1212,6 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 <sub>`cat:task-specific/product-design`</sub>
 
 - [Superdesign](https://github.com/superdesigndev/superdesign)
-
-## Tools
-<sub>`cat:tools`</sub>
-
-*Utility tools, SDKs and toolkits for building, debugging and extending agentic systems.*
-
-- [Langflow](https://github.com/langflow-ai/langflow)
-- [Vercel AI SDK](https://github.com/vercel/ai)
-
-### Android
-<sub>`cat:tools/android`</sub>
-
-- [Agent Device](https://github.com/callstackincubator/agent-device)
-
-### Browser Utils
-<sub>`cat:tools/browser-utils`</sub>
-
-#### SDK
-<sub>`cat:tools/browser-utils/sdk`</sub>
-
-- [Stagehand](https://github.com/browserbase/stagehand)
-
-### Computer Use
-<sub>`cat:tools/computer-use`</sub>
-
-*Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).*
-
-- [cua](https://github.com/trycua/cua)
-
-#### CLI
-<sub>`cat:tools/computer-use/cli`</sub>
-
-- [usecomputer](https://github.com/remorses/usecomputer)
-
-### Data Ingestion
-<sub>`cat:tools/data-ingestion`</sub>
-
-- [Agent-Reach](https://github.com/Panniantong/Agent-Reach)
-
-### Debugging
-<sub>`cat:tools/debugging`</sub>
-
-- [vLLora](https://github.com/vllora/vllora)
-
-### Financial
-<sub>`cat:tools/financial`</sub>
-
-- [AgentKit](https://github.com/coinbase/agentkit)
-
-### IDE Tools
-<sub>`cat:tools/ide-tools`</sub>
-
-- [Roo-Code](https://github.com/RooCodeInc/Roo-Code)
-
-### Integration Platforms
-<sub>`cat:tools/integration-platforms`</sub>
-
-#### SaaS
-<sub>`cat:tools/integration-platforms/saas`</sub>
-
-- [Composio](https://github.com/ComposioHQ/composio)
-
-### macOS
-<sub>`cat:tools/macos`</sub>
-
-- [cmux](https://github.com/manaflow-ai/cmux)
-
-### Model Routing
-<sub>`cat:tools/model-routing`</sub>
-
-- [Agentic Flow](https://github.com/ruvnet/agentic-flow)
-
-### Semantic Search
-<sub>`cat:tools/semantic-search`</sub>
-
-*Semantic search tools for agents operating over codebases and local content.*
-
-- [osgrep](https://github.com/Ryandonofrio3/osgrep)
-
-### Vision UI
-<sub>`cat:tools/vision-ui`</sub>
-
-- [UI-Venus](https://github.com/inclusionAI/UI-Venus)
-
-### World Creation
-<sub>`cat:tools/world-creation`</sub>
-
-#### MCP
-<sub>`cat:tools/world-creation/mcp`</sub>
-
-*Projects in the Model Context Protocol ecosystem — servers, gateways, aggregators, clients.*
-
-- [Unreal Engine MCP](https://github.com/flopperam/unreal-engine-mcp)
 
 ## Trainers
 <sub>`cat:trainers`</sub>
@@ -1271,6 +1271,8 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 
 *Shared workspaces where agents and humans (or multiple agents) collaborate.*
 
+- [AgentsMesh](https://github.com/AgentsMesh/AgentsMesh)
+- [Gastown](https://github.com/gastownhall/gastown)
 - [LobeHub](https://github.com/lobehub/lobehub)
 
 ## World Generation
@@ -1279,3 +1281,10 @@ Every category has a stable ID (`cat:<slug-path>`) so the taxonomy can be refere
 *Tools and models for generating simulated worlds for agents to operate in.*
 
 - [ML-Agents](https://github.com/Unity-Technologies/ml-agents)
+
+### MCP
+<sub>`cat:world-generation/mcp`</sub>
+
+*MCP servers for world and scene generation.*
+
+- [Unreal Engine MCP](https://github.com/flopperam/unreal-engine-mcp)

@@ -2,10 +2,14 @@ digraph G {
   graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Personal AI", fontsize=22, pad=0.4];
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
-  "cat:personal-ai" [label="Personal AI", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Personal AI assistants and related projects."];
+  "proj:crucix" [label="Crucix", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/calesthio/Crucix", URL="https://github.com/calesthio/Crucix"];
+  "proj:nanobot" [label="Nanobot", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/HKUDS/nanobot", URL="https://github.com/HKUDS/nanobot"];
+  "cat:personal-ai" [label="Personal AI", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Personal AI assistants and related projects."];
   "cat:personal-ai/assistants" [label="Assistants", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip=""];
-  "proj:openclaw" [label="openclaw", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/openclaw/openclaw", URL="https://github.com/openclaw/openclaw"];
-  "proj:leon" [label="leon", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/leon-ai/leon", URL="https://github.com/leon-ai/leon"];
+  "proj:openclaw" [label="OpenClaw", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/openclaw/openclaw", URL="https://github.com/openclaw/openclaw"];
+  "proj:leon" [label="Leon", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/leon-ai/leon", URL="https://github.com/leon-ai/leon"];
+  "cat:personal-ai" -> "proj:crucix";
+  "cat:personal-ai" -> "proj:nanobot";
   "cat:personal-ai" -> "cat:personal-ai/assistants";
   "cat:personal-ai/assistants" -> "proj:openclaw";
   "cat:personal-ai/assistants" -> "proj:leon";

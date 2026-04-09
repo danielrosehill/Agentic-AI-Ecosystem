@@ -8,7 +8,7 @@ digraph G {
   "cat:context/context-optimisation" [label="Context Optimisation", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
   "proj:context-mode" [label="context-mode", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/mksglu/context-mode", URL="https://github.com/mksglu/context-mode"];
   "cat:context/engines" [label="Engines", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:contexto" [label="contexto", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/ekailabs/contexto", URL="https://github.com/ekailabs/contexto"];
+  "proj:contexto" [label="Contexto", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/ekailabs/contexto", URL="https://github.com/ekailabs/contexto"];
   "cat:context/frontend-tools" [label="Frontend Tools", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
   "proj:react-grab" [label="react-grab", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/aidenybai/react-grab", URL="https://github.com/aidenybai/react-grab"];
   "cat:context/tools" [label="Tools", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Utility tools, SDKs and toolkits for building, debugging and extending agentic systems."];

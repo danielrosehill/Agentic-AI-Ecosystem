@@ -4,11 +4,11 @@ digraph G {
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:orchestration" [label="Orchestration", shape=circle, fillcolor="#6aa9ff", width=0.85, height=0.85, fontsize=10, tooltip="Orchestration engines for coordinating agents, tools and workflows."];
   "proj:shannon" [label="Shannon", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Kocoro-lab/Shannon", URL="https://github.com/Kocoro-lab/Shannon"];
-  "proj:conductor" [label="conductor", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/conductor-oss/conductor", URL="https://github.com/conductor-oss/conductor"];
-  "proj:ai-maestro" [label="ai-maestro", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/23blocks-OS/ai-maestro", URL="https://github.com/23blocks-OS/ai-maestro"];
-  "proj:agent-orchestrator" [label="agent-orchestrator", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/ComposioHQ/agent-orchestrator", URL="https://github.com/ComposioHQ/agent-orchestrator"];
+  "proj:conductor" [label="Conductor", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/conductor-oss/conductor", URL="https://github.com/conductor-oss/conductor"];
+  "proj:ai-maestro" [label="AI Maestro", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/23blocks-OS/ai-maestro", URL="https://github.com/23blocks-OS/ai-maestro"];
+  "proj:agent-orchestrator" [label="Agent Orchestrator", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/ComposioHQ/agent-orchestrator", URL="https://github.com/ComposioHQ/agent-orchestrator"];
   "cat:orchestration/platform-specific" [label="Platform-Specific", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:agent-squad" [label="agent-squad", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/awslabs/agent-squad", URL="https://github.com/awslabs/agent-squad"];
+  "proj:agent-squad" [label="Agent Squad", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/awslabs/agent-squad", URL="https://github.com/awslabs/agent-squad"];
   "cat:orchestration" -> "proj:shannon";
   "cat:orchestration" -> "proj:conductor";
   "cat:orchestration" -> "proj:ai-maestro";

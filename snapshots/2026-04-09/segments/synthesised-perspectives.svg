@@ -14,8 +14,8 @@
 <g id="node1" class="node">
 <title>cat:synthesised&#45;perspectives</title>
 <g id="a_node1"><a xlink:title="Tools that synthesise multiple viewpoints or agent outputs into a unified perspective.">
-<ellipse fill="#6aa9ff" stroke="black" stroke-width="0" cx="139.43" cy="-142.41" rx="77.32" ry="77.32"/>
-<text text-anchor="middle" x="139.43" y="-139.91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1a1f2c">Synthesised Perspectives</text>
+<ellipse fill="#6aa9ff" stroke="black" stroke-width="0" cx="136.73" cy="-142.41" rx="77.32" ry="77.32"/>
+<text text-anchor="middle" x="136.73" y="-139.91" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1a1f2c">Synthesised Perspectives</text>
 </a>
 </g>
 </g>
@@ -23,31 +23,31 @@
 <g id="node2" class="node">
 <title>proj:plurals</title>
 <g id="a_node2"><a xlink:href="https://github.com/josh-ashkinaze/plurals" xlink:title="https://github.com/josh&#45;ashkinaze/plurals">
-<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="80.43,-29 38.96,-14.5 80.43,0 121.9,-14.5 80.43,-29"/>
-<text text-anchor="middle" x="80.43" y="-12.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">Plurals</text>
+<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="74.73,-29 33.26,-14.5 74.73,0 116.2,-14.5 74.73,-29"/>
+<text text-anchor="middle" x="74.73" y="-12.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">Plurals</text>
 </a>
 </g>
 </g>
 <!-- cat:synthesised&#45;perspectives&#45;&gt;proj:plurals -->
 <g id="edge1" class="edge">
 <title>cat:synthesised&#45;perspectives&#45;&gt;proj:plurals</title>
-<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M106.83,-71.83C99.8,-56.83 93.01,-42.35 88.08,-31.82"/>
-<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="89.66,-31.06 85.95,-27.27 86.49,-32.54 89.66,-31.06"/>
+<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M102.82,-72.56C95.27,-57.23 87.95,-42.36 82.68,-31.65"/>
+<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="84.19,-30.75 80.41,-27.04 81.05,-32.29 84.19,-30.75"/>
 </g>
 <!-- proj:llm&#45;council -->
 <g id="node3" class="node">
 <title>proj:llm&#45;council</title>
 <g id="a_node3"><a xlink:href="https://github.com/karpathy/llm-council" xlink:title="https://github.com/karpathy/llm&#45;council">
-<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="198.43,-29 139.69,-14.5 198.43,0 257.17,-14.5 198.43,-29"/>
-<text text-anchor="middle" x="198.43" y="-12.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">llm&#45;council</text>
+<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="198.73,-29 134.66,-14.5 198.73,0 262.79,-14.5 198.73,-29"/>
+<text text-anchor="middle" x="198.73" y="-12.3" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">LLM Council</text>
 </a>
 </g>
 </g>
 <!-- cat:synthesised&#45;perspectives&#45;&gt;proj:llm&#45;council -->
 <g id="edge2" class="edge">
 <title>cat:synthesised&#45;perspectives&#45;&gt;proj:llm&#45;council</title>
-<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M172.04,-71.83C178.97,-57.03 185.67,-42.73 190.59,-32.24"/>
-<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="192.18,-32.97 192.72,-27.7 189.01,-31.48 192.18,-32.97"/>
+<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M170.63,-72.56C177.98,-57.63 185.12,-43.14 190.36,-32.49"/>
+<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="191.99,-33.15 192.63,-27.89 188.85,-31.6 191.99,-33.15"/>
 </g>
 </g>
 </svg>

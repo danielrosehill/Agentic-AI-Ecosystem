@@ -3,6 +3,6 @@ digraph G {
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:software-extensions" [label="Software Extensions", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Extensions and plugins that add agentic capabilities to existing software."];
-  "proj:jupyter-ai" [label="jupyter-ai", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/jupyterlab/jupyter-ai", URL="https://github.com/jupyterlab/jupyter-ai"];
+  "proj:jupyter-ai" [label="Jupyter AI", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/jupyterlab/jupyter-ai", URL="https://github.com/jupyterlab/jupyter-ai"];
   "cat:software-extensions" -> "proj:jupyter-ai";
 }

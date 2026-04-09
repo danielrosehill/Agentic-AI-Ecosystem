@@ -116,31 +116,31 @@
 <g id="node5" class="node">
 <title>proj:context&#45;mode</title>
 <g id="a_node5"><a xlink:href="https://github.com/mksglu/context-mode" xlink:title="https://github.com/mksglu/context&#45;mode">
-<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="248.5,-137.7 176.21,-123.2 248.5,-108.7 320.8,-123.2 248.5,-137.7"/>
-<text text-anchor="middle" x="248.5" y="-121" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">context&#45;mode</text>
+<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="246.5,-137.7 174.21,-123.2 246.5,-108.7 318.8,-123.2 246.5,-137.7"/>
+<text text-anchor="middle" x="246.5" y="-121" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">context&#45;mode</text>
 </a>
 </g>
 </g>
 <!-- cat:context/context&#45;optimisation&#45;&gt;proj:context&#45;mode -->
 <g id="edge4" class="edge">
 <title>cat:context/context&#45;optimisation&#45;&gt;proj:context&#45;mode</title>
-<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M282.69,-221.04C272.7,-192.73 261.6,-161.29 254.83,-142.13"/>
-<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="256.36,-141.2 253.05,-137.06 253.06,-142.36 256.36,-141.2"/>
+<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M281.91,-221.04C271.56,-192.73 260.07,-161.29 253.06,-142.13"/>
+<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="254.57,-141.16 251.21,-137.06 251.28,-142.36 254.57,-141.16"/>
 </g>
 <!-- proj:contexto -->
 <g id="node7" class="node">
 <title>proj:contexto</title>
 <g id="a_node7"><a xlink:href="https://github.com/ekailabs/contexto" xlink:title="https://github.com/ekailabs/contexto">
-<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="389.5,-137.7 339,-123.2 389.5,-108.7 440.01,-123.2 389.5,-137.7"/>
-<text text-anchor="middle" x="389.5" y="-121" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">contexto</text>
+<polygon fill="#f59e0b" stroke="black" stroke-width="0" points="388.5,-137.7 337.19,-123.2 388.5,-108.7 439.82,-123.2 388.5,-137.7"/>
+<text text-anchor="middle" x="388.5" y="-121" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#1a1f2c">Contexto</text>
 </a>
 </g>
 </g>
 <!-- cat:context/engines&#45;&gt;proj:contexto -->
 <g id="edge6" class="edge">
 <title>cat:context/engines&#45;&gt;proj:contexto</title>
-<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M414.07,-254.1C407.93,-221.62 398.11,-169.72 392.95,-142.39"/>
-<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="394.62,-141.86 391.98,-137.27 391.19,-142.51 394.62,-141.86"/>
+<path fill="none" stroke="#c8cfdb" stroke-width="0.8" d="M413.89,-254.1C407.54,-221.62 397.4,-169.72 392.06,-142.39"/>
+<polygon fill="#c8cfdb" stroke="#c8cfdb" stroke-width="0.8" points="393.74,-141.84 391.06,-137.27 390.3,-142.51 393.74,-141.84"/>
 </g>
 <!-- proj:react&#45;grab -->
 <g id="node9" class="node">

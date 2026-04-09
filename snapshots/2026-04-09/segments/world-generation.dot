@@ -2,7 +2,11 @@ digraph G {
   graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="World Generation", fontsize=22, pad=0.4];
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
-  "cat:world-generation" [label="World Generation", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Tools and models for generating simulated worlds for agents to operate in."];
-  "proj:ml-agents" [label="ml-agents", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Unity-Technologies/ml-agents", URL="https://github.com/Unity-Technologies/ml-agents"];
+  "proj:unreal-engine-mcp" [label="Unreal Engine MCP", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/flopperam/unreal-engine-mcp", URL="https://github.com/flopperam/unreal-engine-mcp"];
+  "cat:world-generation" [label="World Generation", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Tools and models for generating simulated worlds for agents to operate in."];
+  "proj:ml-agents" [label="ML-Agents", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Unity-Technologies/ml-agents", URL="https://github.com/Unity-Technologies/ml-agents"];
+  "cat:world-generation/mcp" [label="MCP", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="MCP servers for world and scene generation."];
+  "cat:world-generation/mcp" -> "proj:unreal-engine-mcp";
   "cat:world-generation" -> "proj:ml-agents";
+  "cat:world-generation" -> "cat:world-generation/mcp";
 }

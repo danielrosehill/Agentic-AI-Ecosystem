@@ -5,7 +5,7 @@ digraph G {
   "cat:automation" [label="Automation", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="General-purpose automation tools and frameworks, including GUI-driven and script-driven flows."];
   "cat:automation/open-source" [label="Open Source", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
   "cat:automation/open-source/gui-based" [label="GUI Based", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip=""];
-  "proj:activepieces" [label="activepieces", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/activepieces/activepieces", URL="https://github.com/activepieces/activepieces"];
+  "proj:activepieces" [label="Activepieces", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/activepieces/activepieces", URL="https://github.com/activepieces/activepieces"];
   "proj:flowise" [label="Flowise", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/FlowiseAI/Flowise", URL="https://github.com/FlowiseAI/Flowise"];
   "cat:automation" -> "cat:automation/open-source";
   "cat:automation/open-source" -> "cat:automation/open-source/gui-based";

@@ -3,7 +3,7 @@ digraph G {
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:marketplaces" [label="Marketplaces", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Marketplaces and stores for discovering, listing, or transacting agents and agent-based services."];
-  "proj:agen-cy-marketplace" [label="agen.cy marketplace", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://marketplace.agen.cy/", URL="https://marketplace.agen.cy/"];
+  "proj:agen-cy-marketplace" [label="agen.cy Marketplace", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://marketplace.agen.cy/", URL="https://marketplace.agen.cy/"];
   "proj:ai-agent-store" [label="AI Agent Store", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://aiagentstore.ai/", URL="https://aiagentstore.ai/"];
   "cat:marketplaces" -> "proj:agen-cy-marketplace";
   "cat:marketplaces" -> "proj:ai-agent-store";

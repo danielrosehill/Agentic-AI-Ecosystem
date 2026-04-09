@@ -3,6 +3,6 @@ digraph G {
   node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:workflow-definition" [label="Workflow Definition", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Tools and DSLs for authoring agent workflows as first-class, portable artifacts."];
-  "proj:packmind" [label="packmind", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/PackmindHub/packmind", URL="https://github.com/PackmindHub/packmind"];
+  "proj:packmind" [label="Packmind", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/PackmindHub/packmind", URL="https://github.com/PackmindHub/packmind"];
   "cat:workflow-definition" -> "proj:packmind";
 }

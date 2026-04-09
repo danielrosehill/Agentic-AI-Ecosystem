@@ -4,7 +4,7 @@ digraph G {
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:agent-tools" [label="Agent Tools", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip=""];
   "cat:agent-tools/comms" [label="Comms", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:mcp-agent-mail" [label="mcp_agent_mail", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Dicklesworthstone/mcp_agent_mail", URL="https://github.com/Dicklesworthstone/mcp_agent_mail"];
+  "proj:mcp-agent-mail" [label="MCP Agent Mail", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Dicklesworthstone/mcp_agent_mail", URL="https://github.com/Dicklesworthstone/mcp_agent_mail"];
   "cat:agent-tools" -> "cat:agent-tools/comms";
   "cat:agent-tools/comms" -> "proj:mcp-agent-mail";
 }

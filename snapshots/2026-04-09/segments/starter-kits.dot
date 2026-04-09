@@ -4,7 +4,7 @@ digraph G {
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:starter-kits" [label="Starter Kits", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Opinionated starter kits and templates for kicking off agentic projects."];
   "cat:starter-kits/social-simulations" [label="Social Simulations", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
-  "proj:ai-town" [label="ai-town", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/a16z-infra/ai-town", URL="https://github.com/a16z-infra/ai-town"];
+  "proj:ai-town" [label="AI Town", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/a16z-infra/ai-town", URL="https://github.com/a16z-infra/ai-town"];
   "cat:starter-kits" -> "cat:starter-kits/social-simulations";
   "cat:starter-kits/social-simulations" -> "proj:ai-town";
 }

@@ -4,8 +4,8 @@ digraph G {
   edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
   "cat:ux" [label="UX", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="User-experience patterns and components specifically for agent systems."];
   "cat:ux/human-in-the-loop" [label="Human in the Loop", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Interfaces and workflows for inserting humans into agent execution — approvals, task handoff, review queues."];
-  "proj:agent-inbox" [label="agent-inbox", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/langchain-ai/agent-inbox", URL="https://github.com/langchain-ai/agent-inbox"];
-  "proj:orchestra" [label="orchestra", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/b12io/orchestra", URL="https://github.com/b12io/orchestra"];
+  "proj:agent-inbox" [label="Agent Inbox", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/langchain-ai/agent-inbox", URL="https://github.com/langchain-ai/agent-inbox"];
+  "proj:orchestra" [label="Orchestra", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/b12io/orchestra", URL="https://github.com/b12io/orchestra"];
   "cat:ux" -> "cat:ux/human-in-the-loop";
   "cat:ux/human-in-the-loop" -> "proj:agent-inbox";
   "cat:ux/human-in-the-loop" -> "proj:orchestra";

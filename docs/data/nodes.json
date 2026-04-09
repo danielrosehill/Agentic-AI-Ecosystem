@@ -452,18 +452,6 @@
       "url": "https://github.com/getzep/graphiti"
     },
     {
-      "id": "cat:agents/personal-focused",
-      "type": "Category",
-      "label": "Personal Focused",
-      "path": [
-        "Agents",
-        "Personal Focused"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:crucix",
       "type": "Project",
       "label": "Crucix",
@@ -1013,17 +1001,6 @@
       "url": "https://github.com/julep-ai/julep"
     },
     {
-      "id": "cat:desktop-guis",
-      "type": "Category",
-      "label": "Desktop GUIs",
-      "path": [
-        "Desktop GUIs"
-      ],
-      "short_description": "Desktop graphical interfaces for interacting with agents.",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:hello-halo",
       "type": "Project",
       "label": "Hello Halo",
@@ -1378,18 +1355,6 @@
       "url": "https://github.com/simular-ai/Agent-S"
     },
     {
-      "id": "cat:frameworks/multi-agent",
-      "type": "Category",
-      "label": "Multi-agent",
-      "path": [
-        "Frameworks",
-        "Multi-agent"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:camel",
       "type": "Project",
       "label": "CAMEL",
@@ -1703,18 +1668,6 @@
       "type": "Project",
       "label": "DeepAgents",
       "url": "https://github.com/langchain-ai/deepagents"
-    },
-    {
-      "id": "cat:harnesses/guardrails",
-      "type": "Category",
-      "label": "Guardrails",
-      "path": [
-        "Harnesses",
-        "Guardrails"
-      ],
-      "short_description": "Guardrails and pre-execution safety checks that gate what running agents can do.",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:shellfirm",
@@ -2048,34 +2001,10 @@
       "url": "https://github.com/666ghj/MiroFish"
     },
     {
-      "id": "cat:multiagent/workspace",
-      "type": "Category",
-      "label": "Workspace",
-      "path": [
-        "Multiagent",
-        "Workspace"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:agentsmesh",
       "type": "Project",
       "label": "AgentsMesh",
       "url": "https://github.com/AgentsMesh/AgentsMesh"
-    },
-    {
-      "id": "cat:multiagent/workspaces",
-      "type": "Category",
-      "label": "Workspaces",
-      "path": [
-        "Multiagent",
-        "Workspaces"
-      ],
-      "short_description": "Shared workspaces where agents and humans (or multiple agents) collaborate.",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:gastown",
@@ -2244,17 +2173,6 @@
       "type": "Project",
       "label": "Agent Squad",
       "url": "https://github.com/awslabs/agent-squad"
-    },
-    {
-      "id": "cat:personal",
-      "type": "Category",
-      "label": "Personal",
-      "path": [
-        "Personal"
-      ],
-      "short_description": "Personal-use agent projects and personal AI tooling.",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:nanobot",
@@ -3105,17 +3023,6 @@
       "url": "https://github.com/superdesigndev/superdesign"
     },
     {
-      "id": "cat:tools",
-      "type": "Category",
-      "label": "Tools",
-      "path": [
-        "Tools"
-      ],
-      "short_description": "Utility tools, SDKs and toolkits for building, debugging and extending agentic systems.",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:vercel-ai",
       "type": "Project",
       "label": "Vercel AI SDK",
@@ -3128,47 +3035,10 @@
       "url": "https://github.com/langflow-ai/langflow"
     },
     {
-      "id": "cat:tools/android",
-      "type": "Category",
-      "label": "Android",
-      "path": [
-        "Tools",
-        "Android"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:agent-device",
       "type": "Project",
       "label": "Agent Device",
       "url": "https://github.com/callstackincubator/agent-device"
-    },
-    {
-      "id": "cat:tools/browser-utils",
-      "type": "Category",
-      "label": "Browser Utils",
-      "path": [
-        "Tools",
-        "Browser Utils"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
-      "id": "cat:tools/browser-utils/sdk",
-      "type": "Category",
-      "label": "SDK",
-      "path": [
-        "Tools",
-        "Browser Utils",
-        "SDK"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:stagehand",
@@ -3177,35 +3047,10 @@
       "url": "https://github.com/browserbase/stagehand"
     },
     {
-      "id": "cat:tools/computer-use",
-      "type": "Category",
-      "label": "Computer Use",
-      "path": [
-        "Tools",
-        "Computer Use"
-      ],
-      "short_description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:cua",
       "type": "Project",
       "label": "cua",
       "url": "https://github.com/trycua/cua"
-    },
-    {
-      "id": "cat:tools/computer-use/cli",
-      "type": "Category",
-      "label": "CLI",
-      "path": [
-        "Tools",
-        "Computer Use",
-        "CLI"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:usecomputer",
@@ -3214,34 +3059,10 @@
       "url": "https://github.com/remorses/usecomputer"
     },
     {
-      "id": "cat:tools/data-ingestion",
-      "type": "Category",
-      "label": "Data Ingestion",
-      "path": [
-        "Tools",
-        "Data Ingestion"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:agent-reach",
       "type": "Project",
       "label": "Agent-Reach",
       "url": "https://github.com/Panniantong/Agent-Reach"
-    },
-    {
-      "id": "cat:tools/debugging",
-      "type": "Category",
-      "label": "Debugging",
-      "path": [
-        "Tools",
-        "Debugging"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:vllora",
@@ -3250,34 +3071,10 @@
       "url": "https://github.com/vllora/vllora"
     },
     {
-      "id": "cat:tools/financial",
-      "type": "Category",
-      "label": "Financial",
-      "path": [
-        "Tools",
-        "Financial"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:agentkit",
       "type": "Project",
       "label": "AgentKit",
       "url": "https://github.com/coinbase/agentkit"
-    },
-    {
-      "id": "cat:tools/ide-tools",
-      "type": "Category",
-      "label": "IDE Tools",
-      "path": [
-        "Tools",
-        "IDE Tools"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:roo-code",
@@ -3286,47 +3083,10 @@
       "url": "https://github.com/RooCodeInc/Roo-Code"
     },
     {
-      "id": "cat:tools/integration-platforms",
-      "type": "Category",
-      "label": "Integration Platforms",
-      "path": [
-        "Tools",
-        "Integration Platforms"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
-      "id": "cat:tools/integration-platforms/saas",
-      "type": "Category",
-      "label": "SaaS",
-      "path": [
-        "Tools",
-        "Integration Platforms",
-        "SaaS"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:composio",
       "type": "Project",
       "label": "Composio",
       "url": "https://github.com/ComposioHQ/composio"
-    },
-    {
-      "id": "cat:tools/macos",
-      "type": "Category",
-      "label": "macOS",
-      "path": [
-        "Tools",
-        "macOS"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:cmux",
@@ -3335,34 +3095,10 @@
       "url": "https://github.com/manaflow-ai/cmux"
     },
     {
-      "id": "cat:tools/model-routing",
-      "type": "Category",
-      "label": "Model Routing",
-      "path": [
-        "Tools",
-        "Model Routing"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:agentic-flow",
       "type": "Project",
       "label": "Agentic Flow",
       "url": "https://github.com/ruvnet/agentic-flow"
-    },
-    {
-      "id": "cat:tools/semantic-search",
-      "type": "Category",
-      "label": "Semantic Search",
-      "path": [
-        "Tools",
-        "Semantic Search"
-      ],
-      "short_description": "Semantic search tools for agents operating over codebases and local content.",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:osgrep",
@@ -3371,47 +3107,10 @@
       "url": "https://github.com/Ryandonofrio3/osgrep"
     },
     {
-      "id": "cat:tools/vision-ui",
-      "type": "Category",
-      "label": "Vision UI",
-      "path": [
-        "Tools",
-        "Vision UI"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "id": "proj:ui-venus",
       "type": "Project",
       "label": "UI-Venus",
       "url": "https://github.com/inclusionAI/UI-Venus"
-    },
-    {
-      "id": "cat:tools/world-creation",
-      "type": "Category",
-      "label": "World Creation",
-      "path": [
-        "Tools",
-        "World Creation"
-      ],
-      "short_description": "",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
-      "id": "cat:tools/world-creation/mcp",
-      "type": "Category",
-      "label": "MCP",
-      "path": [
-        "Tools",
-        "World Creation",
-        "MCP"
-      ],
-      "short_description": "Projects in the Model Context Protocol ecosystem \u2014 servers, gateways, aggregators, clients.",
-      "long_description": "",
-      "examples_narrative": ""
     },
     {
       "id": "proj:unreal-engine-mcp",
@@ -3583,6 +3282,234 @@
       "type": "Project",
       "label": "ML-Agents",
       "url": "https://github.com/Unity-Technologies/ml-agents"
+    },
+    {
+      "id": "cat:on-device-agents/android",
+      "type": "Category",
+      "label": "Android",
+      "path": [
+        "On Device Agents",
+        "Android"
+      ],
+      "short_description": "Android-specific agent runtimes and device-level automation.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:computer-use/cli",
+      "type": "Category",
+      "label": "CLI",
+      "path": [
+        "Computer Use",
+        "CLI"
+      ],
+      "short_description": "CLI-based computer-use agents and tools.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:rag/ingestion",
+      "type": "Category",
+      "label": "Ingestion",
+      "path": [
+        "RAG",
+        "Ingestion"
+      ],
+      "short_description": "Pipelines that ingest and process documents into retrieval systems.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:dev-tools/debugging",
+      "type": "Category",
+      "label": "Debugging",
+      "path": [
+        "Dev Tools",
+        "Debugging"
+      ],
+      "short_description": "Debugging and introspection tools for agent development.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:dev-tools/ide-integrations",
+      "type": "Category",
+      "label": "IDE Integrations",
+      "path": [
+        "Dev Tools",
+        "IDE Integrations"
+      ],
+      "short_description": "IDE extensions and plugins for agent-assisted development.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:integrations",
+      "type": "Category",
+      "label": "Integrations",
+      "path": [
+        "Integrations"
+      ],
+      "short_description": "Agent-to-SaaS connector platforms: Composio-style libraries exposing third-party APIs as agent tools.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:semantic-search",
+      "type": "Category",
+      "label": "Semantic Search",
+      "path": [
+        "Semantic Search"
+      ],
+      "short_description": "Semantic search tools for agents operating over codebases and local content.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:computer-use/vision-ui",
+      "type": "Category",
+      "label": "Vision UI",
+      "path": [
+        "Computer Use",
+        "Vision UI"
+      ],
+      "short_description": "Vision-based UI understanding models for computer-use agents.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:world-generation/mcp",
+      "type": "Category",
+      "label": "MCP",
+      "path": [
+        "World Generation",
+        "MCP"
+      ],
+      "short_description": "MCP servers for world and scene generation.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:prompt-management",
+      "type": "Category",
+      "label": "Prompt Management",
+      "path": [
+        "Prompt Management"
+      ],
+      "short_description": "Versioning, registries, and lifecycle management for prompts as first-class artifacts.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:structured-output",
+      "type": "Category",
+      "label": "Structured Output",
+      "path": [
+        "Structured Output"
+      ],
+      "short_description": "Libraries that constrain LLM outputs to typed schemas, JSON, or formal grammars.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:semantic-caching",
+      "type": "Category",
+      "label": "Semantic Caching",
+      "path": [
+        "Semantic Caching"
+      ],
+      "short_description": "Cache layers that serve semantically equivalent LLM responses to cut cost and latency.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:inference-servers",
+      "type": "Category",
+      "label": "Inference Servers",
+      "path": [
+        "Inference Servers"
+      ],
+      "short_description": "LLM inference servers and runtimes (vLLM, TGI, llama.cpp, SGLang) that agents call into.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:synthetic-data",
+      "type": "Category",
+      "label": "Synthetic Data",
+      "path": [
+        "Synthetic Data"
+      ],
+      "short_description": "Tools for generating synthetic training and evaluation data for agents.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:annotation",
+      "type": "Category",
+      "label": "Annotation",
+      "path": [
+        "Annotation"
+      ],
+      "short_description": "Human labeling, RLHF, and feedback-collection platforms for agent training data.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:identity-and-auth",
+      "type": "Category",
+      "label": "Identity and Auth",
+      "path": [
+        "Identity and Auth"
+      ],
+      "short_description": "Agent identity, credential vaulting, and delegated authentication for tool access.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:pii-and-redaction",
+      "type": "Category",
+      "label": "PII and Redaction",
+      "path": [
+        "PII and Redaction"
+      ],
+      "short_description": "PII detection, content sanitization, and safety filtering for agent I/O.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:agent-analytics",
+      "type": "Category",
+      "label": "Agent Analytics",
+      "path": [
+        "Agent Analytics"
+      ],
+      "short_description": "Product analytics for agent behaviour: funnels, retention, conversation quality, task success.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:guardrails",
+      "type": "Category",
+      "label": "Guardrails",
+      "path": [
+        "Guardrails"
+      ],
+      "short_description": "Guardrails and pre-execution safety checks that gate what running agents can do.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:agents/desktop-guis",
+      "type": "Category",
+      "label": "Desktop GUIs",
+      "path": [
+        "Agents",
+        "Desktop GUIs"
+      ],
+      "short_description": "Desktop graphical interfaces for interacting with agents.",
+      "long_description": "",
+      "examples_narrative": ""
     }
   ]
 }

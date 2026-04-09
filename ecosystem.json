@@ -2,6 +2,13 @@
   "updated": "2026-04-09",
   "segments": [
     {
+      "name": "Agent Analytics",
+      "examples": [],
+      "short_description": "Product analytics for agent behaviour: funnels, retention, conversation quality, task success.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
       "name": "Agent Clusters",
       "examples": [
         {
@@ -167,6 +174,18 @@
           "examples_narrative": ""
         },
         {
+          "name": "Desktop GUIs",
+          "examples": [
+            {
+              "name": "Hello Halo",
+              "url": "https://github.com/openkursar/hello-halo"
+            }
+          ],
+          "short_description": "Desktop graphical interfaces for interacting with agents.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
           "name": "Development",
           "examples": [
             {
@@ -291,18 +310,6 @@
           "examples_narrative": ""
         },
         {
-          "name": "Personal Focused",
-          "examples": [
-            {
-              "name": "Crucix",
-              "url": "https://github.com/calesthio/Crucix"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
           "name": "Purpose Specific",
           "children": [
             {
@@ -406,6 +413,13 @@
       "examples_narrative": ""
     },
     {
+      "name": "Annotation",
+      "examples": [],
+      "short_description": "Human labeling, RLHF, and feedback-collection platforms for agent training data.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
       "name": "Automation",
       "children": [
         {
@@ -483,6 +497,10 @@
         {
           "name": "Agent Browser",
           "url": "https://github.com/vercel-labs/agent-browser"
+        },
+        {
+          "name": "Stagehand",
+          "url": "https://github.com/browserbase/stagehand"
         }
       ],
       "short_description": "Utilities and SDKs that sit alongside browsers to support agentic workflows.",
@@ -493,11 +511,27 @@
       "name": "Computer Use",
       "children": [
         {
+          "name": "CLI",
+          "examples": [
+            {
+              "name": "usecomputer",
+              "url": "https://github.com/remorses/usecomputer"
+            }
+          ],
+          "short_description": "CLI-based computer-use agents and tools.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
           "name": "Platform Specific",
           "children": [
             {
               "name": "macOS",
               "examples": [
+                {
+                  "name": "cmux",
+                  "url": "https://github.com/manaflow-ai/cmux"
+                },
                 {
                   "name": "macOS-use",
                   "url": "https://github.com/browser-use/macOS-use"
@@ -511,6 +545,24 @@
           "short_description": "",
           "long_description": "",
           "examples_narrative": ""
+        },
+        {
+          "name": "Vision UI",
+          "examples": [
+            {
+              "name": "UI-Venus",
+              "url": "https://github.com/inclusionAI/UI-Venus"
+            }
+          ],
+          "short_description": "Vision-based UI understanding models for computer-use agents.",
+          "long_description": "",
+          "examples_narrative": ""
+        }
+      ],
+      "examples": [
+        {
+          "name": "cua",
+          "url": "https://github.com/trycua/cua"
         }
       ],
       "short_description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",
@@ -688,20 +740,32 @@
       "examples_narrative": ""
     },
     {
-      "name": "Desktop GUIs",
-      "examples": [
-        {
-          "name": "Hello Halo",
-          "url": "https://github.com/openkursar/hello-halo"
-        }
-      ],
-      "short_description": "Desktop graphical interfaces for interacting with agents.",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "name": "Dev Tools",
       "children": [
+        {
+          "name": "Debugging",
+          "examples": [
+            {
+              "name": "vLLora",
+              "url": "https://github.com/vllora/vllora"
+            }
+          ],
+          "short_description": "Debugging and introspection tools for agent development.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
+        {
+          "name": "IDE Integrations",
+          "examples": [
+            {
+              "name": "Roo-Code",
+              "url": "https://github.com/RooCodeInc/Roo-Code"
+            }
+          ],
+          "short_description": "IDE extensions and plugins for agent-assisted development.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
         {
           "name": "Repo Refactoring",
           "examples": [
@@ -851,6 +915,10 @@
       "name": "Financial Tools",
       "examples": [
         {
+          "name": "AgentKit",
+          "url": "https://github.com/coinbase/agentkit"
+        },
+        {
           "name": "GOAT",
           "url": "https://github.com/goat-sdk/goat"
         }
@@ -911,20 +979,12 @@
           "examples_narrative": ""
         },
         {
-          "name": "Multi-agent",
+          "name": "Multiagent Orchestration",
           "examples": [
             {
               "name": "CAMEL",
               "url": "https://github.com/camel-ai/camel"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Multiagent Orchestration",
-          "examples": [
+            },
             {
               "name": "CrewAI",
               "url": "https://github.com/crewAIInc/crewAI"
@@ -1033,8 +1093,16 @@
           "url": "https://github.com/Intelligent-Internet/ii-agent"
         },
         {
+          "name": "Langflow",
+          "url": "https://github.com/langflow-ai/langflow"
+        },
+        {
           "name": "uAgents",
           "url": "https://github.com/fetchai/uAgents"
+        },
+        {
+          "name": "Vercel AI SDK",
+          "url": "https://github.com/vercel/ai"
         }
       ],
       "short_description": "General-purpose frameworks for building agents and agentic applications.",
@@ -1134,6 +1202,18 @@
       "examples_narrative": ""
     },
     {
+      "name": "Guardrails",
+      "examples": [
+        {
+          "name": "Shellfirm",
+          "url": "https://github.com/kaplanelad/shellfirm"
+        }
+      ],
+      "short_description": "Guardrails and pre-execution safety checks that gate what running agents can do.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
       "name": "Harnesses",
       "children": [
         {
@@ -1145,18 +1225,6 @@
             }
           ],
           "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Guardrails",
-          "examples": [
-            {
-              "name": "Shellfirm",
-              "url": "https://github.com/kaplanelad/shellfirm"
-            }
-          ],
-          "short_description": "Guardrails and pre-execution safety checks that gate what running agents can do.",
           "long_description": "",
           "examples_narrative": ""
         },
@@ -1184,6 +1252,32 @@
         }
       ],
       "short_description": "Test harnesses and runner frameworks that host and exercise agents.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "name": "Identity and Auth",
+      "examples": [],
+      "short_description": "Agent identity, credential vaulting, and delegated authentication for tool access.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "name": "Inference Servers",
+      "examples": [],
+      "short_description": "LLM inference servers and runtimes (vLLM, TGI, llama.cpp, SGLang) that agents call into.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "name": "Integrations",
+      "examples": [
+        {
+          "name": "Composio",
+          "url": "https://github.com/ComposioHQ/composio"
+        }
+      ],
+      "short_description": "Agent-to-SaaS connector platforms: Composio-style libraries exposing third-party APIs as agent tools.",
       "long_description": "",
       "examples_narrative": ""
     },
@@ -1393,30 +1487,6 @@
           "short_description": "",
           "long_description": "",
           "examples_narrative": ""
-        },
-        {
-          "name": "Workspace",
-          "examples": [
-            {
-              "name": "AgentsMesh",
-              "url": "https://github.com/AgentsMesh/AgentsMesh"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Workspaces",
-          "examples": [
-            {
-              "name": "Gastown",
-              "url": "https://github.com/gastownhall/gastown"
-            }
-          ],
-          "short_description": "Shared workspaces where agents and humans (or multiple agents) collaborate.",
-          "long_description": "",
-          "examples_narrative": ""
         }
       ],
       "short_description": "Systems built around multiple cooperating or competing agents.",
@@ -1450,6 +1520,18 @@
     {
       "name": "On Device Agents",
       "children": [
+        {
+          "name": "Android",
+          "examples": [
+            {
+              "name": "Agent Device",
+              "url": "https://github.com/callstackincubator/agent-device"
+            }
+          ],
+          "short_description": "Android-specific agent runtimes and device-level automation.",
+          "long_description": "",
+          "examples_narrative": ""
+        },
         {
           "name": "SBCs",
           "examples": [
@@ -1538,18 +1620,6 @@
       "examples_narrative": ""
     },
     {
-      "name": "Personal",
-      "examples": [
-        {
-          "name": "Nanobot",
-          "url": "https://github.com/HKUDS/nanobot"
-        }
-      ],
-      "short_description": "Personal-use agent projects and personal AI tooling.",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
       "name": "Personal AI",
       "children": [
         {
@@ -1569,6 +1639,16 @@
           "examples_narrative": ""
         }
       ],
+      "examples": [
+        {
+          "name": "Crucix",
+          "url": "https://github.com/calesthio/Crucix"
+        },
+        {
+          "name": "Nanobot",
+          "url": "https://github.com/HKUDS/nanobot"
+        }
+      ],
       "short_description": "Personal AI assistants and related projects.",
       "long_description": "",
       "examples_narrative": ""
@@ -1582,6 +1662,13 @@
         }
       ],
       "short_description": "Tools for giving agents distinct personas, voices and identities.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "name": "PII and Redaction",
+      "examples": [],
+      "short_description": "PII detection, content sanitization, and safety filtering for agent I/O.",
       "long_description": "",
       "examples_narrative": ""
     },
@@ -1614,6 +1701,13 @@
         }
       ],
       "short_description": "General platforms that host or enable agentic applications.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "name": "Prompt Management",
+      "examples": [],
+      "short_description": "Versioning, registries, and lifecycle management for prompts as first-class artifacts.",
       "long_description": "",
       "examples_narrative": ""
     },
@@ -1667,6 +1761,18 @@
           "short_description": "",
           "long_description": "",
           "examples_narrative": ""
+        },
+        {
+          "name": "Ingestion",
+          "examples": [
+            {
+              "name": "Agent-Reach",
+              "url": "https://github.com/Panniantong/Agent-Reach"
+            }
+          ],
+          "short_description": "Pipelines that ingest and process documents into retrieval systems.",
+          "long_description": "",
+          "examples_narrative": ""
         }
       ],
       "examples": [
@@ -1713,6 +1819,10 @@
         {
           "name": "Intelligent",
           "examples": [
+            {
+              "name": "Agentic Flow",
+              "url": "https://github.com/ruvnet/agentic-flow"
+            },
             {
               "name": "Semantic Router",
               "url": "https://github.com/vllm-project/semantic-router"
@@ -1908,6 +2018,25 @@
       "examples_narrative": ""
     },
     {
+      "name": "Semantic Caching",
+      "examples": [],
+      "short_description": "Cache layers that serve semantically equivalent LLM responses to cut cost and latency.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "name": "Semantic Search",
+      "examples": [
+        {
+          "name": "osgrep",
+          "url": "https://github.com/Ryandonofrio3/osgrep"
+        }
+      ],
+      "short_description": "Semantic search tools for agents operating over codebases and local content.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
       "name": "Skills",
       "children": [
         {
@@ -2094,6 +2223,13 @@
       "examples_narrative": ""
     },
     {
+      "name": "Structured Output",
+      "examples": [],
+      "short_description": "Libraries that constrain LLM outputs to typed schemas, JSON, or formal grammars.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
       "name": "Synthesised Perspectives",
       "examples": [
         {
@@ -2106,6 +2242,13 @@
         }
       ],
       "short_description": "Tools that synthesise multiple viewpoints or agent outputs into a unified perspective.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "name": "Synthetic Data",
+      "examples": [],
+      "short_description": "Tools for generating synthetic training and evaluation data for agents.",
       "long_description": "",
       "examples_narrative": ""
     },
@@ -2126,218 +2269,6 @@
         }
       ],
       "short_description": "Agents and tools built for a single specific task rather than general use.",
-      "long_description": "",
-      "examples_narrative": ""
-    },
-    {
-      "name": "Tools",
-      "children": [
-        {
-          "name": "Android",
-          "examples": [
-            {
-              "name": "Agent Device",
-              "url": "https://github.com/callstackincubator/agent-device"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Browser Utils",
-          "children": [
-            {
-              "name": "SDK",
-              "examples": [
-                {
-                  "name": "Stagehand",
-                  "url": "https://github.com/browserbase/stagehand"
-                }
-              ],
-              "short_description": "",
-              "long_description": "",
-              "examples_narrative": ""
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Computer Use",
-          "children": [
-            {
-              "name": "CLI",
-              "examples": [
-                {
-                  "name": "usecomputer",
-                  "url": "https://github.com/remorses/usecomputer"
-                }
-              ],
-              "short_description": "",
-              "long_description": "",
-              "examples_narrative": ""
-            }
-          ],
-          "examples": [
-            {
-              "name": "cua",
-              "url": "https://github.com/trycua/cua"
-            }
-          ],
-          "short_description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Data Ingestion",
-          "examples": [
-            {
-              "name": "Agent-Reach",
-              "url": "https://github.com/Panniantong/Agent-Reach"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Debugging",
-          "examples": [
-            {
-              "name": "vLLora",
-              "url": "https://github.com/vllora/vllora"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Financial",
-          "examples": [
-            {
-              "name": "AgentKit",
-              "url": "https://github.com/coinbase/agentkit"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "IDE Tools",
-          "examples": [
-            {
-              "name": "Roo-Code",
-              "url": "https://github.com/RooCodeInc/Roo-Code"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Integration Platforms",
-          "children": [
-            {
-              "name": "SaaS",
-              "examples": [
-                {
-                  "name": "Composio",
-                  "url": "https://github.com/ComposioHQ/composio"
-                }
-              ],
-              "short_description": "",
-              "long_description": "",
-              "examples_narrative": ""
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "macOS",
-          "examples": [
-            {
-              "name": "cmux",
-              "url": "https://github.com/manaflow-ai/cmux"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Model Routing",
-          "examples": [
-            {
-              "name": "Agentic Flow",
-              "url": "https://github.com/ruvnet/agentic-flow"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Semantic Search",
-          "examples": [
-            {
-              "name": "osgrep",
-              "url": "https://github.com/Ryandonofrio3/osgrep"
-            }
-          ],
-          "short_description": "Semantic search tools for agents operating over codebases and local content.",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "Vision UI",
-          "examples": [
-            {
-              "name": "UI-Venus",
-              "url": "https://github.com/inclusionAI/UI-Venus"
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        },
-        {
-          "name": "World Creation",
-          "children": [
-            {
-              "name": "MCP",
-              "examples": [
-                {
-                  "name": "Unreal Engine MCP",
-                  "url": "https://github.com/flopperam/unreal-engine-mcp"
-                }
-              ],
-              "short_description": "Projects in the Model Context Protocol ecosystem \u2014 servers, gateways, aggregators, clients.",
-              "long_description": "",
-              "examples_narrative": ""
-            }
-          ],
-          "short_description": "",
-          "long_description": "",
-          "examples_narrative": ""
-        }
-      ],
-      "examples": [
-        {
-          "name": "Langflow",
-          "url": "https://github.com/langflow-ai/langflow"
-        },
-        {
-          "name": "Vercel AI SDK",
-          "url": "https://github.com/vercel/ai"
-        }
-      ],
-      "short_description": "Utility tools, SDKs and toolkits for building, debugging and extending agentic systems.",
       "long_description": "",
       "examples_narrative": ""
     },
@@ -2436,6 +2367,14 @@
       "name": "Workspaces",
       "examples": [
         {
+          "name": "AgentsMesh",
+          "url": "https://github.com/AgentsMesh/AgentsMesh"
+        },
+        {
+          "name": "Gastown",
+          "url": "https://github.com/gastownhall/gastown"
+        },
+        {
           "name": "LobeHub",
           "url": "https://github.com/lobehub/lobehub"
         }
@@ -2446,6 +2385,20 @@
     },
     {
       "name": "World Generation",
+      "children": [
+        {
+          "name": "MCP",
+          "examples": [
+            {
+              "name": "Unreal Engine MCP",
+              "url": "https://github.com/flopperam/unreal-engine-mcp"
+            }
+          ],
+          "short_description": "MCP servers for world and scene generation.",
+          "long_description": "",
+          "examples_narrative": ""
+        }
+      ],
       "examples": [
         {
           "name": "ML-Agents",
