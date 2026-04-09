@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Agentic AI Ecosystem — Interactive Map</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --panel: #ffffff;
+    --panel-border: #e3e6eb;
+    --text: #1a1f2c;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --category: #6aa9ff;
+    --category-hub: #1f6feb;
+    --project: #f59e0b;
+    --edge: #c8cfdb;
+  }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  #graph { position: fixed; inset: 0; }
+
+  .panel {
+    position: fixed; background: var(--panel); border: 1px solid var(--panel-border);
+    border-radius: 10px; box-shadow: 0 4px 14px rgba(20,30,60,0.06);
+    padding: 14px 16px; font-size: 13px; line-height: 1.4;
+  }
+  #header { top: 16px; left: 16px; max-width: 360px; }
+  #header h1 { margin: 0 0 4px; font-size: 15px; font-weight: 600; }
+  #header .stats { color: var(--muted); font-size: 12px; }
+  #header .stats a { color: var(--accent); text-decoration: none; }
+
+  #controls { top: 16px; right: 16px; width: 240px; }
+  #controls label { display: block; font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
+  #controls input, #controls select {
+    width: 100%; padding: 7px 9px; border: 1px solid var(--panel-border);
+    border-radius: 6px; font-size: 13px; background: #fff; color: var(--text);
+    box-sizing: border-box; margin-bottom: 10px;
+  }
+  #controls input:focus, #controls select:focus {
+    outline: none; border-color: var(--accent);
+  }
+  #controls .legend { display: flex; gap: 12px; align-items: center;
+    font-size: 12px; color: var(--muted); margin-top: 4px; }
+  #controls .legend .dot { width: 10px; height: 10px; border-radius: 50%;
+    display: inline-block; margin-right: 4px; vertical-align: middle; }
+  #controls .legend .box { width: 10px; height: 10px; border-radius: 2px;
+    display: inline-block; margin-right: 4px; vertical-align: middle;
+    transform: rotate(45deg); }
+
+  #info { bottom: 16px; left: 16px; max-width: 360px; display: none; }
+  #info h2 { margin: 0 0 4px; font-size: 14px; }
+  #info .kind { font-size: 11px; color: var(--muted); text-transform: uppercase;
+    letter-spacing: 0.05em; margin-bottom: 6px; }
+  #info p { margin: 6px 0; }
+  #info a { color: var(--accent); word-break: break-all; }
+  #info .path { color: var(--muted); font-size: 12px; }
+
+  #footer { bottom: 16px; right: 16px; font-size: 11px; color: var(--muted); }
+  #footer a { color: var(--muted); text-decoration: underline; }
+</style>
+</head>
+<body>
+<div id="graph"></div>
+
+<div id="header" class="panel">
+  <h1>Agentic AI Ecosystem</h1>
+  <div class="stats" id="stats">Loading…</div>
+</div>
+
+<div id="controls" class="panel">
+  <label for="search">Search</label>
+  <input id="search" type="search" placeholder="Type to highlight…" autocomplete="off">
+  <label for="segment">Focus segment</label>
+  <select id="segment"><option value="">— all —</option></select>
+  <div class="legend">
+    <span><span class="dot" style="background: var(--category)"></span>Category</span>
+    <span><span class="box" style="background: var(--project)"></span>Project</span>
+  </div>
+</div>
+
+<div id="info" class="panel"></div>
+
+<div id="footer" class="panel">
+  <a href="https://github.com/danielrosehill/Agentic-AI-Ecosystem" target="_blank" rel="noopener">source on GitHub</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.73.4/dist/3d-force-graph.min.js"></script>
+<script>
+(async function () {
+  const [nodesRes, edgesRes] = await Promise.all([
+    fetch('../graph/nodes.json'),
+    fetch('../graph/edges.json'),
+  ]);
+  const nodesData = await nodesRes.json();
+  const edgesData = await edgesRes.json();
+
+  // Build graph: every node id stays as-is; every edge becomes a link.
+  const nodes = nodesData.nodes.map(n => ({ ...n }));
+  const nodeIndex = Object.fromEntries(nodes.map(n => [n.id, n]));
+  const links = edgesData.edges
+    .filter(e => nodeIndex[e.from] && nodeIndex[e.to])
+    .map(e => ({
+      // For visual flow: flip child→parent edges so parent points at child.
+      source: e.type === 'SUBCATEGORY_OF' || e.type === 'CATEGORY_OF' ? e.to : e.from,
+      target: e.type === 'SUBCATEGORY_OF' || e.type === 'CATEGORY_OF' ? e.from : e.to,
+      type: e.type,
+    }));
+
+  // Degree count for sizing.
+  const degree = {};
+  links.forEach(l => {
+    degree[l.source] = (degree[l.source] || 0) + 1;
+    degree[l.target] = (degree[l.target] || 0) + 1;
+  });
+  nodes.forEach(n => { n.degree = degree[n.id] || 0; });
+
+  // Segment (top-level category) attribution, for focus filter.
+  const segmentOf = {};
+  function walkSegment(id, seg) {
+    if (segmentOf[id]) return;
+    segmentOf[id] = seg;
+    links.forEach(l => {
+      const s = typeof l.source === 'string' ? l.source : l.source.id;
+      const t = typeof l.target === 'string' ? l.target : l.target.id;
+      if (s === id && !segmentOf[t]) walkSegment(t, seg);
+    });
+  }
+  nodes.forEach(n => {
+    if (n.type === 'Category' && n.path && n.path.length === 1) {
+      walkSegment(n.id, n.label);
+    }
+  });
+
+  // Stats + segment dropdown.
+  const cats = nodes.filter(n => n.type === 'Category').length;
+  const projs = nodes.filter(n => n.type === 'Project').length;
+  document.getElementById('stats').innerHTML =
+    `${cats} categories · ${projs} projects · updated ${nodesData.updated || '—'}`;
+  const segmentSel = document.getElementById('segment');
+  [...new Set(nodes
+      .filter(n => n.type === 'Category' && n.path && n.path.length === 1)
+      .map(n => n.label))]
+    .sort((a, b) => a.localeCompare(b))
+    .forEach(label => {
+      const opt = document.createElement('option');
+      opt.value = label; opt.textContent = label;
+      segmentSel.appendChild(opt);
+    });
+
+  // Three.js primitives for custom node rendering.
+  const CAT_COLOR = 0x6aa9ff;
+  const CAT_HUB_COLOR = 0x1f6feb;
+  const PROJ_COLOR = 0xf59e0b;
+  const DIM_OPACITY = 0.12;
+
+  const catGeom = new THREE.SphereGeometry(1, 18, 18);
+  const projGeom = new THREE.OctahedronGeometry(1, 0);
+
+  // Graph instance.
+  const Graph = ForceGraph3D()(document.getElementById('graph'))
+    .backgroundColor('#f7f8fa')
+    .graphData({ nodes, links })
+    .nodeLabel(n => n.type === 'Project'
+      ? `<b>${escapeHtml(n.label)}</b><br><span style="color:#6b7280">${escapeHtml(n.url || '')}</span>`
+      : `<b>${escapeHtml(n.label)}</b><br><span style="color:#6b7280">${escapeHtml((n.path||[]).join(' › '))}</span>`)
+    .nodeThreeObject(n => {
+      const isProj = n.type === 'Project';
+      const size = isProj ? 2.2 : (3 + Math.min(n.degree, 20) * 0.35);
+      const material = new THREE.MeshLambertMaterial({
+        color: isProj ? PROJ_COLOR : (n.degree > 8 ? CAT_HUB_COLOR : CAT_COLOR),
+        transparent: true,
+        opacity: 1.0,
+      });
+      const mesh = new THREE.Mesh(isProj ? projGeom : catGeom, material);
+      mesh.scale.setScalar(size);
+      n.__material = material;
+      n.__isProj = isProj;
+      return mesh;
+    })
+    .linkColor(() => '#c8cfdb')
+    .linkOpacity(0.45)
+    .linkWidth(0.4)
+    .linkDirectionalParticles(0)
+    .onNodeClick(n => {
+      showInfo(n);
+      if (n.type === 'Project' && n.url) window.open(n.url, '_blank', 'noopener');
+      // center camera on node
+      const dist = 140;
+      const dr = Math.hypot(n.x, n.y, n.z) || 1;
+      Graph.cameraPosition(
+        { x: n.x * (1 + dist / dr), y: n.y * (1 + dist / dr), z: n.z * (1 + dist / dr) },
+        n, 900
+      );
+    });
+
+  // Nice initial forces for a sprawling but readable layout.
+  Graph.d3Force('charge').strength(-120);
+  Graph.d3Force('link').distance(l => l.type === 'CATEGORY_OF' ? 18 : 32);
+
+  // Info panel rendering.
+  const infoEl = document.getElementById('info');
+  function showInfo(n) {
+    infoEl.style.display = 'block';
+    const path = (n.path || []).join(' › ');
+    if (n.type === 'Project') {
+      infoEl.innerHTML =
+        `<div class="kind">Project</div>
+         <h2>${escapeHtml(n.label)}</h2>
+         ${n.url ? `<p><a href="${escapeAttr(n.url)}" target="_blank" rel="noopener">${escapeHtml(n.url)}</a></p>` : ''}
+         <p class="path">${escapeHtml(segmentOf[n.id] || '')}</p>`;
+    } else {
+      infoEl.innerHTML =
+        `<div class="kind">Category</div>
+         <h2>${escapeHtml(n.label)}</h2>
+         <p class="path">${escapeHtml(path)}</p>
+         ${n.description ? `<p>${escapeHtml(n.description)}</p>` : ''}`;
+    }
+  }
+
+  // Search + focus filter: dim non-matching nodes/links.
+  const searchEl = document.getElementById('search');
+  function applyFilter() {
+    const q = searchEl.value.trim().toLowerCase();
+    const seg = segmentSel.value;
+    const matches = (n) => {
+      const okSeg = !seg || segmentOf[n.id] === seg;
+      const okQ = !q
+        || (n.label && n.label.toLowerCase().includes(q))
+        || (n.path && n.path.join(' ').toLowerCase().includes(q));
+      return okSeg && okQ;
+    };
+    nodes.forEach(n => {
+      const m = matches(n);
+      if (n.__material) {
+        n.__material.opacity = m ? 1.0 : DIM_OPACITY;
+        n.__material.needsUpdate = true;
+      }
+      n.__dim = !m;
+    });
+    Graph.linkOpacity(l => {
+      const s = typeof l.source === 'object' ? l.source : nodeIndex[l.source];
+      const t = typeof l.target === 'object' ? l.target : nodeIndex[l.target];
+      return (s && s.__dim) || (t && t.__dim) ? 0.05 : 0.45;
+    });
+  }
+  searchEl.addEventListener('input', applyFilter);
+  segmentSel.addEventListener('change', applyFilter);
+
+  // Utilities.
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function escapeAttr(s) {
+    return escapeHtml(s).replace(/"/g, '&quot;');
+  }
+})();
+</script>
+</body>
+</html>
