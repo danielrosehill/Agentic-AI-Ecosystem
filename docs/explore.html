@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Agentic AI Ecosystem — Explore</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --panel: #ffffff;
+    --border: #e3e6eb;
+    --text: #1a1f2c;
+    --muted: #6b7280;
+    --accent: #2563eb;
+    --accent-soft: #e0ecff;
+    --hub: #1f6feb;
+    --spoke: #6aa9ff;
+    --project: #f59e0b;
+    --line: #c8cfdb;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; height: 100%; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  #app { display: grid; grid-template-columns: 1fr 380px; height: 100vh; }
+  @media (max-width: 900px) { #app { grid-template-columns: 1fr; grid-template-rows: 1fr auto; } }
+
+  #stage { position: relative; overflow: hidden; background:
+    radial-gradient(circle at 50% 50%, #ffffff 0%, #f0f3f8 70%, #e6ebf2 100%); }
+  svg { width: 100%; height: 100%; display: block; }
+
+  #header { position: absolute; top: 16px; left: 16px; right: 16px; pointer-events: none; }
+  #title { font-weight: 700; font-size: 18px; }
+  #subtitle { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  #breadcrumb { position: absolute; top: 56px; left: 16px; right: 16px;
+    font-size: 13px; color: var(--muted); }
+  #breadcrumb .crumb { cursor: pointer; color: var(--accent); text-decoration: none; }
+  #breadcrumb .crumb:hover { text-decoration: underline; }
+  #breadcrumb .sep { color: var(--muted); margin: 0 6px; }
+  #breadcrumb .current { color: var(--text); font-weight: 600; }
+
+  #controls { position: absolute; bottom: 16px; left: 16px; display: flex; gap: 8px; }
+  button { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 8px 12px; font-size: 13px; cursor: pointer; color: var(--text); }
+  button:hover { background: var(--accent-soft); border-color: var(--accent); }
+
+  .node { cursor: pointer; }
+  .node circle { transition: r 0.25s, fill 0.25s, stroke-width 0.25s; }
+  .node text { font-size: 11px; fill: var(--text); pointer-events: none;
+    text-anchor: middle; dominant-baseline: middle; user-select: none; }
+  .node.hub circle { fill: var(--hub); stroke: #fff; stroke-width: 3; }
+  .node.hub text { fill: #fff; font-weight: 700; font-size: 13px; }
+  .node.spoke circle { fill: var(--spoke); stroke: #fff; stroke-width: 2; }
+  .node.project circle { fill: var(--project); stroke: #fff; stroke-width: 2; }
+  .node:hover circle { stroke: var(--accent); stroke-width: 3; }
+  .edge { stroke: var(--line); stroke-width: 1.5; fill: none; }
+
+  #panel { background: var(--panel); border-left: 1px solid var(--border);
+    padding: 22px 24px; overflow-y: auto; }
+  #panel h1 { margin: 0 0 4px; font-size: 20px; }
+  #panel .path { font-size: 12px; color: var(--muted); margin-bottom: 16px; }
+  #panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px;
+    color: var(--muted); margin: 20px 0 8px; font-weight: 600; }
+  #panel .short { font-size: 14px; line-height: 1.5; color: var(--text);
+    font-style: italic; margin-bottom: 10px; }
+  #panel .long { font-size: 13px; line-height: 1.55; color: #2d3748; }
+  #panel ul { list-style: none; padding: 0; margin: 0; }
+  #panel ul li { padding: 8px 0; border-bottom: 1px solid #f0f2f5; font-size: 13px; }
+  #panel ul li:last-child { border-bottom: none; }
+  #panel ul li a { color: var(--accent); text-decoration: none; }
+  #panel ul li a:hover { text-decoration: underline; }
+  #panel .child { cursor: pointer; display: flex; justify-content: space-between;
+    align-items: center; }
+  #panel .child:hover { background: var(--accent-soft); margin: 0 -10px; padding-left: 10px;
+    padding-right: 10px; border-radius: 6px; }
+  #panel .count { font-size: 11px; color: var(--muted); background: #f0f2f5;
+    padding: 2px 8px; border-radius: 10px; }
+  #panel .empty { color: var(--muted); font-size: 13px; font-style: italic; }
+  .pill { display: inline-block; font-size: 11px; padding: 3px 9px; border-radius: 12px;
+    background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage">
+    <div id="header">
+      <div id="title">Agentic AI Ecosystem</div>
+      <div id="subtitle">Click a hub to drill down · click the centre to go up</div>
+    </div>
+    <div id="breadcrumb"></div>
+    <svg id="svg"></svg>
+    <div id="controls">
+      <button id="home">↑ Top</button>
+      <button id="back">← Back</button>
+    </div>
+  </div>
+  <aside id="panel">
+    <div class="empty">Select a category to see its description.</div>
+  </aside>
+</div>
+<script>
+const svg = document.getElementById('svg');
+const panel = document.getElementById('panel');
+const breadcrumb = document.getElementById('breadcrumb');
+const SVG_NS = 'http://www.w3.org/2000/svg';
+
+let tree;      // root with .segments
+let stack = []; // array of nodes from root down to current
+let W = 0, H = 0;
+
+function el(tag, attrs = {}, parent = svg) {
+  const e = document.createElementNS(SVG_NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  parent.appendChild(e);
+  return e;
+}
+
+function resize() {
+  const r = svg.getBoundingClientRect();
+  W = r.width; H = r.height;
+  render();
+}
+
+function current() { return stack[stack.length - 1]; }
+
+function setStack(newStack) {
+  stack = newStack;
+  render();
+  showPanel(current());
+  renderBreadcrumb();
+}
+
+function renderBreadcrumb() {
+  breadcrumb.innerHTML = '';
+  stack.forEach((node, i) => {
+    if (i > 0) {
+      const sep = document.createElement('span');
+      sep.className = 'sep';
+      sep.textContent = '›';
+      breadcrumb.appendChild(sep);
+    }
+    const span = document.createElement('span');
+    if (i === stack.length - 1) {
+      span.className = 'current';
+      span.textContent = node.label || 'Home';
+    } else {
+      span.className = 'crumb';
+      span.textContent = node.label || 'Home';
+      span.addEventListener('click', () => setStack(stack.slice(0, i + 1)));
+    }
+    breadcrumb.appendChild(span);
+  });
+}
+
+function childrenOf(node) {
+  if (!node) return [];
+  if (node === tree) return tree.segments.map(s => ({...s, _type: 'category'}));
+  const kids = (node.children || []).map(c => ({...c, _type: 'category'}));
+  const projs = (node.examples || []).map(p => ({...p, _type: 'project'}));
+  return [...kids, ...projs];
+}
+
+function render() {
+  svg.innerHTML = '';
+  const cx = W / 2, cy = H / 2;
+  const node = current();
+  const kids = childrenOf(node);
+  const n = kids.length;
+
+  const rMin = Math.min(W, H) * 0.28;
+  const rMax = Math.min(W, H) * 0.42;
+  // Larger radius if many children
+  const radius = Math.min(rMax, Math.max(rMin, 20 * n / Math.PI + 60));
+
+  // Draw edges first
+  kids.forEach((_, i) => {
+    const angle = (i / n) * Math.PI * 2 - Math.PI / 2;
+    const x = cx + Math.cos(angle) * radius;
+    const y = cy + Math.sin(angle) * radius;
+    el('line', { class: 'edge', x1: cx, y1: cy, x2: x, y2: y });
+  });
+
+  // Hub (current node)
+  const hubG = el('g', { class: 'node hub' });
+  el('circle', { cx, cy, r: 46 }, hubG);
+  const label = node === tree ? 'All Segments' : (node.label || '');
+  wrapText(hubG, label, cx, cy, 80, '#fff', 13, 700);
+  hubG.addEventListener('click', () => {
+    if (stack.length > 1) setStack(stack.slice(0, -1));
+  });
+
+  // Spokes
+  kids.forEach((kid, i) => {
+    const angle = (i / n) * Math.PI * 2 - Math.PI / 2;
+    const x = cx + Math.cos(angle) * radius;
+    const y = cy + Math.sin(angle) * radius;
+    const isProj = kid._type === 'project';
+    const g = el('g', { class: 'node ' + (isProj ? 'project' : 'spoke') });
+    const r = isProj ? 14 : 22;
+    el('circle', { cx: x, cy: y, r }, g);
+    // label offset outside circle
+    const lx = cx + Math.cos(angle) * (radius + r + 12);
+    const ly = cy + Math.sin(angle) * (radius + r + 12);
+    const t = el('text', { x: lx, y: ly, 'text-anchor': labelAnchor(angle) }, g);
+    t.textContent = truncate(kid.label || kid.name || '', 28);
+    t.setAttribute('fill', '#1a1f2c');
+    t.setAttribute('font-size', '11');
+    t.setAttribute('font-weight', '600');
+
+    g.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (isProj) {
+        showProject(kid);
+      } else {
+        setStack([...stack, kid]);
+      }
+    });
+    g.addEventListener('mouseenter', () => showPanel(kid));
+    g.addEventListener('mouseleave', () => showPanel(current()));
+  });
+}
+
+function labelAnchor(angle) {
+  const cos = Math.cos(angle);
+  if (cos > 0.3) return 'start';
+  if (cos < -0.3) return 'end';
+  return 'middle';
+}
+
+function truncate(s, n) { return s.length > n ? s.slice(0, n - 1) + '…' : s; }
+
+function wrapText(parent, text, cx, cy, maxWidth, fill, size, weight) {
+  const t = el('text', { x: cx, y: cy, fill, 'font-size': size, 'font-weight': weight,
+    'text-anchor': 'middle', 'dominant-baseline': 'middle' }, parent);
+  const words = text.split(/\s+/);
+  const lines = [];
+  let line = '';
+  const charW = size * 0.55;
+  const maxChars = Math.floor(maxWidth / charW);
+  for (const w of words) {
+    if ((line + ' ' + w).trim().length > maxChars && line) {
+      lines.push(line); line = w;
+    } else {
+      line = (line + ' ' + w).trim();
+    }
+  }
+  if (line) lines.push(line);
+  const lineH = size * 1.15;
+  const startY = cy - (lines.length - 1) * lineH / 2;
+  lines.forEach((ln, i) => {
+    const ts = el('tspan', { x: cx, y: startY + i * lineH }, t);
+    ts.textContent = ln;
+  });
+}
+
+function showPanel(node) {
+  if (!node) return;
+  panel.innerHTML = '';
+  const h1 = document.createElement('h1');
+  h1.textContent = node === tree ? 'Agentic AI Ecosystem' : (node.label || '');
+  panel.appendChild(h1);
+
+  if (node === tree) {
+    const p = document.createElement('div');
+    p.className = 'path';
+    p.textContent = `${tree.segments.length} top-level segments · updated ${tree.updated || ''}`;
+    panel.appendChild(p);
+
+    const h2 = document.createElement('h2');
+    h2.textContent = 'Segments';
+    panel.appendChild(h2);
+    const ul = document.createElement('ul');
+    tree.segments.forEach(seg => {
+      const li = document.createElement('li');
+      li.className = 'child';
+      const left = document.createElement('span');
+      left.textContent = seg.label;
+      const right = document.createElement('span');
+      right.className = 'count';
+      right.textContent = countDescendants(seg);
+      li.appendChild(left); li.appendChild(right);
+      li.addEventListener('click', () => setStack([tree, seg]));
+      ul.appendChild(li);
+    });
+    panel.appendChild(ul);
+    return;
+  }
+
+  if (node.path) {
+    const p = document.createElement('div');
+    p.className = 'path';
+    p.textContent = (node.path || []).join(' › ');
+    panel.appendChild(p);
+  }
+
+  if (node.short_description) {
+    const s = document.createElement('div');
+    s.className = 'short';
+    s.textContent = node.short_description;
+    panel.appendChild(s);
+  }
+  if (node.long_description) {
+    const l = document.createElement('div');
+    l.className = 'long';
+    l.textContent = node.long_description;
+    panel.appendChild(l);
+  }
+  if (!node.short_description && !node.long_description) {
+    const d = document.createElement('div');
+    d.className = 'empty';
+    d.textContent = 'No description yet.';
+    panel.appendChild(d);
+  }
+
+  const kids = (node.children || []);
+  if (kids.length) {
+    const h2 = document.createElement('h2');
+    h2.textContent = `Subcategories (${kids.length})`;
+    panel.appendChild(h2);
+    const ul = document.createElement('ul');
+    kids.forEach(c => {
+      const li = document.createElement('li');
+      li.className = 'child';
+      const left = document.createElement('span');
+      left.textContent = c.label;
+      const right = document.createElement('span');
+      right.className = 'count';
+      right.textContent = countDescendants(c);
+      li.appendChild(left); li.appendChild(right);
+      li.addEventListener('click', () => setStack([...stack, c]));
+      ul.appendChild(li);
+    });
+    panel.appendChild(ul);
+  }
+
+  const projs = (node.examples || []);
+  if (projs.length) {
+    const h2 = document.createElement('h2');
+    h2.textContent = `Projects (${projs.length})`;
+    panel.appendChild(h2);
+    const ul = document.createElement('ul');
+    projs.forEach(p => {
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = p.url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      a.textContent = p.name;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    panel.appendChild(ul);
+  }
+}
+
+function showProject(p) {
+  panel.innerHTML = '';
+  const h1 = document.createElement('h1');
+  h1.textContent = p.name;
+  panel.appendChild(h1);
+  const pill = document.createElement('span');
+  pill.className = 'pill';
+  pill.textContent = 'Project';
+  panel.appendChild(pill);
+  const h2 = document.createElement('h2');
+  h2.textContent = 'Link';
+  panel.appendChild(h2);
+  const ul = document.createElement('ul');
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+  a.href = p.url; a.target = '_blank'; a.rel = 'noopener'; a.textContent = p.url;
+  li.appendChild(a); ul.appendChild(li);
+  panel.appendChild(ul);
+}
+
+function countDescendants(node) {
+  let n = (node.examples || []).length;
+  (node.children || []).forEach(c => { n += countDescendants(c); });
+  return n || 0;
+}
+
+document.getElementById('home').addEventListener('click', () => setStack([tree]));
+document.getElementById('back').addEventListener('click', () => {
+  if (stack.length > 1) setStack(stack.slice(0, -1));
+});
+window.addEventListener('resize', resize);
+
+fetch('./data/ecosystem.json').then(r => r.json()).then(data => {
+  tree = data;
+  tree.label = 'All';
+  setStack([tree]);
+  resize();
+});
+</script>
+</body>
+</html>

@@ -100,6 +100,7 @@ def main() -> None:
     DOCS_DATA.mkdir(parents=True, exist_ok=True)
     shutil.copy2(NODES_IN, DOCS_DATA / "nodes.json")
     shutil.copy2(EDGES_IN, DOCS_DATA / "edges.json")
+    shutil.copy2(TREE_OUT, DOCS_DATA / "ecosystem.json")
     print(f"synced {DOCS_DATA.relative_to(ROOT)}/")
     print(f"segments: {len(segments)}")
     print(f"categories: {sum(1 for n in nodes.values() if n['type'] == 'Category')}")
