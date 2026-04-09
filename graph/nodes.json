@@ -1,0 +1,3178 @@
+{
+  "updated": "2026-04-09",
+  "nodes": [
+    {
+      "id": "cat:agent-clusters",
+      "type": "Category",
+      "label": "Agent Clusters",
+      "path": [
+        "Agent Clusters"
+      ],
+      "description": "Systems that run many agents together as a managed group or fleet."
+    },
+    {
+      "id": "proj:intentkit",
+      "type": "Project",
+      "label": "intentkit",
+      "url": "https://github.com/crestalnetwork/intentkit"
+    },
+    {
+      "id": "cat:agent-collaboration",
+      "type": "Category",
+      "label": "Agent Collaboration",
+      "path": [
+        "Agent Collaboration"
+      ],
+      "description": "Protocols, patterns and platforms for agents to collaborate on shared tasks."
+    },
+    {
+      "id": "proj:agentverse",
+      "type": "Project",
+      "label": "AgentVerse",
+      "url": "https://github.com/Peiiii/AgentVerse"
+    },
+    {
+      "id": "cat:agent-to-agent",
+      "type": "Category",
+      "label": "Agent to Agent",
+      "path": [
+        "Agent to Agent"
+      ],
+      "description": "Communication protocols and transports that let agents talk directly to other agents."
+    },
+    {
+      "id": "proj:openagents",
+      "type": "Project",
+      "label": "openagents",
+      "url": "https://github.com/openagents-org/openagents"
+    },
+    {
+      "id": "proj:agentchattr",
+      "type": "Project",
+      "label": "agentchattr",
+      "url": "https://github.com/bcurts/agentchattr"
+    },
+    {
+      "id": "proj:connectonion",
+      "type": "Project",
+      "label": "connectonion",
+      "url": "https://github.com/openonion/connectonion"
+    },
+    {
+      "id": "cat:agent-to-agent/experiments",
+      "type": "Category",
+      "label": "Experiments",
+      "path": [
+        "Agent to Agent",
+        "Experiments"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agent-to-agent/experiments/voices",
+      "type": "Category",
+      "label": "Voices",
+      "path": [
+        "Agent to Agent",
+        "Experiments",
+        "Voices"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:gibberlink",
+      "type": "Project",
+      "label": "gibberlink",
+      "url": "https://github.com/PennyroyalTea/gibberlink"
+    },
+    {
+      "id": "cat:agent-tools",
+      "type": "Category",
+      "label": "Agent Tools",
+      "path": [
+        "Agent Tools"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agent-tools/comms",
+      "type": "Category",
+      "label": "Comms",
+      "path": [
+        "Agent Tools",
+        "Comms"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:mcp-agent-mail",
+      "type": "Project",
+      "label": "mcp_agent_mail",
+      "url": "https://github.com/Dicklesworthstone/mcp_agent_mail"
+    },
+    {
+      "id": "cat:agents",
+      "type": "Category",
+      "label": "Agents",
+      "path": [
+        "Agents"
+      ],
+      "description": "General agent projects and agent subtypes that do not fit more specific segments."
+    },
+    {
+      "id": "proj:xataio-agent",
+      "type": "Project",
+      "label": "xataio/agent",
+      "url": "https://github.com/xataio/agent"
+    },
+    {
+      "id": "cat:agents/autonomous",
+      "type": "Category",
+      "label": "Autonomous",
+      "path": [
+        "Agents",
+        "Autonomous"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/autonomous/trading",
+      "type": "Category",
+      "label": "Trading",
+      "path": [
+        "Agents",
+        "Autonomous",
+        "Trading"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:ai-trader",
+      "type": "Project",
+      "label": "AI-Trader",
+      "url": "https://github.com/HKUDS/AI-Trader"
+    },
+    {
+      "id": "cat:agents/autonomous-agent-creation",
+      "type": "Category",
+      "label": "Autonomous Agent Creation",
+      "path": [
+        "Agents",
+        "Autonomous Agent Creation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:bankrbot-skills",
+      "type": "Project",
+      "label": "BankrBot/skills",
+      "url": "https://github.com/BankrBot/skills"
+    },
+    {
+      "id": "cat:agents/backend-platforms",
+      "type": "Category",
+      "label": "Backend Platforms",
+      "path": [
+        "Agents",
+        "Backend Platforms"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:dify",
+      "type": "Project",
+      "label": "dify",
+      "url": "https://github.com/langgenius/dify"
+    },
+    {
+      "id": "cat:agents/clis-toolkits",
+      "type": "Category",
+      "label": "CLIs/Toolkits",
+      "path": [
+        "Agents",
+        "CLIs/Toolkits"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/clis-toolkits/vendor",
+      "type": "Category",
+      "label": "Vendor",
+      "path": [
+        "Agents",
+        "CLIs/Toolkits",
+        "Vendor"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:qwen-code",
+      "type": "Project",
+      "label": "qwen-code",
+      "url": "https://github.com/QwenLM/qwen-code"
+    },
+    {
+      "id": "cat:agents/computer-use",
+      "type": "Category",
+      "label": "Computer Use",
+      "path": [
+        "Agents",
+        "Computer Use"
+      ],
+      "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
+    },
+    {
+      "id": "proj:open-computer-use",
+      "type": "Project",
+      "label": "open-computer-use",
+      "url": "https://github.com/coasty-ai/open-computer-use"
+    },
+    {
+      "id": "cat:agents/development",
+      "type": "Category",
+      "label": "Development",
+      "path": [
+        "Agents",
+        "Development"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:openhands",
+      "type": "Project",
+      "label": "OpenHands",
+      "url": "https://github.com/OpenHands/OpenHands"
+    },
+    {
+      "id": "cat:agents/domain-specific",
+      "type": "Category",
+      "label": "Domain Specific",
+      "path": [
+        "Agents",
+        "Domain Specific"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/domain-specific/biotech",
+      "type": "Category",
+      "label": "Biotech",
+      "path": [
+        "Agents",
+        "Domain Specific",
+        "Biotech"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:biomni",
+      "type": "Project",
+      "label": "Biomni",
+      "url": "https://github.com/snap-stanford/Biomni"
+    },
+    {
+      "id": "cat:agents/frameworks",
+      "type": "Category",
+      "label": "Frameworks",
+      "path": [
+        "Agents",
+        "Frameworks"
+      ],
+      "description": "General-purpose frameworks for building agents and agentic applications."
+    },
+    {
+      "id": "cat:agents/frameworks/open-source",
+      "type": "Category",
+      "label": "Open Source",
+      "path": [
+        "Agents",
+        "Frameworks",
+        "Open Source"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:hermes-agent",
+      "type": "Project",
+      "label": "hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent"
+    },
+    {
+      "id": "cat:agents/frontends",
+      "type": "Category",
+      "label": "Frontends",
+      "path": [
+        "Agents",
+        "Frontends"
+      ],
+      "description": "User-facing interfaces \u2014 web, desktop, mobile, terminal \u2014 for interacting with agents."
+    },
+    {
+      "id": "proj:openclaw-mission-control",
+      "type": "Project",
+      "label": "openclaw-mission-control",
+      "url": "https://github.com/abhi1693/openclaw-mission-control"
+    },
+    {
+      "id": "cat:agents/harnesses",
+      "type": "Category",
+      "label": "Harnesses",
+      "path": [
+        "Agents",
+        "Harnesses"
+      ],
+      "description": "Test harnesses and runner frameworks that host and exercise agents."
+    },
+    {
+      "id": "cat:agents/harnesses/clis",
+      "type": "Category",
+      "label": "CLIs",
+      "path": [
+        "Agents",
+        "Harnesses",
+        "CLIs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:agents/harnesses/clis/third-party",
+      "type": "Category",
+      "label": "Third Party",
+      "path": [
+        "Agents",
+        "Harnesses",
+        "CLIs",
+        "Third Party"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:crush",
+      "type": "Project",
+      "label": "crush",
+      "url": "https://github.com/charmbracelet/crush"
+    },
+    {
+      "id": "cat:agents/harnesses/clis/vendor",
+      "type": "Category",
+      "label": "Vendor",
+      "path": [
+        "Agents",
+        "Harnesses",
+        "CLIs",
+        "Vendor"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:gemini-cli",
+      "type": "Project",
+      "label": "gemini-cli",
+      "url": "https://github.com/google-gemini/gemini-cli"
+    },
+    {
+      "id": "cat:agents/memory",
+      "type": "Category",
+      "label": "Memory",
+      "path": [
+        "Agents",
+        "Memory"
+      ],
+      "description": "Memory systems for agents \u2014 short-term, long-term, episodic, file-backed, graph-backed."
+    },
+    {
+      "id": "cat:agents/memory/graph-builders",
+      "type": "Category",
+      "label": "Graph Builders",
+      "path": [
+        "Agents",
+        "Memory",
+        "Graph Builders"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:graphiti",
+      "type": "Project",
+      "label": "graphiti",
+      "url": "https://github.com/getzep/graphiti"
+    },
+    {
+      "id": "cat:agents/personal-focused",
+      "type": "Category",
+      "label": "Personal Focused",
+      "path": [
+        "Agents",
+        "Personal Focused"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:crucix",
+      "type": "Project",
+      "label": "Crucix",
+      "url": "https://github.com/calesthio/Crucix"
+    },
+    {
+      "id": "cat:agents/purpose-specific",
+      "type": "Category",
+      "label": "Purpose Specific",
+      "path": [
+        "Agents",
+        "Purpose Specific"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:inkos",
+      "type": "Project",
+      "label": "inkos",
+      "url": "https://github.com/Narcooo/inkos"
+    },
+    {
+      "id": "cat:agents/purpose-specific/penetration-testing",
+      "type": "Category",
+      "label": "Penetration Testing",
+      "path": [
+        "Agents",
+        "Purpose Specific",
+        "Penetration Testing"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:pentagi",
+      "type": "Project",
+      "label": "pentagi",
+      "url": "https://github.com/vxcontrol/pentagi"
+    },
+    {
+      "id": "cat:agents/team-formation",
+      "type": "Category",
+      "label": "Team Formation",
+      "path": [
+        "Agents",
+        "Team Formation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:squad",
+      "type": "Project",
+      "label": "squad",
+      "url": "https://github.com/bradygaster/squad"
+    },
+    {
+      "id": "cat:agents/teams",
+      "type": "Category",
+      "label": "Teams",
+      "path": [
+        "Agents",
+        "Teams"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:ai-data-science-team",
+      "type": "Project",
+      "label": "ai-data-science-team",
+      "url": "https://github.com/business-science/ai-data-science-team"
+    },
+    {
+      "id": "cat:agents/vision",
+      "type": "Category",
+      "label": "Vision",
+      "path": [
+        "Agents",
+        "Vision"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:vision-agents",
+      "type": "Project",
+      "label": "Vision-Agents",
+      "url": "https://github.com/GetStream/Vision-Agents"
+    },
+    {
+      "id": "cat:ai-browsers",
+      "type": "Category",
+      "label": "AI Browsers",
+      "path": [
+        "AI Browsers"
+      ],
+      "description": "Browsers built or adapted specifically for AI agent use, including headless variants optimised for programmatic navigation."
+    },
+    {
+      "id": "proj:browseros",
+      "type": "Project",
+      "label": "BrowserOS",
+      "url": "https://github.com/browseros-ai/BrowserOS"
+    },
+    {
+      "id": "cat:ai-browsers/headless",
+      "type": "Category",
+      "label": "Headless",
+      "path": [
+        "AI Browsers",
+        "Headless"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:lightpanda-browser",
+      "type": "Project",
+      "label": "Lightpanda Browser",
+      "url": "https://github.com/lightpanda-io/browser"
+    },
+    {
+      "id": "proj:steel-browser",
+      "type": "Project",
+      "label": "Steel Browser",
+      "url": "https://github.com/steel-dev/steel-browser"
+    },
+    {
+      "id": "cat:automation",
+      "type": "Category",
+      "label": "Automation",
+      "path": [
+        "Automation"
+      ],
+      "description": "General-purpose automation tools and frameworks, including GUI-driven and script-driven flows."
+    },
+    {
+      "id": "cat:automation/open-source",
+      "type": "Category",
+      "label": "Open Source",
+      "path": [
+        "Automation",
+        "Open Source"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:automation/open-source/gui-based",
+      "type": "Category",
+      "label": "GUI Based",
+      "path": [
+        "Automation",
+        "Open Source",
+        "GUI Based"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:activepieces",
+      "type": "Project",
+      "label": "activepieces",
+      "url": "https://github.com/activepieces/activepieces"
+    },
+    {
+      "id": "proj:flowise",
+      "type": "Project",
+      "label": "Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise"
+    },
+    {
+      "id": "cat:backend-querying",
+      "type": "Category",
+      "label": "Backend Querying",
+      "path": [
+        "Backend Querying"
+      ],
+      "description": "Tools that let agents query backend systems, databases and APIs."
+    },
+    {
+      "id": "proj:mindsdb",
+      "type": "Project",
+      "label": "mindsdb",
+      "url": "https://github.com/mindsdb/mindsdb"
+    },
+    {
+      "id": "cat:benchmarks",
+      "type": "Category",
+      "label": "Benchmarks",
+      "path": [
+        "Benchmarks"
+      ],
+      "description": "Standardised benchmarks for evaluating agent and model capabilities."
+    },
+    {
+      "id": "proj:aicgseceval",
+      "type": "Project",
+      "label": "AICGSecEval",
+      "url": "https://github.com/Tencent/AICGSecEval"
+    },
+    {
+      "id": "proj:osworld",
+      "type": "Project",
+      "label": "OSWorld",
+      "url": "https://github.com/xlang-ai/OSWorld"
+    },
+    {
+      "id": "cat:browser-automation",
+      "type": "Category",
+      "label": "Browser Automation",
+      "path": [
+        "Browser Automation"
+      ],
+      "description": "Libraries and services for driving real browsers under agent control."
+    },
+    {
+      "id": "proj:vibium",
+      "type": "Project",
+      "label": "vibium",
+      "url": "https://github.com/VibiumDev/vibium"
+    },
+    {
+      "id": "cat:browser-tooling",
+      "type": "Category",
+      "label": "Browser Tooling",
+      "path": [
+        "Browser Tooling"
+      ],
+      "description": "Utilities and SDKs that sit alongside browsers to support agentic workflows."
+    },
+    {
+      "id": "proj:agent-browser",
+      "type": "Project",
+      "label": "agent-browser",
+      "url": "https://github.com/vercel-labs/agent-browser"
+    },
+    {
+      "id": "cat:computer-use",
+      "type": "Category",
+      "label": "Computer Use",
+      "path": [
+        "Computer Use"
+      ],
+      "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
+    },
+    {
+      "id": "cat:computer-use/platform-specific",
+      "type": "Category",
+      "label": "Platform Specific",
+      "path": [
+        "Computer Use",
+        "Platform Specific"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:computer-use/platform-specific/macos",
+      "type": "Category",
+      "label": "macOS",
+      "path": [
+        "Computer Use",
+        "Platform Specific",
+        "macOS"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:macos-use",
+      "type": "Project",
+      "label": "macOS-use",
+      "url": "https://github.com/browser-use/macOS-use"
+    },
+    {
+      "id": "cat:context",
+      "type": "Category",
+      "label": "Context",
+      "path": [
+        "Context"
+      ],
+      "description": "Tools for building, optimising, managing and visualising the context window supplied to LLMs."
+    },
+    {
+      "id": "proj:promptx",
+      "type": "Project",
+      "label": "PromptX",
+      "url": "https://github.com/Deepractice/PromptX"
+    },
+    {
+      "id": "proj:weknora",
+      "type": "Project",
+      "label": "WeKnora",
+      "url": "https://github.com/Tencent/WeKnora"
+    },
+    {
+      "id": "cat:context/context-optimisation",
+      "type": "Category",
+      "label": "Context Optimisation",
+      "path": [
+        "Context",
+        "Context Optimisation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:context-mode",
+      "type": "Project",
+      "label": "context-mode",
+      "url": "https://github.com/mksglu/context-mode"
+    },
+    {
+      "id": "cat:context/engines",
+      "type": "Category",
+      "label": "Engines",
+      "path": [
+        "Context",
+        "Engines"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:contexto",
+      "type": "Project",
+      "label": "contexto",
+      "url": "https://github.com/ekailabs/contexto"
+    },
+    {
+      "id": "cat:context/frontend-tools",
+      "type": "Category",
+      "label": "Frontend Tools",
+      "path": [
+        "Context",
+        "Frontend Tools"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:react-grab",
+      "type": "Project",
+      "label": "react-grab",
+      "url": "https://github.com/aidenybai/react-grab"
+    },
+    {
+      "id": "cat:context/tools",
+      "type": "Category",
+      "label": "Tools",
+      "path": [
+        "Context",
+        "Tools"
+      ],
+      "description": "Utility tools, SDKs and toolkits for building, debugging and extending agentic systems."
+    },
+    {
+      "id": "cat:context/tools/context-managers",
+      "type": "Category",
+      "label": "Context Managers",
+      "path": [
+        "Context",
+        "Tools",
+        "Context Managers"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:dotai",
+      "type": "Project",
+      "label": "dotai",
+      "url": "https://github.com/udecode/dotai"
+    },
+    {
+      "id": "cat:context/visualisation",
+      "type": "Category",
+      "label": "Visualisation",
+      "path": [
+        "Context",
+        "Visualisation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:context-lens",
+      "type": "Project",
+      "label": "context-lens",
+      "url": "https://github.com/larsderidder/context-lens"
+    },
+    {
+      "id": "cat:conversational-control",
+      "type": "Category",
+      "label": "Conversational Control",
+      "path": [
+        "Conversational Control"
+      ],
+      "description": "Systems that steer or constrain multi-turn conversations with agents."
+    },
+    {
+      "id": "proj:parlant",
+      "type": "Project",
+      "label": "parlant",
+      "url": "https://github.com/emcie-co/parlant"
+    },
+    {
+      "id": "cat:data-extraction-and-structuring",
+      "type": "Category",
+      "label": "Data Extraction and Structuring",
+      "path": [
+        "Data Extraction and Structuring"
+      ],
+      "description": "Tools that convert unstructured data into structured form for agents to consume."
+    },
+    {
+      "id": "proj:firecrawl",
+      "type": "Project",
+      "label": "firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl"
+    },
+    {
+      "id": "cat:data-sources",
+      "type": "Category",
+      "label": "Data Sources",
+      "path": [
+        "Data Sources"
+      ],
+      "description": "Curated data feeds and providers that agents can draw on."
+    },
+    {
+      "id": "cat:data-sources/financial",
+      "type": "Category",
+      "label": "Financial",
+      "path": [
+        "Data Sources",
+        "Financial"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:openbb",
+      "type": "Project",
+      "label": "OpenBB",
+      "url": "https://github.com/OpenBB-finance/OpenBB"
+    },
+    {
+      "id": "cat:databases",
+      "type": "Category",
+      "label": "Databases",
+      "path": [
+        "Databases"
+      ],
+      "description": "Database systems used in agentic stacks, including purpose-built context and vector stores."
+    },
+    {
+      "id": "cat:databases/context-databases",
+      "type": "Category",
+      "label": "Context Databases",
+      "path": [
+        "Databases",
+        "Context Databases"
+      ],
+      "description": "Databases specifically designed for storing and retrieving agent/LLM context."
+    },
+    {
+      "id": "proj:openviking",
+      "type": "Project",
+      "label": "OpenViking",
+      "url": "https://github.com/volcengine/OpenViking"
+    },
+    {
+      "id": "cat:deployment-platforms",
+      "type": "Category",
+      "label": "Deployment Platforms",
+      "path": [
+        "Deployment Platforms"
+      ],
+      "description": "Platforms for deploying and hosting agents and agentic services."
+    },
+    {
+      "id": "cat:deployment-platforms/serverless",
+      "type": "Category",
+      "label": "Serverless",
+      "path": [
+        "Deployment Platforms",
+        "Serverless"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:julep",
+      "type": "Project",
+      "label": "julep",
+      "url": "https://github.com/julep-ai/julep"
+    },
+    {
+      "id": "cat:desktop-guis",
+      "type": "Category",
+      "label": "Desktop GUIs",
+      "path": [
+        "Desktop GUIs"
+      ],
+      "description": "Desktop graphical interfaces for interacting with agents."
+    },
+    {
+      "id": "proj:hello-halo",
+      "type": "Project",
+      "label": "hello-halo",
+      "url": "https://github.com/openkursar/hello-halo"
+    },
+    {
+      "id": "cat:dev-tools",
+      "type": "Category",
+      "label": "Dev Tools",
+      "path": [
+        "Dev Tools"
+      ],
+      "description": "Developer tooling that uses agents or supports agent development workflows."
+    },
+    {
+      "id": "cat:dev-tools/repo-refactoring",
+      "type": "Category",
+      "label": "Repo Refactoring",
+      "path": [
+        "Dev Tools",
+        "Repo Refactoring"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agentrc",
+      "type": "Project",
+      "label": "agentrc",
+      "url": "https://github.com/microsoft/agentrc"
+    },
+    {
+      "id": "cat:development-platforms",
+      "type": "Category",
+      "label": "Development Platforms",
+      "path": [
+        "Development Platforms"
+      ],
+      "description": "End-to-end platforms for building agentic applications."
+    },
+    {
+      "id": "proj:coze-studio",
+      "type": "Project",
+      "label": "coze-studio",
+      "url": "https://github.com/coze-dev/coze-studio"
+    },
+    {
+      "id": "cat:embedding-models",
+      "type": "Category",
+      "label": "Embedding Models",
+      "path": [
+        "Embedding Models"
+      ],
+      "description": "Models used to produce embeddings for retrieval and RAG pipelines."
+    },
+    {
+      "id": "cat:embedding-pipeline-orchestrators",
+      "type": "Category",
+      "label": "Embedding Pipeline Orchestrators",
+      "path": [
+        "Embedding Pipeline Orchestrators"
+      ],
+      "description": "Orchestration tools that manage embedding generation and ingestion pipelines."
+    },
+    {
+      "id": "cat:engineering-platforms",
+      "type": "Category",
+      "label": "Engineering Platforms",
+      "path": [
+        "Engineering Platforms"
+      ],
+      "description": "Platforms targeted at engineering teams building with LLMs and agents."
+    },
+    {
+      "id": "proj:voltagent",
+      "type": "Project",
+      "label": "voltagent",
+      "url": "https://github.com/VoltAgent/voltagent"
+    },
+    {
+      "id": "cat:environments",
+      "type": "Category",
+      "label": "Environments",
+      "path": [
+        "Environments"
+      ],
+      "description": "Sandboxed environments \u2014 OS, simulated worlds, virtual machines \u2014 in which agents run."
+    },
+    {
+      "id": "cat:environments/os",
+      "type": "Category",
+      "label": "OS",
+      "path": [
+        "Environments",
+        "OS"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agent-os",
+      "type": "Project",
+      "label": "agent-os",
+      "url": "https://github.com/rivet-dev/agent-os"
+    },
+    {
+      "id": "cat:environments/remote-desktops",
+      "type": "Category",
+      "label": "Remote Desktops",
+      "path": [
+        "Environments",
+        "Remote Desktops"
+      ],
+      "description": "Hosted remote desktop / VM services providing agents with a persistent GUI environment to operate."
+    },
+    {
+      "id": "proj:abacus-desktop",
+      "type": "Project",
+      "label": "Abacus Desktop",
+      "url": "https://desktop.abacus.ai/"
+    },
+    {
+      "id": "proj:cua-ai",
+      "type": "Project",
+      "label": "cua.ai",
+      "url": "https://cua.ai/"
+    },
+    {
+      "id": "cat:evals-and-experiment-tracking",
+      "type": "Category",
+      "label": "Evals and Experiment Tracking",
+      "path": [
+        "Evals and Experiment Tracking"
+      ],
+      "description": "Frameworks, harnesses and platforms for evaluating agents and tracking experiments."
+    },
+    {
+      "id": "proj:trulens",
+      "type": "Project",
+      "label": "trulens",
+      "url": "https://github.com/truera/trulens"
+    },
+    {
+      "id": "proj:langwatch",
+      "type": "Project",
+      "label": "langwatch",
+      "url": "https://github.com/langwatch/langwatch"
+    },
+    {
+      "id": "cat:evals-and-experiment-tracking/frameworks",
+      "type": "Category",
+      "label": "Frameworks",
+      "path": [
+        "Evals and Experiment Tracking",
+        "Frameworks"
+      ],
+      "description": "General-purpose frameworks for building agents and agentic applications."
+    },
+    {
+      "id": "proj:deepeval",
+      "type": "Project",
+      "label": "deepeval",
+      "url": "https://github.com/confident-ai/deepeval"
+    },
+    {
+      "id": "cat:evals-and-experiment-tracking/observability",
+      "type": "Category",
+      "label": "Observability",
+      "path": [
+        "Evals and Experiment Tracking",
+        "Observability"
+      ],
+      "description": "Logging, tracing and observability specifically for agent and LLM systems."
+    },
+    {
+      "id": "proj:langfuse",
+      "type": "Project",
+      "label": "langfuse",
+      "url": "https://github.com/langfuse/langfuse"
+    },
+    {
+      "id": "cat:feedback-formatting",
+      "type": "Category",
+      "label": "Feedback Formatting",
+      "path": [
+        "Feedback Formatting"
+      ],
+      "description": "Tools that shape feedback signals (tool output, user input) into forms agents can act on."
+    },
+    {
+      "id": "proj:agentation",
+      "type": "Project",
+      "label": "agentation",
+      "url": "https://github.com/benjitaylor/agentation"
+    },
+    {
+      "id": "cat:financial-tools",
+      "type": "Category",
+      "label": "Financial Tools",
+      "path": [
+        "Financial Tools"
+      ],
+      "description": "Agent-oriented tools targeted at financial workflows."
+    },
+    {
+      "id": "proj:goat",
+      "type": "Project",
+      "label": "goat",
+      "url": "https://github.com/goat-sdk/goat"
+    },
+    {
+      "id": "cat:formatting",
+      "type": "Category",
+      "label": "Formatting",
+      "path": [
+        "Formatting"
+      ],
+      "description": "Token-efficient serialisation and data-formatting schemes for passing structured data to and from LLMs."
+    },
+    {
+      "id": "proj:toon",
+      "type": "Project",
+      "label": "toon",
+      "url": "https://github.com/toon-format/toon"
+    },
+    {
+      "id": "cat:foundations",
+      "type": "Category",
+      "label": "Foundations",
+      "path": [
+        "Foundations"
+      ],
+      "description": "Industry foundations, consortia and non-profits shaping the agentic AI ecosystem."
+    },
+    {
+      "id": "proj:agentic-ai-industry-foundation-aaif",
+      "type": "Project",
+      "label": "Agentic AI Industry Foundation (AAIF)",
+      "url": "https://aaif.io/"
+    },
+    {
+      "id": "cat:frameworks",
+      "type": "Category",
+      "label": "Frameworks",
+      "path": [
+        "Frameworks"
+      ],
+      "description": "General-purpose frameworks for building agents and agentic applications."
+    },
+    {
+      "id": "proj:autogen",
+      "type": "Project",
+      "label": "autogen",
+      "url": "https://github.com/microsoft/autogen"
+    },
+    {
+      "id": "proj:uagents",
+      "type": "Project",
+      "label": "uAgents",
+      "url": "https://github.com/fetchai/uAgents"
+    },
+    {
+      "id": "proj:ii-agent",
+      "type": "Project",
+      "label": "ii-agent",
+      "url": "https://github.com/Intelligent-Internet/ii-agent"
+    },
+    {
+      "id": "proj:agentforge",
+      "type": "Project",
+      "label": "AgentForge",
+      "url": "https://github.com/DataBassGit/AgentForge"
+    },
+    {
+      "id": "proj:evoagentx",
+      "type": "Project",
+      "label": "EvoAgentX",
+      "url": "https://github.com/EvoAgentX/EvoAgentX"
+    },
+    {
+      "id": "proj:aiopslab",
+      "type": "Project",
+      "label": "AIOpsLab",
+      "url": "https://github.com/microsoft/AIOpsLab"
+    },
+    {
+      "id": "cat:frameworks/net",
+      "type": "Category",
+      "label": ".NET",
+      "path": [
+        "Frameworks",
+        ".NET"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:botsharp",
+      "type": "Project",
+      "label": "BotSharp",
+      "url": "https://github.com/SciSharp/BotSharp"
+    },
+    {
+      "id": "cat:frameworks/computer-use",
+      "type": "Category",
+      "label": "Computer Use",
+      "path": [
+        "Frameworks",
+        "Computer Use"
+      ],
+      "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
+    },
+    {
+      "id": "proj:agent-s",
+      "type": "Project",
+      "label": "Agent-S",
+      "url": "https://github.com/simular-ai/Agent-S"
+    },
+    {
+      "id": "cat:frameworks/multi-agent",
+      "type": "Category",
+      "label": "Multi-agent",
+      "path": [
+        "Frameworks",
+        "Multi-agent"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:camel",
+      "type": "Project",
+      "label": "camel",
+      "url": "https://github.com/camel-ai/camel"
+    },
+    {
+      "id": "cat:frameworks/multiagent-orchestration",
+      "type": "Category",
+      "label": "Multiagent Orchestration",
+      "path": [
+        "Frameworks",
+        "Multiagent Orchestration"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:crewai",
+      "type": "Project",
+      "label": "crewAI",
+      "url": "https://github.com/crewAIInc/crewAI"
+    },
+    {
+      "id": "cat:frameworks/multimodal",
+      "type": "Category",
+      "label": "Multimodal",
+      "path": [
+        "Frameworks",
+        "Multimodal"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:videosdk-live-agents",
+      "type": "Project",
+      "label": "videosdk-live/agents",
+      "url": "https://github.com/videosdk-live/agents"
+    },
+    {
+      "id": "cat:frameworks/optimisation",
+      "type": "Category",
+      "label": "Optimisation",
+      "path": [
+        "Frameworks",
+        "Optimisation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:frameworks/optimisation/parallelisation",
+      "type": "Category",
+      "label": "Parallelisation",
+      "path": [
+        "Frameworks",
+        "Optimisation",
+        "Parallelisation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:ensoai",
+      "type": "Project",
+      "label": "EnsoAI",
+      "url": "https://github.com/J3n5en/EnsoAI"
+    },
+    {
+      "id": "cat:frameworks/social-simulations",
+      "type": "Category",
+      "label": "Social Simulations",
+      "path": [
+        "Frameworks",
+        "Social Simulations"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:concordia",
+      "type": "Project",
+      "label": "concordia",
+      "url": "https://github.com/google-deepmind/concordia"
+    },
+    {
+      "id": "proj:moltbook",
+      "type": "Project",
+      "label": "moltbook",
+      "url": ""
+    },
+    {
+      "id": "cat:frameworks/stateful-design",
+      "type": "Category",
+      "label": "Stateful Design",
+      "path": [
+        "Frameworks",
+        "Stateful Design"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:letta",
+      "type": "Project",
+      "label": "letta",
+      "url": "https://github.com/letta-ai/letta"
+    },
+    {
+      "id": "cat:frameworks/voice",
+      "type": "Category",
+      "label": "Voice",
+      "path": [
+        "Frameworks",
+        "Voice"
+      ],
+      "description": "Voice-first agents and voice interaction frameworks."
+    },
+    {
+      "id": "proj:livekit-agents",
+      "type": "Project",
+      "label": "livekit/agents",
+      "url": "https://github.com/livekit/agents"
+    },
+    {
+      "id": "proj:ten-framework",
+      "type": "Project",
+      "label": "ten-framework",
+      "url": "https://github.com/TEN-framework/ten-framework"
+    },
+    {
+      "id": "cat:frontends",
+      "type": "Category",
+      "label": "Frontends",
+      "path": [
+        "Frontends"
+      ],
+      "description": "User-facing interfaces \u2014 web, desktop, mobile, terminal \u2014 for interacting with agents."
+    },
+    {
+      "id": "cat:frontends/android",
+      "type": "Category",
+      "label": "Android",
+      "path": [
+        "Frontends",
+        "Android"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:operit",
+      "type": "Project",
+      "label": "Operit",
+      "url": "https://github.com/AAswordman/Operit"
+    },
+    {
+      "id": "cat:frontends/chat-uis",
+      "type": "Category",
+      "label": "Chat UIs",
+      "path": [
+        "Frontends",
+        "Chat UIs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agent-ui",
+      "type": "Project",
+      "label": "agent-ui",
+      "url": "https://github.com/agno-agi/agent-ui"
+    },
+    {
+      "id": "cat:frontends/guis-and-clis",
+      "type": "Category",
+      "label": "GUIs and CLIs",
+      "path": [
+        "Frontends",
+        "GUIs and CLIs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:goose",
+      "type": "Project",
+      "label": "goose",
+      "url": "https://github.com/aaif-goose/goose"
+    },
+    {
+      "id": "cat:frontends/tuis-and-clis",
+      "type": "Category",
+      "label": "TUIs and CLIs",
+      "path": [
+        "Frontends",
+        "TUIs and CLIs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agent-deck",
+      "type": "Project",
+      "label": "agent-deck",
+      "url": "https://github.com/asheshgoplani/agent-deck"
+    },
+    {
+      "id": "cat:gateways",
+      "type": "Category",
+      "label": "Gateways",
+      "path": [
+        "Gateways"
+      ],
+      "description": "Gateway services that sit between agents and upstream services (LLMs, tools, data)."
+    },
+    {
+      "id": "cat:gateways/context-compression",
+      "type": "Category",
+      "label": "Context Compression",
+      "path": [
+        "Gateways",
+        "Context Compression"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:context-gateway",
+      "type": "Project",
+      "label": "Context-Gateway",
+      "url": "https://github.com/Compresr-ai/Context-Gateway"
+    },
+    {
+      "id": "cat:geopolitical-simulation",
+      "type": "Category",
+      "label": "Geopolitical Simulation",
+      "path": [
+        "Geopolitical Simulation"
+      ],
+      "description": "Simulations focused specifically on geopolitical scenarios and dynamics."
+    },
+    {
+      "id": "proj:wargamesai",
+      "type": "Project",
+      "label": "WargamesAI",
+      "url": "https://github.com/user1342/WargamesAI"
+    },
+    {
+      "id": "proj:snowglobe",
+      "type": "Project",
+      "label": "snowglobe",
+      "url": "https://github.com/IQTLabs/snowglobe"
+    },
+    {
+      "id": "cat:harnesses",
+      "type": "Category",
+      "label": "Harnesses",
+      "path": [
+        "Harnesses"
+      ],
+      "description": "Test harnesses and runner frameworks that host and exercise agents."
+    },
+    {
+      "id": "proj:hive",
+      "type": "Project",
+      "label": "hive",
+      "url": "https://github.com/aden-hive/hive"
+    },
+    {
+      "id": "proj:oh-my-openagent",
+      "type": "Project",
+      "label": "oh-my-openagent",
+      "url": "https://github.com/code-yeongyu/oh-my-openagent"
+    },
+    {
+      "id": "cat:harnesses/deep-research",
+      "type": "Category",
+      "label": "Deep Research",
+      "path": [
+        "Harnesses",
+        "Deep Research"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:deepagents",
+      "type": "Project",
+      "label": "deepagents",
+      "url": "https://github.com/langchain-ai/deepagents"
+    },
+    {
+      "id": "cat:harnesses/guardrails",
+      "type": "Category",
+      "label": "Guardrails",
+      "path": [
+        "Harnesses",
+        "Guardrails"
+      ],
+      "description": "Guardrails and pre-execution safety checks that gate what running agents can do."
+    },
+    {
+      "id": "proj:shellfirm",
+      "type": "Project",
+      "label": "shellfirm",
+      "url": "https://github.com/kaplanelad/shellfirm"
+    },
+    {
+      "id": "cat:harnesses/macos",
+      "type": "Category",
+      "label": "macOS",
+      "path": [
+        "Harnesses",
+        "macOS"
+      ],
+      "description": "Harnesses that run agents natively on macOS."
+    },
+    {
+      "id": "proj:osaurus",
+      "type": "Project",
+      "label": "osaurus",
+      "url": "https://github.com/osaurus-ai/osaurus"
+    },
+    {
+      "id": "cat:llms",
+      "type": "Category",
+      "label": "LLMs",
+      "path": [
+        "LLMs"
+      ],
+      "description": "Language models, including those trained or tuned specifically for agentic use cases."
+    },
+    {
+      "id": "proj:gemini-3-1",
+      "type": "Project",
+      "label": "Gemini 3.1",
+      "url": ""
+    },
+    {
+      "id": "cat:llms/agent-specific",
+      "type": "Category",
+      "label": "Agent Specific",
+      "path": [
+        "LLMs",
+        "Agent Specific"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:grok-4-20-multi-agent",
+      "type": "Project",
+      "label": "Grok 4.20 Multi-Agent",
+      "url": "https://openrouter.ai/x-ai/grok-4.20-multi-agent"
+    },
+    {
+      "id": "cat:llms/by-use-case",
+      "type": "Category",
+      "label": "By Use Case",
+      "path": [
+        "LLMs",
+        "By Use Case"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:llms/by-use-case/computer-use",
+      "type": "Category",
+      "label": "Computer Use",
+      "path": [
+        "LLMs",
+        "By Use Case",
+        "Computer Use"
+      ],
+      "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
+    },
+    {
+      "id": "proj:fara",
+      "type": "Project",
+      "label": "fara",
+      "url": "https://github.com/microsoft/fara"
+    },
+    {
+      "id": "cat:loops",
+      "type": "Category",
+      "label": "Loops",
+      "path": [
+        "Loops"
+      ],
+      "description": "Agent loop implementations \u2014 the core think/act/observe cycle."
+    },
+    {
+      "id": "proj:ralph",
+      "type": "Project",
+      "label": "ralph",
+      "url": "https://github.com/snarktank/ralph"
+    },
+    {
+      "id": "cat:marketplaces",
+      "type": "Category",
+      "label": "Marketplaces",
+      "path": [
+        "Marketplaces"
+      ],
+      "description": "Marketplaces and stores for discovering, listing, or transacting agents and agent-based services."
+    },
+    {
+      "id": "proj:agen-cy-marketplace",
+      "type": "Project",
+      "label": "agen.cy marketplace",
+      "url": "https://marketplace.agen.cy/"
+    },
+    {
+      "id": "proj:ai-agent-store",
+      "type": "Project",
+      "label": "AI Agent Store",
+      "url": "https://aiagentstore.ai/"
+    },
+    {
+      "id": "cat:mcp",
+      "type": "Category",
+      "label": "MCP",
+      "path": [
+        "MCP"
+      ],
+      "description": "Projects in the Model Context Protocol ecosystem \u2014 servers, gateways, aggregators, clients."
+    },
+    {
+      "id": "cat:mcp/aggregation",
+      "type": "Category",
+      "label": "Aggregation",
+      "path": [
+        "MCP",
+        "Aggregation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:klavis",
+      "type": "Project",
+      "label": "klavis",
+      "url": "https://github.com/Klavis-AI/klavis"
+    },
+    {
+      "id": "cat:mcp/gateways",
+      "type": "Category",
+      "label": "Gateways",
+      "path": [
+        "MCP",
+        "Gateways"
+      ],
+      "description": "Gateway services that sit between agents and upstream services (LLMs, tools, data)."
+    },
+    {
+      "id": "proj:mcp-context-forge",
+      "type": "Project",
+      "label": "mcp-context-forge",
+      "url": "https://github.com/IBM/mcp-context-forge"
+    },
+    {
+      "id": "cat:mcp/third-party",
+      "type": "Category",
+      "label": "Third Party",
+      "path": [
+        "MCP",
+        "Third Party"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:mcp-server-airbnb",
+      "type": "Project",
+      "label": "mcp-server-airbnb",
+      "url": "https://github.com/openbnb-org/mcp-server-airbnb"
+    },
+    {
+      "id": "cat:memory",
+      "type": "Category",
+      "label": "Memory",
+      "path": [
+        "Memory"
+      ],
+      "description": "Memory systems for agents \u2014 short-term, long-term, episodic, file-backed, graph-backed."
+    },
+    {
+      "id": "proj:cognee",
+      "type": "Project",
+      "label": "cognee",
+      "url": "https://github.com/topoteretes/cognee"
+    },
+    {
+      "id": "proj:agentmemory",
+      "type": "Project",
+      "label": "agentmemory",
+      "url": "https://github.com/rohitg00/agentmemory"
+    },
+    {
+      "id": "proj:mem0",
+      "type": "Project",
+      "label": "mem0",
+      "url": "https://github.com/mem0ai/mem0"
+    },
+    {
+      "id": "proj:memos",
+      "type": "Project",
+      "label": "MemOS",
+      "url": "https://github.com/MemTensor/MemOS"
+    },
+    {
+      "id": "cat:memory/file",
+      "type": "Category",
+      "label": "File",
+      "path": [
+        "Memory",
+        "File"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:memvid",
+      "type": "Project",
+      "label": "memvid",
+      "url": "https://github.com/memvid/memvid"
+    },
+    {
+      "id": "cat:memory/regressive",
+      "type": "Category",
+      "label": "Regressive",
+      "path": [
+        "Memory",
+        "Regressive"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agentic-context-engine",
+      "type": "Project",
+      "label": "agentic-context-engine",
+      "url": "https://github.com/kayba-ai/agentic-context-engine"
+    },
+    {
+      "id": "cat:memory/skills",
+      "type": "Category",
+      "label": "Skills",
+      "path": [
+        "Memory",
+        "Skills"
+      ],
+      "description": "Agent skills ecosystems \u2014 registries, bundles, standards, guides and package libraries."
+    },
+    {
+      "id": "proj:acontext",
+      "type": "Project",
+      "label": "Acontext",
+      "url": "https://github.com/memodb-io/Acontext"
+    },
+    {
+      "id": "cat:multiagent",
+      "type": "Category",
+      "label": "Multiagent",
+      "path": [
+        "Multiagent"
+      ],
+      "description": "Systems built around multiple cooperating or competing agents."
+    },
+    {
+      "id": "cat:multiagent/large-scale-experiments",
+      "type": "Category",
+      "label": "Large Scale Experiments",
+      "path": [
+        "Multiagent",
+        "Large Scale Experiments"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agenttorch",
+      "type": "Project",
+      "label": "AgentTorch",
+      "url": "https://github.com/AgentTorch/AgentTorch"
+    },
+    {
+      "id": "cat:multiagent/swarm-prediction",
+      "type": "Category",
+      "label": "Swarm Prediction",
+      "path": [
+        "Multiagent",
+        "Swarm Prediction"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:mirofish",
+      "type": "Project",
+      "label": "MiroFish",
+      "url": "https://github.com/666ghj/MiroFish"
+    },
+    {
+      "id": "cat:multiagent/workspace",
+      "type": "Category",
+      "label": "Workspace",
+      "path": [
+        "Multiagent",
+        "Workspace"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agentsmesh",
+      "type": "Project",
+      "label": "AgentsMesh",
+      "url": "https://github.com/AgentsMesh/AgentsMesh"
+    },
+    {
+      "id": "cat:multiagent/workspaces",
+      "type": "Category",
+      "label": "Workspaces",
+      "path": [
+        "Multiagent",
+        "Workspaces"
+      ],
+      "description": "Shared workspaces where agents and humans (or multiple agents) collaborate."
+    },
+    {
+      "id": "proj:gastown",
+      "type": "Project",
+      "label": "gastown",
+      "url": "https://github.com/gastownhall/gastown"
+    },
+    {
+      "id": "cat:networks",
+      "type": "Category",
+      "label": "Networks",
+      "path": [
+        "Networks"
+      ],
+      "description": "Agent networks and directories \u2014 social/professional platforms where agents and their creators are listed and interconnected."
+    },
+    {
+      "id": "proj:agent-ai",
+      "type": "Project",
+      "label": "agent.ai",
+      "url": "https://agent.ai/"
+    },
+    {
+      "id": "cat:observability",
+      "type": "Category",
+      "label": "Observability",
+      "path": [
+        "Observability"
+      ],
+      "description": "Logging, tracing and observability specifically for agent and LLM systems."
+    },
+    {
+      "id": "proj:ragaai-catalyst",
+      "type": "Project",
+      "label": "RagaAI-Catalyst",
+      "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst"
+    },
+    {
+      "id": "cat:on-device-agents",
+      "type": "Category",
+      "label": "On Device Agents",
+      "path": [
+        "On Device Agents"
+      ],
+      "description": "Agents designed to run on-device, including phones, SBCs and edge hardware."
+    },
+    {
+      "id": "cat:on-device-agents/sbcs",
+      "type": "Category",
+      "label": "SBCs",
+      "path": [
+        "On Device Agents",
+        "SBCs"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:be-more-agent",
+      "type": "Project",
+      "label": "be-more-agent",
+      "url": "https://github.com/brenpoly/be-more-agent"
+    },
+    {
+      "id": "cat:operations",
+      "type": "Category",
+      "label": "Operations",
+      "path": [
+        "Operations"
+      ],
+      "description": "Operational concerns for running agents in production \u2014 cost, monitoring, reliability."
+    },
+    {
+      "id": "cat:operations/cost-monitoring",
+      "type": "Category",
+      "label": "Cost Monitoring",
+      "path": [
+        "Operations",
+        "Cost Monitoring"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agentops",
+      "type": "Project",
+      "label": "agentops",
+      "url": "https://github.com/AgentOps-AI/agentops"
+    },
+    {
+      "id": "cat:optimisation-platform",
+      "type": "Category",
+      "label": "Optimisation Platform",
+      "path": [
+        "Optimisation Platform"
+      ],
+      "description": "Platforms focused on optimising agent/LLM pipelines."
+    },
+    {
+      "id": "proj:coze-loop",
+      "type": "Project",
+      "label": "coze-loop",
+      "url": "https://github.com/coze-dev/coze-loop"
+    },
+    {
+      "id": "cat:orchestration",
+      "type": "Category",
+      "label": "Orchestration",
+      "path": [
+        "Orchestration"
+      ],
+      "description": "Orchestration engines for coordinating agents, tools and workflows."
+    },
+    {
+      "id": "proj:shannon",
+      "type": "Project",
+      "label": "Shannon",
+      "url": "https://github.com/Kocoro-lab/Shannon"
+    },
+    {
+      "id": "proj:conductor",
+      "type": "Project",
+      "label": "conductor",
+      "url": "https://github.com/conductor-oss/conductor"
+    },
+    {
+      "id": "proj:ai-maestro",
+      "type": "Project",
+      "label": "ai-maestro",
+      "url": "https://github.com/23blocks-OS/ai-maestro"
+    },
+    {
+      "id": "proj:agent-orchestrator",
+      "type": "Project",
+      "label": "agent-orchestrator",
+      "url": "https://github.com/ComposioHQ/agent-orchestrator"
+    },
+    {
+      "id": "cat:orchestration/platform-specific",
+      "type": "Category",
+      "label": "Platform-Specific",
+      "path": [
+        "Orchestration",
+        "Platform-Specific"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agent-squad",
+      "type": "Project",
+      "label": "agent-squad",
+      "url": "https://github.com/awslabs/agent-squad"
+    },
+    {
+      "id": "cat:personal",
+      "type": "Category",
+      "label": "Personal",
+      "path": [
+        "Personal"
+      ],
+      "description": "Personal-use agent projects and personal AI tooling."
+    },
+    {
+      "id": "proj:nanobot",
+      "type": "Project",
+      "label": "nanobot",
+      "url": "https://github.com/HKUDS/nanobot"
+    },
+    {
+      "id": "cat:personal-ai",
+      "type": "Category",
+      "label": "Personal AI",
+      "path": [
+        "Personal AI"
+      ],
+      "description": "Personal AI assistants and related projects."
+    },
+    {
+      "id": "cat:personal-ai/assistants",
+      "type": "Category",
+      "label": "Assistants",
+      "path": [
+        "Personal AI",
+        "Assistants"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:openclaw",
+      "type": "Project",
+      "label": "openclaw",
+      "url": "https://github.com/openclaw/openclaw"
+    },
+    {
+      "id": "proj:leon",
+      "type": "Project",
+      "label": "leon",
+      "url": "https://github.com/leon-ai/leon"
+    },
+    {
+      "id": "cat:personification",
+      "type": "Category",
+      "label": "Personification",
+      "path": [
+        "Personification"
+      ],
+      "description": "Tools for giving agents distinct personas, voices and identities."
+    },
+    {
+      "id": "proj:bub",
+      "type": "Project",
+      "label": "bub",
+      "url": "https://github.com/bubbuild/bub"
+    },
+    {
+      "id": "cat:pipelines",
+      "type": "Category",
+      "label": "Pipelines",
+      "path": [
+        "Pipelines"
+      ],
+      "description": "Reusable pipelines for common agentic workloads."
+    },
+    {
+      "id": "proj:paper2agent",
+      "type": "Project",
+      "label": "Paper2Agent",
+      "url": "https://github.com/jmiao24/Paper2Agent"
+    },
+    {
+      "id": "cat:platforms",
+      "type": "Category",
+      "label": "Platforms",
+      "path": [
+        "Platforms"
+      ],
+      "description": "General platforms that host or enable agentic applications."
+    },
+    {
+      "id": "cat:platforms/embodied",
+      "type": "Category",
+      "label": "Embodied",
+      "path": [
+        "Platforms",
+        "Embodied"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:fairo",
+      "type": "Project",
+      "label": "fairo",
+      "url": "https://github.com/facebookresearch/fairo"
+    },
+    {
+      "id": "cat:proxy",
+      "type": "Category",
+      "label": "Proxy",
+      "path": [
+        "Proxy"
+      ],
+      "description": "Proxy services that sit between clients and LLM/agent backends."
+    },
+    {
+      "id": "cat:proxy/gateways",
+      "type": "Category",
+      "label": "Gateways",
+      "path": [
+        "Proxy",
+        "Gateways"
+      ],
+      "description": "Gateway services that sit between agents and upstream services (LLMs, tools, data)."
+    },
+    {
+      "id": "proj:agentgateway",
+      "type": "Project",
+      "label": "agentgateway",
+      "url": "https://github.com/agentgateway/agentgateway"
+    },
+    {
+      "id": "proj:litellm",
+      "type": "Project",
+      "label": "litellm",
+      "url": "https://github.com/BerriAI/litellm"
+    },
+    {
+      "id": "cat:proxy/mcp-to-openai",
+      "type": "Category",
+      "label": "MCP to OpenAI",
+      "path": [
+        "Proxy",
+        "MCP to OpenAI"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:mcpo",
+      "type": "Project",
+      "label": "mcpo",
+      "url": "https://github.com/open-webui/mcpo"
+    },
+    {
+      "id": "cat:rag",
+      "type": "Category",
+      "label": "RAG",
+      "path": [
+        "RAG"
+      ],
+      "description": "Retrieval-augmented generation engines, frameworks and components."
+    },
+    {
+      "id": "proj:airweave",
+      "type": "Project",
+      "label": "airweave",
+      "url": "https://github.com/airweave-ai/airweave"
+    },
+    {
+      "id": "cat:rag/engines",
+      "type": "Category",
+      "label": "Engines",
+      "path": [
+        "RAG",
+        "Engines"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:ragflow",
+      "type": "Project",
+      "label": "ragflow",
+      "url": "https://github.com/infiniflow/ragflow"
+    },
+    {
+      "id": "cat:reinforcement-learning",
+      "type": "Category",
+      "label": "Reinforcement Learning",
+      "path": [
+        "Reinforcement Learning"
+      ],
+      "description": "RL frameworks and environments used to train agentic behaviour."
+    },
+    {
+      "id": "proj:rlinf",
+      "type": "Project",
+      "label": "RLinf",
+      "url": "https://github.com/RLinf/RLinf"
+    },
+    {
+      "id": "proj:acme",
+      "type": "Project",
+      "label": "acme",
+      "url": "https://github.com/google-deepmind/acme"
+    },
+    {
+      "id": "cat:routers",
+      "type": "Category",
+      "label": "Routers",
+      "path": [
+        "Routers"
+      ],
+      "description": "Routing layers that select between models, tools or agents based on cost, capability or intent."
+    },
+    {
+      "id": "cat:routers/cost-optimisation",
+      "type": "Category",
+      "label": "Cost Optimisation",
+      "path": [
+        "Routers",
+        "Cost Optimisation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:relayplane-proxy",
+      "type": "Project",
+      "label": "RelayPlane proxy",
+      "url": "https://github.com/RelayPlane/proxy"
+    },
+    {
+      "id": "cat:routers/intelligent",
+      "type": "Category",
+      "label": "Intelligent",
+      "path": [
+        "Routers",
+        "Intelligent"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:semantic-router",
+      "type": "Project",
+      "label": "semantic-router",
+      "url": "https://github.com/vllm-project/semantic-router"
+    },
+    {
+      "id": "cat:routers/tool-specific",
+      "type": "Category",
+      "label": "Tool Specific",
+      "path": [
+        "Routers",
+        "Tool Specific"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:clawrouter",
+      "type": "Project",
+      "label": "ClawRouter",
+      "url": "https://github.com/BlockRunAI/ClawRouter"
+    },
+    {
+      "id": "cat:runtimes",
+      "type": "Category",
+      "label": "Runtimes",
+      "path": [
+        "Runtimes"
+      ],
+      "description": "Execution runtimes \u2014 sandboxes, data layers, kernels \u2014 that host running agents."
+    },
+    {
+      "id": "proj:openshell",
+      "type": "Project",
+      "label": "OpenShell",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    },
+    {
+      "id": "cat:runtimes/data-layers",
+      "type": "Category",
+      "label": "Data Layers",
+      "path": [
+        "Runtimes",
+        "Data Layers"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:deeplake",
+      "type": "Project",
+      "label": "deeplake",
+      "url": "https://github.com/activeloopai/deeplake"
+    },
+    {
+      "id": "cat:runtimes/policy-engines",
+      "type": "Category",
+      "label": "Policy Engines",
+      "path": [
+        "Runtimes",
+        "Policy Engines"
+      ],
+      "description": "Runtime policy engines that evaluate and enforce rules on agent actions."
+    },
+    {
+      "id": "proj:aegis",
+      "type": "Project",
+      "label": "Aegis",
+      "url": "https://github.com/Justin0504/Aegis"
+    },
+    {
+      "id": "cat:runtimes/sandboxes",
+      "type": "Category",
+      "label": "Sandboxes",
+      "path": [
+        "Runtimes",
+        "Sandboxes"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:opensandbox",
+      "type": "Project",
+      "label": "OpenSandbox",
+      "url": "https://github.com/alibaba/OpenSandbox"
+    },
+    {
+      "id": "cat:saas-builders",
+      "type": "Category",
+      "label": "SaaS Builders",
+      "path": [
+        "SaaS Builders"
+      ],
+      "description": "Hosted SaaS platforms for building agents and agentic workflows, spanning no-code, visual, and code-defined paradigms."
+    },
+    {
+      "id": "cat:saas-builders/no-code",
+      "type": "Category",
+      "label": "No Code",
+      "path": [
+        "SaaS Builders",
+        "No Code"
+      ],
+      "description": "Builders targeted at non-programmers, typically form- and config-driven with minimal visual wiring."
+    },
+    {
+      "id": "cat:saas-builders/visual-programming",
+      "type": "Category",
+      "label": "Visual Programming",
+      "path": [
+        "SaaS Builders",
+        "Visual Programming"
+      ],
+      "description": "Builders where flows are expressed as node-and-edge graphs or canvas-based visual programs."
+    },
+    {
+      "id": "proj:n8n",
+      "type": "Project",
+      "label": "n8n",
+      "url": "https://n8n.io/"
+    },
+    {
+      "id": "cat:saas-builders/visual-programming/workflow-focused",
+      "type": "Category",
+      "label": "Workflow Focused",
+      "path": [
+        "SaaS Builders",
+        "Visual Programming",
+        "Workflow Focused"
+      ],
+      "description": "Visual builders oriented around structured, multi-step workflows rather than free-form agents."
+    },
+    {
+      "id": "proj:gumloop",
+      "type": "Project",
+      "label": "Gumloop",
+      "url": "https://www.gumloop.com/"
+    },
+    {
+      "id": "proj:mindstudio",
+      "type": "Project",
+      "label": "MindStudio",
+      "url": "https://www.mindstudio.ai/"
+    },
+    {
+      "id": "cat:saas-builders/code-defined",
+      "type": "Category",
+      "label": "Code-Defined",
+      "path": [
+        "SaaS Builders",
+        "Code-Defined"
+      ],
+      "description": "Hosted builders where agents and workflows are primarily defined in code (SDK, DSL, or config-as-code)."
+    },
+    {
+      "id": "cat:security",
+      "type": "Category",
+      "label": "Security",
+      "path": [
+        "Security"
+      ],
+      "description": "Security tooling for agents: sandboxing, red teaming, defensive automation."
+    },
+    {
+      "id": "proj:agent-scan",
+      "type": "Project",
+      "label": "agent-scan",
+      "url": "https://github.com/snyk/agent-scan"
+    },
+    {
+      "id": "proj:agentguard",
+      "type": "Project",
+      "label": "agentguard",
+      "url": "https://github.com/GoPlusSecurity/agentguard"
+    },
+    {
+      "id": "cat:security/automation",
+      "type": "Category",
+      "label": "Automation",
+      "path": [
+        "Security",
+        "Automation"
+      ],
+      "description": "General-purpose automation tools and frameworks, including GUI-driven and script-driven flows."
+    },
+    {
+      "id": "proj:tracecat",
+      "type": "Project",
+      "label": "tracecat",
+      "url": "https://github.com/TracecatHQ/tracecat"
+    },
+    {
+      "id": "cat:security/control-planes",
+      "type": "Category",
+      "label": "Control Planes",
+      "path": [
+        "Security",
+        "Control Planes"
+      ],
+      "description": "Centralised control planes for governing, auditing, and enforcing policy across agent fleets."
+    },
+    {
+      "id": "proj:cordum",
+      "type": "Project",
+      "label": "cordum",
+      "url": "https://github.com/cordum-io/cordum"
+    },
+    {
+      "id": "cat:security/red-team",
+      "type": "Category",
+      "label": "Red Team",
+      "path": [
+        "Security",
+        "Red Team"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:rogue",
+      "type": "Project",
+      "label": "rogue",
+      "url": "https://github.com/qualifire-dev/rogue"
+    },
+    {
+      "id": "cat:security/sandboxing",
+      "type": "Category",
+      "label": "Sandboxing",
+      "path": [
+        "Security",
+        "Sandboxing"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:microsandbox",
+      "type": "Project",
+      "label": "microsandbox",
+      "url": "https://github.com/superradcompany/microsandbox"
+    },
+    {
+      "id": "cat:skills",
+      "type": "Category",
+      "label": "Skills",
+      "path": [
+        "Skills"
+      ],
+      "description": "Agent skills ecosystems \u2014 registries, bundles, standards, guides and package libraries."
+    },
+    {
+      "id": "proj:agent-skills",
+      "type": "Project",
+      "label": "agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills"
+    },
+    {
+      "id": "cat:skills/bundles",
+      "type": "Category",
+      "label": "Bundles",
+      "path": [
+        "Skills",
+        "Bundles"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:skills/bundles/claude-code",
+      "type": "Category",
+      "label": "Claude Code",
+      "path": [
+        "Skills",
+        "Bundles",
+        "Claude Code"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:marketingskills",
+      "type": "Project",
+      "label": "marketingskills",
+      "url": "https://github.com/coreyhaines31/marketingskills"
+    },
+    {
+      "id": "cat:skills/guides",
+      "type": "Category",
+      "label": "Guides",
+      "path": [
+        "Skills",
+        "Guides"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:taste-skill",
+      "type": "Project",
+      "label": "taste-skill",
+      "url": "https://github.com/Leonxlnx/taste-skill"
+    },
+    {
+      "id": "cat:skills/package-library",
+      "type": "Category",
+      "label": "Package Library",
+      "path": [
+        "Skills",
+        "Package Library"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:vercel-labs-skills",
+      "type": "Project",
+      "label": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills"
+    },
+    {
+      "id": "cat:skills/registries",
+      "type": "Category",
+      "label": "Registries",
+      "path": [
+        "Skills",
+        "Registries"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agent-skills-tech-leads-club",
+      "type": "Project",
+      "label": "agent-skills (tech-leads-club)",
+      "url": "https://github.com/tech-leads-club/agent-skills"
+    },
+    {
+      "id": "cat:skills/standards",
+      "type": "Category",
+      "label": "Standards",
+      "path": [
+        "Skills",
+        "Standards"
+      ],
+      "description": "Proposed and emerging standards across the agentic ecosystem."
+    },
+    {
+      "id": "proj:agentskills",
+      "type": "Project",
+      "label": "agentskills",
+      "url": "https://github.com/agentskills/agentskills"
+    },
+    {
+      "id": "cat:societal-simulations",
+      "type": "Category",
+      "label": "Societal Simulations",
+      "path": [
+        "Societal Simulations"
+      ],
+      "description": "Large-scale simulations of societies and human behaviour using agent populations."
+    },
+    {
+      "id": "proj:oasis",
+      "type": "Project",
+      "label": "oasis",
+      "url": "https://github.com/camel-ai/oasis"
+    },
+    {
+      "id": "cat:software-extensions",
+      "type": "Category",
+      "label": "Software Extensions",
+      "path": [
+        "Software Extensions"
+      ],
+      "description": "Extensions and plugins that add agentic capabilities to existing software."
+    },
+    {
+      "id": "proj:jupyter-ai",
+      "type": "Project",
+      "label": "jupyter-ai",
+      "url": "https://github.com/jupyterlab/jupyter-ai"
+    },
+    {
+      "id": "cat:standards",
+      "type": "Category",
+      "label": "Standards",
+      "path": [
+        "Standards"
+      ],
+      "description": "Proposed and emerging standards across the agentic ecosystem."
+    },
+    {
+      "id": "cat:standards/emerging-ecosystem-tied",
+      "type": "Category",
+      "label": "Emerging (Ecosystem-Tied)",
+      "path": [
+        "Standards",
+        "Emerging (Ecosystem-Tied)"
+      ],
+      "description": "Emerging standards whose adoption is tied to a specific host ecosystem (e.g. a browser engine or platform vendor) rather than being fully vendor-neutral."
+    },
+    {
+      "id": "proj:webmcp",
+      "type": "Project",
+      "label": "WebMCP",
+      "url": "https://webmcp.dev/"
+    },
+    {
+      "id": "proj:webmcp-chrome-epp",
+      "type": "Project",
+      "label": "WebMCP (Chrome EPP)",
+      "url": "https://developer.chrome.com/blog/webmcp-epp"
+    },
+    {
+      "id": "cat:standards/proposed",
+      "type": "Category",
+      "label": "Proposed",
+      "path": [
+        "Standards",
+        "Proposed"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:gitagent",
+      "type": "Project",
+      "label": "gitagent",
+      "url": "https://github.com/open-gitagent/gitagent"
+    },
+    {
+      "id": "proj:aiuc-1",
+      "type": "Project",
+      "label": "AIUC-1",
+      "url": "https://www.aiuc-1.com/"
+    },
+    {
+      "id": "cat:standards/ratified",
+      "type": "Category",
+      "label": "Ratified",
+      "path": [
+        "Standards",
+        "Ratified"
+      ],
+      "description": "Standards with a published specification and active governance."
+    },
+    {
+      "id": "proj:a2a-agent2agent-protocol",
+      "type": "Project",
+      "label": "A2A (Agent2Agent Protocol)",
+      "url": "https://github.com/a2aproject/A2A"
+    },
+    {
+      "id": "proj:ag-ui-agent-user-interaction-protocol",
+      "type": "Project",
+      "label": "AG-UI (Agent User Interaction Protocol)",
+      "url": "https://docs.ag-ui.com/introduction"
+    },
+    {
+      "id": "proj:mcp-model-context-protocol",
+      "type": "Project",
+      "label": "MCP (Model Context Protocol)",
+      "url": "https://modelcontextprotocol.io/specification/2025-11-25"
+    },
+    {
+      "id": "cat:starter-kits",
+      "type": "Category",
+      "label": "Starter Kits",
+      "path": [
+        "Starter Kits"
+      ],
+      "description": "Opinionated starter kits and templates for kicking off agentic projects."
+    },
+    {
+      "id": "cat:starter-kits/social-simulations",
+      "type": "Category",
+      "label": "Social Simulations",
+      "path": [
+        "Starter Kits",
+        "Social Simulations"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:ai-town",
+      "type": "Project",
+      "label": "ai-town",
+      "url": "https://github.com/a16z-infra/ai-town"
+    },
+    {
+      "id": "cat:synthesised-perspectives",
+      "type": "Category",
+      "label": "Synthesised Perspectives",
+      "path": [
+        "Synthesised Perspectives"
+      ],
+      "description": "Tools that synthesise multiple viewpoints or agent outputs into a unified perspective."
+    },
+    {
+      "id": "proj:plurals",
+      "type": "Project",
+      "label": "Plurals",
+      "url": "https://github.com/josh-ashkinaze/plurals"
+    },
+    {
+      "id": "proj:llm-council",
+      "type": "Project",
+      "label": "llm-council",
+      "url": "https://github.com/karpathy/llm-council"
+    },
+    {
+      "id": "cat:task-specific",
+      "type": "Category",
+      "label": "Task Specific",
+      "path": [
+        "Task Specific"
+      ],
+      "description": "Agents and tools built for a single specific task rather than general use."
+    },
+    {
+      "id": "cat:task-specific/product-design",
+      "type": "Category",
+      "label": "Product Design",
+      "path": [
+        "Task Specific",
+        "Product Design"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:superdesign",
+      "type": "Project",
+      "label": "superdesign",
+      "url": "https://github.com/superdesigndev/superdesign"
+    },
+    {
+      "id": "cat:tools",
+      "type": "Category",
+      "label": "Tools",
+      "path": [
+        "Tools"
+      ],
+      "description": "Utility tools, SDKs and toolkits for building, debugging and extending agentic systems."
+    },
+    {
+      "id": "proj:vercel-ai",
+      "type": "Project",
+      "label": "vercel/ai",
+      "url": "https://github.com/vercel/ai"
+    },
+    {
+      "id": "proj:langflow",
+      "type": "Project",
+      "label": "langflow",
+      "url": "https://github.com/langflow-ai/langflow"
+    },
+    {
+      "id": "cat:tools/android",
+      "type": "Category",
+      "label": "Android",
+      "path": [
+        "Tools",
+        "Android"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agent-device",
+      "type": "Project",
+      "label": "agent-device",
+      "url": "https://github.com/callstackincubator/agent-device"
+    },
+    {
+      "id": "cat:tools/browser-utils",
+      "type": "Category",
+      "label": "Browser Utils",
+      "path": [
+        "Tools",
+        "Browser Utils"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:tools/browser-utils/sdk",
+      "type": "Category",
+      "label": "SDK",
+      "path": [
+        "Tools",
+        "Browser Utils",
+        "SDK"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:stagehand",
+      "type": "Project",
+      "label": "stagehand",
+      "url": "https://github.com/browserbase/stagehand"
+    },
+    {
+      "id": "cat:tools/computer-use",
+      "type": "Category",
+      "label": "Computer Use",
+      "path": [
+        "Tools",
+        "Computer Use"
+      ],
+      "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
+    },
+    {
+      "id": "proj:cua",
+      "type": "Project",
+      "label": "cua",
+      "url": "https://github.com/trycua/cua"
+    },
+    {
+      "id": "cat:tools/computer-use/cli",
+      "type": "Category",
+      "label": "CLI",
+      "path": [
+        "Tools",
+        "Computer Use",
+        "CLI"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:usecomputer",
+      "type": "Project",
+      "label": "usecomputer",
+      "url": "https://github.com/remorses/usecomputer"
+    },
+    {
+      "id": "cat:tools/data-ingestion",
+      "type": "Category",
+      "label": "Data Ingestion",
+      "path": [
+        "Tools",
+        "Data Ingestion"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agent-reach",
+      "type": "Project",
+      "label": "Agent-Reach",
+      "url": "https://github.com/Panniantong/Agent-Reach"
+    },
+    {
+      "id": "cat:tools/debugging",
+      "type": "Category",
+      "label": "Debugging",
+      "path": [
+        "Tools",
+        "Debugging"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:vllora",
+      "type": "Project",
+      "label": "vllora",
+      "url": "https://github.com/vllora/vllora"
+    },
+    {
+      "id": "cat:tools/financial",
+      "type": "Category",
+      "label": "Financial",
+      "path": [
+        "Tools",
+        "Financial"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agentkit",
+      "type": "Project",
+      "label": "agentkit",
+      "url": "https://github.com/coinbase/agentkit"
+    },
+    {
+      "id": "cat:tools/ide-tools",
+      "type": "Category",
+      "label": "IDE Tools",
+      "path": [
+        "Tools",
+        "IDE Tools"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:roo-code",
+      "type": "Project",
+      "label": "Roo-Code",
+      "url": "https://github.com/RooCodeInc/Roo-Code"
+    },
+    {
+      "id": "cat:tools/integration-platforms",
+      "type": "Category",
+      "label": "Integration Platforms",
+      "path": [
+        "Tools",
+        "Integration Platforms"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:tools/integration-platforms/saas",
+      "type": "Category",
+      "label": "SaaS",
+      "path": [
+        "Tools",
+        "Integration Platforms",
+        "SaaS"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:composio",
+      "type": "Project",
+      "label": "composio",
+      "url": "https://github.com/ComposioHQ/composio"
+    },
+    {
+      "id": "cat:tools/macos",
+      "type": "Category",
+      "label": "macOS",
+      "path": [
+        "Tools",
+        "macOS"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:cmux",
+      "type": "Project",
+      "label": "cmux",
+      "url": "https://github.com/manaflow-ai/cmux"
+    },
+    {
+      "id": "cat:tools/model-routing",
+      "type": "Category",
+      "label": "Model Routing",
+      "path": [
+        "Tools",
+        "Model Routing"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:agentic-flow",
+      "type": "Project",
+      "label": "agentic-flow",
+      "url": "https://github.com/ruvnet/agentic-flow"
+    },
+    {
+      "id": "cat:tools/semantic-search",
+      "type": "Category",
+      "label": "Semantic Search",
+      "path": [
+        "Tools",
+        "Semantic Search"
+      ],
+      "description": "Semantic search tools for agents operating over codebases and local content."
+    },
+    {
+      "id": "proj:osgrep",
+      "type": "Project",
+      "label": "osgrep",
+      "url": "https://github.com/Ryandonofrio3/osgrep"
+    },
+    {
+      "id": "cat:tools/vision-ui",
+      "type": "Category",
+      "label": "Vision UI",
+      "path": [
+        "Tools",
+        "Vision UI"
+      ],
+      "description": ""
+    },
+    {
+      "id": "proj:ui-venus",
+      "type": "Project",
+      "label": "UI-Venus",
+      "url": "https://github.com/inclusionAI/UI-Venus"
+    },
+    {
+      "id": "cat:tools/world-creation",
+      "type": "Category",
+      "label": "World Creation",
+      "path": [
+        "Tools",
+        "World Creation"
+      ],
+      "description": ""
+    },
+    {
+      "id": "cat:tools/world-creation/mcp",
+      "type": "Category",
+      "label": "MCP",
+      "path": [
+        "Tools",
+        "World Creation",
+        "MCP"
+      ],
+      "description": "Projects in the Model Context Protocol ecosystem \u2014 servers, gateways, aggregators, clients."
+    },
+    {
+      "id": "proj:unreal-engine-mcp",
+      "type": "Project",
+      "label": "unreal-engine-mcp",
+      "url": "https://github.com/flopperam/unreal-engine-mcp"
+    },
+    {
+      "id": "cat:trainers",
+      "type": "Category",
+      "label": "Trainers",
+      "path": [
+        "Trainers"
+      ],
+      "description": "Training frameworks and tools for agent models."
+    },
+    {
+      "id": "proj:agent-lightning",
+      "type": "Project",
+      "label": "agent-lightning",
+      "url": "https://github.com/microsoft/agent-lightning"
+    },
+    {
+      "id": "cat:uncategorized",
+      "type": "Category",
+      "label": "Uncategorized",
+      "path": [
+        "Uncategorized"
+      ],
+      "description": "Holding area for projects awaiting classification. Entries here are a todo list, not a destination."
+    },
+    {
+      "id": "proj:agency-agents",
+      "type": "Project",
+      "label": "agency-agents",
+      "url": "https://github.com/msitarzewski/agency-agents"
+    },
+    {
+      "id": "cat:upserting-tools",
+      "type": "Category",
+      "label": "Upserting Tools",
+      "path": [
+        "Upserting Tools"
+      ],
+      "description": "Tools that manage upserting data into vector stores and retrieval indexes."
+    },
+    {
+      "id": "cat:ux",
+      "type": "Category",
+      "label": "UX",
+      "path": [
+        "UX"
+      ],
+      "description": "User-experience patterns and components specifically for agent systems."
+    },
+    {
+      "id": "cat:ux/human-in-the-loop",
+      "type": "Category",
+      "label": "Human in the Loop",
+      "path": [
+        "UX",
+        "Human in the Loop"
+      ],
+      "description": "Interfaces and workflows for inserting humans into agent execution \u2014 approvals, task handoff, review queues."
+    },
+    {
+      "id": "proj:agent-inbox",
+      "type": "Project",
+      "label": "agent-inbox",
+      "url": "https://github.com/langchain-ai/agent-inbox"
+    },
+    {
+      "id": "proj:orchestra",
+      "type": "Project",
+      "label": "orchestra",
+      "url": "https://github.com/b12io/orchestra"
+    },
+    {
+      "id": "cat:vector-databases",
+      "type": "Category",
+      "label": "Vector Databases",
+      "path": [
+        "Vector Databases"
+      ],
+      "description": "Vector databases used for embedding storage and similarity search."
+    },
+    {
+      "id": "proj:qdrant",
+      "type": "Project",
+      "label": "Qdrant",
+      "url": "https://github.com/qdrant/qdrant"
+    },
+    {
+      "id": "cat:voice",
+      "type": "Category",
+      "label": "Voice",
+      "path": [
+        "Voice"
+      ],
+      "description": "Voice-first agents and voice interaction frameworks."
+    },
+    {
+      "id": "proj:bolna",
+      "type": "Project",
+      "label": "bolna",
+      "url": "https://github.com/bolna-ai/bolna"
+    },
+    {
+      "id": "cat:workflow-definition",
+      "type": "Category",
+      "label": "Workflow Definition",
+      "path": [
+        "Workflow Definition"
+      ],
+      "description": "Tools and DSLs for authoring agent workflows as first-class, portable artifacts."
+    },
+    {
+      "id": "proj:packmind",
+      "type": "Project",
+      "label": "packmind",
+      "url": "https://github.com/PackmindHub/packmind"
+    },
+    {
+      "id": "cat:workspaces",
+      "type": "Category",
+      "label": "Workspaces",
+      "path": [
+        "Workspaces"
+      ],
+      "description": "Shared workspaces where agents and humans (or multiple agents) collaborate."
+    },
+    {
+      "id": "proj:lobehub",
+      "type": "Project",
+      "label": "lobehub",
+      "url": "https://github.com/lobehub/lobehub"
+    },
+    {
+      "id": "cat:world-generation",
+      "type": "Category",
+      "label": "World Generation",
+      "path": [
+        "World Generation"
+      ],
+      "description": "Tools and models for generating simulated worlds for agents to operate in."
+    },
+    {
+      "id": "proj:ml-agents",
+      "type": "Project",
+      "label": "ml-agents",
+      "url": "https://github.com/Unity-Technologies/ml-agents"
+    }
+  ]
+}

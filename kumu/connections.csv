@@ -1,0 +1,326 @@
+From,To,Type
+intentkit,Agent Clusters,CATEGORY_OF
+AgentVerse,Agent Collaboration,CATEGORY_OF
+openagents,Agent to Agent,CATEGORY_OF
+agentchattr,Agent to Agent,CATEGORY_OF
+connectonion,Agent to Agent,CATEGORY_OF
+Agent to Agent › Experiments,Agent to Agent,SUBCATEGORY_OF
+Agent to Agent › Experiments › Voices,Agent to Agent › Experiments,SUBCATEGORY_OF
+gibberlink,Agent to Agent › Experiments › Voices,CATEGORY_OF
+Agent Tools › Comms,Agent Tools,SUBCATEGORY_OF
+mcp_agent_mail,Agent Tools › Comms,CATEGORY_OF
+xataio/agent,Agents,CATEGORY_OF
+Agents › Autonomous,Agents,SUBCATEGORY_OF
+Agents › Autonomous › Trading,Agents › Autonomous,SUBCATEGORY_OF
+AI-Trader,Agents › Autonomous › Trading,CATEGORY_OF
+Agents › Autonomous Agent Creation,Agents,SUBCATEGORY_OF
+BankrBot/skills,Agents › Autonomous Agent Creation,CATEGORY_OF
+Agents › Backend Platforms,Agents,SUBCATEGORY_OF
+dify,Agents › Backend Platforms,CATEGORY_OF
+Agents › CLIs/Toolkits,Agents,SUBCATEGORY_OF
+Agents › CLIs/Toolkits › Vendor,Agents › CLIs/Toolkits,SUBCATEGORY_OF
+qwen-code,Agents › CLIs/Toolkits › Vendor,CATEGORY_OF
+Agents › Computer Use,Agents,SUBCATEGORY_OF
+open-computer-use,Agents › Computer Use,CATEGORY_OF
+Agents › Development,Agents,SUBCATEGORY_OF
+OpenHands,Agents › Development,CATEGORY_OF
+Agents › Domain Specific,Agents,SUBCATEGORY_OF
+Agents › Domain Specific › Biotech,Agents › Domain Specific,SUBCATEGORY_OF
+Biomni,Agents › Domain Specific › Biotech,CATEGORY_OF
+Agents › Frameworks,Agents,SUBCATEGORY_OF
+Agents › Frameworks › Open Source,Agents › Frameworks,SUBCATEGORY_OF
+hermes-agent,Agents › Frameworks › Open Source,CATEGORY_OF
+Agents › Frontends,Agents,SUBCATEGORY_OF
+openclaw-mission-control,Agents › Frontends,CATEGORY_OF
+Agents › Harnesses,Agents,SUBCATEGORY_OF
+Agents › Harnesses › CLIs,Agents › Harnesses,SUBCATEGORY_OF
+Agents › Harnesses › CLIs › Third Party,Agents › Harnesses › CLIs,SUBCATEGORY_OF
+crush,Agents › Harnesses › CLIs › Third Party,CATEGORY_OF
+Agents › Harnesses › CLIs › Vendor,Agents › Harnesses › CLIs,SUBCATEGORY_OF
+gemini-cli,Agents › Harnesses › CLIs › Vendor,CATEGORY_OF
+Agents › Memory,Agents,SUBCATEGORY_OF
+Agents › Memory › Graph Builders,Agents › Memory,SUBCATEGORY_OF
+graphiti,Agents › Memory › Graph Builders,CATEGORY_OF
+Agents › Personal Focused,Agents,SUBCATEGORY_OF
+Crucix,Agents › Personal Focused,CATEGORY_OF
+Agents › Purpose Specific,Agents,SUBCATEGORY_OF
+inkos,Agents › Purpose Specific,CATEGORY_OF
+Agents › Purpose Specific › Penetration Testing,Agents › Purpose Specific,SUBCATEGORY_OF
+pentagi,Agents › Purpose Specific › Penetration Testing,CATEGORY_OF
+Agents › Team Formation,Agents,SUBCATEGORY_OF
+squad,Agents › Team Formation,CATEGORY_OF
+Agents › Teams,Agents,SUBCATEGORY_OF
+ai-data-science-team,Agents › Teams,CATEGORY_OF
+Agents › Vision,Agents,SUBCATEGORY_OF
+Vision-Agents,Agents › Vision,CATEGORY_OF
+BrowserOS,AI Browsers,CATEGORY_OF
+AI Browsers › Headless,AI Browsers,SUBCATEGORY_OF
+Lightpanda Browser,AI Browsers › Headless,CATEGORY_OF
+Steel Browser,AI Browsers › Headless,CATEGORY_OF
+Automation › Open Source,Automation,SUBCATEGORY_OF
+Automation › Open Source › GUI Based,Automation › Open Source,SUBCATEGORY_OF
+activepieces,Automation › Open Source › GUI Based,CATEGORY_OF
+Flowise,Automation › Open Source › GUI Based,CATEGORY_OF
+mindsdb,Backend Querying,CATEGORY_OF
+AICGSecEval,Benchmarks,CATEGORY_OF
+OSWorld,Benchmarks,CATEGORY_OF
+vibium,Browser Automation,CATEGORY_OF
+agent-browser,Browser Tooling,CATEGORY_OF
+Computer Use › Platform Specific,Computer Use,SUBCATEGORY_OF
+Computer Use › Platform Specific › macOS,Computer Use › Platform Specific,SUBCATEGORY_OF
+macOS-use,Computer Use › Platform Specific › macOS,CATEGORY_OF
+PromptX,Context,CATEGORY_OF
+WeKnora,Context,CATEGORY_OF
+Context › Context Optimisation,Context,SUBCATEGORY_OF
+context-mode,Context › Context Optimisation,CATEGORY_OF
+Context › Engines,Context,SUBCATEGORY_OF
+contexto,Context › Engines,CATEGORY_OF
+Context › Frontend Tools,Context,SUBCATEGORY_OF
+react-grab,Context › Frontend Tools,CATEGORY_OF
+Context › Tools,Context,SUBCATEGORY_OF
+Context › Tools › Context Managers,Context › Tools,SUBCATEGORY_OF
+dotai,Context › Tools › Context Managers,CATEGORY_OF
+Context › Visualisation,Context,SUBCATEGORY_OF
+context-lens,Context › Visualisation,CATEGORY_OF
+parlant,Conversational Control,CATEGORY_OF
+firecrawl,Data Extraction and Structuring,CATEGORY_OF
+Data Sources › Financial,Data Sources,SUBCATEGORY_OF
+OpenBB,Data Sources › Financial,CATEGORY_OF
+Databases › Context Databases,Databases,SUBCATEGORY_OF
+OpenViking,Databases › Context Databases,CATEGORY_OF
+Deployment Platforms › Serverless,Deployment Platforms,SUBCATEGORY_OF
+julep,Deployment Platforms › Serverless,CATEGORY_OF
+hello-halo,Desktop GUIs,CATEGORY_OF
+Dev Tools › Repo Refactoring,Dev Tools,SUBCATEGORY_OF
+agentrc,Dev Tools › Repo Refactoring,CATEGORY_OF
+coze-studio,Development Platforms,CATEGORY_OF
+voltagent,Engineering Platforms,CATEGORY_OF
+Environments › OS,Environments,SUBCATEGORY_OF
+agent-os,Environments › OS,CATEGORY_OF
+Environments › Remote Desktops,Environments,SUBCATEGORY_OF
+Abacus Desktop,Environments › Remote Desktops,CATEGORY_OF
+cua.ai,Environments › Remote Desktops,CATEGORY_OF
+trulens,Evals and Experiment Tracking,CATEGORY_OF
+langwatch,Evals and Experiment Tracking,CATEGORY_OF
+Evals and Experiment Tracking › Frameworks,Evals and Experiment Tracking,SUBCATEGORY_OF
+deepeval,Evals and Experiment Tracking › Frameworks,CATEGORY_OF
+Evals and Experiment Tracking › Observability,Evals and Experiment Tracking,SUBCATEGORY_OF
+langfuse,Evals and Experiment Tracking › Observability,CATEGORY_OF
+agentation,Feedback Formatting,CATEGORY_OF
+goat,Financial Tools,CATEGORY_OF
+toon,Formatting,CATEGORY_OF
+Agentic AI Industry Foundation (AAIF),Foundations,CATEGORY_OF
+autogen,Frameworks,CATEGORY_OF
+uAgents,Frameworks,CATEGORY_OF
+ii-agent,Frameworks,CATEGORY_OF
+AgentForge,Frameworks,CATEGORY_OF
+EvoAgentX,Frameworks,CATEGORY_OF
+AIOpsLab,Frameworks,CATEGORY_OF
+Frameworks › .NET,Frameworks,SUBCATEGORY_OF
+BotSharp,Frameworks › .NET,CATEGORY_OF
+Frameworks › Computer Use,Frameworks,SUBCATEGORY_OF
+Agent-S,Frameworks › Computer Use,CATEGORY_OF
+Frameworks › Multi-agent,Frameworks,SUBCATEGORY_OF
+camel,Frameworks › Multi-agent,CATEGORY_OF
+Frameworks › Multiagent Orchestration,Frameworks,SUBCATEGORY_OF
+crewAI,Frameworks › Multiagent Orchestration,CATEGORY_OF
+Frameworks › Multimodal,Frameworks,SUBCATEGORY_OF
+videosdk-live/agents,Frameworks › Multimodal,CATEGORY_OF
+Frameworks › Optimisation,Frameworks,SUBCATEGORY_OF
+Frameworks › Optimisation › Parallelisation,Frameworks › Optimisation,SUBCATEGORY_OF
+EnsoAI,Frameworks › Optimisation › Parallelisation,CATEGORY_OF
+Frameworks › Social Simulations,Frameworks,SUBCATEGORY_OF
+concordia,Frameworks › Social Simulations,CATEGORY_OF
+moltbook,Frameworks › Social Simulations,CATEGORY_OF
+Frameworks › Stateful Design,Frameworks,SUBCATEGORY_OF
+letta,Frameworks › Stateful Design,CATEGORY_OF
+Frameworks › Voice,Frameworks,SUBCATEGORY_OF
+livekit/agents,Frameworks › Voice,CATEGORY_OF
+ten-framework,Frameworks › Voice,CATEGORY_OF
+Frontends › Android,Frontends,SUBCATEGORY_OF
+Operit,Frontends › Android,CATEGORY_OF
+Frontends › Chat UIs,Frontends,SUBCATEGORY_OF
+agent-ui,Frontends › Chat UIs,CATEGORY_OF
+Frontends › GUIs and CLIs,Frontends,SUBCATEGORY_OF
+goose,Frontends › GUIs and CLIs,CATEGORY_OF
+Frontends › TUIs and CLIs,Frontends,SUBCATEGORY_OF
+agent-deck,Frontends › TUIs and CLIs,CATEGORY_OF
+Gateways › Context Compression,Gateways,SUBCATEGORY_OF
+Context-Gateway,Gateways › Context Compression,CATEGORY_OF
+WargamesAI,Geopolitical Simulation,CATEGORY_OF
+snowglobe,Geopolitical Simulation,CATEGORY_OF
+hive,Harnesses,CATEGORY_OF
+oh-my-openagent,Harnesses,CATEGORY_OF
+Harnesses › Deep Research,Harnesses,SUBCATEGORY_OF
+deepagents,Harnesses › Deep Research,CATEGORY_OF
+Harnesses › Guardrails,Harnesses,SUBCATEGORY_OF
+shellfirm,Harnesses › Guardrails,CATEGORY_OF
+Harnesses › macOS,Harnesses,SUBCATEGORY_OF
+osaurus,Harnesses › macOS,CATEGORY_OF
+Gemini 3.1,LLMs,CATEGORY_OF
+LLMs › Agent Specific,LLMs,SUBCATEGORY_OF
+Grok 4.20 Multi-Agent,LLMs › Agent Specific,CATEGORY_OF
+LLMs › By Use Case,LLMs,SUBCATEGORY_OF
+LLMs › By Use Case › Computer Use,LLMs › By Use Case,SUBCATEGORY_OF
+fara,LLMs › By Use Case › Computer Use,CATEGORY_OF
+ralph,Loops,CATEGORY_OF
+agen.cy marketplace,Marketplaces,CATEGORY_OF
+AI Agent Store,Marketplaces,CATEGORY_OF
+MCP › Aggregation,MCP,SUBCATEGORY_OF
+klavis,MCP › Aggregation,CATEGORY_OF
+MCP › Gateways,MCP,SUBCATEGORY_OF
+mcp-context-forge,MCP › Gateways,CATEGORY_OF
+MCP › Third Party,MCP,SUBCATEGORY_OF
+mcp-server-airbnb,MCP › Third Party,CATEGORY_OF
+cognee,Memory,CATEGORY_OF
+agentmemory,Memory,CATEGORY_OF
+mem0,Memory,CATEGORY_OF
+MemOS,Memory,CATEGORY_OF
+Memory › File,Memory,SUBCATEGORY_OF
+memvid,Memory › File,CATEGORY_OF
+Memory › Regressive,Memory,SUBCATEGORY_OF
+agentic-context-engine,Memory › Regressive,CATEGORY_OF
+Memory › Skills,Memory,SUBCATEGORY_OF
+Acontext,Memory › Skills,CATEGORY_OF
+Multiagent › Large Scale Experiments,Multiagent,SUBCATEGORY_OF
+AgentTorch,Multiagent › Large Scale Experiments,CATEGORY_OF
+Multiagent › Swarm Prediction,Multiagent,SUBCATEGORY_OF
+MiroFish,Multiagent › Swarm Prediction,CATEGORY_OF
+Multiagent › Workspace,Multiagent,SUBCATEGORY_OF
+AgentsMesh,Multiagent › Workspace,CATEGORY_OF
+Multiagent › Workspaces,Multiagent,SUBCATEGORY_OF
+gastown,Multiagent › Workspaces,CATEGORY_OF
+agent.ai,Networks,CATEGORY_OF
+RagaAI-Catalyst,Observability,CATEGORY_OF
+On Device Agents › SBCs,On Device Agents,SUBCATEGORY_OF
+be-more-agent,On Device Agents › SBCs,CATEGORY_OF
+Operations › Cost Monitoring,Operations,SUBCATEGORY_OF
+agentops,Operations › Cost Monitoring,CATEGORY_OF
+coze-loop,Optimisation Platform,CATEGORY_OF
+Shannon,Orchestration,CATEGORY_OF
+conductor,Orchestration,CATEGORY_OF
+ai-maestro,Orchestration,CATEGORY_OF
+agent-orchestrator,Orchestration,CATEGORY_OF
+Orchestration › Platform-Specific,Orchestration,SUBCATEGORY_OF
+agent-squad,Orchestration › Platform-Specific,CATEGORY_OF
+nanobot,Personal,CATEGORY_OF
+Personal AI › Assistants,Personal AI,SUBCATEGORY_OF
+openclaw,Personal AI › Assistants,CATEGORY_OF
+leon,Personal AI › Assistants,CATEGORY_OF
+bub,Personification,CATEGORY_OF
+Paper2Agent,Pipelines,CATEGORY_OF
+Platforms › Embodied,Platforms,SUBCATEGORY_OF
+fairo,Platforms › Embodied,CATEGORY_OF
+Proxy › Gateways,Proxy,SUBCATEGORY_OF
+agentgateway,Proxy › Gateways,CATEGORY_OF
+litellm,Proxy › Gateways,CATEGORY_OF
+Proxy › MCP to OpenAI,Proxy,SUBCATEGORY_OF
+mcpo,Proxy › MCP to OpenAI,CATEGORY_OF
+airweave,RAG,CATEGORY_OF
+RAG › Engines,RAG,SUBCATEGORY_OF
+ragflow,RAG › Engines,CATEGORY_OF
+RLinf,Reinforcement Learning,CATEGORY_OF
+acme,Reinforcement Learning,CATEGORY_OF
+Routers › Cost Optimisation,Routers,SUBCATEGORY_OF
+RelayPlane proxy,Routers › Cost Optimisation,CATEGORY_OF
+Routers › Intelligent,Routers,SUBCATEGORY_OF
+semantic-router,Routers › Intelligent,CATEGORY_OF
+Routers › Tool Specific,Routers,SUBCATEGORY_OF
+ClawRouter,Routers › Tool Specific,CATEGORY_OF
+OpenShell,Runtimes,CATEGORY_OF
+Runtimes › Data Layers,Runtimes,SUBCATEGORY_OF
+deeplake,Runtimes › Data Layers,CATEGORY_OF
+Runtimes › Policy Engines,Runtimes,SUBCATEGORY_OF
+Aegis,Runtimes › Policy Engines,CATEGORY_OF
+Runtimes › Sandboxes,Runtimes,SUBCATEGORY_OF
+OpenSandbox,Runtimes › Sandboxes,CATEGORY_OF
+SaaS Builders › No Code,SaaS Builders,SUBCATEGORY_OF
+SaaS Builders › Visual Programming,SaaS Builders,SUBCATEGORY_OF
+n8n,SaaS Builders › Visual Programming,CATEGORY_OF
+SaaS Builders › Visual Programming › Workflow Focused,SaaS Builders › Visual Programming,SUBCATEGORY_OF
+Gumloop,SaaS Builders › Visual Programming › Workflow Focused,CATEGORY_OF
+MindStudio,SaaS Builders › Visual Programming › Workflow Focused,CATEGORY_OF
+SaaS Builders › Code-Defined,SaaS Builders,SUBCATEGORY_OF
+agent-scan,Security,CATEGORY_OF
+agentguard,Security,CATEGORY_OF
+Security › Automation,Security,SUBCATEGORY_OF
+tracecat,Security › Automation,CATEGORY_OF
+Security › Control Planes,Security,SUBCATEGORY_OF
+cordum,Security › Control Planes,CATEGORY_OF
+Security › Red Team,Security,SUBCATEGORY_OF
+rogue,Security › Red Team,CATEGORY_OF
+Security › Sandboxing,Security,SUBCATEGORY_OF
+microsandbox,Security › Sandboxing,CATEGORY_OF
+agent-skills,Skills,CATEGORY_OF
+Skills › Bundles,Skills,SUBCATEGORY_OF
+Skills › Bundles › Claude Code,Skills › Bundles,SUBCATEGORY_OF
+marketingskills,Skills › Bundles › Claude Code,CATEGORY_OF
+Skills › Guides,Skills,SUBCATEGORY_OF
+taste-skill,Skills › Guides,CATEGORY_OF
+Skills › Package Library,Skills,SUBCATEGORY_OF
+vercel-labs/skills,Skills › Package Library,CATEGORY_OF
+Skills › Registries,Skills,SUBCATEGORY_OF
+agent-skills (tech-leads-club),Skills › Registries,CATEGORY_OF
+Skills › Standards,Skills,SUBCATEGORY_OF
+agentskills,Skills › Standards,CATEGORY_OF
+oasis,Societal Simulations,CATEGORY_OF
+jupyter-ai,Software Extensions,CATEGORY_OF
+Standards › Emerging (Ecosystem-Tied),Standards,SUBCATEGORY_OF
+WebMCP,Standards › Emerging (Ecosystem-Tied),CATEGORY_OF
+WebMCP (Chrome EPP),Standards › Emerging (Ecosystem-Tied),CATEGORY_OF
+Standards › Proposed,Standards,SUBCATEGORY_OF
+gitagent,Standards › Proposed,CATEGORY_OF
+AIUC-1,Standards › Proposed,CATEGORY_OF
+Standards › Ratified,Standards,SUBCATEGORY_OF
+A2A (Agent2Agent Protocol),Standards › Ratified,CATEGORY_OF
+AG-UI (Agent User Interaction Protocol),Standards › Ratified,CATEGORY_OF
+MCP (Model Context Protocol),Standards › Ratified,CATEGORY_OF
+Starter Kits › Social Simulations,Starter Kits,SUBCATEGORY_OF
+ai-town,Starter Kits › Social Simulations,CATEGORY_OF
+Plurals,Synthesised Perspectives,CATEGORY_OF
+llm-council,Synthesised Perspectives,CATEGORY_OF
+Task Specific › Product Design,Task Specific,SUBCATEGORY_OF
+superdesign,Task Specific › Product Design,CATEGORY_OF
+vercel/ai,Tools,CATEGORY_OF
+langflow,Tools,CATEGORY_OF
+Tools › Android,Tools,SUBCATEGORY_OF
+agent-device,Tools › Android,CATEGORY_OF
+Tools › Browser Utils,Tools,SUBCATEGORY_OF
+Tools › Browser Utils › SDK,Tools › Browser Utils,SUBCATEGORY_OF
+stagehand,Tools › Browser Utils › SDK,CATEGORY_OF
+Tools › Computer Use,Tools,SUBCATEGORY_OF
+cua,Tools › Computer Use,CATEGORY_OF
+Tools › Computer Use › CLI,Tools › Computer Use,SUBCATEGORY_OF
+usecomputer,Tools › Computer Use › CLI,CATEGORY_OF
+Tools › Data Ingestion,Tools,SUBCATEGORY_OF
+Agent-Reach,Tools › Data Ingestion,CATEGORY_OF
+Tools › Debugging,Tools,SUBCATEGORY_OF
+vllora,Tools › Debugging,CATEGORY_OF
+Tools › Financial,Tools,SUBCATEGORY_OF
+agentkit,Tools › Financial,CATEGORY_OF
+Tools › IDE Tools,Tools,SUBCATEGORY_OF
+Roo-Code,Tools › IDE Tools,CATEGORY_OF
+Tools › Integration Platforms,Tools,SUBCATEGORY_OF
+Tools › Integration Platforms › SaaS,Tools › Integration Platforms,SUBCATEGORY_OF
+composio,Tools › Integration Platforms › SaaS,CATEGORY_OF
+Tools › macOS,Tools,SUBCATEGORY_OF
+cmux,Tools › macOS,CATEGORY_OF
+Tools › Model Routing,Tools,SUBCATEGORY_OF
+agentic-flow,Tools › Model Routing,CATEGORY_OF
+Tools › Semantic Search,Tools,SUBCATEGORY_OF
+osgrep,Tools › Semantic Search,CATEGORY_OF
+Tools › Vision UI,Tools,SUBCATEGORY_OF
+UI-Venus,Tools › Vision UI,CATEGORY_OF
+Tools › World Creation,Tools,SUBCATEGORY_OF
+Tools › World Creation › MCP,Tools › World Creation,SUBCATEGORY_OF
+unreal-engine-mcp,Tools › World Creation › MCP,CATEGORY_OF
+agent-lightning,Trainers,CATEGORY_OF
+agency-agents,Uncategorized,CATEGORY_OF
+UX › Human in the Loop,UX,SUBCATEGORY_OF
+agent-inbox,UX › Human in the Loop,CATEGORY_OF
+orchestra,UX › Human in the Loop,CATEGORY_OF
+Qdrant,Vector Databases,CATEGORY_OF
+bolna,Voice,CATEGORY_OF
+packmind,Workflow Definition,CATEGORY_OF
+lobehub,Workspaces,CATEGORY_OF
+ml-agents,World Generation,CATEGORY_OF

@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**156 projects** across **75 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**196 projects** across **76 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -10,90 +10,84 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 ## Segments
 
-- [AI Browsers](#ai-browsers) (2)
 - [Agent Clusters](#agent-clusters) (1)
 - [Agent Collaboration](#agent-collaboration) (1)
-- [Agent Skills](#agent-skills) (1)
-- [Agent Tools](#agent-tools) (1)
 - [Agent to Agent](#agent-to-agent) (4)
+- [Agent Tools](#agent-tools) (1)
 - [Agents](#agents) (19)
+- [AI Browsers](#ai-browsers) (3)
 - [Automation](#automation) (2)
 - [Backend Querying](#backend-querying) (1)
-- [Benchmarks](#benchmarks) (1)
+- [Benchmarks](#benchmarks) (2)
 - [Browser Automation](#browser-automation) (1)
 - [Browser Tooling](#browser-tooling) (1)
-- [Building Tools](#building-tools) (1)
 - [Computer Use](#computer-use) (1)
+- [Context](#context) (7)
+- [Conversational Control](#conversational-control) (1)
 - [Data Extraction and Structuring](#data-extraction-and-structuring) (1)
 - [Data Sources](#data-sources) (1)
+- [Databases](#databases) (1)
 - [Deployment Platforms](#deployment-platforms) (1)
 - [Desktop GUIs](#desktop-guis) (1)
 - [Dev Tools](#dev-tools) (1)
 - [Development Platforms](#development-platforms) (1)
+- [Embedding Models](#embedding-models) (0)
+- [Embedding Pipeline Orchestrators](#embedding-pipeline-orchestrators) (0)
 - [Engineering Platforms](#engineering-platforms) (1)
-- [Environments](#environments) (1)
-- [Evals and Experiment Tracking](#evals-and-experiment-tracking) (3)
-- [Evaluations](#evaluations) (1)
+- [Environments](#environments) (3)
+- [Evals and Experiment Tracking](#evals-and-experiment-tracking) (4)
 - [Feedback Formatting](#feedback-formatting) (1)
 - [Financial Tools](#financial-tools) (1)
-- [Frameworks](#frameworks) (16)
-- [Frontend Components](#frontend-components) (1)
-- [Frontends](#frontends) (3)
+- [Formatting](#formatting) (1)
+- [Foundations](#foundations) (1)
+- [Frameworks](#frameworks) (17)
+- [Frontends](#frontends) (4)
+- [Gateways](#gateways) (1)
 - [Geopolitical Simulation](#geopolitical-simulation) (2)
-- [Harnesses](#harnesses) (3)
+- [Harnesses](#harnesses) (5)
 - [LLMs](#llms) (3)
 - [Loops](#loops) (1)
+- [Marketplaces](#marketplaces) (2)
 - [MCP](#mcp) (3)
-- [Memory](#memory) (5)
-- [Memory Layers](#memory-layers) (1)
+- [Memory](#memory) (7)
 - [Multiagent](#multiagent) (4)
+- [Networks](#networks) (1)
 - [Observability](#observability) (1)
 - [On Device Agents](#on-device-agents) (1)
 - [Operations](#operations) (1)
 - [Optimisation Platform](#optimisation-platform) (1)
-- [Orchestration](#orchestration) (4)
+- [Orchestration](#orchestration) (5)
 - [Personal](#personal) (1)
 - [Personal AI](#personal-ai) (2)
 - [Personification](#personification) (1)
 - [Pipelines](#pipelines) (1)
 - [Platforms](#platforms) (1)
-- [Proxy](#proxy) (2)
-- [RAG](#rag) (1)
+- [Proxy](#proxy) (3)
+- [RAG](#rag) (2)
 - [Reinforcement Learning](#reinforcement-learning) (2)
 - [Routers](#routers) (3)
-- [Runtimes](#runtimes) (3)
-- [Security](#security) (5)
-- [Skills](#skills) (4)
-- [Skills Baskets](#skills-baskets) (1)
+- [Runtimes](#runtimes) (4)
+- [SaaS Builders](#saas-builders) (3)
+- [Security](#security) (6)
+- [Skills](#skills) (6)
 - [Societal Simulations](#societal-simulations) (1)
 - [Software Extensions](#software-extensions) (1)
-- [Standards](#standards) (1)
+- [Standards](#standards) (7)
 - [Starter Kits](#starter-kits) (1)
 - [Synthesised Perspectives](#synthesised-perspectives) (2)
 - [Task Specific](#task-specific) (1)
-- [Tooling](#tooling) (7)
-- [Toolkits](#toolkits) (1)
-- [Tools](#tools) (5)
+- [Tools](#tools) (16)
 - [Trainers](#trainers) (1)
 - [Uncategorized](#uncategorized) (1)
-- [Utilities](#utilities) (0)
+- [Upserting Tools](#upserting-tools) (0)
+- [UX](#ux) (2)
 - [Vector Databases](#vector-databases) (1)
 - [Voice](#voice) (1)
+- [Workflow Definition](#workflow-definition) (1)
 - [Workspaces](#workspaces) (1)
 - [World Generation](#world-generation) (1)
-- [Upserting Tools](#upserting-tools) (0)
-- [Embedding Models](#embedding-models) (0)
-- [Embedding Pipeline Orchestrators](#embedding-pipeline-orchestrators) (0)
-- [Context](#context) (2)
 
 ---
-
-## AI Browsers
-
-### Headless
-
-- [Lightpanda Browser](https://github.com/lightpanda-io/browser)
-- [Steel Browser](https://github.com/steel-dev/steel-browser)
 
 ## Agent Clusters
 
@@ -102,18 +96,6 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ## Agent Collaboration
 
 - [AgentVerse](https://github.com/Peiiii/AgentVerse)
-
-## Agent Skills
-
-### Registries
-
-- [agent-skills (tech-leads-club)](https://github.com/tech-leads-club/agent-skills)
-
-## Agent Tools
-
-### Comms
-
-- [mcp_agent_mail](https://github.com/Dicklesworthstone/mcp_agent_mail)
 
 ## Agent to Agent
 
@@ -127,6 +109,12 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [gibberlink](https://github.com/PennyroyalTea/gibberlink)
 
+## Agent Tools
+
+### Comms
+
+- [mcp_agent_mail](https://github.com/Dicklesworthstone/mcp_agent_mail)
+
 ## Agents
 
 - [xataio/agent](https://github.com/xataio/agent)
@@ -136,6 +124,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 #### Trading
 
 - [AI-Trader](https://github.com/HKUDS/AI-Trader)
+
+### Autonomous Agent Creation
+
+- [BankrBot/skills](https://github.com/BankrBot/skills)
 
 ### Backend Platforms
 
@@ -168,8 +160,6 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [hermes-agent](https://github.com/NousResearch/hermes-agent)
 
 ### Frontends
-
-#### OpenClaw
 
 - [openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control)
 
@@ -215,9 +205,14 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [Vision-Agents](https://github.com/GetStream/Vision-Agents)
 
-### Autonomous Agent Creation
+## AI Browsers
 
-- [BankrBot/skills](https://github.com/BankrBot/skills)
+- [BrowserOS](https://github.com/browseros-ai/BrowserOS)
+
+### Headless
+
+- [Lightpanda Browser](https://github.com/lightpanda-io/browser)
+- [Steel Browser](https://github.com/steel-dev/steel-browser)
 
 ## Automation
 
@@ -235,6 +230,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ## Benchmarks
 
 - [AICGSecEval](https://github.com/Tencent/AICGSecEval)
+- [OSWorld](https://github.com/xlang-ai/OSWorld)
 
 ## Browser Automation
 
@@ -244,10 +240,6 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [agent-browser](https://github.com/vercel-labs/agent-browser)
 
-## Building Tools
-
-- [langflow](https://github.com/langflow-ai/langflow)
-
 ## Computer Use
 
 ### Platform Specific
@@ -255,6 +247,37 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 #### macOS
 
 - [macOS-use](https://github.com/browser-use/macOS-use)
+
+## Context
+
+- [PromptX](https://github.com/Deepractice/PromptX)
+- [WeKnora](https://github.com/Tencent/WeKnora)
+
+### Context Optimisation
+
+- [context-mode](https://github.com/mksglu/context-mode)
+
+### Engines
+
+- [contexto](https://github.com/ekailabs/contexto)
+
+### Frontend Tools
+
+- [react-grab](https://github.com/aidenybai/react-grab)
+
+### Tools
+
+#### Context Managers
+
+- [dotai](https://github.com/udecode/dotai)
+
+### Visualisation
+
+- [context-lens](https://github.com/larsderidder/context-lens)
+
+## Conversational Control
+
+- [parlant](https://github.com/emcie-co/parlant)
 
 ## Data Extraction and Structuring
 
@@ -265,6 +288,12 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### Financial
 
 - [OpenBB](https://github.com/OpenBB-finance/OpenBB)
+
+## Databases
+
+### Context Databases
+
+- [OpenViking](https://github.com/volcengine/OpenViking)
 
 ## Deployment Platforms
 
@@ -286,6 +315,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [coze-studio](https://github.com/coze-dev/coze-studio)
 
+## Embedding Models
+
+## Embedding Pipeline Orchestrators
+
 ## Engineering Platforms
 
 - [voltagent](https://github.com/VoltAgent/voltagent)
@@ -296,8 +329,14 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [agent-os](https://github.com/rivet-dev/agent-os)
 
+### Remote Desktops
+
+- [Abacus Desktop](https://desktop.abacus.ai/)
+- [cua.ai](https://cua.ai/)
+
 ## Evals and Experiment Tracking
 
+- [langwatch](https://github.com/langwatch/langwatch)
 - [trulens](https://github.com/truera/trulens)
 
 ### Frameworks
@@ -308,10 +347,6 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [langfuse](https://github.com/langfuse/langfuse)
 
-## Evaluations
-
-- [langwatch](https://github.com/langwatch/langwatch)
-
 ## Feedback Formatting
 
 - [agentation](https://github.com/benjitaylor/agentation)
@@ -319,6 +354,14 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ## Financial Tools
 
 - [goat](https://github.com/goat-sdk/goat)
+
+## Formatting
+
+- [toon](https://github.com/toon-format/toon)
+
+## Foundations
+
+- [Agentic AI Industry Foundation (AAIF)](https://aaif.io/)
 
 ## Frameworks
 
@@ -358,6 +401,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### Social Simulations
 
 - [concordia](https://github.com/google-deepmind/concordia)
+- moltbook
 
 ### Stateful Design
 
@@ -368,17 +412,15 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [livekit/agents](https://github.com/livekit/agents)
 - [ten-framework](https://github.com/TEN-framework/ten-framework)
 
-## Frontend Components
-
-### Chat UIs
-
-- [agent-ui](https://github.com/agno-agi/agent-ui)
-
 ## Frontends
 
 ### Android
 
 - [Operit](https://github.com/AAswordman/Operit)
+
+### Chat UIs
+
+- [agent-ui](https://github.com/agno-agi/agent-ui)
 
 ### GUIs and CLIs
 
@@ -387,6 +429,12 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### TUIs and CLIs
 
 - [agent-deck](https://github.com/asheshgoplani/agent-deck)
+
+## Gateways
+
+### Context Compression
+
+- [Context-Gateway](https://github.com/Compresr-ai/Context-Gateway)
 
 ## Geopolitical Simulation
 
@@ -401,6 +449,14 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### Deep Research
 
 - [deepagents](https://github.com/langchain-ai/deepagents)
+
+### Guardrails
+
+- [shellfirm](https://github.com/kaplanelad/shellfirm)
+
+### macOS
+
+- [osaurus](https://github.com/osaurus-ai/osaurus)
 
 ## LLMs
 
@@ -420,6 +476,11 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [ralph](https://github.com/snarktank/ralph)
 
+## Marketplaces
+
+- [agen.cy marketplace](https://marketplace.agen.cy/)
+- [AI Agent Store](https://aiagentstore.ai/)
+
 ## MCP
 
 ### Aggregation
@@ -438,6 +499,8 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [agentmemory](https://github.com/rohitg00/agentmemory)
 - [cognee](https://github.com/topoteretes/cognee)
+- [mem0](https://github.com/mem0ai/mem0)
+- [MemOS](https://github.com/MemTensor/MemOS)
 
 ### File
 
@@ -450,10 +513,6 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### Skills
 
 - [Acontext](https://github.com/memodb-io/Acontext)
-
-## Memory Layers
-
-- [mem0](https://github.com/mem0ai/mem0)
 
 ## Multiagent
 
@@ -472,6 +531,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### Workspaces
 
 - [gastown](https://github.com/gastownhall/gastown)
+
+## Networks
+
+- [agent.ai](https://agent.ai/)
 
 ## Observability
 
@@ -495,6 +558,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 ## Orchestration
 
+- [agent-orchestrator](https://github.com/ComposioHQ/agent-orchestrator)
 - [ai-maestro](https://github.com/23blocks-OS/ai-maestro)
 - [conductor](https://github.com/conductor-oss/conductor)
 - [Shannon](https://github.com/Kocoro-lab/Shannon)
@@ -533,6 +597,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### Gateways
 
 - [agentgateway](https://github.com/agentgateway/agentgateway)
+- [litellm](https://github.com/BerriAI/litellm)
 
 ### MCP to OpenAI
 
@@ -541,6 +606,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ## RAG
 
 - [airweave](https://github.com/airweave-ai/airweave)
+
+### Engines
+
+- [ragflow](https://github.com/infiniflow/ragflow)
 
 ## Reinforcement Learning
 
@@ -559,8 +628,6 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 ### Tool Specific
 
-#### OpenClaw
-
 - [ClawRouter](https://github.com/BlockRunAI/ClawRouter)
 
 ## Runtimes
@@ -571,9 +638,28 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [deeplake](https://github.com/activeloopai/deeplake)
 
+### Policy Engines
+
+- [Aegis](https://github.com/Justin0504/Aegis)
+
 ### Sandboxes
 
 - [OpenSandbox](https://github.com/alibaba/OpenSandbox)
+
+## SaaS Builders
+
+### Code-Defined
+
+### No Code
+
+### Visual Programming
+
+- [n8n](https://n8n.io/)
+
+#### Workflow Focused
+
+- [Gumloop](https://www.gumloop.com/)
+- [MindStudio](https://www.mindstudio.ai/)
 
 ## Security
 
@@ -584,6 +670,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [tracecat](https://github.com/TracecatHQ/tracecat)
 
+### Control Planes
+
+- [cordum](https://github.com/cordum-io/cordum)
+
 ### Red Team
 
 - [rogue](https://github.com/qualifire-dev/rogue)
@@ -593,6 +683,8 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [microsandbox](https://github.com/superradcompany/microsandbox)
 
 ## Skills
+
+- [agent-skills](https://github.com/addyosmani/agent-skills)
 
 ### Bundles
 
@@ -608,13 +700,13 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [vercel-labs/skills](https://github.com/vercel-labs/skills)
 
+### Registries
+
+- [agent-skills (tech-leads-club)](https://github.com/tech-leads-club/agent-skills)
+
 ### Standards
 
 - [agentskills](https://github.com/agentskills/agentskills)
-
-## Skills Baskets
-
-- [agent-skills](https://github.com/addyosmani/agent-skills)
 
 ## Societal Simulations
 
@@ -626,9 +718,21 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 ## Standards
 
+### Emerging (Ecosystem-Tied)
+
+- [WebMCP](https://webmcp.dev/)
+- [WebMCP (Chrome EPP)](https://developer.chrome.com/blog/webmcp-epp)
+
 ### Proposed
 
+- [AIUC-1](https://www.aiuc-1.com/)
 - [gitagent](https://github.com/open-gitagent/gitagent)
+
+### Ratified
+
+- [A2A (Agent2Agent Protocol)](https://github.com/a2aproject/A2A)
+- [AG-UI (Agent User Interaction Protocol)](https://docs.ag-ui.com/introduction)
+- [MCP (Model Context Protocol)](https://modelcontextprotocol.io/specification/2025-11-25)
 
 ## Starter Kits
 
@@ -647,7 +751,14 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [superdesign](https://github.com/superdesigndev/superdesign)
 
-## Tooling
+## Tools
+
+- [langflow](https://github.com/langflow-ai/langflow)
+- [vercel/ai](https://github.com/vercel/ai)
+
+### Android
+
+- [agent-device](https://github.com/callstackincubator/agent-device)
 
 ### Browser Utils
 
@@ -667,6 +778,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [Agent-Reach](https://github.com/Panniantong/Agent-Reach)
 
+### Debugging
+
+- [vllora](https://github.com/vllora/vllora)
+
 ### Financial
 
 - [agentkit](https://github.com/coinbase/agentkit)
@@ -675,37 +790,33 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [Roo-Code](https://github.com/RooCodeInc/Roo-Code)
 
-### World Creation
+### Integration Platforms
 
-#### MCP
+#### SaaS
 
-- [unreal-engine-mcp](https://github.com/flopperam/unreal-engine-mcp)
+- [composio](https://github.com/ComposioHQ/composio)
 
-## Toolkits
+### macOS
 
-- [vercel/ai](https://github.com/vercel/ai)
-
-## Tools
-
-### Android
-
-- [agent-device](https://github.com/callstackincubator/agent-device)
-
-### Debugging
-
-- [vllora](https://github.com/vllora/vllora)
+- [cmux](https://github.com/manaflow-ai/cmux)
 
 ### Model Routing
 
 - [agentic-flow](https://github.com/ruvnet/agentic-flow)
 
+### Semantic Search
+
+- [osgrep](https://github.com/Ryandonofrio3/osgrep)
+
 ### Vision UI
 
 - [UI-Venus](https://github.com/inclusionAI/UI-Venus)
 
-### macOS
+### World Creation
 
-- [cmux](https://github.com/manaflow-ai/cmux)
+#### MCP
+
+- [unreal-engine-mcp](https://github.com/flopperam/unreal-engine-mcp)
 
 ## Trainers
 
@@ -715,9 +826,14 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [agency-agents](https://github.com/msitarzewski/agency-agents)
 
-## Utilities
+## Upserting Tools
 
-### Frontend
+## UX
+
+### Human in the Loop
+
+- [agent-inbox](https://github.com/langchain-ai/agent-inbox)
+- [orchestra](https://github.com/b12io/orchestra)
 
 ## Vector Databases
 
@@ -727,6 +843,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [bolna](https://github.com/bolna-ai/bolna)
 
+## Workflow Definition
+
+- [packmind](https://github.com/PackmindHub/packmind)
+
 ## Workspaces
 
 - [lobehub](https://github.com/lobehub/lobehub)
@@ -734,19 +854,3 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ## World Generation
 
 - [ml-agents](https://github.com/Unity-Technologies/ml-agents)
-
-## Upserting Tools
-
-## Embedding Models
-
-## Embedding Pipeline Orchestrators
-
-## Context
-
-### Context Optimisation
-
-- [context-mode](https://github.com/mksglu/context-mode)
-
-### Frontend Tools
-
-- [react-grab](https://github.com/aidenybai/react-grab)

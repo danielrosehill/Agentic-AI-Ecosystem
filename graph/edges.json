@@ -1,0 +1,1630 @@
+{
+  "updated": "2026-04-09",
+  "edges": [
+    {
+      "from": "proj:intentkit",
+      "to": "cat:agent-clusters",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agentverse",
+      "to": "cat:agent-collaboration",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:openagents",
+      "to": "cat:agent-to-agent",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agentchattr",
+      "to": "cat:agent-to-agent",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:connectonion",
+      "to": "cat:agent-to-agent",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agent-to-agent/experiments",
+      "to": "cat:agent-to-agent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agent-to-agent/experiments/voices",
+      "to": "cat:agent-to-agent/experiments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:gibberlink",
+      "to": "cat:agent-to-agent/experiments/voices",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agent-tools/comms",
+      "to": "cat:agent-tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:mcp-agent-mail",
+      "to": "cat:agent-tools/comms",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:xataio-agent",
+      "to": "cat:agents",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous/trading",
+      "to": "cat:agents/autonomous",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:ai-trader",
+      "to": "cat:agents/autonomous/trading",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/autonomous-agent-creation",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:bankrbot-skills",
+      "to": "cat:agents/autonomous-agent-creation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/backend-platforms",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:dify",
+      "to": "cat:agents/backend-platforms",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/clis-toolkits",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/clis-toolkits/vendor",
+      "to": "cat:agents/clis-toolkits",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:qwen-code",
+      "to": "cat:agents/clis-toolkits/vendor",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/computer-use",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:open-computer-use",
+      "to": "cat:agents/computer-use",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/development",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:openhands",
+      "to": "cat:agents/development",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/domain-specific/biotech",
+      "to": "cat:agents/domain-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:biomni",
+      "to": "cat:agents/domain-specific/biotech",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/frameworks",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/frameworks/open-source",
+      "to": "cat:agents/frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:hermes-agent",
+      "to": "cat:agents/frameworks/open-source",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/frontends",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:openclaw-mission-control",
+      "to": "cat:agents/frontends",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/harnesses",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/harnesses/clis",
+      "to": "cat:agents/harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/harnesses/clis/third-party",
+      "to": "cat:agents/harnesses/clis",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:crush",
+      "to": "cat:agents/harnesses/clis/third-party",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/harnesses/clis/vendor",
+      "to": "cat:agents/harnesses/clis",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:gemini-cli",
+      "to": "cat:agents/harnesses/clis/vendor",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/memory",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/memory/graph-builders",
+      "to": "cat:agents/memory",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:graphiti",
+      "to": "cat:agents/memory/graph-builders",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/personal-focused",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:crucix",
+      "to": "cat:agents/personal-focused",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/purpose-specific",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:inkos",
+      "to": "cat:agents/purpose-specific",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/purpose-specific/penetration-testing",
+      "to": "cat:agents/purpose-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:pentagi",
+      "to": "cat:agents/purpose-specific/penetration-testing",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/team-formation",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:squad",
+      "to": "cat:agents/team-formation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/teams",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:ai-data-science-team",
+      "to": "cat:agents/teams",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:agents/vision",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:vision-agents",
+      "to": "cat:agents/vision",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:browseros",
+      "to": "cat:ai-browsers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:ai-browsers/headless",
+      "to": "cat:ai-browsers",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:lightpanda-browser",
+      "to": "cat:ai-browsers/headless",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:steel-browser",
+      "to": "cat:ai-browsers/headless",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:automation/open-source",
+      "to": "cat:automation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:automation/open-source/gui-based",
+      "to": "cat:automation/open-source",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:activepieces",
+      "to": "cat:automation/open-source/gui-based",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:flowise",
+      "to": "cat:automation/open-source/gui-based",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:mindsdb",
+      "to": "cat:backend-querying",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:aicgseceval",
+      "to": "cat:benchmarks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:osworld",
+      "to": "cat:benchmarks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:vibium",
+      "to": "cat:browser-automation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-browser",
+      "to": "cat:browser-tooling",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:computer-use/platform-specific",
+      "to": "cat:computer-use",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:computer-use/platform-specific/macos",
+      "to": "cat:computer-use/platform-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:macos-use",
+      "to": "cat:computer-use/platform-specific/macos",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:promptx",
+      "to": "cat:context",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:weknora",
+      "to": "cat:context",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:context/context-optimisation",
+      "to": "cat:context",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:context-mode",
+      "to": "cat:context/context-optimisation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:context/engines",
+      "to": "cat:context",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:contexto",
+      "to": "cat:context/engines",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:context/frontend-tools",
+      "to": "cat:context",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:react-grab",
+      "to": "cat:context/frontend-tools",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:context/tools",
+      "to": "cat:context",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:context/tools/context-managers",
+      "to": "cat:context/tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:dotai",
+      "to": "cat:context/tools/context-managers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:context/visualisation",
+      "to": "cat:context",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:context-lens",
+      "to": "cat:context/visualisation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:parlant",
+      "to": "cat:conversational-control",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:firecrawl",
+      "to": "cat:data-extraction-and-structuring",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:data-sources/financial",
+      "to": "cat:data-sources",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:openbb",
+      "to": "cat:data-sources/financial",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:databases/context-databases",
+      "to": "cat:databases",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:openviking",
+      "to": "cat:databases/context-databases",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:deployment-platforms/serverless",
+      "to": "cat:deployment-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:julep",
+      "to": "cat:deployment-platforms/serverless",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:hello-halo",
+      "to": "cat:desktop-guis",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:dev-tools/repo-refactoring",
+      "to": "cat:dev-tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentrc",
+      "to": "cat:dev-tools/repo-refactoring",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:coze-studio",
+      "to": "cat:development-platforms",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:voltagent",
+      "to": "cat:engineering-platforms",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:environments/os",
+      "to": "cat:environments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-os",
+      "to": "cat:environments/os",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:environments/remote-desktops",
+      "to": "cat:environments",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:abacus-desktop",
+      "to": "cat:environments/remote-desktops",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:cua-ai",
+      "to": "cat:environments/remote-desktops",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:trulens",
+      "to": "cat:evals-and-experiment-tracking",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:langwatch",
+      "to": "cat:evals-and-experiment-tracking",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:evals-and-experiment-tracking/frameworks",
+      "to": "cat:evals-and-experiment-tracking",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:deepeval",
+      "to": "cat:evals-and-experiment-tracking/frameworks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:evals-and-experiment-tracking/observability",
+      "to": "cat:evals-and-experiment-tracking",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:langfuse",
+      "to": "cat:evals-and-experiment-tracking/observability",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agentation",
+      "to": "cat:feedback-formatting",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:goat",
+      "to": "cat:financial-tools",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:toon",
+      "to": "cat:formatting",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agentic-ai-industry-foundation-aaif",
+      "to": "cat:foundations",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:autogen",
+      "to": "cat:frameworks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:uagents",
+      "to": "cat:frameworks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ii-agent",
+      "to": "cat:frameworks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agentforge",
+      "to": "cat:frameworks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:evoagentx",
+      "to": "cat:frameworks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:aiopslab",
+      "to": "cat:frameworks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/net",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:botsharp",
+      "to": "cat:frameworks/net",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/computer-use",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-s",
+      "to": "cat:frameworks/computer-use",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/multi-agent",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:camel",
+      "to": "cat:frameworks/multi-agent",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/multiagent-orchestration",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:crewai",
+      "to": "cat:frameworks/multiagent-orchestration",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/multimodal",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:videosdk-live-agents",
+      "to": "cat:frameworks/multimodal",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/optimisation",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/optimisation/parallelisation",
+      "to": "cat:frameworks/optimisation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:ensoai",
+      "to": "cat:frameworks/optimisation/parallelisation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/social-simulations",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:concordia",
+      "to": "cat:frameworks/social-simulations",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:moltbook",
+      "to": "cat:frameworks/social-simulations",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/stateful-design",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:letta",
+      "to": "cat:frameworks/stateful-design",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks/voice",
+      "to": "cat:frameworks",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:livekit-agents",
+      "to": "cat:frameworks/voice",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ten-framework",
+      "to": "cat:frameworks/voice",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frontends/android",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:operit",
+      "to": "cat:frontends/android",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frontends/chat-uis",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-ui",
+      "to": "cat:frontends/chat-uis",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frontends/guis-and-clis",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:goose",
+      "to": "cat:frontends/guis-and-clis",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:frontends/tuis-and-clis",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-deck",
+      "to": "cat:frontends/tuis-and-clis",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:gateways/context-compression",
+      "to": "cat:gateways",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:context-gateway",
+      "to": "cat:gateways/context-compression",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:wargamesai",
+      "to": "cat:geopolitical-simulation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:snowglobe",
+      "to": "cat:geopolitical-simulation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:hive",
+      "to": "cat:harnesses",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:oh-my-openagent",
+      "to": "cat:harnesses",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/deep-research",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:deepagents",
+      "to": "cat:harnesses/deep-research",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/guardrails",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:shellfirm",
+      "to": "cat:harnesses/guardrails",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses/macos",
+      "to": "cat:harnesses",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:osaurus",
+      "to": "cat:harnesses/macos",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:gemini-3-1",
+      "to": "cat:llms",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:llms/agent-specific",
+      "to": "cat:llms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:grok-4-20-multi-agent",
+      "to": "cat:llms/agent-specific",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:llms/by-use-case",
+      "to": "cat:llms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:llms/by-use-case/computer-use",
+      "to": "cat:llms/by-use-case",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:fara",
+      "to": "cat:llms/by-use-case/computer-use",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ralph",
+      "to": "cat:loops",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agen-cy-marketplace",
+      "to": "cat:marketplaces",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ai-agent-store",
+      "to": "cat:marketplaces",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:mcp/aggregation",
+      "to": "cat:mcp",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:klavis",
+      "to": "cat:mcp/aggregation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:mcp/gateways",
+      "to": "cat:mcp",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:mcp-context-forge",
+      "to": "cat:mcp/gateways",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:mcp/third-party",
+      "to": "cat:mcp",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:mcp-server-airbnb",
+      "to": "cat:mcp/third-party",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:cognee",
+      "to": "cat:memory",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agentmemory",
+      "to": "cat:memory",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:mem0",
+      "to": "cat:memory",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:memos",
+      "to": "cat:memory",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:memory/file",
+      "to": "cat:memory",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:memvid",
+      "to": "cat:memory/file",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:memory/regressive",
+      "to": "cat:memory",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentic-context-engine",
+      "to": "cat:memory/regressive",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:memory/skills",
+      "to": "cat:memory",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:acontext",
+      "to": "cat:memory/skills",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:multiagent/large-scale-experiments",
+      "to": "cat:multiagent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agenttorch",
+      "to": "cat:multiagent/large-scale-experiments",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:multiagent/swarm-prediction",
+      "to": "cat:multiagent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:mirofish",
+      "to": "cat:multiagent/swarm-prediction",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:multiagent/workspace",
+      "to": "cat:multiagent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentsmesh",
+      "to": "cat:multiagent/workspace",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:multiagent/workspaces",
+      "to": "cat:multiagent",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:gastown",
+      "to": "cat:multiagent/workspaces",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-ai",
+      "to": "cat:networks",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ragaai-catalyst",
+      "to": "cat:observability",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:on-device-agents/sbcs",
+      "to": "cat:on-device-agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:be-more-agent",
+      "to": "cat:on-device-agents/sbcs",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:operations/cost-monitoring",
+      "to": "cat:operations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentops",
+      "to": "cat:operations/cost-monitoring",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:coze-loop",
+      "to": "cat:optimisation-platform",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:shannon",
+      "to": "cat:orchestration",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:conductor",
+      "to": "cat:orchestration",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ai-maestro",
+      "to": "cat:orchestration",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-orchestrator",
+      "to": "cat:orchestration",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:orchestration/platform-specific",
+      "to": "cat:orchestration",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-squad",
+      "to": "cat:orchestration/platform-specific",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:nanobot",
+      "to": "cat:personal",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:personal-ai/assistants",
+      "to": "cat:personal-ai",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:openclaw",
+      "to": "cat:personal-ai/assistants",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:leon",
+      "to": "cat:personal-ai/assistants",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:bub",
+      "to": "cat:personification",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:paper2agent",
+      "to": "cat:pipelines",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:platforms/embodied",
+      "to": "cat:platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:fairo",
+      "to": "cat:platforms/embodied",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:proxy/gateways",
+      "to": "cat:proxy",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentgateway",
+      "to": "cat:proxy/gateways",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:litellm",
+      "to": "cat:proxy/gateways",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:proxy/mcp-to-openai",
+      "to": "cat:proxy",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:mcpo",
+      "to": "cat:proxy/mcp-to-openai",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:airweave",
+      "to": "cat:rag",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:rag/engines",
+      "to": "cat:rag",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:ragflow",
+      "to": "cat:rag/engines",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:rlinf",
+      "to": "cat:reinforcement-learning",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:acme",
+      "to": "cat:reinforcement-learning",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:routers/cost-optimisation",
+      "to": "cat:routers",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:relayplane-proxy",
+      "to": "cat:routers/cost-optimisation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:routers/intelligent",
+      "to": "cat:routers",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:semantic-router",
+      "to": "cat:routers/intelligent",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:routers/tool-specific",
+      "to": "cat:routers",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:clawrouter",
+      "to": "cat:routers/tool-specific",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:openshell",
+      "to": "cat:runtimes",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:runtimes/data-layers",
+      "to": "cat:runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:deeplake",
+      "to": "cat:runtimes/data-layers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:runtimes/policy-engines",
+      "to": "cat:runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:aegis",
+      "to": "cat:runtimes/policy-engines",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:runtimes/sandboxes",
+      "to": "cat:runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:opensandbox",
+      "to": "cat:runtimes/sandboxes",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:saas-builders/no-code",
+      "to": "cat:saas-builders",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:saas-builders/visual-programming",
+      "to": "cat:saas-builders",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:n8n",
+      "to": "cat:saas-builders/visual-programming",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:saas-builders/visual-programming/workflow-focused",
+      "to": "cat:saas-builders/visual-programming",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:gumloop",
+      "to": "cat:saas-builders/visual-programming/workflow-focused",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:mindstudio",
+      "to": "cat:saas-builders/visual-programming/workflow-focused",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:saas-builders/code-defined",
+      "to": "cat:saas-builders",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-scan",
+      "to": "cat:security",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agentguard",
+      "to": "cat:security",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:security/automation",
+      "to": "cat:security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:tracecat",
+      "to": "cat:security/automation",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:security/control-planes",
+      "to": "cat:security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:cordum",
+      "to": "cat:security/control-planes",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:security/red-team",
+      "to": "cat:security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:rogue",
+      "to": "cat:security/red-team",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:security/sandboxing",
+      "to": "cat:security",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:microsandbox",
+      "to": "cat:security/sandboxing",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-skills",
+      "to": "cat:skills",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:skills/bundles",
+      "to": "cat:skills",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:skills/bundles/claude-code",
+      "to": "cat:skills/bundles",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:marketingskills",
+      "to": "cat:skills/bundles/claude-code",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:skills/guides",
+      "to": "cat:skills",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:taste-skill",
+      "to": "cat:skills/guides",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:skills/package-library",
+      "to": "cat:skills",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:vercel-labs-skills",
+      "to": "cat:skills/package-library",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:skills/registries",
+      "to": "cat:skills",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-skills-tech-leads-club",
+      "to": "cat:skills/registries",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:skills/standards",
+      "to": "cat:skills",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentskills",
+      "to": "cat:skills/standards",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:oasis",
+      "to": "cat:societal-simulations",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:jupyter-ai",
+      "to": "cat:software-extensions",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:standards/emerging-ecosystem-tied",
+      "to": "cat:standards",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:webmcp",
+      "to": "cat:standards/emerging-ecosystem-tied",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:webmcp-chrome-epp",
+      "to": "cat:standards/emerging-ecosystem-tied",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:standards/proposed",
+      "to": "cat:standards",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:gitagent",
+      "to": "cat:standards/proposed",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:aiuc-1",
+      "to": "cat:standards/proposed",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:standards/ratified",
+      "to": "cat:standards",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:a2a-agent2agent-protocol",
+      "to": "cat:standards/ratified",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ag-ui-agent-user-interaction-protocol",
+      "to": "cat:standards/ratified",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:mcp-model-context-protocol",
+      "to": "cat:standards/ratified",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:starter-kits/social-simulations",
+      "to": "cat:starter-kits",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:ai-town",
+      "to": "cat:starter-kits/social-simulations",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:plurals",
+      "to": "cat:synthesised-perspectives",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:llm-council",
+      "to": "cat:synthesised-perspectives",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:task-specific/product-design",
+      "to": "cat:task-specific",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:superdesign",
+      "to": "cat:task-specific/product-design",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:vercel-ai",
+      "to": "cat:tools",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:langflow",
+      "to": "cat:tools",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/android",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-device",
+      "to": "cat:tools/android",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/browser-utils",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/browser-utils/sdk",
+      "to": "cat:tools/browser-utils",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:stagehand",
+      "to": "cat:tools/browser-utils/sdk",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/computer-use",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:cua",
+      "to": "cat:tools/computer-use",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/computer-use/cli",
+      "to": "cat:tools/computer-use",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:usecomputer",
+      "to": "cat:tools/computer-use/cli",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/data-ingestion",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-reach",
+      "to": "cat:tools/data-ingestion",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/debugging",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:vllora",
+      "to": "cat:tools/debugging",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/financial",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentkit",
+      "to": "cat:tools/financial",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/ide-tools",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:roo-code",
+      "to": "cat:tools/ide-tools",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/integration-platforms",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/integration-platforms/saas",
+      "to": "cat:tools/integration-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:composio",
+      "to": "cat:tools/integration-platforms/saas",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/macos",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:cmux",
+      "to": "cat:tools/macos",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/model-routing",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agentic-flow",
+      "to": "cat:tools/model-routing",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/semantic-search",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:osgrep",
+      "to": "cat:tools/semantic-search",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/vision-ui",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:ui-venus",
+      "to": "cat:tools/vision-ui",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/world-creation",
+      "to": "cat:tools",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:tools/world-creation/mcp",
+      "to": "cat:tools/world-creation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:unreal-engine-mcp",
+      "to": "cat:tools/world-creation/mcp",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-lightning",
+      "to": "cat:trainers",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:agency-agents",
+      "to": "cat:uncategorized",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "cat:ux/human-in-the-loop",
+      "to": "cat:ux",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "proj:agent-inbox",
+      "to": "cat:ux/human-in-the-loop",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:orchestra",
+      "to": "cat:ux/human-in-the-loop",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:qdrant",
+      "to": "cat:vector-databases",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:bolna",
+      "to": "cat:voice",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:packmind",
+      "to": "cat:workflow-definition",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:lobehub",
+      "to": "cat:workspaces",
+      "type": "CATEGORY_OF"
+    },
+    {
+      "from": "proj:ml-agents",
+      "to": "cat:world-generation",
+      "type": "CATEGORY_OF"
+    }
+  ]
+}

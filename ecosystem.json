@@ -2,31 +2,14 @@
   "updated": "2026-04-09",
   "segments": [
     {
-      "name": "AI Browsers",
-      "children": [
-        {
-          "name": "Headless",
-          "examples": [
-            {
-              "name": "Lightpanda Browser",
-              "url": "https://github.com/lightpanda-io/browser"
-            },
-            {
-              "name": "Steel Browser",
-              "url": "https://github.com/steel-dev/steel-browser"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name": "Agent Clusters",
       "examples": [
         {
           "name": "intentkit",
           "url": "https://github.com/crestalnetwork/intentkit"
         }
-      ]
+      ],
+      "description": "Systems that run many agents together as a managed group or fleet."
     },
     {
       "name": "Agent Collaboration",
@@ -35,52 +18,11 @@
           "name": "AgentVerse",
           "url": "https://github.com/Peiiii/AgentVerse"
         }
-      ]
-    },
-    {
-      "name": "Agent Skills",
-      "children": [
-        {
-          "name": "Registries",
-          "examples": [
-            {
-              "name": "agent-skills (tech-leads-club)",
-              "url": "https://github.com/tech-leads-club/agent-skills"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Agent Tools",
-      "children": [
-        {
-          "name": "Comms",
-          "examples": [
-            {
-              "name": "mcp_agent_mail",
-              "url": "https://github.com/Dicklesworthstone/mcp_agent_mail"
-            }
-          ]
-        }
-      ]
+      ],
+      "description": "Protocols, patterns and platforms for agents to collaborate on shared tasks."
     },
     {
       "name": "Agent to Agent",
-      "examples": [
-        {
-          "name": "openagents",
-          "url": "https://github.com/openagents-org/openagents"
-        },
-        {
-          "name": "agentchattr",
-          "url": "https://github.com/bcurts/agentchattr"
-        },
-        {
-          "name": "connectonion",
-          "url": "https://github.com/openonion/connectonion"
-        }
-      ],
       "children": [
         {
           "name": "Experiments",
@@ -92,20 +34,47 @@
                   "name": "gibberlink",
                   "url": "https://github.com/PennyroyalTea/gibberlink"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "examples": [
+        {
+          "name": "agentchattr",
+          "url": "https://github.com/bcurts/agentchattr"
+        },
+        {
+          "name": "connectonion",
+          "url": "https://github.com/openonion/connectonion"
+        },
+        {
+          "name": "openagents",
+          "url": "https://github.com/openagents-org/openagents"
+        }
+      ],
+      "description": "Communication protocols and transports that let agents talk directly to other agents."
+    },
+    {
+      "name": "Agent Tools",
+      "children": [
+        {
+          "name": "Comms",
+          "examples": [
+            {
+              "name": "mcp_agent_mail",
+              "url": "https://github.com/Dicklesworthstone/mcp_agent_mail"
+            }
+          ],
+          "description": ""
+        }
+      ],
+      "description": ""
     },
     {
       "name": "Agents",
-      "examples": [
-        {
-          "name": "xataio/agent",
-          "url": "https://github.com/xataio/agent"
-        }
-      ],
       "children": [
         {
           "name": "Autonomous",
@@ -117,9 +86,21 @@
                   "name": "AI-Trader",
                   "url": "https://github.com/HKUDS/AI-Trader"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Autonomous Agent Creation",
+          "examples": [
+            {
+              "name": "BankrBot/skills",
+              "url": "https://github.com/BankrBot/skills"
+            }
+          ],
+          "description": ""
         },
         {
           "name": "Backend Platforms",
@@ -128,7 +109,8 @@
               "name": "dify",
               "url": "https://github.com/langgenius/dify"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "CLIs/Toolkits",
@@ -140,9 +122,11 @@
                   "name": "qwen-code",
                   "url": "https://github.com/QwenLM/qwen-code"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Computer Use",
@@ -151,7 +135,8 @@
               "name": "open-computer-use",
               "url": "https://github.com/coasty-ai/open-computer-use"
             }
-          ]
+          ],
+          "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
         },
         {
           "name": "Development",
@@ -160,7 +145,8 @@
               "name": "OpenHands",
               "url": "https://github.com/OpenHands/OpenHands"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Domain Specific",
@@ -172,9 +158,11 @@
                   "name": "Biomni",
                   "url": "https://github.com/snap-stanford/Biomni"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Frameworks",
@@ -186,23 +174,21 @@
                   "name": "hermes-agent",
                   "url": "https://github.com/NousResearch/hermes-agent"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": "General-purpose frameworks for building agents and agentic applications."
         },
         {
           "name": "Frontends",
-          "children": [
+          "examples": [
             {
-              "name": "OpenClaw",
-              "examples": [
-                {
-                  "name": "openclaw-mission-control",
-                  "url": "https://github.com/abhi1693/openclaw-mission-control"
-                }
-              ]
+              "name": "openclaw-mission-control",
+              "url": "https://github.com/abhi1693/openclaw-mission-control"
             }
-          ]
+          ],
+          "description": "User-facing interfaces \u2014 web, desktop, mobile, terminal \u2014 for interacting with agents."
         },
         {
           "name": "Harnesses",
@@ -217,7 +203,8 @@
                       "name": "crush",
                       "url": "https://github.com/charmbracelet/crush"
                     }
-                  ]
+                  ],
+                  "description": ""
                 },
                 {
                   "name": "Vendor",
@@ -226,11 +213,14 @@
                       "name": "gemini-cli",
                       "url": "https://github.com/google-gemini/gemini-cli"
                     }
-                  ]
+                  ],
+                  "description": ""
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": "Test harnesses and runner frameworks that host and exercise agents."
         },
         {
           "name": "Memory",
@@ -242,9 +232,11 @@
                   "name": "graphiti",
                   "url": "https://github.com/getzep/graphiti"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": "Memory systems for agents \u2014 short-term, long-term, episodic, file-backed, graph-backed."
         },
         {
           "name": "Personal Focused",
@@ -253,16 +245,11 @@
               "name": "Crucix",
               "url": "https://github.com/calesthio/Crucix"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Purpose Specific",
-          "examples": [
-            {
-              "name": "inkos",
-              "url": "https://github.com/Narcooo/inkos"
-            }
-          ],
           "children": [
             {
               "name": "Penetration Testing",
@@ -271,9 +258,17 @@
                   "name": "pentagi",
                   "url": "https://github.com/vxcontrol/pentagi"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "examples": [
+            {
+              "name": "inkos",
+              "url": "https://github.com/Narcooo/inkos"
+            }
+          ],
+          "description": ""
         },
         {
           "name": "Team Formation",
@@ -282,7 +277,8 @@
               "name": "squad",
               "url": "https://github.com/bradygaster/squad"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Teams",
@@ -291,7 +287,8 @@
               "name": "ai-data-science-team",
               "url": "https://github.com/business-science/ai-data-science-team"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Vision",
@@ -300,19 +297,43 @@
               "name": "Vision-Agents",
               "url": "https://github.com/GetStream/Vision-Agents"
             }
-          ]
-        },
+          ],
+          "description": ""
+        }
+      ],
+      "examples": [
         {
-          "name": "Autonomous Agent Creation",
-          "children": [],
+          "name": "xataio/agent",
+          "url": "https://github.com/xataio/agent"
+        }
+      ],
+      "description": "General agent projects and agent subtypes that do not fit more specific segments."
+    },
+    {
+      "name": "AI Browsers",
+      "children": [
+        {
+          "name": "Headless",
           "examples": [
             {
-              "name": "BankrBot/skills",
-              "url": "https://github.com/BankrBot/skills"
+              "name": "Lightpanda Browser",
+              "url": "https://github.com/lightpanda-io/browser"
+            },
+            {
+              "name": "Steel Browser",
+              "url": "https://github.com/steel-dev/steel-browser"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "examples": [
+        {
+          "name": "BrowserOS",
+          "url": "https://github.com/browseros-ai/BrowserOS"
+        }
+      ],
+      "description": "Browsers built or adapted specifically for AI agent use, including headless variants optimised for programmatic navigation."
     },
     {
       "name": "Automation",
@@ -331,11 +352,14 @@
                   "name": "Flowise",
                   "url": "https://github.com/FlowiseAI/Flowise"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "General-purpose automation tools and frameworks, including GUI-driven and script-driven flows."
     },
     {
       "name": "Backend Querying",
@@ -344,7 +368,8 @@
           "name": "mindsdb",
           "url": "https://github.com/mindsdb/mindsdb"
         }
-      ]
+      ],
+      "description": "Tools that let agents query backend systems, databases and APIs."
     },
     {
       "name": "Benchmarks",
@@ -352,8 +377,13 @@
         {
           "name": "AICGSecEval",
           "url": "https://github.com/Tencent/AICGSecEval"
+        },
+        {
+          "name": "OSWorld",
+          "url": "https://github.com/xlang-ai/OSWorld"
         }
-      ]
+      ],
+      "description": "Standardised benchmarks for evaluating agent and model capabilities."
     },
     {
       "name": "Browser Automation",
@@ -362,7 +392,8 @@
           "name": "vibium",
           "url": "https://github.com/VibiumDev/vibium"
         }
-      ]
+      ],
+      "description": "Libraries and services for driving real browsers under agent control."
     },
     {
       "name": "Browser Tooling",
@@ -371,16 +402,8 @@
           "name": "agent-browser",
           "url": "https://github.com/vercel-labs/agent-browser"
         }
-      ]
-    },
-    {
-      "name": "Building Tools",
-      "examples": [
-        {
-          "name": "langflow",
-          "url": "https://github.com/langflow-ai/langflow"
-        }
-      ]
+      ],
+      "description": "Utilities and SDKs that sit alongside browsers to support agentic workflows."
     },
     {
       "name": "Computer Use",
@@ -395,11 +418,96 @@
                   "name": "macOS-use",
                   "url": "https://github.com/browser-use/macOS-use"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
+    },
+    {
+      "name": "Context",
+      "children": [
+        {
+          "name": "Context Optimisation",
+          "examples": [
+            {
+              "name": "context-mode",
+              "url": "https://github.com/mksglu/context-mode"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Engines",
+          "examples": [
+            {
+              "name": "contexto",
+              "url": "https://github.com/ekailabs/contexto"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Frontend Tools",
+          "examples": [
+            {
+              "name": "react-grab",
+              "url": "https://github.com/aidenybai/react-grab"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Tools",
+          "children": [
+            {
+              "name": "Context Managers",
+              "examples": [
+                {
+                  "name": "dotai",
+                  "url": "https://github.com/udecode/dotai"
+                }
+              ],
+              "description": ""
+            }
+          ],
+          "description": "Utility tools, SDKs and toolkits for building, debugging and extending agentic systems."
+        },
+        {
+          "name": "Visualisation",
+          "examples": [
+            {
+              "name": "context-lens",
+              "url": "https://github.com/larsderidder/context-lens"
+            }
+          ],
+          "description": ""
+        }
+      ],
+      "examples": [
+        {
+          "name": "PromptX",
+          "url": "https://github.com/Deepractice/PromptX"
+        },
+        {
+          "name": "WeKnora",
+          "url": "https://github.com/Tencent/WeKnora"
+        }
+      ],
+      "description": "Tools for building, optimising, managing and visualising the context window supplied to LLMs."
+    },
+    {
+      "name": "Conversational Control",
+      "examples": [
+        {
+          "name": "parlant",
+          "url": "https://github.com/emcie-co/parlant"
+        }
+      ],
+      "description": "Systems that steer or constrain multi-turn conversations with agents."
     },
     {
       "name": "Data Extraction and Structuring",
@@ -408,7 +516,8 @@
           "name": "firecrawl",
           "url": "https://github.com/firecrawl/firecrawl"
         }
-      ]
+      ],
+      "description": "Tools that convert unstructured data into structured form for agents to consume."
     },
     {
       "name": "Data Sources",
@@ -420,9 +529,27 @@
               "name": "OpenBB",
               "url": "https://github.com/OpenBB-finance/OpenBB"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Curated data feeds and providers that agents can draw on."
+    },
+    {
+      "name": "Databases",
+      "children": [
+        {
+          "name": "Context Databases",
+          "examples": [
+            {
+              "name": "OpenViking",
+              "url": "https://github.com/volcengine/OpenViking"
+            }
+          ],
+          "description": "Databases specifically designed for storing and retrieving agent/LLM context."
+        }
+      ],
+      "description": "Database systems used in agentic stacks, including purpose-built context and vector stores."
     },
     {
       "name": "Deployment Platforms",
@@ -434,9 +561,11 @@
               "name": "julep",
               "url": "https://github.com/julep-ai/julep"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Platforms for deploying and hosting agents and agentic services."
     },
     {
       "name": "Desktop GUIs",
@@ -445,7 +574,8 @@
           "name": "hello-halo",
           "url": "https://github.com/openkursar/hello-halo"
         }
-      ]
+      ],
+      "description": "Desktop graphical interfaces for interacting with agents."
     },
     {
       "name": "Dev Tools",
@@ -457,9 +587,11 @@
               "name": "agentrc",
               "url": "https://github.com/microsoft/agentrc"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Developer tooling that uses agents or supports agent development workflows."
     },
     {
       "name": "Development Platforms",
@@ -468,7 +600,18 @@
           "name": "coze-studio",
           "url": "https://github.com/coze-dev/coze-studio"
         }
-      ]
+      ],
+      "description": "End-to-end platforms for building agentic applications."
+    },
+    {
+      "name": "Embedding Models",
+      "examples": [],
+      "description": "Models used to produce embeddings for retrieval and RAG pipelines."
+    },
+    {
+      "name": "Embedding Pipeline Orchestrators",
+      "examples": [],
+      "description": "Orchestration tools that manage embedding generation and ingestion pipelines."
     },
     {
       "name": "Engineering Platforms",
@@ -477,7 +620,8 @@
           "name": "voltagent",
           "url": "https://github.com/VoltAgent/voltagent"
         }
-      ]
+      ],
+      "description": "Platforms targeted at engineering teams building with LLMs and agents."
     },
     {
       "name": "Environments",
@@ -489,18 +633,28 @@
               "name": "agent-os",
               "url": "https://github.com/rivet-dev/agent-os"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Remote Desktops",
+          "examples": [
+            {
+              "name": "Abacus Desktop",
+              "url": "https://desktop.abacus.ai/"
+            },
+            {
+              "name": "cua.ai",
+              "url": "https://cua.ai/"
+            }
+          ],
+          "description": "Hosted remote desktop / VM services providing agents with a persistent GUI environment to operate."
         }
-      ]
+      ],
+      "description": "Sandboxed environments \u2014 OS, simulated worlds, virtual machines \u2014 in which agents run."
     },
     {
       "name": "Evals and Experiment Tracking",
-      "examples": [
-        {
-          "name": "trulens",
-          "url": "https://github.com/truera/trulens"
-        }
-      ],
       "children": [
         {
           "name": "Frameworks",
@@ -509,7 +663,8 @@
               "name": "deepeval",
               "url": "https://github.com/confident-ai/deepeval"
             }
-          ]
+          ],
+          "description": "General-purpose frameworks for building agents and agentic applications."
         },
         {
           "name": "Observability",
@@ -518,18 +673,21 @@
               "name": "langfuse",
               "url": "https://github.com/langfuse/langfuse"
             }
-          ]
+          ],
+          "description": "Logging, tracing and observability specifically for agent and LLM systems."
         }
-      ]
-    },
-    {
-      "name": "Evaluations",
+      ],
       "examples": [
         {
           "name": "langwatch",
           "url": "https://github.com/langwatch/langwatch"
+        },
+        {
+          "name": "trulens",
+          "url": "https://github.com/truera/trulens"
         }
-      ]
+      ],
+      "description": "Frameworks, harnesses and platforms for evaluating agents and tracking experiments."
     },
     {
       "name": "Feedback Formatting",
@@ -538,7 +696,8 @@
           "name": "agentation",
           "url": "https://github.com/benjitaylor/agentation"
         }
-      ]
+      ],
+      "description": "Tools that shape feedback signals (tool output, user input) into forms agents can act on."
     },
     {
       "name": "Financial Tools",
@@ -547,39 +706,31 @@
           "name": "goat",
           "url": "https://github.com/goat-sdk/goat"
         }
-      ]
+      ],
+      "description": "Agent-oriented tools targeted at financial workflows."
+    },
+    {
+      "name": "Formatting",
+      "examples": [
+        {
+          "name": "toon",
+          "url": "https://github.com/toon-format/toon"
+        }
+      ],
+      "description": "Token-efficient serialisation and data-formatting schemes for passing structured data to and from LLMs."
+    },
+    {
+      "name": "Foundations",
+      "examples": [
+        {
+          "name": "Agentic AI Industry Foundation (AAIF)",
+          "url": "https://aaif.io/"
+        }
+      ],
+      "description": "Industry foundations, consortia and non-profits shaping the agentic AI ecosystem."
     },
     {
       "name": "Frameworks",
-      "examples": [
-        {
-          "name": "autogen",
-          "url": "https://github.com/microsoft/autogen",
-          "tags": [
-            "major"
-          ]
-        },
-        {
-          "name": "uAgents",
-          "url": "https://github.com/fetchai/uAgents"
-        },
-        {
-          "name": "ii-agent",
-          "url": "https://github.com/Intelligent-Internet/ii-agent"
-        },
-        {
-          "name": "AgentForge",
-          "url": "https://github.com/DataBassGit/AgentForge"
-        },
-        {
-          "name": "EvoAgentX",
-          "url": "https://github.com/EvoAgentX/EvoAgentX"
-        },
-        {
-          "name": "AIOpsLab",
-          "url": "https://github.com/microsoft/AIOpsLab"
-        }
-      ],
       "children": [
         {
           "name": ".NET",
@@ -588,7 +739,8 @@
               "name": "BotSharp",
               "url": "https://github.com/SciSharp/BotSharp"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Computer Use",
@@ -597,7 +749,8 @@
               "name": "Agent-S",
               "url": "https://github.com/simular-ai/Agent-S"
             }
-          ]
+          ],
+          "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
         },
         {
           "name": "Multi-agent",
@@ -606,19 +759,18 @@
               "name": "camel",
               "url": "https://github.com/camel-ai/camel"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Multiagent Orchestration",
           "examples": [
             {
               "name": "crewAI",
-              "url": "https://github.com/crewAIInc/crewAI",
-              "tags": [
-                "major"
-              ]
+              "url": "https://github.com/crewAIInc/crewAI"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Multimodal",
@@ -627,7 +779,8 @@
               "name": "videosdk-live/agents",
               "url": "https://github.com/videosdk-live/agents"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Optimisation",
@@ -639,9 +792,11 @@
                   "name": "EnsoAI",
                   "url": "https://github.com/J3n5en/EnsoAI"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Social Simulations",
@@ -649,8 +804,13 @@
             {
               "name": "concordia",
               "url": "https://github.com/google-deepmind/concordia"
+            },
+            {
+              "name": "moltbook",
+              "url": ""
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Stateful Design",
@@ -659,7 +819,8 @@
               "name": "letta",
               "url": "https://github.com/letta-ai/letta"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Voice",
@@ -672,23 +833,37 @@
               "name": "ten-framework",
               "url": "https://github.com/TEN-framework/ten-framework"
             }
-          ]
+          ],
+          "description": "Voice-first agents and voice interaction frameworks."
         }
-      ]
-    },
-    {
-      "name": "Frontend Components",
-      "children": [
+      ],
+      "examples": [
         {
-          "name": "Chat UIs",
-          "examples": [
-            {
-              "name": "agent-ui",
-              "url": "https://github.com/agno-agi/agent-ui"
-            }
-          ]
+          "name": "AgentForge",
+          "url": "https://github.com/DataBassGit/AgentForge"
+        },
+        {
+          "name": "AIOpsLab",
+          "url": "https://github.com/microsoft/AIOpsLab"
+        },
+        {
+          "name": "autogen",
+          "url": "https://github.com/microsoft/autogen"
+        },
+        {
+          "name": "EvoAgentX",
+          "url": "https://github.com/EvoAgentX/EvoAgentX"
+        },
+        {
+          "name": "ii-agent",
+          "url": "https://github.com/Intelligent-Internet/ii-agent"
+        },
+        {
+          "name": "uAgents",
+          "url": "https://github.com/fetchai/uAgents"
         }
-      ]
+      ],
+      "description": "General-purpose frameworks for building agents and agentic applications."
     },
     {
       "name": "Frontends",
@@ -700,7 +875,18 @@
               "name": "Operit",
               "url": "https://github.com/AAswordman/Operit"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Chat UIs",
+          "examples": [
+            {
+              "name": "agent-ui",
+              "url": "https://github.com/agno-agi/agent-ui"
+            }
+          ],
+          "description": ""
         },
         {
           "name": "GUIs and CLIs",
@@ -709,7 +895,8 @@
               "name": "goose",
               "url": "https://github.com/aaif-goose/goose"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "TUIs and CLIs",
@@ -718,25 +905,76 @@
               "name": "agent-deck",
               "url": "https://github.com/asheshgoplani/agent-deck"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "User-facing interfaces \u2014 web, desktop, mobile, terminal \u2014 for interacting with agents."
+    },
+    {
+      "name": "Gateways",
+      "children": [
+        {
+          "name": "Context Compression",
+          "examples": [
+            {
+              "name": "Context-Gateway",
+              "url": "https://github.com/Compresr-ai/Context-Gateway"
+            }
+          ],
+          "description": ""
+        }
+      ],
+      "description": "Gateway services that sit between agents and upstream services (LLMs, tools, data)."
     },
     {
       "name": "Geopolitical Simulation",
       "examples": [
         {
-          "name": "WargamesAI",
-          "url": "https://github.com/user1342/WargamesAI"
-        },
-        {
           "name": "snowglobe",
           "url": "https://github.com/IQTLabs/snowglobe"
+        },
+        {
+          "name": "WargamesAI",
+          "url": "https://github.com/user1342/WargamesAI"
         }
-      ]
+      ],
+      "description": "Simulations focused specifically on geopolitical scenarios and dynamics."
     },
     {
       "name": "Harnesses",
+      "children": [
+        {
+          "name": "Deep Research",
+          "examples": [
+            {
+              "name": "deepagents",
+              "url": "https://github.com/langchain-ai/deepagents"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Guardrails",
+          "examples": [
+            {
+              "name": "shellfirm",
+              "url": "https://github.com/kaplanelad/shellfirm"
+            }
+          ],
+          "description": "Guardrails and pre-execution safety checks that gate what running agents can do."
+        },
+        {
+          "name": "macOS",
+          "examples": [
+            {
+              "name": "osaurus",
+              "url": "https://github.com/osaurus-ai/osaurus"
+            }
+          ],
+          "description": "Harnesses that run agents natively on macOS."
+        }
+      ],
       "examples": [
         {
           "name": "hive",
@@ -747,26 +985,10 @@
           "url": "https://github.com/code-yeongyu/oh-my-openagent"
         }
       ],
-      "children": [
-        {
-          "name": "Deep Research",
-          "examples": [
-            {
-              "name": "deepagents",
-              "url": "https://github.com/langchain-ai/deepagents"
-            }
-          ]
-        }
-      ]
+      "description": "Test harnesses and runner frameworks that host and exercise agents."
     },
     {
       "name": "LLMs",
-      "examples": [
-        {
-          "name": "Gemini 3.1",
-          "url": ""
-        }
-      ],
       "children": [
         {
           "name": "Agent Specific",
@@ -775,7 +997,8 @@
               "name": "Grok 4.20 Multi-Agent",
               "url": "https://openrouter.ai/x-ai/grok-4.20-multi-agent"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "By Use Case",
@@ -787,11 +1010,20 @@
                   "name": "fara",
                   "url": "https://github.com/microsoft/fara"
                 }
-              ]
+              ],
+              "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "examples": [
+        {
+          "name": "Gemini 3.1",
+          "url": ""
+        }
+      ],
+      "description": "Language models, including those trained or tuned specifically for agentic use cases."
     },
     {
       "name": "Loops",
@@ -800,7 +1032,22 @@
           "name": "ralph",
           "url": "https://github.com/snarktank/ralph"
         }
-      ]
+      ],
+      "description": "Agent loop implementations \u2014 the core think/act/observe cycle."
+    },
+    {
+      "name": "Marketplaces",
+      "examples": [
+        {
+          "name": "agen.cy marketplace",
+          "url": "https://marketplace.agen.cy/"
+        },
+        {
+          "name": "AI Agent Store",
+          "url": "https://aiagentstore.ai/"
+        }
+      ],
+      "description": "Marketplaces and stores for discovering, listing, or transacting agents and agent-based services."
     },
     {
       "name": "MCP",
@@ -812,7 +1059,8 @@
               "name": "klavis",
               "url": "https://github.com/Klavis-AI/klavis"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Gateways",
@@ -821,7 +1069,8 @@
               "name": "mcp-context-forge",
               "url": "https://github.com/IBM/mcp-context-forge"
             }
-          ]
+          ],
+          "description": "Gateway services that sit between agents and upstream services (LLMs, tools, data)."
         },
         {
           "name": "Third Party",
@@ -830,22 +1079,14 @@
               "name": "mcp-server-airbnb",
               "url": "https://github.com/openbnb-org/mcp-server-airbnb"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Projects in the Model Context Protocol ecosystem \u2014 servers, gateways, aggregators, clients."
     },
     {
       "name": "Memory",
-      "examples": [
-        {
-          "name": "cognee",
-          "url": "https://github.com/topoteretes/cognee"
-        },
-        {
-          "name": "agentmemory",
-          "url": "https://github.com/rohitg00/agentmemory"
-        }
-      ],
       "children": [
         {
           "name": "File",
@@ -854,7 +1095,8 @@
               "name": "memvid",
               "url": "https://github.com/memvid/memvid"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Regressive",
@@ -863,28 +1105,39 @@
               "name": "agentic-context-engine",
               "url": "https://github.com/kayba-ai/agentic-context-engine"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Skills",
-          "children": [],
           "examples": [
             {
               "name": "Acontext",
               "url": "https://github.com/memodb-io/Acontext"
             }
-          ]
+          ],
+          "description": "Agent skills ecosystems \u2014 registries, bundles, standards, guides and package libraries."
         }
-      ]
-    },
-    {
-      "name": "Memory Layers",
+      ],
       "examples": [
+        {
+          "name": "agentmemory",
+          "url": "https://github.com/rohitg00/agentmemory"
+        },
+        {
+          "name": "cognee",
+          "url": "https://github.com/topoteretes/cognee"
+        },
         {
           "name": "mem0",
           "url": "https://github.com/mem0ai/mem0"
+        },
+        {
+          "name": "MemOS",
+          "url": "https://github.com/MemTensor/MemOS"
         }
-      ]
+      ],
+      "description": "Memory systems for agents \u2014 short-term, long-term, episodic, file-backed, graph-backed."
     },
     {
       "name": "Multiagent",
@@ -896,7 +1149,8 @@
               "name": "AgentTorch",
               "url": "https://github.com/AgentTorch/AgentTorch"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Swarm Prediction",
@@ -905,7 +1159,8 @@
               "name": "MiroFish",
               "url": "https://github.com/666ghj/MiroFish"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Workspace",
@@ -914,7 +1169,8 @@
               "name": "AgentsMesh",
               "url": "https://github.com/AgentsMesh/AgentsMesh"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Workspaces",
@@ -923,9 +1179,21 @@
               "name": "gastown",
               "url": "https://github.com/gastownhall/gastown"
             }
-          ]
+          ],
+          "description": "Shared workspaces where agents and humans (or multiple agents) collaborate."
         }
-      ]
+      ],
+      "description": "Systems built around multiple cooperating or competing agents."
+    },
+    {
+      "name": "Networks",
+      "examples": [
+        {
+          "name": "agent.ai",
+          "url": "https://agent.ai/"
+        }
+      ],
+      "description": "Agent networks and directories \u2014 social/professional platforms where agents and their creators are listed and interconnected."
     },
     {
       "name": "Observability",
@@ -934,7 +1202,8 @@
           "name": "RagaAI-Catalyst",
           "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst"
         }
-      ]
+      ],
+      "description": "Logging, tracing and observability specifically for agent and LLM systems."
     },
     {
       "name": "On Device Agents",
@@ -946,9 +1215,11 @@
               "name": "be-more-agent",
               "url": "https://github.com/brenpoly/be-more-agent"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Agents designed to run on-device, including phones, SBCs and edge hardware."
     },
     {
       "name": "Operations",
@@ -960,9 +1231,11 @@
               "name": "agentops",
               "url": "https://github.com/AgentOps-AI/agentops"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Operational concerns for running agents in production \u2014 cost, monitoring, reliability."
     },
     {
       "name": "Optimisation Platform",
@@ -971,24 +1244,11 @@
           "name": "coze-loop",
           "url": "https://github.com/coze-dev/coze-loop"
         }
-      ]
+      ],
+      "description": "Platforms focused on optimising agent/LLM pipelines."
     },
     {
       "name": "Orchestration",
-      "examples": [
-        {
-          "name": "Shannon",
-          "url": "https://github.com/Kocoro-lab/Shannon"
-        },
-        {
-          "name": "conductor",
-          "url": "https://github.com/conductor-oss/conductor"
-        },
-        {
-          "name": "ai-maestro",
-          "url": "https://github.com/23blocks-OS/ai-maestro"
-        }
-      ],
       "children": [
         {
           "name": "Platform-Specific",
@@ -997,9 +1257,29 @@
               "name": "agent-squad",
               "url": "https://github.com/awslabs/agent-squad"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "examples": [
+        {
+          "name": "agent-orchestrator",
+          "url": "https://github.com/ComposioHQ/agent-orchestrator"
+        },
+        {
+          "name": "ai-maestro",
+          "url": "https://github.com/23blocks-OS/ai-maestro"
+        },
+        {
+          "name": "conductor",
+          "url": "https://github.com/conductor-oss/conductor"
+        },
+        {
+          "name": "Shannon",
+          "url": "https://github.com/Kocoro-lab/Shannon"
+        }
+      ],
+      "description": "Orchestration engines for coordinating agents, tools and workflows."
     },
     {
       "name": "Personal",
@@ -1008,7 +1288,8 @@
           "name": "nanobot",
           "url": "https://github.com/HKUDS/nanobot"
         }
-      ]
+      ],
+      "description": "Personal-use agent projects and personal AI tooling."
     },
     {
       "name": "Personal AI",
@@ -1017,16 +1298,18 @@
           "name": "Assistants",
           "examples": [
             {
-              "name": "openclaw",
-              "url": "https://github.com/openclaw/openclaw"
-            },
-            {
               "name": "leon",
               "url": "https://github.com/leon-ai/leon"
+            },
+            {
+              "name": "openclaw",
+              "url": "https://github.com/openclaw/openclaw"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Personal AI assistants and related projects."
     },
     {
       "name": "Personification",
@@ -1035,7 +1318,8 @@
           "name": "bub",
           "url": "https://github.com/bubbuild/bub"
         }
-      ]
+      ],
+      "description": "Tools for giving agents distinct personas, voices and identities."
     },
     {
       "name": "Pipelines",
@@ -1044,7 +1328,8 @@
           "name": "Paper2Agent",
           "url": "https://github.com/jmiao24/Paper2Agent"
         }
-      ]
+      ],
+      "description": "Reusable pipelines for common agentic workloads."
     },
     {
       "name": "Platforms",
@@ -1056,9 +1341,11 @@
               "name": "fairo",
               "url": "https://github.com/facebookresearch/fairo"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "General platforms that host or enable agentic applications."
     },
     {
       "name": "Proxy",
@@ -1069,8 +1356,13 @@
             {
               "name": "agentgateway",
               "url": "https://github.com/agentgateway/agentgateway"
+            },
+            {
+              "name": "litellm",
+              "url": "https://github.com/BerriAI/litellm"
             }
-          ]
+          ],
+          "description": "Gateway services that sit between agents and upstream services (LLMs, tools, data)."
         },
         {
           "name": "MCP to OpenAI",
@@ -1079,31 +1371,47 @@
               "name": "mcpo",
               "url": "https://github.com/open-webui/mcpo"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Proxy services that sit between clients and LLM/agent backends."
     },
     {
       "name": "RAG",
+      "children": [
+        {
+          "name": "Engines",
+          "examples": [
+            {
+              "name": "ragflow",
+              "url": "https://github.com/infiniflow/ragflow"
+            }
+          ],
+          "description": ""
+        }
+      ],
       "examples": [
         {
           "name": "airweave",
           "url": "https://github.com/airweave-ai/airweave"
         }
-      ]
+      ],
+      "description": "Retrieval-augmented generation engines, frameworks and components."
     },
     {
       "name": "Reinforcement Learning",
       "examples": [
         {
-          "name": "RLinf",
-          "url": "https://github.com/RLinf/RLinf"
-        },
-        {
           "name": "acme",
           "url": "https://github.com/google-deepmind/acme"
+        },
+        {
+          "name": "RLinf",
+          "url": "https://github.com/RLinf/RLinf"
         }
-      ]
+      ],
+      "description": "RL frameworks and environments used to train agentic behaviour."
     },
     {
       "name": "Routers",
@@ -1115,7 +1423,8 @@
               "name": "RelayPlane proxy",
               "url": "https://github.com/RelayPlane/proxy"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Intelligent",
@@ -1124,32 +1433,24 @@
               "name": "semantic-router",
               "url": "https://github.com/vllm-project/semantic-router"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Tool Specific",
-          "children": [
+          "examples": [
             {
-              "name": "OpenClaw",
-              "examples": [
-                {
-                  "name": "ClawRouter",
-                  "url": "https://github.com/BlockRunAI/ClawRouter"
-                }
-              ]
+              "name": "ClawRouter",
+              "url": "https://github.com/BlockRunAI/ClawRouter"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Routing layers that select between models, tools or agents based on cost, capability or intent."
     },
     {
       "name": "Runtimes",
-      "examples": [
-        {
-          "name": "OpenShell",
-          "url": "https://github.com/NVIDIA/OpenShell"
-        }
-      ],
       "children": [
         {
           "name": "Data Layers",
@@ -1158,7 +1459,18 @@
               "name": "deeplake",
               "url": "https://github.com/activeloopai/deeplake"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Policy Engines",
+          "examples": [
+            {
+              "name": "Aegis",
+              "url": "https://github.com/Justin0504/Aegis"
+            }
+          ],
+          "description": "Runtime policy engines that evaluate and enforce rules on agent actions."
         },
         {
           "name": "Sandboxes",
@@ -1167,12 +1479,104 @@
               "name": "OpenSandbox",
               "url": "https://github.com/alibaba/OpenSandbox"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "examples": [
+        {
+          "name": "OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell"
+        }
+      ],
+      "description": "Execution runtimes \u2014 sandboxes, data layers, kernels \u2014 that host running agents."
+    },
+    {
+      "name": "SaaS Builders",
+      "children": [
+        {
+          "name": "Code-Defined",
+          "examples": [],
+          "description": "Hosted builders where agents and workflows are primarily defined in code (SDK, DSL, or config-as-code)."
+        },
+        {
+          "name": "No Code",
+          "examples": [],
+          "description": "Builders targeted at non-programmers, typically form- and config-driven with minimal visual wiring."
+        },
+        {
+          "name": "Visual Programming",
+          "children": [
+            {
+              "name": "Workflow Focused",
+              "examples": [
+                {
+                  "name": "Gumloop",
+                  "url": "https://www.gumloop.com/"
+                },
+                {
+                  "name": "MindStudio",
+                  "url": "https://www.mindstudio.ai/"
+                }
+              ],
+              "description": "Visual builders oriented around structured, multi-step workflows rather than free-form agents."
+            }
+          ],
+          "examples": [
+            {
+              "name": "n8n",
+              "url": "https://n8n.io/"
+            }
+          ],
+          "description": "Builders where flows are expressed as node-and-edge graphs or canvas-based visual programs."
+        }
+      ],
+      "description": "Hosted SaaS platforms for building agents and agentic workflows, spanning no-code, visual, and code-defined paradigms."
     },
     {
       "name": "Security",
+      "children": [
+        {
+          "name": "Automation",
+          "examples": [
+            {
+              "name": "tracecat",
+              "url": "https://github.com/TracecatHQ/tracecat"
+            }
+          ],
+          "description": "General-purpose automation tools and frameworks, including GUI-driven and script-driven flows."
+        },
+        {
+          "name": "Control Planes",
+          "examples": [
+            {
+              "name": "cordum",
+              "url": "https://github.com/cordum-io/cordum"
+            }
+          ],
+          "description": "Centralised control planes for governing, auditing, and enforcing policy across agent fleets."
+        },
+        {
+          "name": "Red Team",
+          "examples": [
+            {
+              "name": "rogue",
+              "url": "https://github.com/qualifire-dev/rogue"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Sandboxing",
+          "examples": [
+            {
+              "name": "microsandbox",
+              "url": "https://github.com/superradcompany/microsandbox"
+            }
+          ],
+          "description": ""
+        }
+      ],
       "examples": [
         {
           "name": "agent-scan",
@@ -1183,35 +1587,7 @@
           "url": "https://github.com/GoPlusSecurity/agentguard"
         }
       ],
-      "children": [
-        {
-          "name": "Automation",
-          "examples": [
-            {
-              "name": "tracecat",
-              "url": "https://github.com/TracecatHQ/tracecat"
-            }
-          ]
-        },
-        {
-          "name": "Red Team",
-          "examples": [
-            {
-              "name": "rogue",
-              "url": "https://github.com/qualifire-dev/rogue"
-            }
-          ]
-        },
-        {
-          "name": "Sandboxing",
-          "examples": [
-            {
-              "name": "microsandbox",
-              "url": "https://github.com/superradcompany/microsandbox"
-            }
-          ]
-        }
-      ]
+      "description": "Security tooling for agents: sandboxing, red teaming, defensive automation."
     },
     {
       "name": "Skills",
@@ -1226,9 +1602,11 @@
                   "name": "marketingskills",
                   "url": "https://github.com/coreyhaines31/marketingskills"
                 }
-              ]
+              ],
+              "description": ""
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Guides",
@@ -1237,38 +1615,47 @@
               "name": "taste-skill",
               "url": "https://github.com/Leonxlnx/taste-skill"
             }
-          ]
+          ],
+          "description": ""
         },
         {
           "name": "Package Library",
-          "children": [],
           "examples": [
             {
               "name": "vercel-labs/skills",
               "url": "https://github.com/vercel-labs/skills"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Registries",
+          "examples": [
+            {
+              "name": "agent-skills (tech-leads-club)",
+              "url": "https://github.com/tech-leads-club/agent-skills"
+            }
+          ],
+          "description": ""
         },
         {
           "name": "Standards",
-          "children": [],
           "examples": [
             {
               "name": "agentskills",
               "url": "https://github.com/agentskills/agentskills"
             }
-          ]
+          ],
+          "description": "Proposed and emerging standards across the agentic ecosystem."
         }
-      ]
-    },
-    {
-      "name": "Skills Baskets",
+      ],
       "examples": [
         {
           "name": "agent-skills",
           "url": "https://github.com/addyosmani/agent-skills"
         }
-      ]
+      ],
+      "description": "Agent skills ecosystems \u2014 registries, bundles, standards, guides and package libraries."
     },
     {
       "name": "Societal Simulations",
@@ -1277,7 +1664,8 @@
           "name": "oasis",
           "url": "https://github.com/camel-ai/oasis"
         }
-      ]
+      ],
+      "description": "Large-scale simulations of societies and human behaviour using agent populations."
     },
     {
       "name": "Software Extensions",
@@ -1286,21 +1674,60 @@
           "name": "jupyter-ai",
           "url": "https://github.com/jupyterlab/jupyter-ai"
         }
-      ]
+      ],
+      "description": "Extensions and plugins that add agentic capabilities to existing software."
     },
     {
       "name": "Standards",
       "children": [
         {
+          "name": "Emerging (Ecosystem-Tied)",
+          "examples": [
+            {
+              "name": "WebMCP",
+              "url": "https://webmcp.dev/"
+            },
+            {
+              "name": "WebMCP (Chrome EPP)",
+              "url": "https://developer.chrome.com/blog/webmcp-epp"
+            }
+          ],
+          "description": "Emerging standards whose adoption is tied to a specific host ecosystem (e.g. a browser engine or platform vendor) rather than being fully vendor-neutral."
+        },
+        {
           "name": "Proposed",
           "examples": [
+            {
+              "name": "AIUC-1",
+              "url": "https://www.aiuc-1.com/"
+            },
             {
               "name": "gitagent",
               "url": "https://github.com/open-gitagent/gitagent"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Ratified",
+          "examples": [
+            {
+              "name": "A2A (Agent2Agent Protocol)",
+              "url": "https://github.com/a2aproject/A2A"
+            },
+            {
+              "name": "AG-UI (Agent User Interaction Protocol)",
+              "url": "https://docs.ag-ui.com/introduction"
+            },
+            {
+              "name": "MCP (Model Context Protocol)",
+              "url": "https://modelcontextprotocol.io/specification/2025-11-25"
+            }
+          ],
+          "description": "Standards with a published specification and active governance."
         }
-      ]
+      ],
+      "description": "Proposed and emerging standards across the agentic ecosystem."
     },
     {
       "name": "Starter Kits",
@@ -1312,22 +1739,25 @@
               "name": "ai-town",
               "url": "https://github.com/a16z-infra/ai-town"
             }
-          ]
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "description": "Opinionated starter kits and templates for kicking off agentic projects."
     },
     {
       "name": "Synthesised Perspectives",
       "examples": [
         {
-          "name": "Plurals",
-          "url": "https://github.com/josh-ashkinaze/plurals"
-        },
-        {
           "name": "llm-council",
           "url": "https://github.com/karpathy/llm-council"
+        },
+        {
+          "name": "Plurals",
+          "url": "https://github.com/josh-ashkinaze/plurals"
         }
-      ]
+      ],
+      "description": "Tools that synthesise multiple viewpoints or agent outputs into a unified perspective."
     },
     {
       "name": "Task Specific",
@@ -1339,98 +1769,11 @@
               "name": "superdesign",
               "url": "https://github.com/superdesigndev/superdesign"
             }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Tooling",
-      "children": [
-        {
-          "name": "Browser Utils",
-          "children": [
-            {
-              "name": "SDK",
-              "examples": [
-                {
-                  "name": "stagehand",
-                  "url": "https://github.com/browserbase/stagehand"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Computer Use",
-          "examples": [
-            {
-              "name": "cua",
-              "url": "https://github.com/trycua/cua"
-            }
           ],
-          "children": [
-            {
-              "name": "CLI",
-              "examples": [
-                {
-                  "name": "usecomputer",
-                  "url": "https://github.com/remorses/usecomputer"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Data Ingestion",
-          "examples": [
-            {
-              "name": "Agent-Reach",
-              "url": "https://github.com/Panniantong/Agent-Reach"
-            }
-          ]
-        },
-        {
-          "name": "Financial",
-          "examples": [
-            {
-              "name": "agentkit",
-              "url": "https://github.com/coinbase/agentkit"
-            }
-          ]
-        },
-        {
-          "name": "IDE Tools",
-          "examples": [
-            {
-              "name": "Roo-Code",
-              "url": "https://github.com/RooCodeInc/Roo-Code"
-            }
-          ]
-        },
-        {
-          "name": "World Creation",
-          "children": [
-            {
-              "name": "MCP",
-              "examples": [
-                {
-                  "name": "unreal-engine-mcp",
-                  "url": "https://github.com/flopperam/unreal-engine-mcp"
-                }
-              ]
-            }
-          ]
+          "description": ""
         }
-      ]
-    },
-    {
-      "name": "Toolkits",
-      "examples": [
-        {
-          "name": "vercel/ai",
-          "url": "https://github.com/vercel/ai"
-        }
-      ]
+      ],
+      "description": "Agents and tools built for a single specific task rather than general use."
     },
     {
       "name": "Tools",
@@ -1442,7 +1785,56 @@
               "name": "agent-device",
               "url": "https://github.com/callstackincubator/agent-device"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Browser Utils",
+          "children": [
+            {
+              "name": "SDK",
+              "examples": [
+                {
+                  "name": "stagehand",
+                  "url": "https://github.com/browserbase/stagehand"
+                }
+              ],
+              "description": ""
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Computer Use",
+          "children": [
+            {
+              "name": "CLI",
+              "examples": [
+                {
+                  "name": "usecomputer",
+                  "url": "https://github.com/remorses/usecomputer"
+                }
+              ],
+              "description": ""
+            }
+          ],
+          "examples": [
+            {
+              "name": "cua",
+              "url": "https://github.com/trycua/cua"
+            }
+          ],
+          "description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen)."
+        },
+        {
+          "name": "Data Ingestion",
+          "examples": [
+            {
+              "name": "Agent-Reach",
+              "url": "https://github.com/Panniantong/Agent-Reach"
+            }
+          ],
+          "description": ""
         },
         {
           "name": "Debugging",
@@ -1451,25 +1843,44 @@
               "name": "vllora",
               "url": "https://github.com/vllora/vllora"
             }
-          ]
+          ],
+          "description": ""
         },
         {
-          "name": "Model Routing",
+          "name": "Financial",
           "examples": [
             {
-              "name": "agentic-flow",
-              "url": "https://github.com/ruvnet/agentic-flow"
+              "name": "agentkit",
+              "url": "https://github.com/coinbase/agentkit"
             }
-          ]
+          ],
+          "description": ""
         },
         {
-          "name": "Vision UI",
+          "name": "IDE Tools",
           "examples": [
             {
-              "name": "UI-Venus",
-              "url": "https://github.com/inclusionAI/UI-Venus"
+              "name": "Roo-Code",
+              "url": "https://github.com/RooCodeInc/Roo-Code"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Integration Platforms",
+          "children": [
+            {
+              "name": "SaaS",
+              "examples": [
+                {
+                  "name": "composio",
+                  "url": "https://github.com/ComposioHQ/composio"
+                }
+              ],
+              "description": ""
+            }
+          ],
+          "description": ""
         },
         {
           "name": "macOS",
@@ -1478,9 +1889,67 @@
               "name": "cmux",
               "url": "https://github.com/manaflow-ai/cmux"
             }
-          ]
+          ],
+          "description": ""
+        },
+        {
+          "name": "Model Routing",
+          "examples": [
+            {
+              "name": "agentic-flow",
+              "url": "https://github.com/ruvnet/agentic-flow"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "Semantic Search",
+          "examples": [
+            {
+              "name": "osgrep",
+              "url": "https://github.com/Ryandonofrio3/osgrep"
+            }
+          ],
+          "description": "Semantic search tools for agents operating over codebases and local content."
+        },
+        {
+          "name": "Vision UI",
+          "examples": [
+            {
+              "name": "UI-Venus",
+              "url": "https://github.com/inclusionAI/UI-Venus"
+            }
+          ],
+          "description": ""
+        },
+        {
+          "name": "World Creation",
+          "children": [
+            {
+              "name": "MCP",
+              "examples": [
+                {
+                  "name": "unreal-engine-mcp",
+                  "url": "https://github.com/flopperam/unreal-engine-mcp"
+                }
+              ],
+              "description": "Projects in the Model Context Protocol ecosystem \u2014 servers, gateways, aggregators, clients."
+            }
+          ],
+          "description": ""
         }
-      ]
+      ],
+      "examples": [
+        {
+          "name": "langflow",
+          "url": "https://github.com/langflow-ai/langflow"
+        },
+        {
+          "name": "vercel/ai",
+          "url": "https://github.com/vercel/ai"
+        }
+      ],
+      "description": "Utility tools, SDKs and toolkits for building, debugging and extending agentic systems."
     },
     {
       "name": "Trainers",
@@ -1489,7 +1958,8 @@
           "name": "agent-lightning",
           "url": "https://github.com/microsoft/agent-lightning"
         }
-      ]
+      ],
+      "description": "Training frameworks and tools for agent models."
     },
     {
       "name": "Uncategorized",
@@ -1498,16 +1968,33 @@
           "name": "agency-agents",
           "url": "https://github.com/msitarzewski/agency-agents"
         }
-      ]
+      ],
+      "description": "Holding area for projects awaiting classification. Entries here are a todo list, not a destination."
     },
     {
-      "name": "Utilities",
+      "name": "Upserting Tools",
+      "examples": [],
+      "description": "Tools that manage upserting data into vector stores and retrieval indexes."
+    },
+    {
+      "name": "UX",
       "children": [
         {
-          "name": "Frontend",
-          "examples": []
+          "name": "Human in the Loop",
+          "examples": [
+            {
+              "name": "agent-inbox",
+              "url": "https://github.com/langchain-ai/agent-inbox"
+            },
+            {
+              "name": "orchestra",
+              "url": "https://github.com/b12io/orchestra"
+            }
+          ],
+          "description": "Interfaces and workflows for inserting humans into agent execution \u2014 approvals, task handoff, review queues."
         }
-      ]
+      ],
+      "description": "User-experience patterns and components specifically for agent systems."
     },
     {
       "name": "Vector Databases",
@@ -1516,7 +2003,8 @@
           "name": "Qdrant",
           "url": "https://github.com/qdrant/qdrant"
         }
-      ]
+      ],
+      "description": "Vector databases used for embedding storage and similarity search."
     },
     {
       "name": "Voice",
@@ -1525,7 +2013,18 @@
           "name": "bolna",
           "url": "https://github.com/bolna-ai/bolna"
         }
-      ]
+      ],
+      "description": "Voice-first agents and voice interaction frameworks."
+    },
+    {
+      "name": "Workflow Definition",
+      "examples": [
+        {
+          "name": "packmind",
+          "url": "https://github.com/PackmindHub/packmind"
+        }
+      ],
+      "description": "Tools and DSLs for authoring agent workflows as first-class, portable artifacts."
     },
     {
       "name": "Workspaces",
@@ -1534,7 +2033,8 @@
           "name": "lobehub",
           "url": "https://github.com/lobehub/lobehub"
         }
-      ]
+      ],
+      "description": "Shared workspaces where agents and humans (or multiple agents) collaborate."
     },
     {
       "name": "World Generation",
@@ -1543,41 +2043,8 @@
           "name": "ml-agents",
           "url": "https://github.com/Unity-Technologies/ml-agents"
         }
-      ]
-    },
-    {
-      "name": "Upserting Tools"
-    },
-    {
-      "name": "Embedding Models"
-    },
-    {
-      "name": "Embedding Pipeline Orchestrators"
-    },
-    {
-      "name": "Context",
-      "children": [
-        {
-          "name": "Context Optimisation",
-          "children": [],
-          "examples": [
-            {
-              "name": "context-mode",
-              "url": "https://github.com/mksglu/context-mode"
-            }
-          ]
-        },
-        {
-          "name": "Frontend Tools",
-          "children": [],
-          "examples": [
-            {
-              "name": "react-grab",
-              "url": "https://github.com/aidenybai/react-grab"
-            }
-          ]
-        }
-      ]
+      ],
+      "description": "Tools and models for generating simulated worlds for agents to operate in."
     }
   ]
 }
