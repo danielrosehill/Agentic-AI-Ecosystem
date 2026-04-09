@@ -6,7 +6,7 @@ A curated, categorised map of the agentic AI ecosystem — built from real proje
 
 ## How it works
 
-Each project is tagged with a hierarchical `path` (top category → subcategory → …). This README is generated from `ecosystem.json` — edit the JSON, then run `python scripts/generate_readme.py`.
+The JSON is organised as a tree of segments, each with nested subcategories and example projects. This README is generated from `ecosystem.json` — edit the JSON, then run `python scripts/generate_readme.py`.
 
 ## Segments
 
@@ -117,7 +117,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [connectonion](https://github.com/openonion/connectonion)
 - [openagents](https://github.com/openagents-org/openagents)
 
-### Experiments → Voices
+### Experiments
+
+#### Voices
 
 - [gibberlink](https://github.com/PennyroyalTea/gibberlink)
 
@@ -125,7 +127,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [xataio/agent](https://github.com/xataio/agent)
 
-### Autonomous → Trading
+### Autonomous
+
+#### Trading
 
 - [AI-Trader](https://github.com/HKUDS/AI-Trader)
 
@@ -133,7 +137,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [dify](https://github.com/langgenius/dify)
 
-### CLIs/Toolkits → Vendor
+### CLIs/Toolkits
+
+#### Vendor
 
 - [qwen-code](https://github.com/QwenLM/qwen-code)
 
@@ -145,27 +151,39 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [OpenHands](https://github.com/OpenHands/OpenHands)
 
-### Domain Specific → Biotech
+### Domain Specific
+
+#### Biotech
 
 - [Biomni](https://github.com/snap-stanford/Biomni)
 
-### Frameworks → Open Source
+### Frameworks
+
+#### Open Source
 
 - [hermes-agent](https://github.com/NousResearch/hermes-agent)
 
-### Frontends → OpenClaw
+### Frontends
+
+#### OpenClaw
 
 - [openclaw-mission-control](https://github.com/abhi1693/openclaw-mission-control)
 
-### Harnesses → CLIs → Third Party
+### Harnesses
+
+#### CLIs
+
+##### Third Party
 
 - [crush](https://github.com/charmbracelet/crush)
 
-### Harnesses → CLIs → Vendor
+##### Vendor
 
 - [gemini-cli](https://github.com/google-gemini/gemini-cli)
 
-### Memory → Graph Builders
+### Memory
+
+#### Graph Builders
 
 - [graphiti](https://github.com/getzep/graphiti)
 
@@ -177,7 +195,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [inkos](https://github.com/Narcooo/inkos)
 
-### Purpose Specific → Penetration Testing
+#### Penetration Testing
 
 - [pentagi](https://github.com/vxcontrol/pentagi)
 
@@ -195,7 +213,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 ## Automation
 
-### Open Source → GUI Based
+### Open Source
+
+#### GUI Based
 
 - [activepieces](https://github.com/activepieces/activepieces)
 - [Flowise](https://github.com/FlowiseAI/Flowise)
@@ -222,7 +242,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 ## Computer Use
 
-### Platform Specific → macOS
+### Platform Specific
+
+#### macOS
 
 - [macOS-use](https://github.com/browser-use/macOS-use)
 
@@ -319,7 +341,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [videosdk-live/agents](https://github.com/videosdk-live/agents)
 
-### Optimisation → Parallelisation
+### Optimisation
+
+#### Parallelisation
 
 - [EnsoAI](https://github.com/J3n5en/EnsoAI)
 
@@ -378,7 +402,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [Grok 4.20 Multi-Agent](https://openrouter.ai/x-ai/grok-4.20-multi-agent)
 
-### By Use Case → Computer Use
+### By Use Case
+
+#### Computer Use
 
 - [fara](https://github.com/microsoft/fara)
 
@@ -519,7 +545,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [semantic-router](https://github.com/vllm-project/semantic-router)
 
-### Tool Specific → OpenClaw
+### Tool Specific
+
+#### OpenClaw
 
 - [ClawRouter](https://github.com/BlockRunAI/ClawRouter)
 
@@ -554,7 +582,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 ## Skills
 
-### Bundles → Claude Code
+### Bundles
+
+#### Claude Code
 
 - [marketingskills](https://github.com/coreyhaines31/marketingskills)
 
@@ -599,7 +629,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 ## Tooling
 
-### Browser Utils → SDK
+### Browser Utils
+
+#### SDK
 
 - [stagehand](https://github.com/browserbase/stagehand)
 
@@ -607,7 +639,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [cua](https://github.com/trycua/cua)
 
-### Computer Use → CLI
+#### CLI
 
 - [usecomputer](https://github.com/remorses/usecomputer)
 
@@ -623,7 +655,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [Roo-Code](https://github.com/RooCodeInc/Roo-Code)
 
-### World Creation → MCP
+### World Creation
+
+#### MCP
 
 - [unreal-engine-mcp](https://github.com/flopperam/unreal-engine-mcp)
 
