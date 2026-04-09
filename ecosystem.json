@@ -192,7 +192,7 @@
     {
       "name": "agentgateway",
       "url": "https://github.com/agentgateway/agentgateway",
-      "path": ["Proxy"]
+      "path": ["Proxy", "Gateways"]
     },
     {
       "name": "agentation",
@@ -633,6 +633,46 @@
       "name": "leon",
       "url": "https://github.com/leon-ai/leon",
       "path": ["Personal AI", "Assistants"]
+    },
+    {
+      "name": "Agent-S",
+      "url": "https://github.com/simular-ai/Agent-S",
+      "path": ["Frameworks", "Computer Use"]
+    },
+    {
+      "name": "fara",
+      "url": "https://github.com/microsoft/fara",
+      "path": ["LLMs", "By Use Case", "Computer Use"]
+    },
+    {
+      "name": "open-computer-use",
+      "url": "https://github.com/coasty-ai/open-computer-use",
+      "path": ["Agents", "Computer Use"]
+    },
+    {
+      "name": "cua",
+      "url": "https://github.com/trycua/cua",
+      "path": ["Tooling", "Computer Use"]
+    },
+    {
+      "name": "usecomputer",
+      "url": "https://github.com/remorses/usecomputer",
+      "path": ["Tooling", "Computer Use", "CLI"]
+    },
+    {
+      "name": "ten-framework",
+      "url": "https://github.com/TEN-framework/ten-framework",
+      "path": ["Frameworks", "Voice"]
+    },
+    {
+      "name": "mcpo",
+      "url": "https://github.com/open-webui/mcpo",
+      "path": ["Proxy", "MCP to OpenAI"]
+    },
+    {
+      "name": "mcp-context-forge",
+      "url": "https://github.com/IBM/mcp-context-forge",
+      "path": ["MCP", "Gateways"]
     }
   ]
 }

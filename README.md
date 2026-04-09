@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**126 projects** across **63 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**134 projects** across **63 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -16,7 +16,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Agent Skills](#agent-skills) (1)
 - [Agent Tools](#agent-tools) (1)
 - [Agent to Agent](#agent-to-agent) (4)
-- [Agents](#agents) (18)
+- [Agents](#agents) (19)
 - [Automation](#automation) (2)
 - [Backend Querying](#backend-querying) (1)
 - [Benchmarks](#benchmarks) (1)
@@ -36,14 +36,14 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Evaluations](#evaluations) (1)
 - [Feedback Formatting](#feedback-formatting) (1)
 - [Financial Tools](#financial-tools) (1)
-- [Frameworks](#frameworks) (13)
+- [Frameworks](#frameworks) (15)
 - [Frontend Components](#frontend-components) (1)
 - [Frontends](#frontends) (3)
 - [Geopolitical Simulation](#geopolitical-simulation) (2)
 - [Harnesses](#harnesses) (3)
-- [LLMs](#llms) (2)
+- [LLMs](#llms) (3)
 - [Loops](#loops) (1)
-- [MCP](#mcp) (2)
+- [MCP](#mcp) (3)
 - [Memory](#memory) (5)
 - [Memory Layers](#memory-layers) (1)
 - [Monitoring](#monitoring) (1)
@@ -56,7 +56,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Personal AI](#personal-ai) (2)
 - [Personification](#personification) (1)
 - [Pipelines](#pipelines) (1)
-- [Proxy](#proxy) (1)
+- [Proxy](#proxy) (2)
 - [RAG](#rag) (1)
 - [Runtimes](#runtimes) (2)
 - [Security](#security) (4)
@@ -66,7 +66,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Standards](#standards) (1)
 - [Synthesised Perspectives](#synthesised-perspectives) (2)
 - [Task Specific](#task-specific) (1)
-- [Tooling](#tooling) (4)
+- [Tooling](#tooling) (6)
 - [Toolkits](#toolkits) (1)
 - [Tools](#tools) (4)
 - [Trainers](#trainers) (1)
@@ -128,6 +128,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### CLIs/Toolkits → Vendor
 
 - [qwen-code](https://github.com/QwenLM/qwen-code)
+
+### Computer Use
+
+- [open-computer-use](https://github.com/coasty-ai/open-computer-use)
 
 ### Development
 
@@ -295,6 +299,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [BotSharp](https://github.com/SciSharp/BotSharp)
 
+### Computer Use
+
+- [Agent-S](https://github.com/simular-ai/Agent-S)
+
 ### Multi-agent
 
 - [camel](https://github.com/camel-ai/camel)
@@ -318,6 +326,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Voice
 
 - [livekit/agents](https://github.com/livekit/agents)
+- [ten-framework](https://github.com/TEN-framework/ten-framework)
 
 ## Frontend Components
 
@@ -361,6 +370,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [Grok 4.20 Multi-Agent](https://openrouter.ai/x-ai/grok-4.20-multi-agent)
 
+### By Use Case → Computer Use
+
+- [fara](https://github.com/microsoft/fara)
+
 ## Loops
 
 - [ralph](https://github.com/snarktank/ralph)
@@ -370,6 +383,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Aggregation
 
 - [klavis](https://github.com/Klavis-AI/klavis)
+
+### Gateways
+
+- [mcp-context-forge](https://github.com/IBM/mcp-context-forge)
 
 ### Third Party
 
@@ -451,7 +468,13 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 ## Proxy
 
+### Gateways
+
 - [agentgateway](https://github.com/agentgateway/agentgateway)
+
+### MCP to OpenAI
+
+- [mcpo](https://github.com/open-webui/mcpo)
 
 ## RAG
 
@@ -521,6 +544,14 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Browser Utils → SDK
 
 - [stagehand](https://github.com/browserbase/stagehand)
+
+### Computer Use
+
+- [cua](https://github.com/trycua/cua)
+
+### Computer Use → CLI
+
+- [usecomputer](https://github.com/remorses/usecomputer)
 
 ### Data Ingestion
 
