@@ -55,7 +55,9 @@ def walk(node: dict, parent_path: list[str], nodes: list, edges: list, taken: se
         "type": "Category",
         "label": node["name"],
         "path": path,
-        "description": node.get("description", "") or "",
+        "short_description": node.get("short_description", node.get("description", "")) or "",
+        "long_description": node.get("long_description", "") or "",
+        "examples_narrative": node.get("examples_narrative", "") or "",
     })
     taken.add(cid)
     if parent_path:

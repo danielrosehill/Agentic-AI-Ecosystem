@@ -74,11 +74,10 @@ def main() -> None:
         # matching the existing schema. The taxonomy-review pass can tidy.
         if "children" not in out and "examples" not in out:
             out["examples"] = []
-        if "children" not in out:
-            # leaf category: schema sometimes has empty children; skip
-            pass
 
-        out["description"] = n.get("description", "") or ""
+        out["short_description"] = n.get("short_description", "") or ""
+        out["long_description"] = n.get("long_description", "") or ""
+        out["examples_narrative"] = n.get("examples_narrative", "") or ""
         return out
 
     segments = [

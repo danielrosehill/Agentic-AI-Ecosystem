@@ -30,8 +30,10 @@ ID_PATTERN = re.compile(
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--strict-descriptions", action="store_true",
-                    help="Fail if any Category has an empty description")
+    ap.add_argument("--strict-short", action="store_true",
+                    help="Fail if any Category has empty short_description")
+    ap.add_argument("--strict-long", action="store_true",
+                    help="Fail if any Category has empty long_description")
     args = ap.parse_args()
 
     nodes_data = json.loads(NODES_IN.read_text())
@@ -107,17 +109,27 @@ def main() -> int:
             cur = parent.get(cur)
 
     # 7. Description coverage
-    empty_desc = [
-        n["id"] for n in nodes
-        if n["type"] == "Category" and not (n.get("description") or "").strip()
-    ]
+    def empty(n, field):
+        return not (n.get(field) or "").strip()
+
     total_cats = sum(1 for n in nodes if n["type"] == "Category")
-    if args.strict_descriptions:
-        for nid in empty_desc:
-            errors.append(f"category {nid} has empty description (strict mode)")
-    elif empty_desc:
+    empty_short = [n["id"] for n in nodes if n["type"] == "Category" and empty(n, "short_description")]
+    empty_long  = [n["id"] for n in nodes if n["type"] == "Category" and empty(n, "long_description")]
+
+    if args.strict_short:
+        for nid in empty_short:
+            errors.append(f"category {nid} has empty short_description (strict mode)")
+    elif empty_short:
         warnings.append(
-            f"{len(empty_desc)}/{total_cats} categories have empty descriptions"
+            f"{len(empty_short)}/{total_cats} categories have empty short_description"
+        )
+
+    if args.strict_long:
+        for nid in empty_long:
+            errors.append(f"category {nid} has empty long_description (strict mode)")
+    elif empty_long:
+        warnings.append(
+            f"{len(empty_long)}/{total_cats} categories have empty long_description"
         )
 
     # Report

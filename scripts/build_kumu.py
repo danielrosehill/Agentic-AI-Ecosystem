@@ -77,7 +77,7 @@ def main() -> None:
                 w.writerow([
                     kumu_label(nid),
                     "Category",
-                    n.get("description", "") or "",
+                    n.get("short_description", "") or "",
                     "",
                     BREADCRUMB.join(n["path"]),
                 ])

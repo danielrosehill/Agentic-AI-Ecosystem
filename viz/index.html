@@ -166,7 +166,7 @@
     .graphData({ nodes, links })
     .nodeLabel(n => n.type === 'Project'
       ? `<b>${escapeHtml(n.label)}</b><br><span style="color:#6b7280">${escapeHtml(n.url || '')}</span>`
-      : `<b>${escapeHtml(n.label)}</b><br><span style="color:#6b7280">${escapeHtml((n.path||[]).join(' › '))}</span>`)
+      : `<b>${escapeHtml(n.label)}</b><br><span style="color:#6b7280">${escapeHtml((n.path||[]).join(' › '))}</span>${n.short_description ? '<br><span style="color:#6b7280">' + escapeHtml(n.short_description) + '</span>' : ''}`)
     .nodeThreeObject(n => {
       const isProj = n.type === 'Project';
       const size = isProj ? 2.2 : (3 + Math.min(n.degree, 20) * 0.35);
@@ -213,11 +213,16 @@
          ${n.url ? `<p><a href="${escapeAttr(n.url)}" target="_blank" rel="noopener">${escapeHtml(n.url)}</a></p>` : ''}
          <p class="path">${escapeHtml(segmentOf[n.id] || '')}</p>`;
     } else {
+      const short = n.short_description || '';
+      const long_ = n.long_description || '';
+      const narrative = n.examples_narrative || '';
       infoEl.innerHTML =
         `<div class="kind">Category</div>
          <h2>${escapeHtml(n.label)}</h2>
          <p class="path">${escapeHtml(path)}</p>
-         ${n.description ? `<p>${escapeHtml(n.description)}</p>` : ''}`;
+         ${short ? `<p><em>${escapeHtml(short)}</em></p>` : ''}
+         ${long_ ? `<p>${escapeHtml(long_)}</p>` : ''}
+         ${narrative ? `<p>${escapeHtml(narrative)}</p>` : ''}`;
     }
   }
 

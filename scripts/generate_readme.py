@@ -48,13 +48,21 @@ def render_node(node, path, depth):
     lines.append(f"{heading} {node['name']}")
     lines.append(f"<sub>`{cid}`</sub>")
     lines.append("")
-    desc = (node.get("description") or "").strip()
-    if desc:
-        lines.append(f"*{desc}*")
+    short = (node.get("short_description") or node.get("description") or "").strip()
+    long_ = (node.get("long_description") or "").strip()
+    narrative = (node.get("examples_narrative") or "").strip()
+    if short:
+        lines.append(f"*{short}*")
+        lines.append("")
+    if long_:
+        lines.append(long_)
         lines.append("")
     for ex in sorted(node.get("examples", []) or [], key=lambda e: e["name"].lower()):
         lines.append(render_example(ex))
     if node.get("examples"):
+        lines.append("")
+    if narrative:
+        lines.append(narrative)
         lines.append("")
     for child in node.get("children", []) or []:
         lines.extend(render_node(child, full_path, depth + 1))
