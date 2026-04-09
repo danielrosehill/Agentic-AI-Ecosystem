@@ -1585,6 +1585,516 @@
       "from": "cat:harnesses/platform-specific",
       "to": "cat:harnesses",
       "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:prompt-management",
+      "to": "cat:prompts",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:workflow-definition",
+      "to": "cat:prompts",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:conversational-control",
+      "to": "cat:prompts",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:formatting",
+      "to": "cat:prompts",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:feedback-formatting",
+      "to": "cat:prompts",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:structured-output",
+      "to": "cat:prompts",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:llms",
+      "to": "cat:models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:embedding-models",
+      "to": "cat:models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:trainers",
+      "to": "cat:models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:reinforcement-learning",
+      "to": "cat:models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:synthetic-data",
+      "to": "cat:models",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:inference-servers",
+      "to": "cat:inference",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:gateways",
+      "to": "cat:inference",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:routers",
+      "to": "cat:inference",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:proxy",
+      "to": "cat:inference",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:semantic-caching",
+      "to": "cat:inference",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:personification",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:synthesised-perspectives",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agent-clusters",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agent-collaboration",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:multiagent",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:networks",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:task-specific",
+      "to": "cat:agents",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:computer-use",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:browser-automation",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:browser-tooling",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:ai-browsers",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:software-extensions",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:marketplaces",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:financial-tools",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:voice",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:upserting-tools",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:data-extraction-and-structuring",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:integrations",
+      "to": "cat:actions",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:data-sources",
+      "to": "cat:grounding",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:grounding-tools",
+      "to": "cat:grounding",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:search-utilities",
+      "to": "cat:grounding",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:context",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:memory",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:rag",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:semantic-search",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:vector-databases",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:embedding-pipeline-orchestrators",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:personal-ai",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:session-state-management",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:context-optimisation",
+      "to": "cat:context-store",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:in-thread-truncation",
+      "to": "cat:context-optimisation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:cross-thread-compression",
+      "to": "cat:context-optimisation",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:databases",
+      "to": "cat:storage",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:backend-querying",
+      "to": "cat:storage",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:desktop-clients",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:windows",
+      "to": "cat:desktop-clients",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:macos",
+      "to": "cat:desktop-clients",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:linux",
+      "to": "cat:desktop-clients",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:cross-platform",
+      "to": "cat:desktop-clients",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:mobile-clients",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:android",
+      "to": "cat:mobile-clients",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:ios",
+      "to": "cat:mobile-clients",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:web-clients",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:terminal-clients",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:server-software",
+      "to": "cat:frontends",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:security",
+      "to": "cat:safety",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:guardrails",
+      "to": "cat:safety",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:identity-and-auth",
+      "to": "cat:safety",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:pii-and-redaction",
+      "to": "cat:safety",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:human-in-the-loop",
+      "to": "cat:safety",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agent-in-the-loop",
+      "to": "cat:safety",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:operations",
+      "to": "cat:observability",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:evals-and-experiment-tracking",
+      "to": "cat:observability",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:benchmarks",
+      "to": "cat:observability",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:agent-analytics",
+      "to": "cat:observability",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:frameworks",
+      "to": "cat:frameworks-runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:runtimes",
+      "to": "cat:frameworks-runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:harnesses",
+      "to": "cat:frameworks-runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:loops",
+      "to": "cat:frameworks-runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:orchestration",
+      "to": "cat:frameworks-runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:environments",
+      "to": "cat:frameworks-runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:starter-kits",
+      "to": "cat:frameworks-runtimes",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:saas-builders",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:automation",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:development-platforms",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:engineering-platforms",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:platforms",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:optimisation-platform",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:deployment-platforms",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:on-device-agents",
+      "to": "cat:builders-platforms",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:workspaces",
+      "to": "cat:interfaces-workspaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:ux",
+      "to": "cat:interfaces-workspaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:annotation",
+      "to": "cat:interfaces-workspaces",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:dev-tools",
+      "to": "cat:dev-tools-skills",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:skills",
+      "to": "cat:dev-tools-skills",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:societal-simulations",
+      "to": "cat:simulations-worlds",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:geopolitical-simulation",
+      "to": "cat:simulations-worlds",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:world-generation",
+      "to": "cat:simulations-worlds",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:character-roleplay",
+      "to": "cat:simulations-worlds",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:character-definition",
+      "to": "cat:character-roleplay",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:lore-worldbuilding",
+      "to": "cat:character-roleplay",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:roleplay-runtimes",
+      "to": "cat:character-roleplay",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:foundations",
+      "to": "cat:organisations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:companies",
+      "to": "cat:organisations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:government-bodies",
+      "to": "cat:organisations",
+      "type": "SUBCATEGORY_OF"
+    },
+    {
+      "from": "cat:foundations-consortia",
+      "to": "cat:organisations",
+      "type": "SUBCATEGORY_OF"
     }
   ]
 }

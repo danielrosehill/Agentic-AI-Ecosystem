@@ -6,6 +6,7 @@
       "type": "Category",
       "label": "Agent Clusters",
       "path": [
+        "Agents",
         "Agent Clusters"
       ],
       "short_description": "Systems that run many agents together as a managed group or fleet.",
@@ -23,6 +24,7 @@
       "type": "Category",
       "label": "Agent Collaboration",
       "path": [
+        "Agents",
         "Agent Collaboration"
       ],
       "short_description": "Protocols, patterns and platforms for agents to collaborate on shared tasks.",
@@ -133,7 +135,8 @@
       ],
       "short_description": "General agent projects and agent subtypes that do not fit more specific segments.",
       "long_description": "",
-      "examples_narrative": ""
+      "examples_narrative": "",
+      "kind": "runtime"
     },
     {
       "id": "proj:xataio-agent",
@@ -553,6 +556,7 @@
       "type": "Category",
       "label": "AI Browsers",
       "path": [
+        "Actions",
         "AI Browsers"
       ],
       "short_description": "Browsers built or adapted specifically for AI agent use, including headless variants optimised for programmatic navigation.",
@@ -570,6 +574,7 @@
       "type": "Category",
       "label": "Headless",
       "path": [
+        "Actions",
         "AI Browsers",
         "Headless"
       ],
@@ -594,6 +599,7 @@
       "type": "Category",
       "label": "Automation",
       "path": [
+        "Builders & Platforms",
         "Automation"
       ],
       "short_description": "General-purpose automation tools and frameworks, including GUI-driven and script-driven flows.",
@@ -605,6 +611,7 @@
       "type": "Category",
       "label": "Open Source",
       "path": [
+        "Builders & Platforms",
         "Automation",
         "Open Source"
       ],
@@ -617,6 +624,7 @@
       "type": "Category",
       "label": "GUI Based",
       "path": [
+        "Builders & Platforms",
         "Automation",
         "Open Source",
         "GUI Based"
@@ -642,6 +650,7 @@
       "type": "Category",
       "label": "Backend Querying",
       "path": [
+        "Storage",
         "Backend Querying"
       ],
       "short_description": "Tools that let agents query backend systems, databases and APIs.",
@@ -659,6 +668,7 @@
       "type": "Category",
       "label": "Benchmarks",
       "path": [
+        "Observability",
         "Benchmarks"
       ],
       "short_description": "Standardised benchmarks for evaluating agent and model capabilities.",
@@ -682,6 +692,7 @@
       "type": "Category",
       "label": "Browser Automation",
       "path": [
+        "Actions",
         "Browser Automation"
       ],
       "short_description": "Libraries and services for driving real browsers under agent control.",
@@ -699,6 +710,7 @@
       "type": "Category",
       "label": "Browser Tooling",
       "path": [
+        "Actions",
         "Browser Tooling"
       ],
       "short_description": "Utilities and SDKs that sit alongside browsers to support agentic workflows.",
@@ -716,6 +728,7 @@
       "type": "Category",
       "label": "Computer Use",
       "path": [
+        "Actions",
         "Computer Use"
       ],
       "short_description": "Agents and frameworks that operate a computer the way a human would (mouse, keyboard, screen).",
@@ -727,6 +740,7 @@
       "type": "Category",
       "label": "Platform Specific",
       "path": [
+        "Actions",
         "Computer Use",
         "Platform Specific"
       ],
@@ -739,6 +753,7 @@
       "type": "Category",
       "label": "macOS",
       "path": [
+        "Actions",
         "Computer Use",
         "Platform Specific",
         "macOS"
@@ -758,6 +773,7 @@
       "type": "Category",
       "label": "Context",
       "path": [
+        "Context Store",
         "Context"
       ],
       "short_description": "Tools for building, optimising, managing and visualising the context window supplied to LLMs.",
@@ -781,6 +797,7 @@
       "type": "Category",
       "label": "Context Optimisation",
       "path": [
+        "Context Store",
         "Context",
         "Context Optimisation"
       ],
@@ -799,6 +816,7 @@
       "type": "Category",
       "label": "Engines",
       "path": [
+        "Context Store",
         "Context",
         "Engines"
       ],
@@ -817,6 +835,7 @@
       "type": "Category",
       "label": "Frontend Tools",
       "path": [
+        "Context Store",
         "Context",
         "Frontend Tools"
       ],
@@ -835,6 +854,7 @@
       "type": "Category",
       "label": "Tools",
       "path": [
+        "Context Store",
         "Context",
         "Tools"
       ],
@@ -847,6 +867,7 @@
       "type": "Category",
       "label": "Context Managers",
       "path": [
+        "Context Store",
         "Context",
         "Tools",
         "Context Managers"
@@ -866,6 +887,7 @@
       "type": "Category",
       "label": "Visualisation",
       "path": [
+        "Context Store",
         "Context",
         "Visualisation"
       ],
@@ -884,6 +906,7 @@
       "type": "Category",
       "label": "Conversational Control",
       "path": [
+        "Prompts",
         "Conversational Control"
       ],
       "short_description": "Systems that steer or constrain multi-turn conversations with agents.",
@@ -901,6 +924,7 @@
       "type": "Category",
       "label": "Data Extraction and Structuring",
       "path": [
+        "Actions",
         "Data Extraction and Structuring"
       ],
       "short_description": "Tools that convert unstructured data into structured form for agents to consume.",
@@ -918,6 +942,7 @@
       "type": "Category",
       "label": "Data Sources",
       "path": [
+        "Grounding",
         "Data Sources"
       ],
       "short_description": "Curated data feeds and providers that agents can draw on.",
@@ -929,6 +954,7 @@
       "type": "Category",
       "label": "Financial",
       "path": [
+        "Grounding",
         "Data Sources",
         "Financial"
       ],
@@ -947,6 +973,7 @@
       "type": "Category",
       "label": "Databases",
       "path": [
+        "Storage",
         "Databases"
       ],
       "short_description": "Database systems used in agentic stacks, including purpose-built context and vector stores.",
@@ -958,6 +985,7 @@
       "type": "Category",
       "label": "Context Databases",
       "path": [
+        "Storage",
         "Databases",
         "Context Databases"
       ],
@@ -976,6 +1004,7 @@
       "type": "Category",
       "label": "Deployment Platforms",
       "path": [
+        "Builders & Platforms",
         "Deployment Platforms"
       ],
       "short_description": "Platforms for deploying and hosting agents and agentic services.",
@@ -987,6 +1016,7 @@
       "type": "Category",
       "label": "Serverless",
       "path": [
+        "Builders & Platforms",
         "Deployment Platforms",
         "Serverless"
       ],
@@ -1011,6 +1041,7 @@
       "type": "Category",
       "label": "Dev Tools",
       "path": [
+        "Dev Tools & Skills",
         "Dev Tools"
       ],
       "short_description": "Developer tooling that uses agents or supports agent development workflows.",
@@ -1022,6 +1053,7 @@
       "type": "Category",
       "label": "Repo Refactoring",
       "path": [
+        "Dev Tools & Skills",
         "Dev Tools",
         "Repo Refactoring"
       ],
@@ -1040,6 +1072,7 @@
       "type": "Category",
       "label": "Development Platforms",
       "path": [
+        "Builders & Platforms",
         "Development Platforms"
       ],
       "short_description": "End-to-end platforms for building agentic applications.",
@@ -1057,6 +1090,7 @@
       "type": "Category",
       "label": "Embedding Models",
       "path": [
+        "Models",
         "Embedding Models"
       ],
       "short_description": "Models used to produce embeddings for retrieval and RAG pipelines.",
@@ -1068,6 +1102,7 @@
       "type": "Category",
       "label": "Embedding Pipeline Orchestrators",
       "path": [
+        "Context Store",
         "Embedding Pipeline Orchestrators"
       ],
       "short_description": "Orchestration tools that manage embedding generation and ingestion pipelines.",
@@ -1079,6 +1114,7 @@
       "type": "Category",
       "label": "Engineering Platforms",
       "path": [
+        "Builders & Platforms",
         "Engineering Platforms"
       ],
       "short_description": "Platforms targeted at engineering teams building with LLMs and agents.",
@@ -1096,6 +1132,7 @@
       "type": "Category",
       "label": "Environments",
       "path": [
+        "Frameworks & Runtimes",
         "Environments"
       ],
       "short_description": "Sandboxed environments \u2014 OS, simulated worlds, virtual machines \u2014 in which agents run.",
@@ -1107,6 +1144,7 @@
       "type": "Category",
       "label": "OS",
       "path": [
+        "Frameworks & Runtimes",
         "Environments",
         "OS"
       ],
@@ -1125,6 +1163,7 @@
       "type": "Category",
       "label": "Remote Desktops",
       "path": [
+        "Frameworks & Runtimes",
         "Environments",
         "Remote Desktops"
       ],
@@ -1149,6 +1188,7 @@
       "type": "Category",
       "label": "Evals and Experiment Tracking",
       "path": [
+        "Observability",
         "Evals and Experiment Tracking"
       ],
       "short_description": "Frameworks, harnesses and platforms for evaluating agents and tracking experiments.",
@@ -1172,6 +1212,7 @@
       "type": "Category",
       "label": "Frameworks",
       "path": [
+        "Observability",
         "Evals and Experiment Tracking",
         "Frameworks"
       ],
@@ -1190,6 +1231,7 @@
       "type": "Category",
       "label": "Observability",
       "path": [
+        "Observability",
         "Evals and Experiment Tracking",
         "Observability"
       ],
@@ -1208,6 +1250,7 @@
       "type": "Category",
       "label": "Feedback Formatting",
       "path": [
+        "Prompts",
         "Feedback Formatting"
       ],
       "short_description": "Tools that shape feedback signals (tool output, user input) into forms agents can act on.",
@@ -1225,6 +1268,7 @@
       "type": "Category",
       "label": "Financial Tools",
       "path": [
+        "Actions",
         "Financial Tools"
       ],
       "short_description": "Agent-oriented tools targeted at financial workflows.",
@@ -1242,6 +1286,7 @@
       "type": "Category",
       "label": "Formatting",
       "path": [
+        "Prompts",
         "Formatting"
       ],
       "short_description": "Token-efficient serialisation and data-formatting schemes for passing structured data to and from LLMs.",
@@ -1259,6 +1304,7 @@
       "type": "Category",
       "label": "Foundations",
       "path": [
+        "Organisations",
         "Foundations"
       ],
       "short_description": "Industry foundations, consortia and non-profits shaping the agentic AI ecosystem.",
@@ -1276,6 +1322,7 @@
       "type": "Category",
       "label": "Frameworks",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks"
       ],
       "short_description": "General-purpose frameworks for building agents and agentic applications.",
@@ -1323,6 +1370,7 @@
       "type": "Category",
       "label": ".NET",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         ".NET"
       ],
@@ -1341,6 +1389,7 @@
       "type": "Category",
       "label": "Computer Use",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Computer Use"
       ],
@@ -1365,6 +1414,7 @@
       "type": "Category",
       "label": "Multiagent Orchestration",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Multiagent Orchestration"
       ],
@@ -1383,6 +1433,7 @@
       "type": "Category",
       "label": "Multimodal",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Multimodal"
       ],
@@ -1401,6 +1452,7 @@
       "type": "Category",
       "label": "Optimisation",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Optimisation"
       ],
@@ -1413,6 +1465,7 @@
       "type": "Category",
       "label": "Parallelisation",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Optimisation",
         "Parallelisation"
@@ -1432,6 +1485,7 @@
       "type": "Category",
       "label": "Social Simulations",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Social Simulations"
       ],
@@ -1456,6 +1510,7 @@
       "type": "Category",
       "label": "Stateful Design",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Stateful Design"
       ],
@@ -1474,6 +1529,7 @@
       "type": "Category",
       "label": "Voice",
       "path": [
+        "Frameworks & Runtimes",
         "Frameworks",
         "Voice"
       ],
@@ -1502,7 +1558,8 @@
       ],
       "short_description": "User-facing interfaces \u2014 web, desktop, mobile, terminal \u2014 for interacting with agents.",
       "long_description": "",
-      "examples_narrative": ""
+      "examples_narrative": "",
+      "kind": "runtime"
     },
     {
       "id": "cat:frontends/android",
@@ -1581,6 +1638,7 @@
       "type": "Category",
       "label": "Gateways",
       "path": [
+        "Inference",
         "Gateways"
       ],
       "short_description": "Gateway services that sit between agents and upstream services (LLMs, tools, data).",
@@ -1592,6 +1650,7 @@
       "type": "Category",
       "label": "Context Compression",
       "path": [
+        "Inference",
         "Gateways",
         "Context Compression"
       ],
@@ -1610,6 +1669,7 @@
       "type": "Category",
       "label": "Geopolitical Simulation",
       "path": [
+        "Simulations & Worlds",
         "Geopolitical Simulation"
       ],
       "short_description": "Simulations focused specifically on geopolitical scenarios and dynamics.",
@@ -1633,6 +1693,7 @@
       "type": "Category",
       "label": "Harnesses",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses"
       ],
       "short_description": "Execution-layer scaffolding that wraps agents for real runs \u2014 sub-agent dispatch, long-horizon coherence, checkpointing, platform-specific runtimes.",
@@ -1656,6 +1717,7 @@
       "type": "Category",
       "label": "Deep Research",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Deep Research"
       ],
@@ -1686,6 +1748,7 @@
       "type": "Category",
       "label": "LLMs",
       "path": [
+        "Models",
         "LLMs"
       ],
       "short_description": "Language models, including those trained or tuned specifically for agentic use cases.",
@@ -1703,6 +1766,7 @@
       "type": "Category",
       "label": "Agent Specific",
       "path": [
+        "Models",
         "LLMs",
         "Agent Specific"
       ],
@@ -1721,6 +1785,7 @@
       "type": "Category",
       "label": "By Use Case",
       "path": [
+        "Models",
         "LLMs",
         "By Use Case"
       ],
@@ -1733,6 +1798,7 @@
       "type": "Category",
       "label": "Computer Use",
       "path": [
+        "Models",
         "LLMs",
         "By Use Case",
         "Computer Use"
@@ -1752,6 +1818,7 @@
       "type": "Category",
       "label": "Loops",
       "path": [
+        "Frameworks & Runtimes",
         "Loops"
       ],
       "short_description": "Agent loop implementations \u2014 the core think/act/observe cycle.",
@@ -1769,6 +1836,7 @@
       "type": "Category",
       "label": "Marketplaces",
       "path": [
+        "Actions",
         "Marketplaces"
       ],
       "short_description": "Marketplaces and stores for discovering, listing, or transacting agents and agent-based services.",
@@ -1796,7 +1864,8 @@
       ],
       "short_description": "Projects in the Model Context Protocol ecosystem \u2014 servers, gateways, aggregators, clients.",
       "long_description": "",
-      "examples_narrative": ""
+      "examples_narrative": "",
+      "kind": "runtime"
     },
     {
       "id": "cat:mcp/aggregation",
@@ -1857,6 +1926,7 @@
       "type": "Category",
       "label": "Memory",
       "path": [
+        "Context Store",
         "Memory"
       ],
       "short_description": "Memory systems for agents \u2014 short-term, long-term, episodic, file-backed, graph-backed.",
@@ -1892,6 +1962,7 @@
       "type": "Category",
       "label": "File",
       "path": [
+        "Context Store",
         "Memory",
         "File"
       ],
@@ -1910,6 +1981,7 @@
       "type": "Category",
       "label": "Regressive",
       "path": [
+        "Context Store",
         "Memory",
         "Regressive"
       ],
@@ -1928,6 +2000,7 @@
       "type": "Category",
       "label": "Skills",
       "path": [
+        "Context Store",
         "Memory",
         "Skills"
       ],
@@ -1946,6 +2019,7 @@
       "type": "Category",
       "label": "Multiagent",
       "path": [
+        "Agents",
         "Multiagent"
       ],
       "short_description": "Systems built around multiple cooperating or competing agents.",
@@ -1957,6 +2031,7 @@
       "type": "Category",
       "label": "Large Scale Experiments",
       "path": [
+        "Agents",
         "Multiagent",
         "Large Scale Experiments"
       ],
@@ -1975,6 +2050,7 @@
       "type": "Category",
       "label": "Swarm Prediction",
       "path": [
+        "Agents",
         "Multiagent",
         "Swarm Prediction"
       ],
@@ -2005,6 +2081,7 @@
       "type": "Category",
       "label": "Networks",
       "path": [
+        "Agents",
         "Networks"
       ],
       "short_description": "Agent networks and directories \u2014 social/professional platforms where agents and their creators are listed and interconnected.",
@@ -2026,7 +2103,8 @@
       ],
       "short_description": "Logging, tracing and observability specifically for agent and LLM systems.",
       "long_description": "",
-      "examples_narrative": ""
+      "examples_narrative": "",
+      "kind": "runtime"
     },
     {
       "id": "proj:ragaai-catalyst",
@@ -2039,6 +2117,7 @@
       "type": "Category",
       "label": "On Device Agents",
       "path": [
+        "Builders & Platforms",
         "On Device Agents"
       ],
       "short_description": "Agents designed to run on-device, including phones, SBCs and edge hardware.",
@@ -2050,6 +2129,7 @@
       "type": "Category",
       "label": "SBCs",
       "path": [
+        "Builders & Platforms",
         "On Device Agents",
         "SBCs"
       ],
@@ -2068,6 +2148,7 @@
       "type": "Category",
       "label": "Operations",
       "path": [
+        "Observability",
         "Operations"
       ],
       "short_description": "Operational concerns for running agents in production \u2014 cost, monitoring, reliability.",
@@ -2079,6 +2160,7 @@
       "type": "Category",
       "label": "Cost Monitoring",
       "path": [
+        "Observability",
         "Operations",
         "Cost Monitoring"
       ],
@@ -2097,6 +2179,7 @@
       "type": "Category",
       "label": "Optimisation Platform",
       "path": [
+        "Builders & Platforms",
         "Optimisation Platform"
       ],
       "short_description": "Platforms focused on optimising agent/LLM pipelines.",
@@ -2114,6 +2197,7 @@
       "type": "Category",
       "label": "Orchestration",
       "path": [
+        "Frameworks & Runtimes",
         "Orchestration"
       ],
       "short_description": "Orchestration engines for coordinating agents, tools and workflows.",
@@ -2149,6 +2233,7 @@
       "type": "Category",
       "label": "Platform-Specific",
       "path": [
+        "Frameworks & Runtimes",
         "Orchestration",
         "Platform-Specific"
       ],
@@ -2173,6 +2258,7 @@
       "type": "Category",
       "label": "Personal AI",
       "path": [
+        "Context Store",
         "Personal AI"
       ],
       "short_description": "Personal AI assistants and related projects.",
@@ -2184,6 +2270,7 @@
       "type": "Category",
       "label": "Assistants",
       "path": [
+        "Context Store",
         "Personal AI",
         "Assistants"
       ],
@@ -2208,6 +2295,7 @@
       "type": "Category",
       "label": "Personification",
       "path": [
+        "Agents",
         "Personification"
       ],
       "short_description": "Tools for giving agents distinct personas, voices and identities.",
@@ -2242,6 +2330,7 @@
       "type": "Category",
       "label": "Platforms",
       "path": [
+        "Builders & Platforms",
         "Platforms"
       ],
       "short_description": "General platforms that host or enable agentic applications.",
@@ -2253,6 +2342,7 @@
       "type": "Category",
       "label": "Embodied",
       "path": [
+        "Builders & Platforms",
         "Platforms",
         "Embodied"
       ],
@@ -2271,6 +2361,7 @@
       "type": "Category",
       "label": "Proxy",
       "path": [
+        "Inference",
         "Proxy"
       ],
       "short_description": "Proxy services that sit between clients and LLM/agent backends.",
@@ -2282,6 +2373,7 @@
       "type": "Category",
       "label": "Gateways",
       "path": [
+        "Inference",
         "Proxy",
         "Gateways"
       ],
@@ -2306,6 +2398,7 @@
       "type": "Category",
       "label": "MCP to OpenAI",
       "path": [
+        "Inference",
         "Proxy",
         "MCP to OpenAI"
       ],
@@ -2324,6 +2417,7 @@
       "type": "Category",
       "label": "RAG",
       "path": [
+        "Context Store",
         "RAG"
       ],
       "short_description": "Retrieval-augmented generation engines, frameworks and components.",
@@ -2341,6 +2435,7 @@
       "type": "Category",
       "label": "Engines",
       "path": [
+        "Context Store",
         "RAG",
         "Engines"
       ],
@@ -2359,6 +2454,7 @@
       "type": "Category",
       "label": "Reinforcement Learning",
       "path": [
+        "Models",
         "Reinforcement Learning"
       ],
       "short_description": "RL frameworks and environments used to train agentic behaviour.",
@@ -2382,6 +2478,7 @@
       "type": "Category",
       "label": "Routers",
       "path": [
+        "Inference",
         "Routers"
       ],
       "short_description": "Routing layers that select between models, tools or agents based on cost, capability or intent.",
@@ -2393,6 +2490,7 @@
       "type": "Category",
       "label": "Cost Optimisation",
       "path": [
+        "Inference",
         "Routers",
         "Cost Optimisation"
       ],
@@ -2411,6 +2509,7 @@
       "type": "Category",
       "label": "Intelligent",
       "path": [
+        "Inference",
         "Routers",
         "Intelligent"
       ],
@@ -2429,6 +2528,7 @@
       "type": "Category",
       "label": "Tool Specific",
       "path": [
+        "Inference",
         "Routers",
         "Tool Specific"
       ],
@@ -2447,6 +2547,7 @@
       "type": "Category",
       "label": "Runtimes",
       "path": [
+        "Frameworks & Runtimes",
         "Runtimes"
       ],
       "short_description": "Execution runtimes \u2014 sandboxes, data layers, kernels \u2014 that host running agents.",
@@ -2464,6 +2565,7 @@
       "type": "Category",
       "label": "Data Layers",
       "path": [
+        "Frameworks & Runtimes",
         "Runtimes",
         "Data Layers"
       ],
@@ -2482,6 +2584,7 @@
       "type": "Category",
       "label": "Policy Engines",
       "path": [
+        "Frameworks & Runtimes",
         "Runtimes",
         "Policy Engines"
       ],
@@ -2500,6 +2603,7 @@
       "type": "Category",
       "label": "Sandboxes",
       "path": [
+        "Frameworks & Runtimes",
         "Runtimes",
         "Sandboxes"
       ],
@@ -2518,6 +2622,7 @@
       "type": "Category",
       "label": "SaaS Builders",
       "path": [
+        "Builders & Platforms",
         "SaaS Builders"
       ],
       "short_description": "Hosted SaaS platforms for building agents and agentic workflows, spanning no-code, visual, and code-defined paradigms.",
@@ -2529,6 +2634,7 @@
       "type": "Category",
       "label": "No Code",
       "path": [
+        "Builders & Platforms",
         "SaaS Builders",
         "No Code"
       ],
@@ -2541,6 +2647,7 @@
       "type": "Category",
       "label": "Visual Programming",
       "path": [
+        "Builders & Platforms",
         "SaaS Builders",
         "Visual Programming"
       ],
@@ -2559,6 +2666,7 @@
       "type": "Category",
       "label": "Workflow Focused",
       "path": [
+        "Builders & Platforms",
         "SaaS Builders",
         "Visual Programming",
         "Workflow Focused"
@@ -2584,6 +2692,7 @@
       "type": "Category",
       "label": "Code-Defined",
       "path": [
+        "Builders & Platforms",
         "SaaS Builders",
         "Code-Defined"
       ],
@@ -2596,6 +2705,7 @@
       "type": "Category",
       "label": "Security",
       "path": [
+        "Safety",
         "Security"
       ],
       "short_description": "Security tooling for agents: sandboxing, red teaming, defensive automation.",
@@ -2619,6 +2729,7 @@
       "type": "Category",
       "label": "Automation",
       "path": [
+        "Safety",
         "Security",
         "Automation"
       ],
@@ -2637,6 +2748,7 @@
       "type": "Category",
       "label": "Control Planes",
       "path": [
+        "Safety",
         "Security",
         "Control Planes"
       ],
@@ -2655,6 +2767,7 @@
       "type": "Category",
       "label": "Red Team",
       "path": [
+        "Safety",
         "Security",
         "Red Team"
       ],
@@ -2673,6 +2786,7 @@
       "type": "Category",
       "label": "Sandboxing",
       "path": [
+        "Safety",
         "Security",
         "Sandboxing"
       ],
@@ -2691,6 +2805,7 @@
       "type": "Category",
       "label": "Skills",
       "path": [
+        "Dev Tools & Skills",
         "Skills"
       ],
       "short_description": "Agent skills ecosystems \u2014 registries, bundles, standards, guides and package libraries.",
@@ -2708,6 +2823,7 @@
       "type": "Category",
       "label": "Bundles",
       "path": [
+        "Dev Tools & Skills",
         "Skills",
         "Bundles"
       ],
@@ -2720,6 +2836,7 @@
       "type": "Category",
       "label": "Claude Code",
       "path": [
+        "Dev Tools & Skills",
         "Skills",
         "Bundles",
         "Claude Code"
@@ -2739,6 +2856,7 @@
       "type": "Category",
       "label": "Guides",
       "path": [
+        "Dev Tools & Skills",
         "Skills",
         "Guides"
       ],
@@ -2757,6 +2875,7 @@
       "type": "Category",
       "label": "Package Library",
       "path": [
+        "Dev Tools & Skills",
         "Skills",
         "Package Library"
       ],
@@ -2775,6 +2894,7 @@
       "type": "Category",
       "label": "Registries",
       "path": [
+        "Dev Tools & Skills",
         "Skills",
         "Registries"
       ],
@@ -2793,6 +2913,7 @@
       "type": "Category",
       "label": "Standards",
       "path": [
+        "Dev Tools & Skills",
         "Skills",
         "Standards"
       ],
@@ -2811,6 +2932,7 @@
       "type": "Category",
       "label": "Societal Simulations",
       "path": [
+        "Simulations & Worlds",
         "Societal Simulations"
       ],
       "short_description": "Large-scale simulations of societies and human behaviour using agent populations.",
@@ -2828,6 +2950,7 @@
       "type": "Category",
       "label": "Software Extensions",
       "path": [
+        "Actions",
         "Software Extensions"
       ],
       "short_description": "Extensions and plugins that add agentic capabilities to existing software.",
@@ -2849,7 +2972,8 @@
       ],
       "short_description": "Proposed and emerging standards across the agentic ecosystem.",
       "long_description": "",
-      "examples_narrative": ""
+      "examples_narrative": "",
+      "kind": "meta"
     },
     {
       "id": "cat:standards/emerging-ecosystem-tied",
@@ -2934,6 +3058,7 @@
       "type": "Category",
       "label": "Starter Kits",
       "path": [
+        "Frameworks & Runtimes",
         "Starter Kits"
       ],
       "short_description": "Opinionated starter kits and templates for kicking off agentic projects.",
@@ -2945,6 +3070,7 @@
       "type": "Category",
       "label": "Social Simulations",
       "path": [
+        "Frameworks & Runtimes",
         "Starter Kits",
         "Social Simulations"
       ],
@@ -2963,6 +3089,7 @@
       "type": "Category",
       "label": "Synthesised Perspectives",
       "path": [
+        "Agents",
         "Synthesised Perspectives"
       ],
       "short_description": "Tools that synthesise multiple viewpoints or agent outputs into a unified perspective.",
@@ -2986,6 +3113,7 @@
       "type": "Category",
       "label": "Task Specific",
       "path": [
+        "Agents",
         "Task Specific"
       ],
       "short_description": "Agents and tools built for a single specific task rather than general use.",
@@ -2997,6 +3125,7 @@
       "type": "Category",
       "label": "Product Design",
       "path": [
+        "Agents",
         "Task Specific",
         "Product Design"
       ],
@@ -3111,6 +3240,7 @@
       "type": "Category",
       "label": "Trainers",
       "path": [
+        "Models",
         "Trainers"
       ],
       "short_description": "Training frameworks and tools for agent models.",
@@ -3145,6 +3275,7 @@
       "type": "Category",
       "label": "Upserting Tools",
       "path": [
+        "Actions",
         "Upserting Tools"
       ],
       "short_description": "Tools that manage upserting data into vector stores and retrieval indexes.",
@@ -3156,6 +3287,7 @@
       "type": "Category",
       "label": "UX",
       "path": [
+        "Interfaces & Workspaces",
         "UX"
       ],
       "short_description": "User-experience patterns and components specifically for agent systems.",
@@ -3167,6 +3299,7 @@
       "type": "Category",
       "label": "Human in the Loop",
       "path": [
+        "Interfaces & Workspaces",
         "UX",
         "Human in the Loop"
       ],
@@ -3191,6 +3324,7 @@
       "type": "Category",
       "label": "Vector Databases",
       "path": [
+        "Context Store",
         "Vector Databases"
       ],
       "short_description": "Vector databases used for embedding storage and similarity search.",
@@ -3208,6 +3342,7 @@
       "type": "Category",
       "label": "Voice",
       "path": [
+        "Actions",
         "Voice"
       ],
       "short_description": "Voice-first agents and voice interaction frameworks.",
@@ -3225,6 +3360,7 @@
       "type": "Category",
       "label": "Workflow Definition",
       "path": [
+        "Prompts",
         "Workflow Definition"
       ],
       "short_description": "Tools and DSLs for authoring agent workflows as first-class, portable artifacts.",
@@ -3242,6 +3378,7 @@
       "type": "Category",
       "label": "Workspaces",
       "path": [
+        "Interfaces & Workspaces",
         "Workspaces"
       ],
       "short_description": "Shared workspaces where agents and humans (or multiple agents) collaborate.",
@@ -3259,6 +3396,7 @@
       "type": "Category",
       "label": "World Generation",
       "path": [
+        "Simulations & Worlds",
         "World Generation"
       ],
       "short_description": "Tools and models for generating simulated worlds for agents to operate in.",
@@ -3276,6 +3414,7 @@
       "type": "Category",
       "label": "Android",
       "path": [
+        "Builders & Platforms",
         "On Device Agents",
         "Android"
       ],
@@ -3288,6 +3427,7 @@
       "type": "Category",
       "label": "CLI",
       "path": [
+        "Actions",
         "Computer Use",
         "CLI"
       ],
@@ -3300,6 +3440,7 @@
       "type": "Category",
       "label": "Ingestion",
       "path": [
+        "Context Store",
         "RAG",
         "Ingestion"
       ],
@@ -3312,6 +3453,7 @@
       "type": "Category",
       "label": "Debugging",
       "path": [
+        "Dev Tools & Skills",
         "Dev Tools",
         "Debugging"
       ],
@@ -3324,6 +3466,7 @@
       "type": "Category",
       "label": "IDE Integrations",
       "path": [
+        "Dev Tools & Skills",
         "Dev Tools",
         "IDE Integrations"
       ],
@@ -3336,6 +3479,7 @@
       "type": "Category",
       "label": "Integrations",
       "path": [
+        "Actions",
         "Integrations"
       ],
       "short_description": "Agent-to-SaaS connector platforms: Composio-style libraries exposing third-party APIs as agent tools.",
@@ -3347,6 +3491,7 @@
       "type": "Category",
       "label": "Semantic Search",
       "path": [
+        "Context Store",
         "Semantic Search"
       ],
       "short_description": "Semantic search tools for agents operating over codebases and local content.",
@@ -3358,6 +3503,7 @@
       "type": "Category",
       "label": "Vision UI",
       "path": [
+        "Actions",
         "Computer Use",
         "Vision UI"
       ],
@@ -3370,6 +3516,7 @@
       "type": "Category",
       "label": "MCP",
       "path": [
+        "Simulations & Worlds",
         "World Generation",
         "MCP"
       ],
@@ -3382,6 +3529,7 @@
       "type": "Category",
       "label": "Prompt Management",
       "path": [
+        "Prompts",
         "Prompt Management"
       ],
       "short_description": "Versioning, registries, and lifecycle management for prompts as first-class artifacts.",
@@ -3393,6 +3541,7 @@
       "type": "Category",
       "label": "Structured Output",
       "path": [
+        "Prompts",
         "Structured Output"
       ],
       "short_description": "Libraries that constrain LLM outputs to typed schemas, JSON, or formal grammars.",
@@ -3404,6 +3553,7 @@
       "type": "Category",
       "label": "Semantic Caching",
       "path": [
+        "Inference",
         "Semantic Caching"
       ],
       "short_description": "Cache layers that serve semantically equivalent LLM responses to cut cost and latency.",
@@ -3415,6 +3565,7 @@
       "type": "Category",
       "label": "Inference Servers",
       "path": [
+        "Inference",
         "Inference Servers"
       ],
       "short_description": "LLM inference servers and runtimes (vLLM, TGI, llama.cpp, SGLang) that agents call into.",
@@ -3426,6 +3577,7 @@
       "type": "Category",
       "label": "Synthetic Data",
       "path": [
+        "Models",
         "Synthetic Data"
       ],
       "short_description": "Tools for generating synthetic training and evaluation data for agents.",
@@ -3437,6 +3589,7 @@
       "type": "Category",
       "label": "Annotation",
       "path": [
+        "Interfaces & Workspaces",
         "Annotation"
       ],
       "short_description": "Human labeling, RLHF, and feedback-collection platforms for agent training data.",
@@ -3448,6 +3601,7 @@
       "type": "Category",
       "label": "Identity and Auth",
       "path": [
+        "Safety",
         "Identity and Auth"
       ],
       "short_description": "Agent identity, credential vaulting, and delegated authentication for tool access.",
@@ -3459,6 +3613,7 @@
       "type": "Category",
       "label": "PII and Redaction",
       "path": [
+        "Safety",
         "PII and Redaction"
       ],
       "short_description": "PII detection, content sanitization, and safety filtering for agent I/O.",
@@ -3470,6 +3625,7 @@
       "type": "Category",
       "label": "Agent Analytics",
       "path": [
+        "Observability",
         "Agent Analytics"
       ],
       "short_description": "Product analytics for agent behaviour: funnels, retention, conversation quality, task success.",
@@ -3481,6 +3637,7 @@
       "type": "Category",
       "label": "Guardrails",
       "path": [
+        "Safety",
         "Guardrails"
       ],
       "short_description": "Guardrails and pre-execution safety checks that gate what running agents can do.",
@@ -3504,6 +3661,7 @@
       "type": "Category",
       "label": "Sub-agent Dispatch",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Sub-agent Dispatch"
       ],
@@ -3516,6 +3674,7 @@
       "type": "Category",
       "label": "Checkpointing",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Checkpointing"
       ],
@@ -3528,6 +3687,7 @@
       "type": "Category",
       "label": "Task Coherence",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Task Coherence"
       ],
@@ -3540,6 +3700,7 @@
       "type": "Category",
       "label": "Retry and Recovery",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Retry and Recovery"
       ],
@@ -3552,6 +3713,7 @@
       "type": "Category",
       "label": "Context Compression",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Context Compression"
       ],
@@ -3564,6 +3726,7 @@
       "type": "Category",
       "label": "Platform Specific",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Platform Specific"
       ],
@@ -3576,11 +3739,515 @@
       "type": "Category",
       "label": "macOS",
       "path": [
+        "Frameworks & Runtimes",
         "Harnesses",
         "Platform Specific",
         "macOS"
       ],
       "short_description": "Harnesses that run agents natively on macOS.",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:prompts",
+      "type": "Category",
+      "label": "Prompts",
+      "path": [
+        "Prompts"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:models",
+      "type": "Category",
+      "label": "Models",
+      "path": [
+        "Models"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:inference",
+      "type": "Category",
+      "label": "Inference",
+      "path": [
+        "Inference"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:actions",
+      "type": "Category",
+      "label": "Actions",
+      "path": [
+        "Actions"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:grounding",
+      "type": "Category",
+      "label": "Grounding",
+      "path": [
+        "Grounding"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:grounding-tools",
+      "type": "Category",
+      "label": "Grounding Tools",
+      "path": [
+        "Grounding",
+        "Grounding Tools"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:search-utilities",
+      "type": "Category",
+      "label": "Search Utilities",
+      "path": [
+        "Grounding",
+        "Search Utilities"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:context-store",
+      "type": "Category",
+      "label": "Context Store",
+      "path": [
+        "Context Store"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:session-state-management",
+      "type": "Category",
+      "label": "Session State Management",
+      "path": [
+        "Context Store",
+        "Session State Management"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:context-optimisation",
+      "type": "Category",
+      "label": "Context Optimisation",
+      "path": [
+        "Context Store",
+        "Context Optimisation"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:in-thread-truncation",
+      "type": "Category",
+      "label": "In-Thread Truncation",
+      "path": [
+        "Context Store",
+        "Context Optimisation",
+        "In-Thread Truncation"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:cross-thread-compression",
+      "type": "Category",
+      "label": "Cross-Thread Compression",
+      "path": [
+        "Context Store",
+        "Context Optimisation",
+        "Cross-Thread Compression"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:storage",
+      "type": "Category",
+      "label": "Storage",
+      "path": [
+        "Storage"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:desktop-clients",
+      "type": "Category",
+      "label": "Desktop Clients",
+      "path": [
+        "Frontends",
+        "Desktop Clients"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:windows",
+      "type": "Category",
+      "label": "Windows",
+      "path": [
+        "Frontends",
+        "Desktop Clients",
+        "Windows"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:macos",
+      "type": "Category",
+      "label": "macOS",
+      "path": [
+        "Frontends",
+        "Desktop Clients",
+        "macOS"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:linux",
+      "type": "Category",
+      "label": "Linux",
+      "path": [
+        "Frontends",
+        "Desktop Clients",
+        "Linux"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:cross-platform",
+      "type": "Category",
+      "label": "Cross-Platform",
+      "path": [
+        "Frontends",
+        "Desktop Clients",
+        "Cross-Platform"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:mobile-clients",
+      "type": "Category",
+      "label": "Mobile Clients",
+      "path": [
+        "Frontends",
+        "Mobile Clients"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:android",
+      "type": "Category",
+      "label": "Android",
+      "path": [
+        "Frontends",
+        "Mobile Clients",
+        "Android"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:ios",
+      "type": "Category",
+      "label": "iOS",
+      "path": [
+        "Frontends",
+        "Mobile Clients",
+        "iOS"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:web-clients",
+      "type": "Category",
+      "label": "Web Clients",
+      "path": [
+        "Frontends",
+        "Web Clients"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:terminal-clients",
+      "type": "Category",
+      "label": "Terminal Clients",
+      "path": [
+        "Frontends",
+        "Terminal Clients"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:server-software",
+      "type": "Category",
+      "label": "Server Software",
+      "path": [
+        "Frontends",
+        "Server Software"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:safety",
+      "type": "Category",
+      "label": "Safety",
+      "path": [
+        "Safety"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:human-in-the-loop",
+      "type": "Category",
+      "label": "Human in the Loop",
+      "path": [
+        "Safety",
+        "Human in the Loop"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:agent-in-the-loop",
+      "type": "Category",
+      "label": "Agent in the Loop",
+      "path": [
+        "Safety",
+        "Agent in the Loop"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:destinations",
+      "type": "Category",
+      "label": "Destinations",
+      "path": [
+        "Destinations"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "runtime"
+    },
+    {
+      "id": "cat:frameworks-runtimes",
+      "type": "Category",
+      "label": "Frameworks & Runtimes",
+      "path": [
+        "Frameworks & Runtimes"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "meta"
+    },
+    {
+      "id": "cat:builders-platforms",
+      "type": "Category",
+      "label": "Builders & Platforms",
+      "path": [
+        "Builders & Platforms"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "meta"
+    },
+    {
+      "id": "cat:interfaces-workspaces",
+      "type": "Category",
+      "label": "Interfaces & Workspaces",
+      "path": [
+        "Interfaces & Workspaces"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "meta"
+    },
+    {
+      "id": "cat:dev-tools-skills",
+      "type": "Category",
+      "label": "Dev Tools & Skills",
+      "path": [
+        "Dev Tools & Skills"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "meta"
+    },
+    {
+      "id": "cat:simulations-worlds",
+      "type": "Category",
+      "label": "Simulations & Worlds",
+      "path": [
+        "Simulations & Worlds"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "meta"
+    },
+    {
+      "id": "cat:character-roleplay",
+      "type": "Category",
+      "label": "Character & Roleplay",
+      "path": [
+        "Simulations & Worlds",
+        "Character & Roleplay"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:character-definition",
+      "type": "Category",
+      "label": "Character Definition",
+      "path": [
+        "Simulations & Worlds",
+        "Character & Roleplay",
+        "Character Definition"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:lore-worldbuilding",
+      "type": "Category",
+      "label": "Lore & Worldbuilding",
+      "path": [
+        "Simulations & Worlds",
+        "Character & Roleplay",
+        "Lore & Worldbuilding"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:roleplay-runtimes",
+      "type": "Category",
+      "label": "Roleplay Runtimes",
+      "path": [
+        "Simulations & Worlds",
+        "Character & Roleplay",
+        "Roleplay Runtimes"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:organisations",
+      "type": "Category",
+      "label": "Organisations",
+      "path": [
+        "Organisations"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": "",
+      "kind": "meta"
+    },
+    {
+      "id": "cat:companies",
+      "type": "Category",
+      "label": "Companies",
+      "path": [
+        "Organisations",
+        "Companies"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:government-bodies",
+      "type": "Category",
+      "label": "Government Bodies",
+      "path": [
+        "Organisations",
+        "Government Bodies"
+      ],
+      "short_description": "",
+      "long_description": "",
+      "examples_narrative": ""
+    },
+    {
+      "id": "cat:foundations-consortia",
+      "type": "Category",
+      "label": "Foundations & Consortia",
+      "path": [
+        "Organisations",
+        "Foundations & Consortia"
+      ],
+      "short_description": "",
       "long_description": "",
       "examples_narrative": ""
     }
