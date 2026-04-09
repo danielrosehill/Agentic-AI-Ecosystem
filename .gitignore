@@ -5,3 +5,4 @@ proposals.json
 .DS_Store
 mkdocs_src/
 site/
+docs/

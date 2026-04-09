@@ -8,6 +8,41 @@ edit_uri: ""
 docs_dir: mkdocs_src
 site_dir: docs
 
+# Only list the pages we want in the sidebar/top tabs. Deep category pages
+# are still built (they live under docs_dir) and are reachable via URL and
+# the in-page sub-nav block; they are intentionally omitted from `nav` so
+# the sidebar stays flat at the top-level domains.
+nav:
+  - Home: index.md
+  - Explore:
+    - Agents: agents/index.md
+    - Builders & Platforms: builders-platforms/index.md
+    - Context, Memory & Data: context-memory-data/index.md
+    - Dev Tools & Skills: dev-tools-skills/index.md
+    - Ecosystem: ecosystem/index.md
+    - Frameworks & Runtimes: frameworks-runtimes/index.md
+    - Interfaces: interfaces/index.md
+    - Models & Inference: models-inference/index.md
+    - Observability & Evals: observability-evals/index.md
+    - Safety & Governance: safety-governance/index.md
+    - Tools & Integrations: tools-integrations/index.md
+  - About:
+    - Overview: about/index.md
+    - Schema: about/schema.md
+
+not_in_nav: |
+  /agents/**/*
+  /builders-platforms/**/*
+  /context-memory-data/**/*
+  /dev-tools-skills/**/*
+  /ecosystem/**/*
+  /frameworks-runtimes/**/*
+  /interfaces/**/*
+  /models-inference/**/*
+  /observability-evals/**/*
+  /safety-governance/**/*
+  /tools-integrations/**/*
+
 theme:
   name: material
   palette:
@@ -29,11 +64,8 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - navigation.indexes
+    - navigation.tabs.sticky
     - navigation.top
-    - toc.integrate
     - search.suggest
     - search.highlight
     - search.share
@@ -43,7 +75,6 @@ theme:
 
 plugins:
   - search
-  - awesome-pages
 
 markdown_extensions:
   - admonition
@@ -53,8 +84,12 @@ markdown_extensions:
       permalink: true
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 extra:
   social:
