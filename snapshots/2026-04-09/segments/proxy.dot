@@ -1,0 +1,16 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Proxy", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:proxy" [label="Proxy", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Proxy services that sit between clients and LLM/agent backends."];
+  "cat:proxy/gateways" [label="Gateways", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Gateway services that sit between agents and upstream services (LLMs, tools, data)."];
+  "proj:agentgateway" [label="agentgateway", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/agentgateway/agentgateway", URL="https://github.com/agentgateway/agentgateway"];
+  "proj:litellm" [label="litellm", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/BerriAI/litellm", URL="https://github.com/BerriAI/litellm"];
+  "cat:proxy/mcp-to-openai" [label="MCP to OpenAI", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:mcpo" [label="mcpo", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/open-webui/mcpo", URL="https://github.com/open-webui/mcpo"];
+  "cat:proxy" -> "cat:proxy/gateways";
+  "cat:proxy/gateways" -> "proj:agentgateway";
+  "cat:proxy/gateways" -> "proj:litellm";
+  "cat:proxy" -> "cat:proxy/mcp-to-openai";
+  "cat:proxy/mcp-to-openai" -> "proj:mcpo";
+}

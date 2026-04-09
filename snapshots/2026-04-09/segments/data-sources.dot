@@ -1,0 +1,10 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Data Sources", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:data-sources" [label="Data Sources", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Curated data feeds and providers that agents can draw on."];
+  "cat:data-sources/financial" [label="Financial", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:openbb" [label="OpenBB", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/OpenBB-finance/OpenBB", URL="https://github.com/OpenBB-finance/OpenBB"];
+  "cat:data-sources" -> "cat:data-sources/financial";
+  "cat:data-sources/financial" -> "proj:openbb";
+}

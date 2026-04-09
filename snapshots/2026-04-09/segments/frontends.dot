@@ -1,0 +1,22 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Frontends", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:frontends" [label="Frontends", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="User-facing interfaces — web, desktop, mobile, terminal — for interacting with agents."];
+  "cat:frontends/android" [label="Android", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:operit" [label="Operit", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/AAswordman/Operit", URL="https://github.com/AAswordman/Operit"];
+  "cat:frontends/chat-uis" [label="Chat UIs", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:agent-ui" [label="agent-ui", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/agno-agi/agent-ui", URL="https://github.com/agno-agi/agent-ui"];
+  "cat:frontends/guis-and-clis" [label="GUIs and CLIs", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:goose" [label="goose", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/aaif-goose/goose", URL="https://github.com/aaif-goose/goose"];
+  "cat:frontends/tuis-and-clis" [label="TUIs and CLIs", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:agent-deck" [label="agent-deck", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/asheshgoplani/agent-deck", URL="https://github.com/asheshgoplani/agent-deck"];
+  "cat:frontends" -> "cat:frontends/android";
+  "cat:frontends/android" -> "proj:operit";
+  "cat:frontends" -> "cat:frontends/chat-uis";
+  "cat:frontends/chat-uis" -> "proj:agent-ui";
+  "cat:frontends" -> "cat:frontends/guis-and-clis";
+  "cat:frontends/guis-and-clis" -> "proj:goose";
+  "cat:frontends" -> "cat:frontends/tuis-and-clis";
+  "cat:frontends/tuis-and-clis" -> "proj:agent-deck";
+}

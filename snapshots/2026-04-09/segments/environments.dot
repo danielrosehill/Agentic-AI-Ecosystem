@@ -1,0 +1,16 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Environments", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:environments" [label="Environments", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Sandboxed environments — OS, simulated worlds, virtual machines — in which agents run."];
+  "cat:environments/os" [label="OS", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:agent-os" [label="agent-os", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/rivet-dev/agent-os", URL="https://github.com/rivet-dev/agent-os"];
+  "cat:environments/remote-desktops" [label="Remote Desktops", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Hosted remote desktop / VM services providing agents with a persistent GUI environment to operate."];
+  "proj:abacus-desktop" [label="Abacus Desktop", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://desktop.abacus.ai/", URL="https://desktop.abacus.ai/"];
+  "proj:cua-ai" [label="cua.ai", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://cua.ai/", URL="https://cua.ai/"];
+  "cat:environments" -> "cat:environments/os";
+  "cat:environments/os" -> "proj:agent-os";
+  "cat:environments" -> "cat:environments/remote-desktops";
+  "cat:environments/remote-desktops" -> "proj:abacus-desktop";
+  "cat:environments/remote-desktops" -> "proj:cua-ai";
+}

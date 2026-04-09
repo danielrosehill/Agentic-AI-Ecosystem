@@ -1,0 +1,20 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Runtimes", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:runtimes" [label="Runtimes", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="Execution runtimes — sandboxes, data layers, kernels — that host running agents."];
+  "proj:openshell" [label="OpenShell", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/NVIDIA/OpenShell", URL="https://github.com/NVIDIA/OpenShell"];
+  "cat:runtimes/data-layers" [label="Data Layers", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:deeplake" [label="deeplake", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/activeloopai/deeplake", URL="https://github.com/activeloopai/deeplake"];
+  "cat:runtimes/policy-engines" [label="Policy Engines", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Runtime policy engines that evaluate and enforce rules on agent actions."];
+  "proj:aegis" [label="Aegis", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Justin0504/Aegis", URL="https://github.com/Justin0504/Aegis"];
+  "cat:runtimes/sandboxes" [label="Sandboxes", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:opensandbox" [label="OpenSandbox", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/alibaba/OpenSandbox", URL="https://github.com/alibaba/OpenSandbox"];
+  "cat:runtimes" -> "proj:openshell";
+  "cat:runtimes" -> "cat:runtimes/data-layers";
+  "cat:runtimes/data-layers" -> "proj:deeplake";
+  "cat:runtimes" -> "cat:runtimes/policy-engines";
+  "cat:runtimes/policy-engines" -> "proj:aegis";
+  "cat:runtimes" -> "cat:runtimes/sandboxes";
+  "cat:runtimes/sandboxes" -> "proj:opensandbox";
+}

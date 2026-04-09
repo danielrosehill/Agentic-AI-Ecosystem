@@ -1,0 +1,18 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Evals and Experiment Tracking", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:evals-and-experiment-tracking" [label="Evals and Experiment Tracking", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="Frameworks, harnesses and platforms for evaluating agents and tracking experiments."];
+  "proj:trulens" [label="trulens", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/truera/trulens", URL="https://github.com/truera/trulens"];
+  "proj:langwatch" [label="langwatch", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/langwatch/langwatch", URL="https://github.com/langwatch/langwatch"];
+  "cat:evals-and-experiment-tracking/frameworks" [label="Frameworks", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="General-purpose frameworks for building agents and agentic applications."];
+  "proj:deepeval" [label="deepeval", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/confident-ai/deepeval", URL="https://github.com/confident-ai/deepeval"];
+  "cat:evals-and-experiment-tracking/observability" [label="Observability", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Logging, tracing and observability specifically for agent and LLM systems."];
+  "proj:langfuse" [label="langfuse", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/langfuse/langfuse", URL="https://github.com/langfuse/langfuse"];
+  "cat:evals-and-experiment-tracking" -> "proj:trulens";
+  "cat:evals-and-experiment-tracking" -> "proj:langwatch";
+  "cat:evals-and-experiment-tracking" -> "cat:evals-and-experiment-tracking/frameworks";
+  "cat:evals-and-experiment-tracking/frameworks" -> "proj:deepeval";
+  "cat:evals-and-experiment-tracking" -> "cat:evals-and-experiment-tracking/observability";
+  "cat:evals-and-experiment-tracking/observability" -> "proj:langfuse";
+}

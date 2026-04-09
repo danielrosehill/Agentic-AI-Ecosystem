@@ -1,0 +1,18 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Agent to Agent", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:agent-to-agent" [label="Agent to Agent", shape=circle, fillcolor="#6aa9ff", width=0.78, height=0.78, fontsize=10, tooltip="Communication protocols and transports that let agents talk directly to other agents."];
+  "proj:openagents" [label="openagents", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/openagents-org/openagents", URL="https://github.com/openagents-org/openagents"];
+  "proj:agentchattr" [label="agentchattr", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/bcurts/agentchattr", URL="https://github.com/bcurts/agentchattr"];
+  "proj:connectonion" [label="connectonion", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/openonion/connectonion", URL="https://github.com/openonion/connectonion"];
+  "cat:agent-to-agent/experiments" [label="Experiments", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "cat:agent-to-agent/experiments/voices" [label="Voices", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:gibberlink" [label="gibberlink", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/PennyroyalTea/gibberlink", URL="https://github.com/PennyroyalTea/gibberlink"];
+  "cat:agent-to-agent" -> "proj:openagents";
+  "cat:agent-to-agent" -> "proj:agentchattr";
+  "cat:agent-to-agent" -> "proj:connectonion";
+  "cat:agent-to-agent" -> "cat:agent-to-agent/experiments";
+  "cat:agent-to-agent/experiments" -> "cat:agent-to-agent/experiments/voices";
+  "cat:agent-to-agent/experiments/voices" -> "proj:gibberlink";
+}

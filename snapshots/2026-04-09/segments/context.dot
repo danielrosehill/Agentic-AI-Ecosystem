@@ -1,0 +1,32 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Context", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:context" [label="Context", shape=circle, fillcolor="#6aa9ff", width=0.99, height=0.99, fontsize=10, tooltip="Tools for building, optimising, managing and visualising the context window supplied to LLMs."];
+  "proj:promptx" [label="PromptX", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Deepractice/PromptX", URL="https://github.com/Deepractice/PromptX"];
+  "proj:weknora" [label="WeKnora", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Tencent/WeKnora", URL="https://github.com/Tencent/WeKnora"];
+  "cat:context/context-optimisation" [label="Context Optimisation", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:context-mode" [label="context-mode", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/mksglu/context-mode", URL="https://github.com/mksglu/context-mode"];
+  "cat:context/engines" [label="Engines", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:contexto" [label="contexto", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/ekailabs/contexto", URL="https://github.com/ekailabs/contexto"];
+  "cat:context/frontend-tools" [label="Frontend Tools", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:react-grab" [label="react-grab", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/aidenybai/react-grab", URL="https://github.com/aidenybai/react-grab"];
+  "cat:context/tools" [label="Tools", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Utility tools, SDKs and toolkits for building, debugging and extending agentic systems."];
+  "cat:context/tools/context-managers" [label="Context Managers", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:dotai" [label="dotai", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/udecode/dotai", URL="https://github.com/udecode/dotai"];
+  "cat:context/visualisation" [label="Visualisation", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:context-lens" [label="context-lens", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/larsderidder/context-lens", URL="https://github.com/larsderidder/context-lens"];
+  "cat:context" -> "proj:promptx";
+  "cat:context" -> "proj:weknora";
+  "cat:context" -> "cat:context/context-optimisation";
+  "cat:context/context-optimisation" -> "proj:context-mode";
+  "cat:context" -> "cat:context/engines";
+  "cat:context/engines" -> "proj:contexto";
+  "cat:context" -> "cat:context/frontend-tools";
+  "cat:context/frontend-tools" -> "proj:react-grab";
+  "cat:context" -> "cat:context/tools";
+  "cat:context/tools" -> "cat:context/tools/context-managers";
+  "cat:context/tools/context-managers" -> "proj:dotai";
+  "cat:context" -> "cat:context/visualisation";
+  "cat:context/visualisation" -> "proj:context-lens";
+}

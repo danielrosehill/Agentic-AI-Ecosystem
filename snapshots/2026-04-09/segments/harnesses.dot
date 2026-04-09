@@ -1,0 +1,22 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Harnesses", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:harnesses" [label="Harnesses", shape=circle, fillcolor="#6aa9ff", width=0.85, height=0.85, fontsize=10, tooltip="Test harnesses and runner frameworks that host and exercise agents."];
+  "proj:hive" [label="hive", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/aden-hive/hive", URL="https://github.com/aden-hive/hive"];
+  "proj:oh-my-openagent" [label="oh-my-openagent", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/code-yeongyu/oh-my-openagent", URL="https://github.com/code-yeongyu/oh-my-openagent"];
+  "cat:harnesses/deep-research" [label="Deep Research", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:deepagents" [label="deepagents", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/langchain-ai/deepagents", URL="https://github.com/langchain-ai/deepagents"];
+  "cat:harnesses/guardrails" [label="Guardrails", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Guardrails and pre-execution safety checks that gate what running agents can do."];
+  "proj:shellfirm" [label="shellfirm", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/kaplanelad/shellfirm", URL="https://github.com/kaplanelad/shellfirm"];
+  "cat:harnesses/macos" [label="macOS", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Harnesses that run agents natively on macOS."];
+  "proj:osaurus" [label="osaurus", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/osaurus-ai/osaurus", URL="https://github.com/osaurus-ai/osaurus"];
+  "cat:harnesses" -> "proj:hive";
+  "cat:harnesses" -> "proj:oh-my-openagent";
+  "cat:harnesses" -> "cat:harnesses/deep-research";
+  "cat:harnesses/deep-research" -> "proj:deepagents";
+  "cat:harnesses" -> "cat:harnesses/guardrails";
+  "cat:harnesses/guardrails" -> "proj:shellfirm";
+  "cat:harnesses" -> "cat:harnesses/macos";
+  "cat:harnesses/macos" -> "proj:osaurus";
+}

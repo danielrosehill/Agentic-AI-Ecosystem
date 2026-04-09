@@ -1,0 +1,10 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Task Specific", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:task-specific" [label="Task Specific", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Agents and tools built for a single specific task rather than general use."];
+  "cat:task-specific/product-design" [label="Product Design", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:superdesign" [label="superdesign", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/superdesigndev/superdesign", URL="https://github.com/superdesigndev/superdesign"];
+  "cat:task-specific" -> "cat:task-specific/product-design";
+  "cat:task-specific/product-design" -> "proj:superdesign";
+}

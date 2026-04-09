@@ -1,0 +1,14 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="AI Browsers", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:ai-browsers" [label="AI Browsers", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Browsers built or adapted specifically for AI agent use, including headless variants optimised for programmatic navigation."];
+  "proj:browseros" [label="BrowserOS", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/browseros-ai/BrowserOS", URL="https://github.com/browseros-ai/BrowserOS"];
+  "cat:ai-browsers/headless" [label="Headless", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip=""];
+  "proj:lightpanda-browser" [label="Lightpanda Browser", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/lightpanda-io/browser", URL="https://github.com/lightpanda-io/browser"];
+  "proj:steel-browser" [label="Steel Browser", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/steel-dev/steel-browser", URL="https://github.com/steel-dev/steel-browser"];
+  "cat:ai-browsers" -> "proj:browseros";
+  "cat:ai-browsers" -> "cat:ai-browsers/headless";
+  "cat:ai-browsers/headless" -> "proj:lightpanda-browser";
+  "cat:ai-browsers/headless" -> "proj:steel-browser";
+}

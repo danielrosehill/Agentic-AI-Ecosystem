@@ -1,0 +1,10 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Dev Tools", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:dev-tools" [label="Dev Tools", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Developer tooling that uses agents or supports agent development workflows."];
+  "cat:dev-tools/repo-refactoring" [label="Repo Refactoring", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:agentrc" [label="agentrc", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/microsoft/agentrc", URL="https://github.com/microsoft/agentrc"];
+  "cat:dev-tools" -> "cat:dev-tools/repo-refactoring";
+  "cat:dev-tools/repo-refactoring" -> "proj:agentrc";
+}

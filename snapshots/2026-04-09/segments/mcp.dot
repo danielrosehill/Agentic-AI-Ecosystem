@@ -1,0 +1,18 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="MCP", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:mcp" [label="MCP", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Projects in the Model Context Protocol ecosystem — servers, gateways, aggregators, clients."];
+  "cat:mcp/aggregation" [label="Aggregation", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:klavis" [label="klavis", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Klavis-AI/klavis", URL="https://github.com/Klavis-AI/klavis"];
+  "cat:mcp/gateways" [label="Gateways", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Gateway services that sit between agents and upstream services (LLMs, tools, data)."];
+  "proj:mcp-context-forge" [label="mcp-context-forge", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/IBM/mcp-context-forge", URL="https://github.com/IBM/mcp-context-forge"];
+  "cat:mcp/third-party" [label="Third Party", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:mcp-server-airbnb" [label="mcp-server-airbnb", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/openbnb-org/mcp-server-airbnb", URL="https://github.com/openbnb-org/mcp-server-airbnb"];
+  "cat:mcp" -> "cat:mcp/aggregation";
+  "cat:mcp/aggregation" -> "proj:klavis";
+  "cat:mcp" -> "cat:mcp/gateways";
+  "cat:mcp/gateways" -> "proj:mcp-context-forge";
+  "cat:mcp" -> "cat:mcp/third-party";
+  "cat:mcp/third-party" -> "proj:mcp-server-airbnb";
+}

@@ -1,0 +1,10 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Deployment Platforms", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:deployment-platforms" [label="Deployment Platforms", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Platforms for deploying and hosting agents and agentic services."];
+  "cat:deployment-platforms/serverless" [label="Serverless", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:julep" [label="julep", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/julep-ai/julep", URL="https://github.com/julep-ai/julep"];
+  "cat:deployment-platforms" -> "cat:deployment-platforms/serverless";
+  "cat:deployment-platforms/serverless" -> "proj:julep";
+}

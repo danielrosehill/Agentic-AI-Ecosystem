@@ -1,0 +1,8 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Trainers", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:trainers" [label="Trainers", shape=circle, fillcolor="#6aa9ff", width=0.57, height=0.57, fontsize=10, tooltip="Training frameworks and tools for agent models."];
+  "proj:agent-lightning" [label="agent-lightning", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/microsoft/agent-lightning", URL="https://github.com/microsoft/agent-lightning"];
+  "cat:trainers" -> "proj:agent-lightning";
+}

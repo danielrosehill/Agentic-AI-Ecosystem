@@ -1,0 +1,30 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Skills", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:skills" [label="Skills", shape=circle, fillcolor="#6aa9ff", width=0.92, height=0.92, fontsize=10, tooltip="Agent skills ecosystems — registries, bundles, standards, guides and package libraries."];
+  "proj:agent-skills" [label="agent-skills", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/addyosmani/agent-skills", URL="https://github.com/addyosmani/agent-skills"];
+  "cat:skills/bundles" [label="Bundles", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "cat:skills/bundles/claude-code" [label="Claude Code", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:marketingskills" [label="marketingskills", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/coreyhaines31/marketingskills", URL="https://github.com/coreyhaines31/marketingskills"];
+  "cat:skills/guides" [label="Guides", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:taste-skill" [label="taste-skill", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/Leonxlnx/taste-skill", URL="https://github.com/Leonxlnx/taste-skill"];
+  "cat:skills/package-library" [label="Package Library", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:vercel-labs-skills" [label="vercel-labs/skills", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/vercel-labs/skills", URL="https://github.com/vercel-labs/skills"];
+  "cat:skills/registries" [label="Registries", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:agent-skills-tech-leads-club" [label="agent-skills (tech-leads-club)", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/tech-leads-club/agent-skills", URL="https://github.com/tech-leads-club/agent-skills"];
+  "cat:skills/standards" [label="Standards", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Proposed and emerging standards across the agentic ecosystem."];
+  "proj:agentskills" [label="agentskills", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/agentskills/agentskills", URL="https://github.com/agentskills/agentskills"];
+  "cat:skills" -> "proj:agent-skills";
+  "cat:skills" -> "cat:skills/bundles";
+  "cat:skills/bundles" -> "cat:skills/bundles/claude-code";
+  "cat:skills/bundles/claude-code" -> "proj:marketingskills";
+  "cat:skills" -> "cat:skills/guides";
+  "cat:skills/guides" -> "proj:taste-skill";
+  "cat:skills" -> "cat:skills/package-library";
+  "cat:skills/package-library" -> "proj:vercel-labs-skills";
+  "cat:skills" -> "cat:skills/registries";
+  "cat:skills/registries" -> "proj:agent-skills-tech-leads-club";
+  "cat:skills" -> "cat:skills/standards";
+  "cat:skills/standards" -> "proj:agentskills";
+}

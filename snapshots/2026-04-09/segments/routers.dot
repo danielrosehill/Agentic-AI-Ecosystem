@@ -1,0 +1,18 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Routers", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:routers" [label="Routers", shape=circle, fillcolor="#6aa9ff", width=0.71, height=0.71, fontsize=10, tooltip="Routing layers that select between models, tools or agents based on cost, capability or intent."];
+  "cat:routers/cost-optimisation" [label="Cost Optimisation", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:relayplane-proxy" [label="RelayPlane proxy", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/RelayPlane/proxy", URL="https://github.com/RelayPlane/proxy"];
+  "cat:routers/intelligent" [label="Intelligent", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:semantic-router" [label="semantic-router", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/vllm-project/semantic-router", URL="https://github.com/vllm-project/semantic-router"];
+  "cat:routers/tool-specific" [label="Tool Specific", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:clawrouter" [label="ClawRouter", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/BlockRunAI/ClawRouter", URL="https://github.com/BlockRunAI/ClawRouter"];
+  "cat:routers" -> "cat:routers/cost-optimisation";
+  "cat:routers/cost-optimisation" -> "proj:relayplane-proxy";
+  "cat:routers" -> "cat:routers/intelligent";
+  "cat:routers/intelligent" -> "proj:semantic-router";
+  "cat:routers" -> "cat:routers/tool-specific";
+  "cat:routers/tool-specific" -> "proj:clawrouter";
+}

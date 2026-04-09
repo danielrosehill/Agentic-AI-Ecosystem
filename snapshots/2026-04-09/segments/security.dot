@@ -1,0 +1,26 @@
+digraph G {
+  graph [layout=dot, overlap=false, splines=true, bgcolor="#f7f8fa", fontname="Helvetica", labelloc="t", label="Security", fontsize=22, pad=0.4];
+  node [fontname="Helvetica", style="filled", penwidth=0, fontcolor="#1a1f2c"];
+  edge [color="#c8cfdb", arrowsize=0.5, penwidth=0.8];
+  "cat:security" [label="Security", shape=circle, fillcolor="#6aa9ff", width=0.92, height=0.92, fontsize=10, tooltip="Security tooling for agents: sandboxing, red teaming, defensive automation."];
+  "proj:agent-scan" [label="agent-scan", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/snyk/agent-scan", URL="https://github.com/snyk/agent-scan"];
+  "proj:agentguard" [label="agentguard", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/GoPlusSecurity/agentguard", URL="https://github.com/GoPlusSecurity/agentguard"];
+  "cat:security/automation" [label="Automation", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="General-purpose automation tools and frameworks, including GUI-driven and script-driven flows."];
+  "proj:tracecat" [label="tracecat", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/TracecatHQ/tracecat", URL="https://github.com/TracecatHQ/tracecat"];
+  "cat:security/control-planes" [label="Control Planes", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip="Centralised control planes for governing, auditing, and enforcing policy across agent fleets."];
+  "proj:cordum" [label="cordum", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/cordum-io/cordum", URL="https://github.com/cordum-io/cordum"];
+  "cat:security/red-team" [label="Red Team", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:rogue" [label="rogue", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/qualifire-dev/rogue", URL="https://github.com/qualifire-dev/rogue"];
+  "cat:security/sandboxing" [label="Sandboxing", shape=circle, fillcolor="#6aa9ff", width=0.64, height=0.64, fontsize=10, tooltip=""];
+  "proj:microsandbox" [label="microsandbox", shape=diamond, fillcolor="#f59e0b", width=0.40, height=0.40, fontsize=9, tooltip="https://github.com/superradcompany/microsandbox", URL="https://github.com/superradcompany/microsandbox"];
+  "cat:security" -> "proj:agent-scan";
+  "cat:security" -> "proj:agentguard";
+  "cat:security" -> "cat:security/automation";
+  "cat:security/automation" -> "proj:tracecat";
+  "cat:security" -> "cat:security/control-planes";
+  "cat:security/control-planes" -> "proj:cordum";
+  "cat:security" -> "cat:security/red-team";
+  "cat:security/red-team" -> "proj:rogue";
+  "cat:security" -> "cat:security/sandboxing";
+  "cat:security/sandboxing" -> "proj:microsandbox";
+}
