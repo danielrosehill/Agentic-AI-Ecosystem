@@ -15,7 +15,7 @@
     {
       "id": "proj:intentkit",
       "type": "Project",
-      "label": "intentkit",
+      "label": "IntentKit",
       "url": "https://github.com/crestalnetwork/intentkit"
     },
     {
@@ -49,19 +49,19 @@
     {
       "id": "proj:openagents",
       "type": "Project",
-      "label": "openagents",
+      "label": "OpenAgents",
       "url": "https://github.com/openagents-org/openagents"
     },
     {
       "id": "proj:agentchattr",
       "type": "Project",
-      "label": "agentchattr",
+      "label": "AgentChattr",
       "url": "https://github.com/bcurts/agentchattr"
     },
     {
       "id": "proj:connectonion",
       "type": "Project",
-      "label": "connectonion",
+      "label": "ConnectOnion",
       "url": "https://github.com/openonion/connectonion"
     },
     {
@@ -92,7 +92,7 @@
     {
       "id": "proj:gibberlink",
       "type": "Project",
-      "label": "gibberlink",
+      "label": "Gibberlink",
       "url": "https://github.com/PennyroyalTea/gibberlink"
     },
     {
@@ -121,7 +121,7 @@
     {
       "id": "proj:mcp-agent-mail",
       "type": "Project",
-      "label": "mcp_agent_mail",
+      "label": "MCP Agent Mail",
       "url": "https://github.com/Dicklesworthstone/mcp_agent_mail"
     },
     {
@@ -138,7 +138,7 @@
     {
       "id": "proj:xataio-agent",
       "type": "Project",
-      "label": "xataio/agent",
+      "label": "Xata Agent",
       "url": "https://github.com/xataio/agent"
     },
     {
@@ -187,7 +187,7 @@
     {
       "id": "proj:bankrbot-skills",
       "type": "Project",
-      "label": "BankrBot/skills",
+      "label": "BankrBot Skills",
       "url": "https://github.com/BankrBot/skills"
     },
     {
@@ -205,7 +205,7 @@
     {
       "id": "proj:dify",
       "type": "Project",
-      "label": "dify",
+      "label": "Dify",
       "url": "https://github.com/langgenius/dify"
     },
     {
@@ -236,7 +236,7 @@
     {
       "id": "proj:qwen-code",
       "type": "Project",
-      "label": "qwen-code",
+      "label": "Qwen Code",
       "url": "https://github.com/QwenLM/qwen-code"
     },
     {
@@ -334,7 +334,7 @@
     {
       "id": "proj:hermes-agent",
       "type": "Project",
-      "label": "hermes-agent",
+      "label": "Hermes Agent",
       "url": "https://github.com/NousResearch/hermes-agent"
     },
     {
@@ -352,7 +352,7 @@
     {
       "id": "proj:openclaw-mission-control",
       "type": "Project",
-      "label": "openclaw-mission-control",
+      "label": "OpenClaw Mission Control",
       "url": "https://github.com/abhi1693/openclaw-mission-control"
     },
     {
@@ -397,7 +397,7 @@
     {
       "id": "proj:crush",
       "type": "Project",
-      "label": "crush",
+      "label": "Crush",
       "url": "https://github.com/charmbracelet/crush"
     },
     {
@@ -417,7 +417,7 @@
     {
       "id": "proj:gemini-cli",
       "type": "Project",
-      "label": "gemini-cli",
+      "label": "Gemini CLI",
       "url": "https://github.com/google-gemini/gemini-cli"
     },
     {
@@ -448,7 +448,7 @@
     {
       "id": "proj:graphiti",
       "type": "Project",
-      "label": "graphiti",
+      "label": "Graphiti",
       "url": "https://github.com/getzep/graphiti"
     },
     {
@@ -484,7 +484,7 @@
     {
       "id": "proj:inkos",
       "type": "Project",
-      "label": "inkos",
+      "label": "INKOS",
       "url": "https://github.com/Narcooo/inkos"
     },
     {
@@ -503,7 +503,7 @@
     {
       "id": "proj:pentagi",
       "type": "Project",
-      "label": "pentagi",
+      "label": "Pentagi",
       "url": "https://github.com/vxcontrol/pentagi"
     },
     {
@@ -521,7 +521,7 @@
     {
       "id": "proj:squad",
       "type": "Project",
-      "label": "squad",
+      "label": "Squad",
       "url": "https://github.com/bradygaster/squad"
     },
     {
@@ -539,7 +539,7 @@
     {
       "id": "proj:ai-data-science-team",
       "type": "Project",
-      "label": "ai-data-science-team",
+      "label": "AI Data Science Team",
       "url": "https://github.com/business-science/ai-data-science-team"
     },
     {
@@ -557,7 +557,7 @@
     {
       "id": "proj:vision-agents",
       "type": "Project",
-      "label": "Vision-Agents",
+      "label": "Vision Agents",
       "url": "https://github.com/GetStream/Vision-Agents"
     },
     {
@@ -640,7 +640,7 @@
     {
       "id": "proj:activepieces",
       "type": "Project",
-      "label": "activepieces",
+      "label": "Activepieces",
       "url": "https://github.com/activepieces/activepieces"
     },
     {
@@ -663,7 +663,7 @@
     {
       "id": "proj:mindsdb",
       "type": "Project",
-      "label": "mindsdb",
+      "label": "MindsDB",
       "url": "https://github.com/mindsdb/mindsdb"
     },
     {
@@ -703,7 +703,7 @@
     {
       "id": "proj:vibium",
       "type": "Project",
-      "label": "vibium",
+      "label": "Vibium",
       "url": "https://github.com/VibiumDev/vibium"
     },
     {
@@ -720,7 +720,7 @@
     {
       "id": "proj:agent-browser",
       "type": "Project",
-      "label": "agent-browser",
+      "label": "Agent Browser",
       "url": "https://github.com/vercel-labs/agent-browser"
     },
     {
@@ -821,7 +821,7 @@
     {
       "id": "proj:contexto",
       "type": "Project",
-      "label": "contexto",
+      "label": "Contexto",
       "url": "https://github.com/ekailabs/contexto"
     },
     {
@@ -905,7 +905,7 @@
     {
       "id": "proj:parlant",
       "type": "Project",
-      "label": "parlant",
+      "label": "Parlant",
       "url": "https://github.com/emcie-co/parlant"
     },
     {
@@ -922,7 +922,7 @@
     {
       "id": "proj:firecrawl",
       "type": "Project",
-      "label": "firecrawl",
+      "label": "Firecrawl",
       "url": "https://github.com/firecrawl/firecrawl"
     },
     {
@@ -1009,7 +1009,7 @@
     {
       "id": "proj:julep",
       "type": "Project",
-      "label": "julep",
+      "label": "Julep",
       "url": "https://github.com/julep-ai/julep"
     },
     {
@@ -1026,7 +1026,7 @@
     {
       "id": "proj:hello-halo",
       "type": "Project",
-      "label": "hello-halo",
+      "label": "Hello Halo",
       "url": "https://github.com/openkursar/hello-halo"
     },
     {
@@ -1055,7 +1055,7 @@
     {
       "id": "proj:agentrc",
       "type": "Project",
-      "label": "agentrc",
+      "label": "AgentRC",
       "url": "https://github.com/microsoft/agentrc"
     },
     {
@@ -1072,7 +1072,7 @@
     {
       "id": "proj:coze-studio",
       "type": "Project",
-      "label": "coze-studio",
+      "label": "Coze Studio",
       "url": "https://github.com/coze-dev/coze-studio"
     },
     {
@@ -1111,7 +1111,7 @@
     {
       "id": "proj:voltagent",
       "type": "Project",
-      "label": "voltagent",
+      "label": "VoltAgent",
       "url": "https://github.com/VoltAgent/voltagent"
     },
     {
@@ -1181,13 +1181,13 @@
     {
       "id": "proj:trulens",
       "type": "Project",
-      "label": "trulens",
+      "label": "TruLens",
       "url": "https://github.com/truera/trulens"
     },
     {
       "id": "proj:langwatch",
       "type": "Project",
-      "label": "langwatch",
+      "label": "LangWatch",
       "url": "https://github.com/langwatch/langwatch"
     },
     {
@@ -1205,7 +1205,7 @@
     {
       "id": "proj:deepeval",
       "type": "Project",
-      "label": "deepeval",
+      "label": "DeepEval",
       "url": "https://github.com/confident-ai/deepeval"
     },
     {
@@ -1223,7 +1223,7 @@
     {
       "id": "proj:langfuse",
       "type": "Project",
-      "label": "langfuse",
+      "label": "Langfuse",
       "url": "https://github.com/langfuse/langfuse"
     },
     {
@@ -1240,7 +1240,7 @@
     {
       "id": "proj:agentation",
       "type": "Project",
-      "label": "agentation",
+      "label": "Agentation",
       "url": "https://github.com/benjitaylor/agentation"
     },
     {
@@ -1257,7 +1257,7 @@
     {
       "id": "proj:goat",
       "type": "Project",
-      "label": "goat",
+      "label": "GOAT",
       "url": "https://github.com/goat-sdk/goat"
     },
     {
@@ -1274,7 +1274,7 @@
     {
       "id": "proj:toon",
       "type": "Project",
-      "label": "toon",
+      "label": "TOON",
       "url": "https://github.com/toon-format/toon"
     },
     {
@@ -1308,7 +1308,7 @@
     {
       "id": "proj:autogen",
       "type": "Project",
-      "label": "autogen",
+      "label": "AutoGen",
       "url": "https://github.com/microsoft/autogen"
     },
     {
@@ -1320,7 +1320,7 @@
     {
       "id": "proj:ii-agent",
       "type": "Project",
-      "label": "ii-agent",
+      "label": "II-Agent",
       "url": "https://github.com/Intelligent-Internet/ii-agent"
     },
     {
@@ -1392,7 +1392,7 @@
     {
       "id": "proj:camel",
       "type": "Project",
-      "label": "camel",
+      "label": "CAMEL",
       "url": "https://github.com/camel-ai/camel"
     },
     {
@@ -1410,7 +1410,7 @@
     {
       "id": "proj:crewai",
       "type": "Project",
-      "label": "crewAI",
+      "label": "CrewAI",
       "url": "https://github.com/crewAIInc/crewAI"
     },
     {
@@ -1428,7 +1428,7 @@
     {
       "id": "proj:videosdk-live-agents",
       "type": "Project",
-      "label": "videosdk-live/agents",
+      "label": "VideoSDK Agents",
       "url": "https://github.com/videosdk-live/agents"
     },
     {
@@ -1477,13 +1477,13 @@
     {
       "id": "proj:concordia",
       "type": "Project",
-      "label": "concordia",
+      "label": "Concordia",
       "url": "https://github.com/google-deepmind/concordia"
     },
     {
       "id": "proj:moltbook",
       "type": "Project",
-      "label": "moltbook",
+      "label": "Moltbook",
       "url": ""
     },
     {
@@ -1501,7 +1501,7 @@
     {
       "id": "proj:letta",
       "type": "Project",
-      "label": "letta",
+      "label": "Letta",
       "url": "https://github.com/letta-ai/letta"
     },
     {
@@ -1519,13 +1519,13 @@
     {
       "id": "proj:livekit-agents",
       "type": "Project",
-      "label": "livekit/agents",
+      "label": "LiveKit Agents",
       "url": "https://github.com/livekit/agents"
     },
     {
       "id": "proj:ten-framework",
       "type": "Project",
-      "label": "ten-framework",
+      "label": "TEN Framework",
       "url": "https://github.com/TEN-framework/ten-framework"
     },
     {
@@ -1572,7 +1572,7 @@
     {
       "id": "proj:agent-ui",
       "type": "Project",
-      "label": "agent-ui",
+      "label": "Agent UI",
       "url": "https://github.com/agno-agi/agent-ui"
     },
     {
@@ -1590,7 +1590,7 @@
     {
       "id": "proj:goose",
       "type": "Project",
-      "label": "goose",
+      "label": "Goose",
       "url": "https://github.com/aaif-goose/goose"
     },
     {
@@ -1608,7 +1608,7 @@
     {
       "id": "proj:agent-deck",
       "type": "Project",
-      "label": "agent-deck",
+      "label": "Agent Deck",
       "url": "https://github.com/asheshgoplani/agent-deck"
     },
     {
@@ -1660,7 +1660,7 @@
     {
       "id": "proj:snowglobe",
       "type": "Project",
-      "label": "snowglobe",
+      "label": "Snowglobe",
       "url": "https://github.com/IQTLabs/snowglobe"
     },
     {
@@ -1677,7 +1677,7 @@
     {
       "id": "proj:hive",
       "type": "Project",
-      "label": "hive",
+      "label": "Hive",
       "url": "https://github.com/aden-hive/hive"
     },
     {
@@ -1701,7 +1701,7 @@
     {
       "id": "proj:deepagents",
       "type": "Project",
-      "label": "deepagents",
+      "label": "DeepAgents",
       "url": "https://github.com/langchain-ai/deepagents"
     },
     {
@@ -1719,7 +1719,7 @@
     {
       "id": "proj:shellfirm",
       "type": "Project",
-      "label": "shellfirm",
+      "label": "Shellfirm",
       "url": "https://github.com/kaplanelad/shellfirm"
     },
     {
@@ -1737,7 +1737,7 @@
     {
       "id": "proj:osaurus",
       "type": "Project",
-      "label": "osaurus",
+      "label": "Osaurus",
       "url": "https://github.com/osaurus-ai/osaurus"
     },
     {
@@ -1803,7 +1803,7 @@
     {
       "id": "proj:fara",
       "type": "Project",
-      "label": "fara",
+      "label": "Fara",
       "url": "https://github.com/microsoft/fara"
     },
     {
@@ -1820,7 +1820,7 @@
     {
       "id": "proj:ralph",
       "type": "Project",
-      "label": "ralph",
+      "label": "Ralph",
       "url": "https://github.com/snarktank/ralph"
     },
     {
@@ -1837,7 +1837,7 @@
     {
       "id": "proj:agen-cy-marketplace",
       "type": "Project",
-      "label": "agen.cy marketplace",
+      "label": "agen.cy Marketplace",
       "url": "https://marketplace.agen.cy/"
     },
     {
@@ -1872,7 +1872,7 @@
     {
       "id": "proj:klavis",
       "type": "Project",
-      "label": "klavis",
+      "label": "Klavis",
       "url": "https://github.com/Klavis-AI/klavis"
     },
     {
@@ -1890,7 +1890,7 @@
     {
       "id": "proj:mcp-context-forge",
       "type": "Project",
-      "label": "mcp-context-forge",
+      "label": "MCP Context Forge",
       "url": "https://github.com/IBM/mcp-context-forge"
     },
     {
@@ -1908,7 +1908,7 @@
     {
       "id": "proj:mcp-server-airbnb",
       "type": "Project",
-      "label": "mcp-server-airbnb",
+      "label": "MCP Server Airbnb",
       "url": "https://github.com/openbnb-org/mcp-server-airbnb"
     },
     {
@@ -1925,19 +1925,19 @@
     {
       "id": "proj:cognee",
       "type": "Project",
-      "label": "cognee",
+      "label": "Cognee",
       "url": "https://github.com/topoteretes/cognee"
     },
     {
       "id": "proj:agentmemory",
       "type": "Project",
-      "label": "agentmemory",
+      "label": "AgentMemory",
       "url": "https://github.com/rohitg00/agentmemory"
     },
     {
       "id": "proj:mem0",
       "type": "Project",
-      "label": "mem0",
+      "label": "Mem0",
       "url": "https://github.com/mem0ai/mem0"
     },
     {
@@ -1961,7 +1961,7 @@
     {
       "id": "proj:memvid",
       "type": "Project",
-      "label": "memvid",
+      "label": "Memvid",
       "url": "https://github.com/memvid/memvid"
     },
     {
@@ -1979,7 +1979,7 @@
     {
       "id": "proj:agentic-context-engine",
       "type": "Project",
-      "label": "agentic-context-engine",
+      "label": "Agentic Context Engine",
       "url": "https://github.com/kayba-ai/agentic-context-engine"
     },
     {
@@ -2080,7 +2080,7 @@
     {
       "id": "proj:gastown",
       "type": "Project",
-      "label": "gastown",
+      "label": "Gastown",
       "url": "https://github.com/gastownhall/gastown"
     },
     {
@@ -2114,7 +2114,7 @@
     {
       "id": "proj:ragaai-catalyst",
       "type": "Project",
-      "label": "RagaAI-Catalyst",
+      "label": "RagaAI Catalyst",
       "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst"
     },
     {
@@ -2172,7 +2172,7 @@
     {
       "id": "proj:agentops",
       "type": "Project",
-      "label": "agentops",
+      "label": "AgentOps",
       "url": "https://github.com/AgentOps-AI/agentops"
     },
     {
@@ -2189,7 +2189,7 @@
     {
       "id": "proj:coze-loop",
       "type": "Project",
-      "label": "coze-loop",
+      "label": "Coze Loop",
       "url": "https://github.com/coze-dev/coze-loop"
     },
     {
@@ -2212,19 +2212,19 @@
     {
       "id": "proj:conductor",
       "type": "Project",
-      "label": "conductor",
+      "label": "Conductor",
       "url": "https://github.com/conductor-oss/conductor"
     },
     {
       "id": "proj:ai-maestro",
       "type": "Project",
-      "label": "ai-maestro",
+      "label": "AI Maestro",
       "url": "https://github.com/23blocks-OS/ai-maestro"
     },
     {
       "id": "proj:agent-orchestrator",
       "type": "Project",
-      "label": "agent-orchestrator",
+      "label": "Agent Orchestrator",
       "url": "https://github.com/ComposioHQ/agent-orchestrator"
     },
     {
@@ -2242,7 +2242,7 @@
     {
       "id": "proj:agent-squad",
       "type": "Project",
-      "label": "agent-squad",
+      "label": "Agent Squad",
       "url": "https://github.com/awslabs/agent-squad"
     },
     {
@@ -2259,7 +2259,7 @@
     {
       "id": "proj:nanobot",
       "type": "Project",
-      "label": "nanobot",
+      "label": "Nanobot",
       "url": "https://github.com/HKUDS/nanobot"
     },
     {
@@ -2288,13 +2288,13 @@
     {
       "id": "proj:openclaw",
       "type": "Project",
-      "label": "openclaw",
+      "label": "OpenClaw",
       "url": "https://github.com/openclaw/openclaw"
     },
     {
       "id": "proj:leon",
       "type": "Project",
-      "label": "leon",
+      "label": "Leon",
       "url": "https://github.com/leon-ai/leon"
     },
     {
@@ -2311,7 +2311,7 @@
     {
       "id": "proj:bub",
       "type": "Project",
-      "label": "bub",
+      "label": "Bub",
       "url": "https://github.com/bubbuild/bub"
     },
     {
@@ -2357,7 +2357,7 @@
     {
       "id": "proj:fairo",
       "type": "Project",
-      "label": "fairo",
+      "label": "Fairo",
       "url": "https://github.com/facebookresearch/fairo"
     },
     {
@@ -2386,13 +2386,13 @@
     {
       "id": "proj:agentgateway",
       "type": "Project",
-      "label": "agentgateway",
+      "label": "AgentGateway",
       "url": "https://github.com/agentgateway/agentgateway"
     },
     {
       "id": "proj:litellm",
       "type": "Project",
-      "label": "litellm",
+      "label": "LiteLLM",
       "url": "https://github.com/BerriAI/litellm"
     },
     {
@@ -2410,7 +2410,7 @@
     {
       "id": "proj:mcpo",
       "type": "Project",
-      "label": "mcpo",
+      "label": "MCPO",
       "url": "https://github.com/open-webui/mcpo"
     },
     {
@@ -2427,7 +2427,7 @@
     {
       "id": "proj:airweave",
       "type": "Project",
-      "label": "airweave",
+      "label": "Airweave",
       "url": "https://github.com/airweave-ai/airweave"
     },
     {
@@ -2445,7 +2445,7 @@
     {
       "id": "proj:ragflow",
       "type": "Project",
-      "label": "ragflow",
+      "label": "RAGFlow",
       "url": "https://github.com/infiniflow/ragflow"
     },
     {
@@ -2468,7 +2468,7 @@
     {
       "id": "proj:acme",
       "type": "Project",
-      "label": "acme",
+      "label": "Acme",
       "url": "https://github.com/google-deepmind/acme"
     },
     {
@@ -2497,7 +2497,7 @@
     {
       "id": "proj:relayplane-proxy",
       "type": "Project",
-      "label": "RelayPlane proxy",
+      "label": "RelayPlane Proxy",
       "url": "https://github.com/RelayPlane/proxy"
     },
     {
@@ -2515,7 +2515,7 @@
     {
       "id": "proj:semantic-router",
       "type": "Project",
-      "label": "semantic-router",
+      "label": "Semantic Router",
       "url": "https://github.com/vllm-project/semantic-router"
     },
     {
@@ -2568,7 +2568,7 @@
     {
       "id": "proj:deeplake",
       "type": "Project",
-      "label": "deeplake",
+      "label": "Deep Lake",
       "url": "https://github.com/activeloopai/deeplake"
     },
     {
@@ -2705,7 +2705,7 @@
     {
       "id": "proj:agentguard",
       "type": "Project",
-      "label": "agentguard",
+      "label": "AgentGuard",
       "url": "https://github.com/GoPlusSecurity/agentguard"
     },
     {
@@ -2723,7 +2723,7 @@
     {
       "id": "proj:tracecat",
       "type": "Project",
-      "label": "tracecat",
+      "label": "Tracecat",
       "url": "https://github.com/TracecatHQ/tracecat"
     },
     {
@@ -2741,7 +2741,7 @@
     {
       "id": "proj:cordum",
       "type": "Project",
-      "label": "cordum",
+      "label": "Cordum",
       "url": "https://github.com/cordum-io/cordum"
     },
     {
@@ -2759,7 +2759,7 @@
     {
       "id": "proj:rogue",
       "type": "Project",
-      "label": "rogue",
+      "label": "Rogue",
       "url": "https://github.com/qualifire-dev/rogue"
     },
     {
@@ -2777,7 +2777,7 @@
     {
       "id": "proj:microsandbox",
       "type": "Project",
-      "label": "microsandbox",
+      "label": "Microsandbox",
       "url": "https://github.com/superradcompany/microsandbox"
     },
     {
@@ -2794,7 +2794,7 @@
     {
       "id": "proj:agent-skills",
       "type": "Project",
-      "label": "agent-skills",
+      "label": "Agent Skills",
       "url": "https://github.com/addyosmani/agent-skills"
     },
     {
@@ -2825,7 +2825,7 @@
     {
       "id": "proj:marketingskills",
       "type": "Project",
-      "label": "marketingskills",
+      "label": "Marketing Skills",
       "url": "https://github.com/coreyhaines31/marketingskills"
     },
     {
@@ -2843,7 +2843,7 @@
     {
       "id": "proj:taste-skill",
       "type": "Project",
-      "label": "taste-skill",
+      "label": "Taste Skill",
       "url": "https://github.com/Leonxlnx/taste-skill"
     },
     {
@@ -2861,7 +2861,7 @@
     {
       "id": "proj:vercel-labs-skills",
       "type": "Project",
-      "label": "vercel-labs/skills",
+      "label": "Vercel Skills",
       "url": "https://github.com/vercel-labs/skills"
     },
     {
@@ -2879,7 +2879,7 @@
     {
       "id": "proj:agent-skills-tech-leads-club",
       "type": "Project",
-      "label": "agent-skills (tech-leads-club)",
+      "label": "Agent Skills (tech-leads-club)",
       "url": "https://github.com/tech-leads-club/agent-skills"
     },
     {
@@ -2897,7 +2897,7 @@
     {
       "id": "proj:agentskills",
       "type": "Project",
-      "label": "agentskills",
+      "label": "AgentSkills",
       "url": "https://github.com/agentskills/agentskills"
     },
     {
@@ -2914,7 +2914,7 @@
     {
       "id": "proj:oasis",
       "type": "Project",
-      "label": "oasis",
+      "label": "OASIS",
       "url": "https://github.com/camel-ai/oasis"
     },
     {
@@ -2931,7 +2931,7 @@
     {
       "id": "proj:jupyter-ai",
       "type": "Project",
-      "label": "jupyter-ai",
+      "label": "Jupyter AI",
       "url": "https://github.com/jupyterlab/jupyter-ai"
     },
     {
@@ -2984,7 +2984,7 @@
     {
       "id": "proj:gitagent",
       "type": "Project",
-      "label": "gitagent",
+      "label": "GitAgent",
       "url": "https://github.com/open-gitagent/gitagent"
     },
     {
@@ -3049,7 +3049,7 @@
     {
       "id": "proj:ai-town",
       "type": "Project",
-      "label": "ai-town",
+      "label": "AI Town",
       "url": "https://github.com/a16z-infra/ai-town"
     },
     {
@@ -3072,7 +3072,7 @@
     {
       "id": "proj:llm-council",
       "type": "Project",
-      "label": "llm-council",
+      "label": "LLM Council",
       "url": "https://github.com/karpathy/llm-council"
     },
     {
@@ -3101,7 +3101,7 @@
     {
       "id": "proj:superdesign",
       "type": "Project",
-      "label": "superdesign",
+      "label": "Superdesign",
       "url": "https://github.com/superdesigndev/superdesign"
     },
     {
@@ -3118,13 +3118,13 @@
     {
       "id": "proj:vercel-ai",
       "type": "Project",
-      "label": "vercel/ai",
+      "label": "Vercel AI SDK",
       "url": "https://github.com/vercel/ai"
     },
     {
       "id": "proj:langflow",
       "type": "Project",
-      "label": "langflow",
+      "label": "Langflow",
       "url": "https://github.com/langflow-ai/langflow"
     },
     {
@@ -3142,7 +3142,7 @@
     {
       "id": "proj:agent-device",
       "type": "Project",
-      "label": "agent-device",
+      "label": "Agent Device",
       "url": "https://github.com/callstackincubator/agent-device"
     },
     {
@@ -3173,7 +3173,7 @@
     {
       "id": "proj:stagehand",
       "type": "Project",
-      "label": "stagehand",
+      "label": "Stagehand",
       "url": "https://github.com/browserbase/stagehand"
     },
     {
@@ -3246,7 +3246,7 @@
     {
       "id": "proj:vllora",
       "type": "Project",
-      "label": "vllora",
+      "label": "vLLora",
       "url": "https://github.com/vllora/vllora"
     },
     {
@@ -3264,7 +3264,7 @@
     {
       "id": "proj:agentkit",
       "type": "Project",
-      "label": "agentkit",
+      "label": "AgentKit",
       "url": "https://github.com/coinbase/agentkit"
     },
     {
@@ -3313,7 +3313,7 @@
     {
       "id": "proj:composio",
       "type": "Project",
-      "label": "composio",
+      "label": "Composio",
       "url": "https://github.com/ComposioHQ/composio"
     },
     {
@@ -3349,7 +3349,7 @@
     {
       "id": "proj:agentic-flow",
       "type": "Project",
-      "label": "agentic-flow",
+      "label": "Agentic Flow",
       "url": "https://github.com/ruvnet/agentic-flow"
     },
     {
@@ -3416,7 +3416,7 @@
     {
       "id": "proj:unreal-engine-mcp",
       "type": "Project",
-      "label": "unreal-engine-mcp",
+      "label": "Unreal Engine MCP",
       "url": "https://github.com/flopperam/unreal-engine-mcp"
     },
     {
@@ -3433,7 +3433,7 @@
     {
       "id": "proj:agent-lightning",
       "type": "Project",
-      "label": "agent-lightning",
+      "label": "Agent Lightning",
       "url": "https://github.com/microsoft/agent-lightning"
     },
     {
@@ -3450,7 +3450,7 @@
     {
       "id": "proj:agency-agents",
       "type": "Project",
-      "label": "agency-agents",
+      "label": "Agency Agents",
       "url": "https://github.com/msitarzewski/agency-agents"
     },
     {
@@ -3490,13 +3490,13 @@
     {
       "id": "proj:agent-inbox",
       "type": "Project",
-      "label": "agent-inbox",
+      "label": "Agent Inbox",
       "url": "https://github.com/langchain-ai/agent-inbox"
     },
     {
       "id": "proj:orchestra",
       "type": "Project",
-      "label": "orchestra",
+      "label": "Orchestra",
       "url": "https://github.com/b12io/orchestra"
     },
     {
@@ -3530,7 +3530,7 @@
     {
       "id": "proj:bolna",
       "type": "Project",
-      "label": "bolna",
+      "label": "Bolna",
       "url": "https://github.com/bolna-ai/bolna"
     },
     {
@@ -3547,7 +3547,7 @@
     {
       "id": "proj:packmind",
       "type": "Project",
-      "label": "packmind",
+      "label": "Packmind",
       "url": "https://github.com/PackmindHub/packmind"
     },
     {
@@ -3564,7 +3564,7 @@
     {
       "id": "proj:lobehub",
       "type": "Project",
-      "label": "lobehub",
+      "label": "LobeHub",
       "url": "https://github.com/lobehub/lobehub"
     },
     {
@@ -3581,7 +3581,7 @@
     {
       "id": "proj:ml-agents",
       "type": "Project",
-      "label": "ml-agents",
+      "label": "ML-Agents",
       "url": "https://github.com/Unity-Technologies/ml-agents"
     }
   ]

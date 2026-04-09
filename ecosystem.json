@@ -5,7 +5,7 @@
       "name": "Agent Clusters",
       "examples": [
         {
-          "name": "intentkit",
+          "name": "IntentKit",
           "url": "https://github.com/crestalnetwork/intentkit"
         }
       ],
@@ -35,7 +35,7 @@
               "name": "Voices",
               "examples": [
                 {
-                  "name": "gibberlink",
+                  "name": "Gibberlink",
                   "url": "https://github.com/PennyroyalTea/gibberlink"
                 }
               ],
@@ -51,15 +51,15 @@
       ],
       "examples": [
         {
-          "name": "agentchattr",
+          "name": "AgentChattr",
           "url": "https://github.com/bcurts/agentchattr"
         },
         {
-          "name": "connectonion",
+          "name": "ConnectOnion",
           "url": "https://github.com/openonion/connectonion"
         },
         {
-          "name": "openagents",
+          "name": "OpenAgents",
           "url": "https://github.com/openagents-org/openagents"
         }
       ],
@@ -74,7 +74,7 @@
           "name": "Comms",
           "examples": [
             {
-              "name": "mcp_agent_mail",
+              "name": "MCP Agent Mail",
               "url": "https://github.com/Dicklesworthstone/mcp_agent_mail"
             }
           ],
@@ -114,7 +114,7 @@
           "name": "Autonomous Agent Creation",
           "examples": [
             {
-              "name": "BankrBot/skills",
+              "name": "BankrBot Skills",
               "url": "https://github.com/BankrBot/skills"
             }
           ],
@@ -126,7 +126,7 @@
           "name": "Backend Platforms",
           "examples": [
             {
-              "name": "dify",
+              "name": "Dify",
               "url": "https://github.com/langgenius/dify"
             }
           ],
@@ -141,7 +141,7 @@
               "name": "Vendor",
               "examples": [
                 {
-                  "name": "qwen-code",
+                  "name": "Qwen Code",
                   "url": "https://github.com/QwenLM/qwen-code"
                 }
               ],
@@ -205,7 +205,7 @@
               "name": "Open Source",
               "examples": [
                 {
-                  "name": "hermes-agent",
+                  "name": "Hermes Agent",
                   "url": "https://github.com/NousResearch/hermes-agent"
                 }
               ],
@@ -222,7 +222,7 @@
           "name": "Frontends",
           "examples": [
             {
-              "name": "openclaw-mission-control",
+              "name": "OpenClaw Mission Control",
               "url": "https://github.com/abhi1693/openclaw-mission-control"
             }
           ],
@@ -240,7 +240,7 @@
                   "name": "Third Party",
                   "examples": [
                     {
-                      "name": "crush",
+                      "name": "Crush",
                       "url": "https://github.com/charmbracelet/crush"
                     }
                   ],
@@ -252,7 +252,7 @@
                   "name": "Vendor",
                   "examples": [
                     {
-                      "name": "gemini-cli",
+                      "name": "Gemini CLI",
                       "url": "https://github.com/google-gemini/gemini-cli"
                     }
                   ],
@@ -277,7 +277,7 @@
               "name": "Graph Builders",
               "examples": [
                 {
-                  "name": "graphiti",
+                  "name": "Graphiti",
                   "url": "https://github.com/getzep/graphiti"
                 }
               ],
@@ -309,7 +309,7 @@
               "name": "Penetration Testing",
               "examples": [
                 {
-                  "name": "pentagi",
+                  "name": "Pentagi",
                   "url": "https://github.com/vxcontrol/pentagi"
                 }
               ],
@@ -320,7 +320,7 @@
           ],
           "examples": [
             {
-              "name": "inkos",
+              "name": "INKOS",
               "url": "https://github.com/Narcooo/inkos"
             }
           ],
@@ -332,7 +332,7 @@
           "name": "Team Formation",
           "examples": [
             {
-              "name": "squad",
+              "name": "Squad",
               "url": "https://github.com/bradygaster/squad"
             }
           ],
@@ -344,7 +344,7 @@
           "name": "Teams",
           "examples": [
             {
-              "name": "ai-data-science-team",
+              "name": "AI Data Science Team",
               "url": "https://github.com/business-science/ai-data-science-team"
             }
           ],
@@ -356,7 +356,7 @@
           "name": "Vision",
           "examples": [
             {
-              "name": "Vision-Agents",
+              "name": "Vision Agents",
               "url": "https://github.com/GetStream/Vision-Agents"
             }
           ],
@@ -367,7 +367,7 @@
       ],
       "examples": [
         {
-          "name": "xataio/agent",
+          "name": "Xata Agent",
           "url": "https://github.com/xataio/agent"
         }
       ],
@@ -415,7 +415,7 @@
               "name": "GUI Based",
               "examples": [
                 {
-                  "name": "activepieces",
+                  "name": "Activepieces",
                   "url": "https://github.com/activepieces/activepieces"
                 },
                 {
@@ -441,7 +441,7 @@
       "name": "Backend Querying",
       "examples": [
         {
-          "name": "mindsdb",
+          "name": "MindsDB",
           "url": "https://github.com/mindsdb/mindsdb"
         }
       ],
@@ -469,7 +469,7 @@
       "name": "Browser Automation",
       "examples": [
         {
-          "name": "vibium",
+          "name": "Vibium",
           "url": "https://github.com/VibiumDev/vibium"
         }
       ],
@@ -481,7 +481,7 @@
       "name": "Browser Tooling",
       "examples": [
         {
-          "name": "agent-browser",
+          "name": "Agent Browser",
           "url": "https://github.com/vercel-labs/agent-browser"
         }
       ],
@@ -536,7 +536,7 @@
           "name": "Engines",
           "examples": [
             {
-              "name": "contexto",
+              "name": "Contexto",
               "url": "https://github.com/ekailabs/contexto"
             }
           ],
@@ -607,7 +607,7 @@
       "name": "Conversational Control",
       "examples": [
         {
-          "name": "parlant",
+          "name": "Parlant",
           "url": "https://github.com/emcie-co/parlant"
         }
       ],
@@ -619,7 +619,7 @@
       "name": "Data Extraction and Structuring",
       "examples": [
         {
-          "name": "firecrawl",
+          "name": "Firecrawl",
           "url": "https://github.com/firecrawl/firecrawl"
         }
       ],
@@ -674,7 +674,7 @@
           "name": "Serverless",
           "examples": [
             {
-              "name": "julep",
+              "name": "Julep",
               "url": "https://github.com/julep-ai/julep"
             }
           ],
@@ -691,7 +691,7 @@
       "name": "Desktop GUIs",
       "examples": [
         {
-          "name": "hello-halo",
+          "name": "Hello Halo",
           "url": "https://github.com/openkursar/hello-halo"
         }
       ],
@@ -706,7 +706,7 @@
           "name": "Repo Refactoring",
           "examples": [
             {
-              "name": "agentrc",
+              "name": "AgentRC",
               "url": "https://github.com/microsoft/agentrc"
             }
           ],
@@ -723,7 +723,7 @@
       "name": "Development Platforms",
       "examples": [
         {
-          "name": "coze-studio",
+          "name": "Coze Studio",
           "url": "https://github.com/coze-dev/coze-studio"
         }
       ],
@@ -749,7 +749,7 @@
       "name": "Engineering Platforms",
       "examples": [
         {
-          "name": "voltagent",
+          "name": "VoltAgent",
           "url": "https://github.com/VoltAgent/voltagent"
         }
       ],
@@ -800,7 +800,7 @@
           "name": "Frameworks",
           "examples": [
             {
-              "name": "deepeval",
+              "name": "DeepEval",
               "url": "https://github.com/confident-ai/deepeval"
             }
           ],
@@ -812,7 +812,7 @@
           "name": "Observability",
           "examples": [
             {
-              "name": "langfuse",
+              "name": "Langfuse",
               "url": "https://github.com/langfuse/langfuse"
             }
           ],
@@ -823,11 +823,11 @@
       ],
       "examples": [
         {
-          "name": "langwatch",
+          "name": "LangWatch",
           "url": "https://github.com/langwatch/langwatch"
         },
         {
-          "name": "trulens",
+          "name": "TruLens",
           "url": "https://github.com/truera/trulens"
         }
       ],
@@ -839,7 +839,7 @@
       "name": "Feedback Formatting",
       "examples": [
         {
-          "name": "agentation",
+          "name": "Agentation",
           "url": "https://github.com/benjitaylor/agentation"
         }
       ],
@@ -851,7 +851,7 @@
       "name": "Financial Tools",
       "examples": [
         {
-          "name": "goat",
+          "name": "GOAT",
           "url": "https://github.com/goat-sdk/goat"
         }
       ],
@@ -863,7 +863,7 @@
       "name": "Formatting",
       "examples": [
         {
-          "name": "toon",
+          "name": "TOON",
           "url": "https://github.com/toon-format/toon"
         }
       ],
@@ -914,7 +914,7 @@
           "name": "Multi-agent",
           "examples": [
             {
-              "name": "camel",
+              "name": "CAMEL",
               "url": "https://github.com/camel-ai/camel"
             }
           ],
@@ -926,7 +926,7 @@
           "name": "Multiagent Orchestration",
           "examples": [
             {
-              "name": "crewAI",
+              "name": "CrewAI",
               "url": "https://github.com/crewAIInc/crewAI"
             }
           ],
@@ -938,7 +938,7 @@
           "name": "Multimodal",
           "examples": [
             {
-              "name": "videosdk-live/agents",
+              "name": "VideoSDK Agents",
               "url": "https://github.com/videosdk-live/agents"
             }
           ],
@@ -970,11 +970,11 @@
           "name": "Social Simulations",
           "examples": [
             {
-              "name": "concordia",
+              "name": "Concordia",
               "url": "https://github.com/google-deepmind/concordia"
             },
             {
-              "name": "moltbook",
+              "name": "Moltbook",
               "url": ""
             }
           ],
@@ -986,7 +986,7 @@
           "name": "Stateful Design",
           "examples": [
             {
-              "name": "letta",
+              "name": "Letta",
               "url": "https://github.com/letta-ai/letta"
             }
           ],
@@ -998,11 +998,11 @@
           "name": "Voice",
           "examples": [
             {
-              "name": "livekit/agents",
+              "name": "LiveKit Agents",
               "url": "https://github.com/livekit/agents"
             },
             {
-              "name": "ten-framework",
+              "name": "TEN Framework",
               "url": "https://github.com/TEN-framework/ten-framework"
             }
           ],
@@ -1021,7 +1021,7 @@
           "url": "https://github.com/microsoft/AIOpsLab"
         },
         {
-          "name": "autogen",
+          "name": "AutoGen",
           "url": "https://github.com/microsoft/autogen"
         },
         {
@@ -1029,7 +1029,7 @@
           "url": "https://github.com/EvoAgentX/EvoAgentX"
         },
         {
-          "name": "ii-agent",
+          "name": "II-Agent",
           "url": "https://github.com/Intelligent-Internet/ii-agent"
         },
         {
@@ -1060,7 +1060,7 @@
           "name": "Chat UIs",
           "examples": [
             {
-              "name": "agent-ui",
+              "name": "Agent UI",
               "url": "https://github.com/agno-agi/agent-ui"
             }
           ],
@@ -1072,7 +1072,7 @@
           "name": "GUIs and CLIs",
           "examples": [
             {
-              "name": "goose",
+              "name": "Goose",
               "url": "https://github.com/aaif-goose/goose"
             }
           ],
@@ -1084,7 +1084,7 @@
           "name": "TUIs and CLIs",
           "examples": [
             {
-              "name": "agent-deck",
+              "name": "Agent Deck",
               "url": "https://github.com/asheshgoplani/agent-deck"
             }
           ],
@@ -1121,7 +1121,7 @@
       "name": "Geopolitical Simulation",
       "examples": [
         {
-          "name": "snowglobe",
+          "name": "Snowglobe",
           "url": "https://github.com/IQTLabs/snowglobe"
         },
         {
@@ -1140,7 +1140,7 @@
           "name": "Deep Research",
           "examples": [
             {
-              "name": "deepagents",
+              "name": "DeepAgents",
               "url": "https://github.com/langchain-ai/deepagents"
             }
           ],
@@ -1152,7 +1152,7 @@
           "name": "Guardrails",
           "examples": [
             {
-              "name": "shellfirm",
+              "name": "Shellfirm",
               "url": "https://github.com/kaplanelad/shellfirm"
             }
           ],
@@ -1164,7 +1164,7 @@
           "name": "macOS",
           "examples": [
             {
-              "name": "osaurus",
+              "name": "Osaurus",
               "url": "https://github.com/osaurus-ai/osaurus"
             }
           ],
@@ -1175,7 +1175,7 @@
       ],
       "examples": [
         {
-          "name": "hive",
+          "name": "Hive",
           "url": "https://github.com/aden-hive/hive"
         },
         {
@@ -1209,7 +1209,7 @@
               "name": "Computer Use",
               "examples": [
                 {
-                  "name": "fara",
+                  "name": "Fara",
                   "url": "https://github.com/microsoft/fara"
                 }
               ],
@@ -1237,7 +1237,7 @@
       "name": "Loops",
       "examples": [
         {
-          "name": "ralph",
+          "name": "Ralph",
           "url": "https://github.com/snarktank/ralph"
         }
       ],
@@ -1249,7 +1249,7 @@
       "name": "Marketplaces",
       "examples": [
         {
-          "name": "agen.cy marketplace",
+          "name": "agen.cy Marketplace",
           "url": "https://marketplace.agen.cy/"
         },
         {
@@ -1268,7 +1268,7 @@
           "name": "Aggregation",
           "examples": [
             {
-              "name": "klavis",
+              "name": "Klavis",
               "url": "https://github.com/Klavis-AI/klavis"
             }
           ],
@@ -1280,7 +1280,7 @@
           "name": "Gateways",
           "examples": [
             {
-              "name": "mcp-context-forge",
+              "name": "MCP Context Forge",
               "url": "https://github.com/IBM/mcp-context-forge"
             }
           ],
@@ -1292,7 +1292,7 @@
           "name": "Third Party",
           "examples": [
             {
-              "name": "mcp-server-airbnb",
+              "name": "MCP Server Airbnb",
               "url": "https://github.com/openbnb-org/mcp-server-airbnb"
             }
           ],
@@ -1312,7 +1312,7 @@
           "name": "File",
           "examples": [
             {
-              "name": "memvid",
+              "name": "Memvid",
               "url": "https://github.com/memvid/memvid"
             }
           ],
@@ -1324,7 +1324,7 @@
           "name": "Regressive",
           "examples": [
             {
-              "name": "agentic-context-engine",
+              "name": "Agentic Context Engine",
               "url": "https://github.com/kayba-ai/agentic-context-engine"
             }
           ],
@@ -1347,15 +1347,15 @@
       ],
       "examples": [
         {
-          "name": "agentmemory",
+          "name": "AgentMemory",
           "url": "https://github.com/rohitg00/agentmemory"
         },
         {
-          "name": "cognee",
+          "name": "Cognee",
           "url": "https://github.com/topoteretes/cognee"
         },
         {
-          "name": "mem0",
+          "name": "Mem0",
           "url": "https://github.com/mem0ai/mem0"
         },
         {
@@ -1410,7 +1410,7 @@
           "name": "Workspaces",
           "examples": [
             {
-              "name": "gastown",
+              "name": "Gastown",
               "url": "https://github.com/gastownhall/gastown"
             }
           ],
@@ -1439,7 +1439,7 @@
       "name": "Observability",
       "examples": [
         {
-          "name": "RagaAI-Catalyst",
+          "name": "RagaAI Catalyst",
           "url": "https://github.com/raga-ai-hub/RagaAI-Catalyst"
         }
       ],
@@ -1474,7 +1474,7 @@
           "name": "Cost Monitoring",
           "examples": [
             {
-              "name": "agentops",
+              "name": "AgentOps",
               "url": "https://github.com/AgentOps-AI/agentops"
             }
           ],
@@ -1491,7 +1491,7 @@
       "name": "Optimisation Platform",
       "examples": [
         {
-          "name": "coze-loop",
+          "name": "Coze Loop",
           "url": "https://github.com/coze-dev/coze-loop"
         }
       ],
@@ -1506,7 +1506,7 @@
           "name": "Platform-Specific",
           "examples": [
             {
-              "name": "agent-squad",
+              "name": "Agent Squad",
               "url": "https://github.com/awslabs/agent-squad"
             }
           ],
@@ -1517,15 +1517,15 @@
       ],
       "examples": [
         {
-          "name": "agent-orchestrator",
+          "name": "Agent Orchestrator",
           "url": "https://github.com/ComposioHQ/agent-orchestrator"
         },
         {
-          "name": "ai-maestro",
+          "name": "AI Maestro",
           "url": "https://github.com/23blocks-OS/ai-maestro"
         },
         {
-          "name": "conductor",
+          "name": "Conductor",
           "url": "https://github.com/conductor-oss/conductor"
         },
         {
@@ -1541,7 +1541,7 @@
       "name": "Personal",
       "examples": [
         {
-          "name": "nanobot",
+          "name": "Nanobot",
           "url": "https://github.com/HKUDS/nanobot"
         }
       ],
@@ -1556,11 +1556,11 @@
           "name": "Assistants",
           "examples": [
             {
-              "name": "leon",
+              "name": "Leon",
               "url": "https://github.com/leon-ai/leon"
             },
             {
-              "name": "openclaw",
+              "name": "OpenClaw",
               "url": "https://github.com/openclaw/openclaw"
             }
           ],
@@ -1577,7 +1577,7 @@
       "name": "Personification",
       "examples": [
         {
-          "name": "bub",
+          "name": "Bub",
           "url": "https://github.com/bubbuild/bub"
         }
       ],
@@ -1604,7 +1604,7 @@
           "name": "Embodied",
           "examples": [
             {
-              "name": "fairo",
+              "name": "Fairo",
               "url": "https://github.com/facebookresearch/fairo"
             }
           ],
@@ -1624,11 +1624,11 @@
           "name": "Gateways",
           "examples": [
             {
-              "name": "agentgateway",
+              "name": "AgentGateway",
               "url": "https://github.com/agentgateway/agentgateway"
             },
             {
-              "name": "litellm",
+              "name": "LiteLLM",
               "url": "https://github.com/BerriAI/litellm"
             }
           ],
@@ -1640,7 +1640,7 @@
           "name": "MCP to OpenAI",
           "examples": [
             {
-              "name": "mcpo",
+              "name": "MCPO",
               "url": "https://github.com/open-webui/mcpo"
             }
           ],
@@ -1660,7 +1660,7 @@
           "name": "Engines",
           "examples": [
             {
-              "name": "ragflow",
+              "name": "RAGFlow",
               "url": "https://github.com/infiniflow/ragflow"
             }
           ],
@@ -1671,7 +1671,7 @@
       ],
       "examples": [
         {
-          "name": "airweave",
+          "name": "Airweave",
           "url": "https://github.com/airweave-ai/airweave"
         }
       ],
@@ -1683,7 +1683,7 @@
       "name": "Reinforcement Learning",
       "examples": [
         {
-          "name": "acme",
+          "name": "Acme",
           "url": "https://github.com/google-deepmind/acme"
         },
         {
@@ -1702,7 +1702,7 @@
           "name": "Cost Optimisation",
           "examples": [
             {
-              "name": "RelayPlane proxy",
+              "name": "RelayPlane Proxy",
               "url": "https://github.com/RelayPlane/proxy"
             }
           ],
@@ -1714,7 +1714,7 @@
           "name": "Intelligent",
           "examples": [
             {
-              "name": "semantic-router",
+              "name": "Semantic Router",
               "url": "https://github.com/vllm-project/semantic-router"
             }
           ],
@@ -1746,7 +1746,7 @@
           "name": "Data Layers",
           "examples": [
             {
-              "name": "deeplake",
+              "name": "Deep Lake",
               "url": "https://github.com/activeloopai/deeplake"
             }
           ],
@@ -1848,7 +1848,7 @@
           "name": "Automation",
           "examples": [
             {
-              "name": "tracecat",
+              "name": "Tracecat",
               "url": "https://github.com/TracecatHQ/tracecat"
             }
           ],
@@ -1860,7 +1860,7 @@
           "name": "Control Planes",
           "examples": [
             {
-              "name": "cordum",
+              "name": "Cordum",
               "url": "https://github.com/cordum-io/cordum"
             }
           ],
@@ -1872,7 +1872,7 @@
           "name": "Red Team",
           "examples": [
             {
-              "name": "rogue",
+              "name": "Rogue",
               "url": "https://github.com/qualifire-dev/rogue"
             }
           ],
@@ -1884,7 +1884,7 @@
           "name": "Sandboxing",
           "examples": [
             {
-              "name": "microsandbox",
+              "name": "Microsandbox",
               "url": "https://github.com/superradcompany/microsandbox"
             }
           ],
@@ -1899,7 +1899,7 @@
           "url": "https://github.com/snyk/agent-scan"
         },
         {
-          "name": "agentguard",
+          "name": "AgentGuard",
           "url": "https://github.com/GoPlusSecurity/agentguard"
         }
       ],
@@ -1917,7 +1917,7 @@
               "name": "Claude Code",
               "examples": [
                 {
-                  "name": "marketingskills",
+                  "name": "Marketing Skills",
                   "url": "https://github.com/coreyhaines31/marketingskills"
                 }
               ],
@@ -1934,7 +1934,7 @@
           "name": "Guides",
           "examples": [
             {
-              "name": "taste-skill",
+              "name": "Taste Skill",
               "url": "https://github.com/Leonxlnx/taste-skill"
             }
           ],
@@ -1946,7 +1946,7 @@
           "name": "Package Library",
           "examples": [
             {
-              "name": "vercel-labs/skills",
+              "name": "Vercel Skills",
               "url": "https://github.com/vercel-labs/skills"
             }
           ],
@@ -1958,7 +1958,7 @@
           "name": "Registries",
           "examples": [
             {
-              "name": "agent-skills (tech-leads-club)",
+              "name": "Agent Skills (tech-leads-club)",
               "url": "https://github.com/tech-leads-club/agent-skills"
             }
           ],
@@ -1970,7 +1970,7 @@
           "name": "Standards",
           "examples": [
             {
-              "name": "agentskills",
+              "name": "AgentSkills",
               "url": "https://github.com/agentskills/agentskills"
             }
           ],
@@ -1981,7 +1981,7 @@
       ],
       "examples": [
         {
-          "name": "agent-skills",
+          "name": "Agent Skills",
           "url": "https://github.com/addyosmani/agent-skills"
         }
       ],
@@ -1993,7 +1993,7 @@
       "name": "Societal Simulations",
       "examples": [
         {
-          "name": "oasis",
+          "name": "OASIS",
           "url": "https://github.com/camel-ai/oasis"
         }
       ],
@@ -2005,7 +2005,7 @@
       "name": "Software Extensions",
       "examples": [
         {
-          "name": "jupyter-ai",
+          "name": "Jupyter AI",
           "url": "https://github.com/jupyterlab/jupyter-ai"
         }
       ],
@@ -2040,7 +2040,7 @@
               "url": "https://www.aiuc-1.com/"
             },
             {
-              "name": "gitagent",
+              "name": "GitAgent",
               "url": "https://github.com/open-gitagent/gitagent"
             }
           ],
@@ -2080,7 +2080,7 @@
           "name": "Social Simulations",
           "examples": [
             {
-              "name": "ai-town",
+              "name": "AI Town",
               "url": "https://github.com/a16z-infra/ai-town"
             }
           ],
@@ -2097,7 +2097,7 @@
       "name": "Synthesised Perspectives",
       "examples": [
         {
-          "name": "llm-council",
+          "name": "LLM Council",
           "url": "https://github.com/karpathy/llm-council"
         },
         {
@@ -2116,7 +2116,7 @@
           "name": "Product Design",
           "examples": [
             {
-              "name": "superdesign",
+              "name": "Superdesign",
               "url": "https://github.com/superdesigndev/superdesign"
             }
           ],
@@ -2136,7 +2136,7 @@
           "name": "Android",
           "examples": [
             {
-              "name": "agent-device",
+              "name": "Agent Device",
               "url": "https://github.com/callstackincubator/agent-device"
             }
           ],
@@ -2151,7 +2151,7 @@
               "name": "SDK",
               "examples": [
                 {
-                  "name": "stagehand",
+                  "name": "Stagehand",
                   "url": "https://github.com/browserbase/stagehand"
                 }
               ],
@@ -2206,7 +2206,7 @@
           "name": "Debugging",
           "examples": [
             {
-              "name": "vllora",
+              "name": "vLLora",
               "url": "https://github.com/vllora/vllora"
             }
           ],
@@ -2218,7 +2218,7 @@
           "name": "Financial",
           "examples": [
             {
-              "name": "agentkit",
+              "name": "AgentKit",
               "url": "https://github.com/coinbase/agentkit"
             }
           ],
@@ -2245,7 +2245,7 @@
               "name": "SaaS",
               "examples": [
                 {
-                  "name": "composio",
+                  "name": "Composio",
                   "url": "https://github.com/ComposioHQ/composio"
                 }
               ],
@@ -2274,7 +2274,7 @@
           "name": "Model Routing",
           "examples": [
             {
-              "name": "agentic-flow",
+              "name": "Agentic Flow",
               "url": "https://github.com/ruvnet/agentic-flow"
             }
           ],
@@ -2313,7 +2313,7 @@
               "name": "MCP",
               "examples": [
                 {
-                  "name": "unreal-engine-mcp",
+                  "name": "Unreal Engine MCP",
                   "url": "https://github.com/flopperam/unreal-engine-mcp"
                 }
               ],
@@ -2329,11 +2329,11 @@
       ],
       "examples": [
         {
-          "name": "langflow",
+          "name": "Langflow",
           "url": "https://github.com/langflow-ai/langflow"
         },
         {
-          "name": "vercel/ai",
+          "name": "Vercel AI SDK",
           "url": "https://github.com/vercel/ai"
         }
       ],
@@ -2345,7 +2345,7 @@
       "name": "Trainers",
       "examples": [
         {
-          "name": "agent-lightning",
+          "name": "Agent Lightning",
           "url": "https://github.com/microsoft/agent-lightning"
         }
       ],
@@ -2357,7 +2357,7 @@
       "name": "Uncategorized",
       "examples": [
         {
-          "name": "agency-agents",
+          "name": "Agency Agents",
           "url": "https://github.com/msitarzewski/agency-agents"
         }
       ],
@@ -2379,11 +2379,11 @@
           "name": "Human in the Loop",
           "examples": [
             {
-              "name": "agent-inbox",
+              "name": "Agent Inbox",
               "url": "https://github.com/langchain-ai/agent-inbox"
             },
             {
-              "name": "orchestra",
+              "name": "Orchestra",
               "url": "https://github.com/b12io/orchestra"
             }
           ],
@@ -2412,7 +2412,7 @@
       "name": "Voice",
       "examples": [
         {
-          "name": "bolna",
+          "name": "Bolna",
           "url": "https://github.com/bolna-ai/bolna"
         }
       ],
@@ -2424,7 +2424,7 @@
       "name": "Workflow Definition",
       "examples": [
         {
-          "name": "packmind",
+          "name": "Packmind",
           "url": "https://github.com/PackmindHub/packmind"
         }
       ],
@@ -2436,7 +2436,7 @@
       "name": "Workspaces",
       "examples": [
         {
-          "name": "lobehub",
+          "name": "LobeHub",
           "url": "https://github.com/lobehub/lobehub"
         }
       ],
@@ -2448,7 +2448,7 @@
       "name": "World Generation",
       "examples": [
         {
-          "name": "ml-agents",
+          "name": "ML-Agents",
           "url": "https://github.com/Unity-Technologies/ml-agents"
         }
       ],
