@@ -301,6 +301,16 @@
               "url": "https://github.com/GetStream/Vision-Agents"
             }
           ]
+        },
+        {
+          "name": "Autonomous Agent Creation",
+          "children": [],
+          "examples": [
+            {
+              "name": "BankrBot/skills",
+              "url": "https://github.com/BankrBot/skills"
+            }
+          ]
         }
       ]
     },
@@ -854,6 +864,16 @@
               "url": "https://github.com/kayba-ai/agentic-context-engine"
             }
           ]
+        },
+        {
+          "name": "Skills",
+          "children": [],
+          "examples": [
+            {
+              "name": "Acontext",
+              "url": "https://github.com/memodb-io/Acontext"
+            }
+          ]
         }
       ]
     },
@@ -1218,6 +1238,26 @@
               "url": "https://github.com/Leonxlnx/taste-skill"
             }
           ]
+        },
+        {
+          "name": "Package Library",
+          "children": [],
+          "examples": [
+            {
+              "name": "vercel-labs/skills",
+              "url": "https://github.com/vercel-labs/skills"
+            }
+          ]
+        },
+        {
+          "name": "Standards",
+          "children": [],
+          "examples": [
+            {
+              "name": "agentskills",
+              "url": "https://github.com/agentskills/agentskills"
+            }
+          ]
         }
       ]
     },
@@ -1465,12 +1505,7 @@
       "children": [
         {
           "name": "Frontend",
-          "examples": [
-            {
-              "name": "react-grab",
-              "url": "https://github.com/aidenybai/react-grab"
-            }
-          ]
+          "examples": []
         }
       ]
     },
@@ -1518,6 +1553,31 @@
     },
     {
       "name": "Embedding Pipeline Orchestrators"
+    },
+    {
+      "name": "Context",
+      "children": [
+        {
+          "name": "Context Optimisation",
+          "children": [],
+          "examples": [
+            {
+              "name": "context-mode",
+              "url": "https://github.com/mksglu/context-mode"
+            }
+          ]
+        },
+        {
+          "name": "Frontend Tools",
+          "children": [],
+          "examples": [
+            {
+              "name": "react-grab",
+              "url": "https://github.com/aidenybai/react-grab"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

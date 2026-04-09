@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**151 projects** across **74 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**156 projects** across **75 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -16,7 +16,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [Agent Skills](#agent-skills) (1)
 - [Agent Tools](#agent-tools) (1)
 - [Agent to Agent](#agent-to-agent) (4)
-- [Agents](#agents) (18)
+- [Agents](#agents) (19)
 - [Automation](#automation) (2)
 - [Backend Querying](#backend-querying) (1)
 - [Benchmarks](#benchmarks) (1)
@@ -44,7 +44,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [LLMs](#llms) (3)
 - [Loops](#loops) (1)
 - [MCP](#mcp) (3)
-- [Memory](#memory) (4)
+- [Memory](#memory) (5)
 - [Memory Layers](#memory-layers) (1)
 - [Multiagent](#multiagent) (4)
 - [Observability](#observability) (1)
@@ -63,7 +63,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [Routers](#routers) (3)
 - [Runtimes](#runtimes) (3)
 - [Security](#security) (5)
-- [Skills](#skills) (2)
+- [Skills](#skills) (4)
 - [Skills Baskets](#skills-baskets) (1)
 - [Societal Simulations](#societal-simulations) (1)
 - [Software Extensions](#software-extensions) (1)
@@ -76,7 +76,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [Tools](#tools) (5)
 - [Trainers](#trainers) (1)
 - [Uncategorized](#uncategorized) (1)
-- [Utilities](#utilities) (1)
+- [Utilities](#utilities) (0)
 - [Vector Databases](#vector-databases) (1)
 - [Voice](#voice) (1)
 - [Workspaces](#workspaces) (1)
@@ -84,6 +84,7 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [Upserting Tools](#upserting-tools) (0)
 - [Embedding Models](#embedding-models) (0)
 - [Embedding Pipeline Orchestrators](#embedding-pipeline-orchestrators) (0)
+- [Context](#context) (2)
 
 ---
 
@@ -213,6 +214,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ### Vision
 
 - [Vision-Agents](https://github.com/GetStream/Vision-Agents)
+
+### Autonomous Agent Creation
+
+- [BankrBot/skills](https://github.com/BankrBot/skills)
 
 ## Automation
 
@@ -442,6 +447,10 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [agentic-context-engine](https://github.com/kayba-ai/agentic-context-engine)
 
+### Skills
+
+- [Acontext](https://github.com/memodb-io/Acontext)
+
 ## Memory Layers
 
 - [mem0](https://github.com/mem0ai/mem0)
@@ -595,6 +604,14 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 - [taste-skill](https://github.com/Leonxlnx/taste-skill)
 
+### Package Library
+
+- [vercel-labs/skills](https://github.com/vercel-labs/skills)
+
+### Standards
+
+- [agentskills](https://github.com/agentskills/agentskills)
+
 ## Skills Baskets
 
 - [agent-skills](https://github.com/addyosmani/agent-skills)
@@ -702,8 +719,6 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 
 ### Frontend
 
-- [react-grab](https://github.com/aidenybai/react-grab)
-
 ## Vector Databases
 
 - [Qdrant](https://github.com/qdrant/qdrant)
@@ -725,3 +740,13 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ## Embedding Models
 
 ## Embedding Pipeline Orchestrators
+
+## Context
+
+### Context Optimisation
+
+- [context-mode](https://github.com/mksglu/context-mode)
+
+### Frontend Tools
+
+- [react-grab](https://github.com/aidenybai/react-grab)
