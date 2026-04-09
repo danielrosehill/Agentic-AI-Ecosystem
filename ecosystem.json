@@ -122,7 +122,7 @@
     {
       "name": "lobehub",
       "url": "https://github.com/lobehub/lobehub",
-      "path": ["Agents", "Platforms", "Open Source", "Workspace Creators"]
+      "path": ["Workspaces"]
     },
     {
       "name": "agentkit",
@@ -312,7 +312,7 @@
     {
       "name": "agentops",
       "url": "https://github.com/AgentOps-AI/agentops",
-      "path": ["Monitoring"]
+      "path": ["Operations", "Cost Monitoring"]
     },
     {
       "name": "jupyter-ai",
@@ -442,7 +442,7 @@
     {
       "name": "RLinf",
       "url": "https://github.com/RLinf/RLinf",
-      "path": ["Memory", "Reinforcement Learning"]
+      "path": ["Reinforcement Learning"]
     },
     {
       "name": "agentchattr",
@@ -703,6 +703,61 @@
       "name": "unreal-engine-mcp",
       "url": "https://github.com/flopperam/unreal-engine-mcp",
       "path": ["Tooling", "World Creation", "MCP"]
+    },
+    {
+      "name": "oasis",
+      "url": "https://github.com/camel-ai/oasis",
+      "path": ["Societal Simulations"]
+    },
+    {
+      "name": "deeplake",
+      "url": "https://github.com/activeloopai/deeplake",
+      "path": ["Runtimes", "Data Layers"]
+    },
+    {
+      "name": "agentguard",
+      "url": "https://github.com/GoPlusSecurity/agentguard",
+      "path": ["Security"]
+    },
+    {
+      "name": "agentic-flow",
+      "url": "https://github.com/ruvnet/agentic-flow",
+      "path": ["Tools", "Model Routing"]
+    },
+    {
+      "name": "ClawRouter",
+      "url": "https://github.com/BlockRunAI/ClawRouter",
+      "path": ["Routers", "Tool Specific", "OpenClaw"]
+    },
+    {
+      "name": "semantic-router",
+      "url": "https://github.com/vllm-project/semantic-router",
+      "path": ["Routers", "Intelligent"]
+    },
+    {
+      "name": "RelayPlane proxy",
+      "url": "https://github.com/RelayPlane/proxy",
+      "path": ["Routers", "Cost Optimisation"]
+    },
+    {
+      "name": "ml-agents",
+      "url": "https://github.com/Unity-Technologies/ml-agents",
+      "path": ["World Generation"]
+    },
+    {
+      "name": "fairo",
+      "url": "https://github.com/facebookresearch/fairo",
+      "path": ["Platforms", "Embodied"]
+    },
+    {
+      "name": "acme",
+      "url": "https://github.com/google-deepmind/acme",
+      "path": ["Reinforcement Learning"]
+    },
+    {
+      "name": "Qdrant",
+      "url": "https://github.com/qdrant/qdrant",
+      "path": ["Vector Databases"]
     }
   ]
 }

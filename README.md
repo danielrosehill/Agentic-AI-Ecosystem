@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**140 projects** across **64 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**151 projects** across **71 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -16,7 +16,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Agent Skills](#agent-skills) (1)
 - [Agent Tools](#agent-tools) (1)
 - [Agent to Agent](#agent-to-agent) (4)
-- [Agents](#agents) (19)
+- [Agents](#agents) (18)
 - [Automation](#automation) (2)
 - [Backend Querying](#backend-querying) (1)
 - [Benchmarks](#benchmarks) (1)
@@ -44,24 +44,28 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [LLMs](#llms) (3)
 - [Loops](#loops) (1)
 - [MCP](#mcp) (3)
-- [Memory](#memory) (5)
+- [Memory](#memory) (4)
 - [Memory Layers](#memory-layers) (1)
-- [Monitoring](#monitoring) (1)
 - [Multiagent](#multiagent) (4)
 - [Observability](#observability) (1)
 - [On Device Agents](#on-device-agents) (1)
+- [Operations](#operations) (1)
 - [Optimisation Platform](#optimisation-platform) (1)
 - [Orchestration](#orchestration) (4)
 - [Personal](#personal) (1)
 - [Personal AI](#personal-ai) (2)
 - [Personification](#personification) (1)
 - [Pipelines](#pipelines) (1)
+- [Platforms](#platforms) (1)
 - [Proxy](#proxy) (2)
 - [RAG](#rag) (1)
-- [Runtimes](#runtimes) (2)
-- [Security](#security) (4)
+- [Reinforcement Learning](#reinforcement-learning) (2)
+- [Routers](#routers) (3)
+- [Runtimes](#runtimes) (3)
+- [Security](#security) (5)
 - [Skills](#skills) (2)
 - [Skills Baskets](#skills-baskets) (1)
+- [Societal Simulations](#societal-simulations) (1)
 - [Software Extensions](#software-extensions) (1)
 - [Standards](#standards) (1)
 - [Starter Kits](#starter-kits) (1)
@@ -69,11 +73,14 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Task Specific](#task-specific) (1)
 - [Tooling](#tooling) (7)
 - [Toolkits](#toolkits) (1)
-- [Tools](#tools) (4)
+- [Tools](#tools) (5)
 - [Trainers](#trainers) (1)
 - [Uncategorized](#uncategorized) (1)
 - [Utilities](#utilities) (1)
+- [Vector Databases](#vector-databases) (1)
 - [Voice](#voice) (1)
+- [Workspaces](#workspaces) (1)
+- [World Generation](#world-generation) (1)
 
 ---
 
@@ -165,10 +172,6 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Personal Focused
 
 - [Crucix](https://github.com/calesthio/Crucix)
-
-### Platforms → Open Source → Workspace Creators
-
-- [lobehub](https://github.com/lobehub/lobehub)
 
 ### Purpose Specific
 
@@ -410,17 +413,9 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [agentic-context-engine](https://github.com/kayba-ai/agentic-context-engine)
 
-### Reinforcement Learning
-
-- [RLinf](https://github.com/RLinf/RLinf)
-
 ## Memory Layers
 
 - [mem0](https://github.com/mem0ai/mem0)
-
-## Monitoring
-
-- [agentops](https://github.com/AgentOps-AI/agentops)
 
 ## Multiagent
 
@@ -449,6 +444,12 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### SBCs
 
 - [be-more-agent](https://github.com/brenpoly/be-more-agent)
+
+## Operations
+
+### Cost Monitoring
+
+- [agentops](https://github.com/AgentOps-AI/agentops)
 
 ## Optimisation Platform
 
@@ -483,6 +484,12 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [Paper2Agent](https://github.com/jmiao24/Paper2Agent)
 
+## Platforms
+
+### Embodied
+
+- [fairo](https://github.com/facebookresearch/fairo)
+
 ## Proxy
 
 ### Gateways
@@ -497,9 +504,32 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [airweave](https://github.com/airweave-ai/airweave)
 
+## Reinforcement Learning
+
+- [acme](https://github.com/google-deepmind/acme)
+- [RLinf](https://github.com/RLinf/RLinf)
+
+## Routers
+
+### Cost Optimisation
+
+- [RelayPlane proxy](https://github.com/RelayPlane/proxy)
+
+### Intelligent
+
+- [semantic-router](https://github.com/vllm-project/semantic-router)
+
+### Tool Specific → OpenClaw
+
+- [ClawRouter](https://github.com/BlockRunAI/ClawRouter)
+
 ## Runtimes
 
 - [OpenShell](https://github.com/NVIDIA/OpenShell)
+
+### Data Layers
+
+- [deeplake](https://github.com/activeloopai/deeplake)
 
 ### Sandboxes
 
@@ -508,6 +538,7 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ## Security
 
 - [agent-scan](https://github.com/snyk/agent-scan)
+- [agentguard](https://github.com/GoPlusSecurity/agentguard)
 
 ### Automation
 
@@ -534,6 +565,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ## Skills Baskets
 
 - [agent-skills](https://github.com/addyosmani/agent-skills)
+
+## Societal Simulations
+
+- [oasis](https://github.com/camel-ai/oasis)
 
 ## Software Extensions
 
@@ -606,6 +641,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [vllora](https://github.com/vllora/vllora)
 
+### Model Routing
+
+- [agentic-flow](https://github.com/ruvnet/agentic-flow)
+
 ### Vision UI
 
 - [UI-Venus](https://github.com/inclusionAI/UI-Venus)
@@ -628,6 +667,18 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [react-grab](https://github.com/aidenybai/react-grab)
 
+## Vector Databases
+
+- [Qdrant](https://github.com/qdrant/qdrant)
+
 ## Voice
 
 - [bolna](https://github.com/bolna-ai/bolna)
+
+## Workspaces
+
+- [lobehub](https://github.com/lobehub/lobehub)
+
+## World Generation
+
+- [ml-agents](https://github.com/Unity-Technologies/ml-agents)
