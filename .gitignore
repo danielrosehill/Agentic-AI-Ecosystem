@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+*.pyo
+proposals.json
+.DS_Store
