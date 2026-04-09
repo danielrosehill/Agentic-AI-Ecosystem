@@ -12,6 +12,7 @@
     --text: #1a1f2c;
     --muted: #6b7280;
     --accent: #2563eb;
+    --accent-soft: #e0ecff;
     --category: #6aa9ff;
     --category-hub: #1f6feb;
     --project: #f59e0b;
@@ -26,29 +27,45 @@
     border-radius: 10px; box-shadow: 0 4px 14px rgba(20,30,60,0.06);
     padding: 14px 16px; font-size: 13px; line-height: 1.4;
   }
-  #header { top: 16px; left: 16px; max-width: 360px; }
+  #header { top: 16px; left: 16px; max-width: 320px; }
   #header h1 { margin: 0 0 4px; font-size: 15px; font-weight: 600; }
   #header .stats { color: var(--muted); font-size: 12px; }
-  #header .stats a { color: var(--accent); text-decoration: none; }
 
   #controls { top: 16px; right: 16px; width: 240px; }
   #controls label { display: block; font-size: 11px; color: var(--muted);
     text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 4px; }
-  #controls input, #controls select {
+  #controls input, #controls select, #controls button {
     width: 100%; padding: 7px 9px; border: 1px solid var(--panel-border);
     border-radius: 6px; font-size: 13px; background: #fff; color: var(--text);
-    box-sizing: border-box; margin-bottom: 10px;
+    box-sizing: border-box; margin-bottom: 10px; font-family: inherit;
   }
+  #controls button { cursor: pointer; background: var(--panel); }
+  #controls button:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
   #controls input:focus, #controls select:focus {
     outline: none; border-color: var(--accent);
   }
   #controls .legend { display: flex; gap: 12px; align-items: center;
-    font-size: 12px; color: var(--muted); margin-top: 4px; }
+    font-size: 12px; color: var(--muted); }
   #controls .legend .dot { width: 10px; height: 10px; border-radius: 50%;
     display: inline-block; margin-right: 4px; vertical-align: middle; }
   #controls .legend .box { width: 10px; height: 10px; border-radius: 2px;
     display: inline-block; margin-right: 4px; vertical-align: middle;
     transform: rotate(45deg); }
+
+  /* Segment navigation sidebar */
+  #nav { top: 120px; left: 16px; width: 260px; max-height: calc(100vh - 260px);
+    overflow-y: auto; padding: 10px 12px; }
+  #nav h3 { margin: 0 0 8px; font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
+  #nav ul { list-style: none; padding: 0; margin: 0; }
+  #nav li { margin: 0; }
+  #nav .seg { display: flex; align-items: center; justify-content: space-between;
+    padding: 5px 8px; border-radius: 5px; cursor: pointer;
+    font-size: 12.5px; color: var(--text); }
+  #nav .seg:hover { background: var(--accent-soft); color: var(--accent); }
+  #nav .seg.active { background: var(--accent); color: white; }
+  #nav .seg .count { font-size: 10px; color: var(--muted); padding-left: 6px; }
+  #nav .seg.active .count { color: rgba(255,255,255,0.8); }
 
   #info { bottom: 16px; left: 16px; max-width: 360px; display: none; }
   #info h2 { margin: 0 0 4px; font-size: 14px; }
@@ -57,6 +74,9 @@
   #info p { margin: 6px 0; }
   #info a { color: var(--accent); word-break: break-all; }
   #info .path { color: var(--muted); font-size: 12px; }
+  #info .close { position: absolute; top: 10px; right: 12px; border: none;
+    background: none; font-size: 16px; color: var(--muted); cursor: pointer; }
+  #info .close:hover { color: var(--text); }
 
   #footer { bottom: 16px; right: 16px; font-size: 11px; color: var(--muted); }
   #footer a { color: var(--muted); text-decoration: underline; }
@@ -73,12 +93,16 @@
 <div id="controls" class="panel">
   <label for="search">Search</label>
   <input id="search" type="search" placeholder="Type to highlight…" autocomplete="off">
-  <label for="segment">Focus segment</label>
-  <select id="segment"><option value="">— all —</option></select>
+  <button id="reset">Reset view</button>
   <div class="legend">
     <span><span class="dot" style="background: var(--category)"></span>Category</span>
     <span><span class="box" style="background: var(--project)"></span>Project</span>
   </div>
+</div>
+
+<div id="nav" class="panel">
+  <h3>Segments · click to focus</h3>
+  <ul id="seg-list"></ul>
 </div>
 
 <div id="info" class="panel"></div>
@@ -89,6 +113,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/3d-force-graph@1.73.4/dist/3d-force-graph.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three-spritetext@1.8.2/dist/three-spritetext.min.js"></script>
 <script>
 (async function () {
   const [nodesRes, edgesRes] = await Promise.all([
@@ -98,19 +123,18 @@
   const nodesData = await nodesRes.json();
   const edgesData = await edgesRes.json();
 
-  // Build graph: every node id stays as-is; every edge becomes a link.
   const nodes = nodesData.nodes.map(n => ({ ...n }));
   const nodeIndex = Object.fromEntries(nodes.map(n => [n.id, n]));
   const links = edgesData.edges
     .filter(e => nodeIndex[e.from] && nodeIndex[e.to])
     .map(e => ({
-      // For visual flow: flip child→parent edges so parent points at child.
+      // Flip to parent→child direction for visual flow.
       source: e.type === 'SUBCATEGORY_OF' || e.type === 'CATEGORY_OF' ? e.to : e.from,
       target: e.type === 'SUBCATEGORY_OF' || e.type === 'CATEGORY_OF' ? e.from : e.to,
       type: e.type,
     }));
 
-  // Degree count for sizing.
+  // Degree for sizing.
   const degree = {};
   links.forEach(l => {
     degree[l.source] = (degree[l.source] || 0) + 1;
@@ -118,96 +142,183 @@
   });
   nodes.forEach(n => { n.degree = degree[n.id] || 0; });
 
-  // Segment (top-level category) attribution, for focus filter.
+  // Segment attribution (top-level category each node belongs to).
   const segmentOf = {};
+  const childOf = {}; // id -> [child ids]
+  links.forEach(l => {
+    const s = typeof l.source === 'string' ? l.source : l.source.id;
+    const t = typeof l.target === 'string' ? l.target : l.target.id;
+    (childOf[s] = childOf[s] || []).push(t);
+  });
   function walkSegment(id, seg) {
     if (segmentOf[id]) return;
     segmentOf[id] = seg;
-    links.forEach(l => {
-      const s = typeof l.source === 'string' ? l.source : l.source.id;
-      const t = typeof l.target === 'string' ? l.target : l.target.id;
-      if (s === id && !segmentOf[t]) walkSegment(t, seg);
-    });
+    (childOf[id] || []).forEach(c => walkSegment(c, seg));
   }
-  nodes.forEach(n => {
-    if (n.type === 'Category' && n.path && n.path.length === 1) {
-      walkSegment(n.id, n.label);
-    }
-  });
+  const segments = nodes
+    .filter(n => n.type === 'Category' && n.path && n.path.length === 1)
+    .sort((a, b) => a.label.localeCompare(b.label));
+  segments.forEach(s => walkSegment(s.id, s.label));
 
-  // Stats + segment dropdown.
+  // Stats.
   const cats = nodes.filter(n => n.type === 'Category').length;
   const projs = nodes.filter(n => n.type === 'Project').length;
-  document.getElementById('stats').innerHTML =
+  document.getElementById('stats').textContent =
     `${cats} categories · ${projs} projects · updated ${nodesData.updated || '—'}`;
-  const segmentSel = document.getElementById('segment');
-  [...new Set(nodes
-      .filter(n => n.type === 'Category' && n.path && n.path.length === 1)
-      .map(n => n.label))]
-    .sort((a, b) => a.localeCompare(b))
-    .forEach(label => {
-      const opt = document.createElement('option');
-      opt.value = label; opt.textContent = label;
-      segmentSel.appendChild(opt);
-    });
 
-  // Three.js primitives for custom node rendering.
+  // Segment navigation sidebar.
+  const segList = document.getElementById('seg-list');
+  const segCount = (seg) => nodes.filter(n => segmentOf[n.id] === seg.label).length;
+  const segLis = new Map();
+  function buildNav() {
+    segments.forEach(s => {
+      const li = document.createElement('li');
+      const div = document.createElement('div');
+      div.className = 'seg';
+      div.innerHTML = `<span>${escapeHtml(s.label)}</span><span class="count">${segCount(s)}</span>`;
+      div.addEventListener('click', () => focusSegment(s));
+      li.appendChild(div);
+      segList.appendChild(li);
+      segLis.set(s.label, div);
+    });
+    // "All" entry at top
+    const allLi = document.createElement('li');
+    const allDiv = document.createElement('div');
+    allDiv.className = 'seg active';
+    allDiv.innerHTML = `<span>— all —</span><span class="count">${nodes.length}</span>`;
+    allDiv.addEventListener('click', () => focusAll());
+    allLi.appendChild(allDiv);
+    segList.insertBefore(allLi, segList.firstChild);
+    segLis.set('', allDiv);
+  }
+  function setActiveSeg(label) {
+    segLis.forEach((el, k) => el.classList.toggle('active', k === label));
+  }
+
+  // Three.js primitives.
   const CAT_COLOR = 0x6aa9ff;
   const CAT_HUB_COLOR = 0x1f6feb;
+  const CAT_SEG_COLOR = 0x0b3e99;
   const PROJ_COLOR = 0xf59e0b;
-  const DIM_OPACITY = 0.12;
+  const DIM = 0.08;
 
   const catGeom = new THREE.SphereGeometry(1, 18, 18);
   const projGeom = new THREE.OctahedronGeometry(1, 0);
 
-  // Graph instance.
+  function nodeObj(n) {
+    const isProj = n.type === 'Project';
+    const isSeg = !isProj && n.path && n.path.length === 1;
+    const size = isProj ? 2.2 : (3 + Math.min(n.degree, 20) * 0.35);
+    const color = isProj
+      ? PROJ_COLOR
+      : (isSeg ? CAT_SEG_COLOR : (n.degree > 8 ? CAT_HUB_COLOR : CAT_COLOR));
+    const material = new THREE.MeshLambertMaterial({
+      color, transparent: true, opacity: 1.0,
+    });
+    const mesh = new THREE.Mesh(isProj ? projGeom : catGeom, material);
+    mesh.scale.setScalar(size);
+
+    const group = new THREE.Group();
+    group.add(mesh);
+
+    // Always-on text label.
+    const label = new SpriteText(n.label);
+    label.color = isProj ? '#9a5a00' : (isSeg ? '#0b3e99' : '#1a1f2c');
+    label.backgroundColor = isProj ? 'rgba(255,255,255,0.85)' : 'rgba(255,255,255,0.8)';
+    label.borderRadius = 3;
+    label.padding = isSeg ? 3 : 2;
+    label.textHeight = isSeg ? 5 : (isProj ? 2.8 : 3.5);
+    label.fontFace = 'Helvetica, Arial, sans-serif';
+    label.fontWeight = isSeg ? '600' : '400';
+    label.material.depthWrite = false;
+    label.material.transparent = true;
+    label.position.set(0, size + (isSeg ? 4.5 : 3.0), 0);
+    group.add(label);
+
+    n.__material = material;
+    n.__label = label;
+    n.__size = size;
+    return group;
+  }
+
   const Graph = ForceGraph3D()(document.getElementById('graph'))
     .backgroundColor('#f7f8fa')
+    .showNavInfo(false)
     .graphData({ nodes, links })
     .nodeLabel(n => n.type === 'Project'
       ? `<b>${escapeHtml(n.label)}</b><br><span style="color:#6b7280">${escapeHtml(n.url || '')}</span>`
       : `<b>${escapeHtml(n.label)}</b><br><span style="color:#6b7280">${escapeHtml((n.path||[]).join(' › '))}</span>${n.short_description ? '<br><span style="color:#6b7280">' + escapeHtml(n.short_description) + '</span>' : ''}`)
-    .nodeThreeObject(n => {
-      const isProj = n.type === 'Project';
-      const size = isProj ? 2.2 : (3 + Math.min(n.degree, 20) * 0.35);
-      const material = new THREE.MeshLambertMaterial({
-        color: isProj ? PROJ_COLOR : (n.degree > 8 ? CAT_HUB_COLOR : CAT_COLOR),
-        transparent: true,
-        opacity: 1.0,
-      });
-      const mesh = new THREE.Mesh(isProj ? projGeom : catGeom, material);
-      mesh.scale.setScalar(size);
-      n.__material = material;
-      n.__isProj = isProj;
-      return mesh;
-    })
+    .nodeThreeObject(nodeObj)
     .linkColor(() => '#c8cfdb')
     .linkOpacity(0.45)
     .linkWidth(0.4)
     .linkDirectionalParticles(0)
-    .onNodeClick(n => {
-      showInfo(n);
-      if (n.type === 'Project' && n.url) window.open(n.url, '_blank', 'noopener');
-      // center camera on node
-      const dist = 140;
-      const dr = Math.hypot(n.x, n.y, n.z) || 1;
-      Graph.cameraPosition(
-        { x: n.x * (1 + dist / dr), y: n.y * (1 + dist / dr), z: n.z * (1 + dist / dr) },
-        n, 900
-      );
+    .onNodeClick(onNodeClick);
+
+  Graph.d3Force('charge').strength(-140);
+  Graph.d3Force('link').distance(l => l.type === 'CATEGORY_OF' ? 18 : 34);
+
+  // Camera helpers.
+  function flyToNode(n, distance = 180) {
+    const dr = Math.hypot(n.x || 0, n.y || 0, n.z || 0) || 1;
+    Graph.cameraPosition(
+      {
+        x: (n.x || 0) * (1 + distance / dr),
+        y: (n.y || 0) * (1 + distance / dr),
+        z: (n.z || 0) * (1 + distance / dr),
+      },
+      n, 900
+    );
+  }
+  function fitAll() {
+    Graph.zoomToFit(900, 60);
+  }
+
+  function focusSegment(seg) {
+    setActiveSeg(seg.label);
+    highlightSegment(seg.label);
+    // Wait a frame for force layout to settle around new opacities, then fly.
+    setTimeout(() => flyToNode(seg, 260), 50);
+  }
+  function focusAll() {
+    setActiveSeg('');
+    highlightSegment(null);
+    setTimeout(fitAll, 50);
+  }
+  function highlightSegment(label) {
+    nodes.forEach(n => {
+      const match = !label || segmentOf[n.id] === label;
+      if (n.__material) {
+        n.__material.opacity = match ? 1.0 : DIM;
+        n.__material.needsUpdate = true;
+      }
+      if (n.__label) {
+        n.__label.material.opacity = match ? 1.0 : DIM;
+      }
+      n.__dim = !match;
     });
+    Graph.linkOpacity(l => {
+      const s = typeof l.source === 'object' ? l.source : nodeIndex[l.source];
+      const t = typeof l.target === 'object' ? l.target : nodeIndex[l.target];
+      return (s && s.__dim) || (t && t.__dim) ? 0.04 : 0.45;
+    });
+  }
 
-  // Nice initial forces for a sprawling but readable layout.
-  Graph.d3Force('charge').strength(-120);
-  Graph.d3Force('link').distance(l => l.type === 'CATEGORY_OF' ? 18 : 32);
-
-  // Info panel rendering.
+  // Node click: show info, fly, open URL if project.
   const infoEl = document.getElementById('info');
+  function onNodeClick(n) {
+    showInfo(n);
+    flyToNode(n, 140);
+    if (n.type === 'Project' && n.url) {
+      window.open(n.url, '_blank', 'noopener');
+    }
+  }
   function showInfo(n) {
     infoEl.style.display = 'block';
     const path = (n.path || []).join(' › ');
+    const closeBtn = '<button class="close" onclick="document.getElementById(\'info\').style.display=\'none\'">×</button>';
     if (n.type === 'Project') {
-      infoEl.innerHTML =
+      infoEl.innerHTML = closeBtn +
         `<div class="kind">Project</div>
          <h2>${escapeHtml(n.label)}</h2>
          ${n.url ? `<p><a href="${escapeAttr(n.url)}" target="_blank" rel="noopener">${escapeHtml(n.url)}</a></p>` : ''}
@@ -216,7 +327,7 @@
       const short = n.short_description || '';
       const long_ = n.long_description || '';
       const narrative = n.examples_narrative || '';
-      infoEl.innerHTML =
+      infoEl.innerHTML = closeBtn +
         `<div class="kind">Category</div>
          <h2>${escapeHtml(n.label)}</h2>
          <p class="path">${escapeHtml(path)}</p>
@@ -226,34 +337,41 @@
     }
   }
 
-  // Search + focus filter: dim non-matching nodes/links.
+  // Search.
   const searchEl = document.getElementById('search');
-  function applyFilter() {
+  function applySearch() {
     const q = searchEl.value.trim().toLowerCase();
-    const seg = segmentSel.value;
-    const matches = (n) => {
-      const okSeg = !seg || segmentOf[n.id] === seg;
-      const okQ = !q
+    nodes.forEach(n => {
+      const match = !q
         || (n.label && n.label.toLowerCase().includes(q))
         || (n.path && n.path.join(' ').toLowerCase().includes(q));
-      return okSeg && okQ;
-    };
-    nodes.forEach(n => {
-      const m = matches(n);
       if (n.__material) {
-        n.__material.opacity = m ? 1.0 : DIM_OPACITY;
+        n.__material.opacity = match ? 1.0 : DIM;
         n.__material.needsUpdate = true;
       }
-      n.__dim = !m;
+      if (n.__label) {
+        n.__label.material.opacity = match ? 1.0 : DIM;
+      }
+      n.__dim = !match;
     });
     Graph.linkOpacity(l => {
       const s = typeof l.source === 'object' ? l.source : nodeIndex[l.source];
       const t = typeof l.target === 'object' ? l.target : nodeIndex[l.target];
-      return (s && s.__dim) || (t && t.__dim) ? 0.05 : 0.45;
+      return (s && s.__dim) || (t && t.__dim) ? 0.04 : 0.45;
     });
   }
-  searchEl.addEventListener('input', applyFilter);
-  segmentSel.addEventListener('change', applyFilter);
+  searchEl.addEventListener('input', applySearch);
+
+  // Reset view.
+  document.getElementById('reset').addEventListener('click', () => {
+    searchEl.value = '';
+    focusAll();
+  });
+
+  buildNav();
+
+  // Initial auto-fit once the force layout has settled a bit.
+  setTimeout(fitAll, 1200);
 
   // Utilities.
   function escapeHtml(s) {
