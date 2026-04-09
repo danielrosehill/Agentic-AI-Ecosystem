@@ -85,6 +85,8 @@ def rel_to(from_path: list[str], to_path: list[str]) -> str:
     downs = [slug(p) for p in to_path[i:]]
     if not ups and not downs:
         return "./"
+    if not downs:
+        return "".join(ups)
     return "".join(ups) + "/".join(downs) + "/"
 
 
