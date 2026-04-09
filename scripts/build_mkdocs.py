@@ -152,8 +152,7 @@ def render_examples(project_ids, projs) -> str:
     if not project_ids:
         return ""
     lines = ["## Examples", ""]
-    lines.append('<div class="gh-grid" markdown>')
-    lines.append("")
+    lines.append('<div class="gh-grid">')
     sorted_projects = sorted(project_ids, key=lambda pid: projs[pid]["label"].lower())
     for pid in sorted_projects:
         p = projs[pid]
@@ -181,7 +180,6 @@ def render_examples(project_ids, projs) -> str:
                 f'<span class="gh-host">{host}</span>'
                 f'</a>'
             )
-    lines.append("")
     lines.append("</div>")
     lines.append("")
     return "\n".join(lines)
