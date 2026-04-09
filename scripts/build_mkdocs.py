@@ -164,9 +164,8 @@ def render_examples(project_ids, projs) -> str:
             owner, repo = gh
             og = f"https://opengraph.githubassets.com/1/{owner}/{repo}"
             lines.append(
-                f'<a class="gh-card" href="{url}" target="_blank" rel="noopener">'
+                f'<a class="gh-card" href="{url}" target="_blank" rel="noopener" title="{owner}/{repo}">'
                 f'<img src="{og}" alt="{owner}/{repo}" loading="lazy">'
-                f'<span class="gh-name">{owner}/{repo}</span>'
                 f'</a>'
             )
         else:
@@ -444,49 +443,74 @@ def main():
 .subnav a { text-decoration: none; }
 .subnav a:hover { text-decoration: underline; }
 
-/* GitHub-style example cards grid */
+/* Example cards: GitHub OpenGraph previews in a responsive grid */
 .gh-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
   margin: 14px 0 24px;
 }
+@media (min-width: 1200px) {
+  .gh-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+}
 .gh-card {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  display: block;
   text-decoration: none !important;
   color: inherit !important;
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 8px;
   overflow: hidden;
   background: var(--md-code-bg-color);
-  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  aspect-ratio: 2 / 1;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+.gh-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  pointer-events: none;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.04);
 }
 .gh-card:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   border-color: var(--md-accent-fg-color);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22), 0 2px 6px rgba(0,0,0,0.14);
 }
 .gh-card img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
   background: #0d1117;
 }
-.gh-card .gh-name {
-  padding: 8px 12px;
-  font-weight: 600;
-  font-size: 0.85rem;
-  border-top: 1px solid var(--md-default-fg-color--lightest);
+/* Subtle top accent on hover */
+.gh-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--md-accent-fg-color), var(--md-primary-fg-color));
+  opacity: 0;
+  transition: opacity 0.18s ease;
+  z-index: 2;
 }
+.gh-card:hover::before { opacity: 1; }
+
 .gh-card--plain {
-  padding: 16px;
+  aspect-ratio: auto;
+  display: flex;
+  flex-direction: column;
   gap: 6px;
-  min-height: 110px;
+  padding: 18px 16px;
+  min-height: 120px;
   justify-content: center;
+  align-items: flex-start;
 }
-.gh-card--plain .gh-icon { font-size: 1.4rem; color: var(--md-accent-fg-color); }
-.gh-card--plain .gh-host { font-size: 0.75rem; color: var(--md-default-fg-color--light); }
+.gh-card--plain .gh-icon { font-size: 1.6rem; color: var(--md-accent-fg-color); }
+.gh-card--plain .gh-name { font-weight: 600; font-size: 0.9rem; }
+.gh-card--plain .gh-host { font-size: 0.75rem; color: var(--md-default-fg-color--light); opacity: 0.8; }
 """)
 
     # Preserve existing static assets
