@@ -1509,6 +1509,15 @@
           "url": "https://github.com/Unity-Technologies/ml-agents"
         }
       ]
+    },
+    {
+      "name": "Upserting Tools"
+    },
+    {
+      "name": "Embedding Models"
+    },
+    {
+      "name": "Embedding Pipeline Orchestrators"
     }
   ]
 }

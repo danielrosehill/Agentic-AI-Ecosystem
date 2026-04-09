@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**151 projects** across **71 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**151 projects** across **74 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -81,6 +81,9 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 - [Voice](#voice) (1)
 - [Workspaces](#workspaces) (1)
 - [World Generation](#world-generation) (1)
+- [Upserting Tools](#upserting-tools) (0)
+- [Embedding Models](#embedding-models) (0)
+- [Embedding Pipeline Orchestrators](#embedding-pipeline-orchestrators) (0)
 
 ---
 
@@ -716,3 +719,9 @@ The JSON is organised as a tree of segments, each with nested subcategories and 
 ## World Generation
 
 - [ml-agents](https://github.com/Unity-Technologies/ml-agents)
+
+## Upserting Tools
+
+## Embedding Models
+
+## Embedding Pipeline Orchestrators
