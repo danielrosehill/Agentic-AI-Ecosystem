@@ -45,7 +45,10 @@ for top in sorted(tree.keys()):
         if key:
             lines += [f"### {key}", ""]
         for p in sorted(sub[key], key=lambda x: x["name"].lower()):
-            lines.append(f"- [{p['name']}]({p['url']})")
+            if p.get("url"):
+                lines.append(f"- [{p['name']}]({p['url']})")
+            else:
+                lines.append(f"- {p['name']}")
         lines.append("")
 
 (ROOT / "README.md").write_text("\n".join(lines))

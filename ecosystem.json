@@ -533,6 +533,36 @@
       "name": "tracecat",
       "url": "https://github.com/TracecatHQ/tracecat",
       "path": ["Security", "Automation"]
+    },
+    {
+      "name": "ralph",
+      "url": "https://github.com/snarktank/ralph",
+      "path": ["Loops"]
+    },
+    {
+      "name": "videosdk-live/agents",
+      "url": "https://github.com/videosdk-live/agents",
+      "path": ["Frameworks", "Multimodal"]
+    },
+    {
+      "name": "Gemini 3.1",
+      "url": "",
+      "path": ["LLMs"]
+    },
+    {
+      "name": "Grok 4.20 Multi-Agent",
+      "url": "https://openrouter.ai/x-ai/grok-4.20-multi-agent",
+      "path": ["LLMs", "Agent Specific"]
+    },
+    {
+      "name": "memvid",
+      "url": "https://github.com/memvid/memvid",
+      "path": ["Memory", "File"]
+    },
+    {
+      "name": "agent-os",
+      "url": "https://github.com/rivet-dev/agent-os",
+      "path": ["Environments", "OS"]
     }
   ]
 }

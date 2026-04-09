@@ -2,7 +2,7 @@
 
 A curated, categorised map of the agentic AI ecosystem — built from real projects outward to taxonomy.
 
-**106 projects** across **55 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
+**112 projects** across **58 top-level segments**. Source of truth: [`ecosystem.json`](./ecosystem.json).
 
 ## How it works
 
@@ -30,16 +30,19 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 - [Dev Tools](#dev-tools) (1)
 - [Development Platforms](#development-platforms) (1)
 - [Engineering Platforms](#engineering-platforms) (1)
+- [Environments](#environments) (1)
 - [Evals and Experiment Tracking](#evals-and-experiment-tracking) (1)
 - [Evaluations](#evaluations) (1)
 - [Feedback Formatting](#feedback-formatting) (1)
 - [Financial Tools](#financial-tools) (1)
-- [Frameworks](#frameworks) (12)
+- [Frameworks](#frameworks) (13)
 - [Frontend Components](#frontend-components) (1)
 - [Frontends](#frontends) (3)
 - [Harnesses](#harnesses) (3)
+- [LLMs](#llms) (2)
+- [Loops](#loops) (1)
 - [MCP](#mcp) (1)
-- [Memory](#memory) (4)
+- [Memory](#memory) (5)
 - [Memory Layers](#memory-layers) (1)
 - [Monitoring](#monitoring) (1)
 - [Multiagent](#multiagent) (1)
@@ -237,6 +240,12 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [voltagent](https://github.com/VoltAgent/voltagent)
 
+## Environments
+
+### OS
+
+- [agent-os](https://github.com/rivet-dev/agent-os)
+
 ## Evals and Experiment Tracking
 
 - [trulens](https://github.com/truera/trulens)
@@ -273,6 +282,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 ### Multiagent Orchestration
 
 - [crewAI](https://github.com/crewAIInc/crewAI)
+
+### Multimodal
+
+- [videosdk-live/agents](https://github.com/videosdk-live/agents)
 
 ### Optimisation → Parallelisation
 
@@ -315,6 +328,18 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [deepagents](https://github.com/langchain-ai/deepagents)
 
+## LLMs
+
+- Gemini 3.1
+
+### Agent Specific
+
+- [Grok 4.20 Multi-Agent](https://openrouter.ai/x-ai/grok-4.20-multi-agent)
+
+## Loops
+
+- [ralph](https://github.com/snarktank/ralph)
+
 ## MCP
 
 ### Aggregation
@@ -325,6 +350,10 @@ Each project is tagged with a hierarchical `path` (top category → subcategory 
 
 - [agentmemory](https://github.com/rohitg00/agentmemory)
 - [cognee](https://github.com/topoteretes/cognee)
+
+### File
+
+- [memvid](https://github.com/memvid/memvid)
 
 ### Regressive
 
